@@ -4,44 +4,40 @@ namespace DealerInspire\Vessel;
 
 class VesselTest extends \Codeception\Test\Unit
 {
-    use \Codeception\Test\Feature\Stub;
-    /**
-     * @var \UnitTester
-     */
-    protected $tester;
+  use \Codeception\Test\Feature\Stub;
+  /**
+   * @var \UnitTester
+   */
+  protected $tester;
 
-    protected function _before()
-    {
-    }
+  protected function _before() {}
 
-    protected function _after()
-    {
-    }
+  protected function _after() {}
 
-    // tests
-    public function testReturnsPluginDir()
-    {
-        $fj = $this->make(FJ::class);
-        $vessel = new Vessel($fj);
+  // tests
+  public function testReturnsPluginDir()
+  {
+    $fj = $this->make(FJ::class);
+    $vessel = new Vessel($fj);
 
-        $dir = dirname(__DIR__, 2) . '/';
+    $dir = dirname(__DIR__, 2) . '/';
 
-        $this->assertEquals($vessel->get_plugin_path(), $dir);
-    }
+    $this->assertEquals($vessel->get_plugin_path(), $dir);
+  }
 
-    public function testReturnsNotProdEnv()
-    {
-        $fj = $this->make(FJ::class);
-        $vessel = new Vessel($fj);
+  public function testReturnsNotProdEnv()
+  {
+    $fj = $this->make(FJ::class);
+    $vessel = new Vessel($fj);
 
-        $this->assertFalse($vessel->is_prod());
-    }
+    $this->assertFalse($vessel->is_prod());
+  }
 
-    public function testCannotFindTemplate()
-    {
-        $fj = $this->make(FJ::class);
-        $vessel = new Vessel($fj);
+  public function testCannotFindTemplate()
+  {
+    $fj = $this->make(FJ::class);
+    $vessel = new Vessel($fj);
 
-        $this->assertFalse($vessel->vessel_template_exists('fjsucks'));
-    }
+    $this->assertFalse($vessel->vessel_template_exists('fjsucks'));
+  }
 }

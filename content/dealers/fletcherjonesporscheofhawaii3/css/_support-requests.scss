@@ -1,50 +1,49 @@
 #ctabox-pricing .original-price .ctabox-price {
   text-decoration: line-through;
 }
-@media (min-width: 768px)and (max-width: 1023px){
-	#videobanner #videooverlay .videooverlay-content h2 {
-	    font-size: 41px;
-	}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #videobanner #videooverlay .videooverlay-content h2 {
+    font-size: 41px;
+  }
 }
 
-#youtube-row{
-    background: #000;
+#youtube-row {
+  background: #000;
 }
-.specialCoupon .specialRight .modelName{
-    color: #a51a19 !important;
-    font-size: 21px !important;
-}
-
-.specialCoupon .specialRight .description p{
-    font-size: 14px !important;
+.specialCoupon .specialRight .modelName {
+  color: #a51a19 !important;
+  font-size: 21px !important;
 }
 
-a.view-disclaimer-link{
-    color: #a7a7a7 !important;
-    font-size: 11px !important;
-    font-style: italic !important;
-            
-}
-@media(max-width: 1024px) {
-    #videobanner {
-        background-position: 50% 50%;
-    }
+.specialCoupon .specialRight .description p {
+  font-size: 14px !important;
 }
 
-@media(max-width: 767px) {
-    .clock.flip-clock-wrapper {
-        padding-left: 135px;
-    }
+a.view-disclaimer-link {
+  color: #a7a7a7 !important;
+  font-size: 11px !important;
+  font-style: italic !important;
+}
+@media (max-width: 1024px) {
+  #videobanner {
+    background-position: 50% 50%;
+  }
 }
 
-.comments ul.post-comments .comment-num{
+@media (max-width: 767px) {
+  .clock.flip-clock-wrapper {
+    padding-left: 135px;
+  }
+}
+
+.comments ul.post-comments .comment-num {
   display: none;
 }
 #getdirectionsrow {
-	background-size: cover;
-	form.getdirections input {
-		border-bottom: 1px solid #fff;
-	}
+  background-size: cover;
+  form.getdirections input {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 .schedule-testdrive {
@@ -70,18 +69,19 @@ a.view-disclaimer-link{
 }
 
 #footer {
-    padding: 25px 0;
-    .footer-left img {
-        width: 85px;
-    }
-    .footer-middle {
-        margin-top: 30px;
-    }
-    .footer-right {
-        margin-top: 45px;
-    }
+  padding: 25px 0;
+  .footer-left img {
+    width: 85px;
+  }
+  .footer-middle {
+    margin-top: 30px;
+  }
+  .footer-right {
+    margin-top: 45px;
+  }
 }
 
-#mini-header a.button.cta-button.ask-a-question, a.button-primary {
+#mini-header a.button.cta-button.ask-a-question,
+a.button-primary {
   background: Green !important;
 }

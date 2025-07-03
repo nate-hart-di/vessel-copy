@@ -5,11 +5,11 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="footer-top-inner">
-						<?php do_action('footer_left_quick_links') ?>
+						<?php do_action('footer_left_quick_links'); ?>
 						<h2 class="section-title">
 							Quick Links
 						</h2>
-						<?php do_action('footer_right_quick_links') ?>
+						<?php do_action('footer_right_quick_links'); ?>
 					</div>
 				</div>
 			</div>
@@ -45,28 +45,30 @@
 						Copyright &copy; <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?>
 					</div>
 					<div class="location">
-						<?php echo get_option('di_street_address'); ?> <?php echo get_option('di_city'); ?>, <?php echo get_option('di_state'); ?> <?php echo get_option('di_zipcode'); ?>
+						<?php echo get_option('di_street_address'); ?> <?php echo get_option('di_city'); ?>, <?php echo get_option(
+  'di_state',
+); ?> <?php echo get_option('di_zipcode'); ?>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12 footer-middle">
-					<?php $defaults = array(
-						'theme_location'  => 'footer-menu',
-						'container'       => '',
-						'container_class' => '',
-						'container_id'    => '',
-						'menu_class'      => '',
-						'menu_id'         => '',
-						'echo'            => true,
-						'fallback_cb'     => 'wp_page_menu',
-						'before'          => '',
-						'after'           => '',
-						'link_before'     => '',
-						'link_after'      => '',
-						'items_wrap'      => '<ul id="%1$s">%3$s</ul>',
-						'depth'           => 0,
-						'walker'          => ''
-					); ?>
-					<?php wp_nav_menu( $defaults ); ?>
+					<?php $defaults = [
+       'theme_location' => 'footer-menu',
+       'container' => '',
+       'container_class' => '',
+       'container_id' => '',
+       'menu_class' => '',
+       'menu_id' => '',
+       'echo' => true,
+       'fallback_cb' => 'wp_page_menu',
+       'before' => '',
+       'after' => '',
+       'link_before' => '',
+       'link_after' => '',
+       'items_wrap' => '<ul id="%1$s">%3$s</ul>',
+       'depth' => 0,
+       'walker' => '',
+     ]; ?>
+					<?php wp_nav_menu($defaults); ?>
 
 				</div>
 				<div class="col-md-4 col-sm-12 footer-right">

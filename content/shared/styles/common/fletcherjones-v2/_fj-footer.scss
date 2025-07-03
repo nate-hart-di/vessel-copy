@@ -1,11 +1,13 @@
-@media (min-width:1025px) {
+@media (min-width: 1025px) {
   .home #footer {
     position: absolute;
     width: 100%;
     bottom: 0;
     color: #fff;
     .footer-middle {
-      ul, .copyright, .di-version {
+      ul,
+      .copyright,
+      .di-version {
         display: inline-block;
         font-weight: 300;
       }
@@ -23,7 +25,8 @@
 }
 
 #footer {
-  #white-sprinter-logo,#white-amg-logo {
+  #white-sprinter-logo,
+  #white-amg-logo {
     max-width: 115px;
     padding: 15px 5px 0;
   }
@@ -35,7 +38,7 @@
       margin: 20px 5px 0 0;
     }
   }
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     .footer-middle {
       margin: 0;
     }

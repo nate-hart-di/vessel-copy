@@ -8,7 +8,7 @@
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -23,52 +23,51 @@
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/vrp';
 
-
-#results-page{
-  .vehicle{
-    .vehicle-price{
+#results-page {
+  .vehicle {
+    .vehicle-price {
       @include flexbox;
       @include flex-direction(column);
-      .price-top{
+      .price-top {
         order: 0;
       }
-      .cta-button{
+      .cta-button {
         order: 1;
       }
-      .finance-link{
+      .finance-link {
         order: 2 !important;
       }
-      .below-price-cta{
+      .below-price-cta {
         order: 10; // place at bottom of stack
       }
-      .options-button{
+      .options-button {
         order: 15;
       }
-      .button{
+      .button {
         background: $primary;
       }
     }
   }
-  td.gridview .vehicle.grid-view  {
+  td.gridview .vehicle.grid-view {
     padding-bottom: 0;
     display: flex !important;
     @include flex-direction(column);
     .vehicle-quick-stats {
-        @include flexbox();
-        @include flex-direction(column);
-        @include justify-content(flex-start);
-        @include flex-grow(1);
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(flex-start);
+      @include flex-grow(1);
     }
     .button-bar {
-        position: relative;
-        height: auto;
+      position: relative;
+      height: auto;
     }
     .vehicle-price {
-        @include flexbox();
-        @include flex-direction(column);
-        .price-block.bottom-text {
-            @include flex-grow(1);
-        }
+      @include flexbox();
+      @include flex-direction(column);
+      .price-block.bottom-text {
+        @include flex-grow(1);
+      }
     }
   }
 }
@@ -76,7 +75,7 @@
 // *************************************************************************************************
 //	SUPPORT REQUESTS
 // *************************************************************************************************
-#results-page .vehicle .vehicle-price .price-block.locked-price{
+#results-page .vehicle .vehicle-price .price-block.locked-price {
   margin-bottom: 0;
 }
 
@@ -92,7 +91,7 @@ a.offer-image-link {
   display: inline-block;
 }
 .offerbuttonbar.card-action {
-display: none;
+  display: none;
 }
 img#dynamic-banner-image {
   max-width: 40%;
@@ -116,55 +115,55 @@ img#dynamic-banner-image {
   margin-top: -20px !important;
 }
 .top-text-item ul.special-offers li.special-offer {
-  background:transparent;
-  box-shadow:none;
-  margin:0;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
 }
 .top-text-item ul.special-offers li.special-offer:hover {
-  box-shadow:none;
+  box-shadow: none;
 }
 .top-text-item ul.special-offers li.special-offer .offer-image-link {
   padding: 0px;
-  width:50%;
+  width: 50%;
 }
 .top-text-item ul.special-offers li.special-offer .offer-content {
   padding: 0 20px;
-  text-align:left;
-  width:75%;
+  text-align: left;
+  width: 75%;
   height: 100%;
 }
 .top-text-item ul.special-offers li.special-offer .offer-content .rates {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 ul.special-offers li.special-offer .rates {
   border: 0px !important;
   padding: 0px !important;
 }
 .top-text-item ul.special-offers li.special-offer .offer-content .rates > div {
-  width:100%;
+  width: 100%;
 }
 .top-text-item ul.special-offers li.special-offer .offeritem .offerrate,
 .top-text-item ul.special-offers li.special-offer .offeritem .offerlabel {
-  font-size:20px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: none !important;
 }
 .top-text-item ul.special-offers li.special-offer .offeritem.price-line .offerrate,
 .top-text-item ul.special-offers li.special-offer .offeritem.price-line .offerlabel {
-  font-size:24px;
+  font-size: 24px;
 }
 .top-text-item ul.special-offers {
-  background:#f0f0f0;
-  border:5px solid #fff;
-  padding:10px;
+  background: #f0f0f0;
+  border: 5px solid #fff;
+  padding: 10px;
   box-shadow: 0px 0px 6px #0059a8;
 }
 .top-text-item ul.special-offers li.special-offer .offerbuttonbar .button.primary-button {
-  display:none;
+  display: none;
 }
 .top-text-item ul.special-offers li.special-offer .offerbuttonbar .button {
-  font-size:24px;
+  font-size: 24px;
   width: 100% !important;
 }
 .top-text-item ul.special-offers li.special-offer .offer-content > h2 {
@@ -177,7 +176,7 @@ ul.special-offers li.special-offer .offerbuttonbar .primary-button {
   display: none;
 }
 ul.special-offers li.special-offer .offerbuttonbar a.cta-button.button {
-  width:100% !important;
+  width: 100% !important;
   padding: 13px 20px;
   background: #00a651 !important;
   font-size: 14px;
@@ -185,14 +184,16 @@ ul.special-offers li.special-offer .offerbuttonbar a.cta-button.button {
   position: absolute;
   width: 50% !important;
 }
-.vehicle .options-button{margin-top:5px}
+.vehicle .options-button {
+  margin-top: 5px;
+}
 .unlock-offer a {
   background: #c42929;
   display: block;
   text-align: center;
   padding: 5px;
   color: #fff !important;
-font-size: 14px;
+  font-size: 14px;
 }
 .vehicle-badges .options-button {
   margin-top: 8px !important;
@@ -212,6 +213,6 @@ font-size: 14px;
   }
 }
 
-.vehicle .price-top a[href="#gravity-form-77"] {
+.vehicle .price-top a[href='#gravity-form-77'] {
   display: none;
 }

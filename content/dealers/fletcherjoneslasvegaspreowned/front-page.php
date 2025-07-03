@@ -6,32 +6,36 @@ $feature_button_text = get_field('button_text', 'option');
 $feature_button_color = get_field('button_color', 'option');
 $fj_blue = '#0059a8';
 $button_link = get_field('button_link', 'option');
-
 ?>
 
 <div class="visible-xs">
     <div class="overlay-title">
-        <?php /* get_template_part('partials/homepage/personalizer-key'); */ ?>
+        <?php
+/* get_template_part('partials/homepage/personalizer-key'); */
+?>
     </div>
         
     <div class="mobile-cta">
-        <?php
-        if( have_rows( 'mobile_ctas' ) ):
-        while ( have_rows( 'mobile_ctas' ) ) : the_row();
+        <?php if (have_rows('mobile_ctas')):
+          while (have_rows('mobile_ctas')):
 
-        $ctaImage       = get_sub_field( 'image' );
-        $ctaLink        = get_sub_field( 'link' );
-        $ctaLinkTitle   = get_sub_field( 'button_text' );
-        $ctaLinkBG   	= get_sub_field( 'button_background' );
-        $ctaLinkColor   	= get_sub_field( 'button_color' );
-        ?>
+            the_row();
+
+            $ctaImage = get_sub_field('image');
+            $ctaLink = get_sub_field('link');
+            $ctaLinkTitle = get_sub_field('button_text');
+            $ctaLinkBG = get_sub_field('button_background');
+            $ctaLinkColor = get_sub_field('button_color');
+            ?>
 
         <div class="ctaItem">
-            <img src="<?= $ctaImage['sizes']['large']; ?>" alt="<?= $ctaImage['alt']; ?>" />
-            <a trid="e1ee27c0eeab446ab19908" trc href="<?= $ctaLink; ?>" class="button mobile-button" style="background-color:<?= $ctaLinkBG; ?>;color:<?= $ctaLinkColor; ?> !important"><?= $ctaLinkTitle; ?></a>
+            <img src="<?= $ctaImage['sizes']['large'] ?>" alt="<?= $ctaImage['alt'] ?>" />
+            <a trid="e1ee27c0eeab446ab19908" trc href="<?= $ctaLink ?>" class="button mobile-button" style="background-color:<?= $ctaLinkBG ?>;color:<?= $ctaLinkColor ?> !important"><?= $ctaLinkTitle ?></a>
         </div>
 
-        <?php endwhile; endif; ?>
+        <?php
+          endwhile;
+        endif; ?>
     </div>
 
     <div id="mobile-subscribe">

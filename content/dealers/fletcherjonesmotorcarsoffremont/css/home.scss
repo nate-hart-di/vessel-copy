@@ -1,12 +1,12 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
 @import '../../../shared/styles/radioactive';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 
 // *************************************************************************************************
 //  HOMEPAGE
@@ -27,12 +27,13 @@ $vdp-lease-finance: false !default;
   @include justify-content(center);
   @include align-items(center);
   @include flex-direction(column);
-  h1,h2 {
+  h1,
+  h2 {
     text-shadow: 0px 0px 10px #000;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   #videoOverlay {
     top: 0 !important;
   }
@@ -44,7 +45,7 @@ $vdp-lease-finance: false !default;
       height: calc(100vh - 211px);
       .cta-buttons {
         margin-top: 0;
-        @media(max-width: 767px) {
+        @media (max-width: 767px) {
           h1 {
             font-size: 22px;
           }
@@ -54,17 +55,16 @@ $vdp-lease-finance: false !default;
   }
 }
 
-
 .gridwrap {
   display: none;
 }
 
-@media(min-width:1024px){
-  .home{
+@media (min-width: 1024px) {
+  .home {
     #videobanner {
       max-height: 640px;
     }
-    #footer{
+    #footer {
       position: relative;
     }
   }
@@ -73,34 +73,34 @@ $vdp-lease-finance: false !default;
   display: none;
 }
 
-#heroRow{
-	padding: 0;
-	.heroRow__cta{
-	  background: #fff;
-	  position: relative;
-	  height: 100%;
-	  &--wrap{
-		background: #f1f1f1;
-		width: 100%;
-		justify-content: center;
-		flex-direction: column;
-		height: 150px;
-		padding: 8px 0 22px 0;
-		text-decoration: none;
-		// &:hover{
-		//   background: #fff;
-		// }
-		p{
-		  color: #000;
-		  font-weight: 500;
-		}
-		&:hover {
-			background: white;
-		}
-	  }
-	}
+#heroRow {
+  padding: 0;
+  .heroRow__cta {
+    background: #fff;
+    position: relative;
+    height: 100%;
+    &--wrap {
+      background: #f1f1f1;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      height: 150px;
+      padding: 8px 0 22px 0;
+      text-decoration: none;
+      // &:hover{
+      //   background: #fff;
+      // }
+      p {
+        color: #000;
+        font-weight: 500;
+      }
+      &:hover {
+        background: white;
+      }
+    }
   }
+}
 
-  #map {
-    overflow: hidden;
+#map {
+  overflow: hidden;
 }

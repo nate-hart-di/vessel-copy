@@ -1,1 +1,13 @@
-@media(min-width:768px) and (max-width:1199px){.responsive-on .topHeadeActions.quick-search{display:none}}@media(max-width:767px){.responsive-on #detailspage .cta-mobile-details-page{top:70px}.responsive-on #detailspage .maincardetails .mainvehicleheaderbox{margin-top:35px}}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .responsive-on .topHeadeActions.quick-search {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .responsive-on #detailspage .cta-mobile-details-page {
+    top: 70px;
+  }
+  .responsive-on #detailspage .maincardetails .mainvehicleheaderbox {
+    margin-top: 35px;
+  }
+}

@@ -6,14 +6,14 @@
 
   &.open {
     display: block;
-    -webkit-transition: ease all .5s;
-    -moz-transition: ease all .5s;
-    -o-transition: ease all .5s;
-    transition: ease all .5s;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+    transition: ease all 0.5s;
   }
 
   .model_nav {
-    background-color: var(--modelnavtabbackground,#333);
+    background-color: var(--modelnavtabbackground, #333);
     height: 35px;
 
     ul.nav-tabs {
@@ -38,7 +38,7 @@
             border: none;
             text-decoration: underline;
           }
-          &.featured-button{
+          &.featured-button {
             color: var(--modelnavfeaturedbutton, #0091f7);
             &:hover {
               color: var(--modelnavfeaturedbutton, #0091f7);
@@ -73,8 +73,8 @@
       text-align: center;
       font-weight: 600;
     }
-    .item{
-      a{
+    .item {
+      a {
         text-align: center;
       }
     }
@@ -99,7 +99,7 @@
       top: 38%;
       width: 50px;
       height: 50px;
-     // background: url(/wp-content/themes/DealerInspireDealerTheme/images/right-arrow.png) no-repeat center transparent;
+      // background: url(/wp-content/themes/DealerInspireDealerTheme/images/right-arrow.png) no-repeat center transparent;
       background-size: contain;
       z-index: 500;
       font-size: 12px;
@@ -107,7 +107,7 @@
   }
 }
 
-img[src="/wp-content/plugins/vessel/content/shared/images/models/coupe/cls-coupe.png"] {
+img[src='/wp-content/plugins/vessel/content/shared/images/models/coupe/cls-coupe.png'] {
   transform: scale(1.15);
   padding-bottom: 55px;
 }

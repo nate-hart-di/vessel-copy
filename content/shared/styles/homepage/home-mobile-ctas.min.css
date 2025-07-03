@@ -1,1 +1,59 @@
-.home .mobile-cta{margin-top:65px}.mobile-cta{width:100%}.mobile-cta .ctaItem{width:100%;display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-moz-align-items:center;align-items:center;position:relative;padding-top:92.5%}.mobile-cta .ctaItem.di-lazyloaded{padding:12px 9px 3px}.mobile-cta .ctaItem img{width:100%}.mobile-cta .ctaItem img::before{padding-top:92.5%}.mobile-cta .ctaItem a{position:absolute;bottom:15px}.mobile-cta .ctaItem .button{font-size:17px;padding:12px 40px;margin:10px 5px 25px;letter-spacing:0;border:0}.mobile-cta .ctaItem:first-child{padding-top:20%}.mobile-cta .ctaItem:first-child.di-lazyloaded{padding:12px 9px 3px}.mobile-cta .ctaItem:first-child .button.mobile-button{position:relative;max-width:100% !important}.mobile-cta .ctaItem:last-child{padding-bottom:12px;padding-top:12px}
+.home .mobile-cta {
+  margin-top: 65px;
+}
+.mobile-cta {
+  width: 100%;
+}
+.mobile-cta .ctaItem {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  position: relative;
+  padding-top: 92.5%;
+}
+.mobile-cta .ctaItem.di-lazyloaded {
+  padding: 12px 9px 3px;
+}
+.mobile-cta .ctaItem img {
+  width: 100%;
+}
+.mobile-cta .ctaItem img::before {
+  padding-top: 92.5%;
+}
+.mobile-cta .ctaItem a {
+  position: absolute;
+  bottom: 15px;
+}
+.mobile-cta .ctaItem .button {
+  font-size: 17px;
+  padding: 12px 40px;
+  margin: 10px 5px 25px;
+  letter-spacing: 0;
+  border: 0;
+}
+.mobile-cta .ctaItem:first-child {
+  padding-top: 20%;
+}
+.mobile-cta .ctaItem:first-child.di-lazyloaded {
+  padding: 12px 9px 3px;
+}
+.mobile-cta .ctaItem:first-child .button.mobile-button {
+  position: relative;
+  max-width: 100% !important;
+}
+.mobile-cta .ctaItem:last-child {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}

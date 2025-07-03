@@ -1,5 +1,7 @@
 <div class="hidden-xs">
-	<?php // get_template_part('partials/prefooters/footer','threefifthstwofifths'); ?>
+	<?php
+// get_template_part('partials/prefooters/footer','threefifthstwofifths');
+?>
 </div>
 
 <div id="footer">
@@ -7,24 +9,24 @@
 		<div class="row">
 
 			<div class="col-sm-3 footer-left footer-middle hidden-xs">
-				<?php $defaults = array(
-					'theme_location'  => 'footer-menu',
-					'container'       => '',
-					'container_class' => '',
-					'container_id'    => '',
-					'menu_class'      => '',
-					'menu_id'         => '',
-					'echo'            => true,
-					'fallback_cb'     => 'wp_page_menu',
-					'before'          => '',
-					'after'           => '',
-					'link_before'     => '',
-					'link_after'      => '',
-					'items_wrap'      => '<ul id="%1$s">%3$s</ul>',
-					'depth'           => 0,
-					'walker'          => ''
-				); ?>
-				<?php wp_nav_menu( $defaults ); ?>
+				<?php $defaults = [
+      'theme_location' => 'footer-menu',
+      'container' => '',
+      'container_class' => '',
+      'container_id' => '',
+      'menu_class' => '',
+      'menu_id' => '',
+      'echo' => true,
+      'fallback_cb' => 'wp_page_menu',
+      'before' => '',
+      'after' => '',
+      'link_before' => '',
+      'link_after' => '',
+      'items_wrap' => '<ul id="%1$s">%3$s</ul>',
+      'depth' => 0,
+      'walker' => '',
+    ]; ?>
+				<?php wp_nav_menu($defaults); ?>
 			</div>
 
 			<div class="col-sm-6 footer-middle">

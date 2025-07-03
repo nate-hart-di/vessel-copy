@@ -1,12 +1,12 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
 @import '../../../shared/styles/radioactive';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 
 // *************************************************************************************************
 //  VEHICLE DETAILS PAGE
@@ -16,7 +16,7 @@ $vdp-ctabox-offset-top-start: 130px;
 //NEW VDP STYLING: DO NOT REMOVE
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-details';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/vehicle-print-view';
-.page-vehicle-display-page{
+.page-vehicle-display-page {
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
 }
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp';
@@ -30,7 +30,7 @@ $vdp-ctabox-offset-top-start: 130px;
   }
 }
 
-#vehicleDetails  {
+#vehicleDetails {
   .vdp-shopping-tools {
     .shopping-tools-wrapper {
       @include flexbox;
@@ -43,7 +43,7 @@ $vdp-ctabox-offset-top-start: 130px;
         }
       }
     }
-    @include breakpoint (mobile-tablet) {
+    @include breakpoint(mobile-tablet) {
       .shopping-tools-wrapper {
         .shopping-tool {
           margin-bottom: 10px;
@@ -53,8 +53,8 @@ $vdp-ctabox-offset-top-start: 130px;
   }
 }
 
-.details-page-row{
-  .shopping-tool{
+.details-page-row {
+  .shopping-tool {
     display: block;
     float: left;
     padding: 0 15px;

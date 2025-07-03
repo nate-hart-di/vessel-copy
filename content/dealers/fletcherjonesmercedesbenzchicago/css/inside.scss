@@ -1,9 +1,9 @@
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
-@import "_variables";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '_variables';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sidebars/sidebar-basicboxy';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/specials/specials-coupons';
@@ -16,11 +16,12 @@
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/shortcodes/incentives-listview-2014';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
 
-@import "../../../shared/styles/common/fletcherjones-v2/_fj-service-page";
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-service-page';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-inside-pages';
 
-@media (max-width:375px){
-	.tablepress td, .tablepress th {
-	    padding: 8px 5px !important;
-	}
+@media (max-width: 375px) {
+  .tablepress td,
+  .tablepress th {
+    padding: 8px 5px !important;
+  }
 }

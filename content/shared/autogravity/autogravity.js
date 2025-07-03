@@ -1,6 +1,5 @@
-jQuery(document).ready(function($) {
-
-  (function(doc, id) {
+jQuery(document).ready(function ($) {
+  (function (doc, id) {
     var js;
 
     if (doc.getElementById(id)) return;
@@ -11,12 +10,8 @@ jQuery(document).ready(function($) {
     doc.body.appendChild(js);
   })(document, 'autogravity-application-widget');
 
-  if($(window).width() < 768)
-  {
-    if(isMobile.iOS())
-      $('.fj-drive .android').hide();
-    else
-      $(".fj-drive .iOS").hide();
+  if ($(window).width() < 768) {
+    if (isMobile.iOS()) $('.fj-drive .android').hide();
+    else $('.fj-drive .iOS').hide();
   }
-
 });

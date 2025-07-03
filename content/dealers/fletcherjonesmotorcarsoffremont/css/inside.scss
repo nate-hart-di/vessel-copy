@@ -1,13 +1,12 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
 @import '../../../shared/styles/radioactive';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
-
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 
 // *************************************************************************************************
 //  INSIDE PAGES
@@ -26,9 +25,9 @@ $vdp-lease-finance: false !default;
 
 //@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-service-page";
 //@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-inside-pages';
-@import "../../../shared/styles/common/fletcherjones-v2/_fj-service-page";
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-service-page';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-inside-pages';
-@include breakpoint (md) {
+@include breakpoint(md) {
   body.page-template-sitemap-php {
     .container.contentcontainer {
       padding-top: 120px;
@@ -36,12 +35,13 @@ $vdp-lease-finance: false !default;
   }
 }
 
-#di-page-composer{
-  .body-header, .desktop-margin{
+#di-page-composer {
+  .body-header,
+  .desktop-margin {
     margin-top: 0;
   }
   &.contentcontainer {
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       padding-top: 0;
     }
   }

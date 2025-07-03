@@ -1,13 +1,13 @@
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
 // *************************************************************************************************
-@import "variables";
+@import 'variables';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-listview';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-gridview';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-topbar';
@@ -15,13 +15,12 @@ $vdp-lease-finance: false !default;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-mobile';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/resultspage-common-elements';
 
-
-#results-page{
-  .vehicle{
-    &.locked_pricing_vehicle{
-      .locked-reveal-text{
+#results-page {
+  .vehicle {
+    &.locked_pricing_vehicle {
+      .locked-reveal-text {
         display: none;
-        .locked-pricing-price-unlocked &{
+        .locked-pricing-price-unlocked & {
           display: block;
         }
       }

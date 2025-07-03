@@ -8,9 +8,9 @@
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
@@ -26,11 +26,11 @@
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/header-vertical';
 
 //Porsche header styles
- @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/header';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/header';
 
 //make room for translate bar
-@media screen and (max-width:767px){
-  .contentcontainer{
+@media screen and (max-width: 767px) {
+  .contentcontainer {
     padding-top: 15px;
   }
 }
@@ -74,29 +74,29 @@ TABLET ELEMENT STYLING
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
 }
 
 /*************************************************************************************************
 MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide';
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide';
 }
 
 /*************************************************************************************************
 THIRD PARTY STYLING/REQUESTS
 *************************************************************************************************/
 #vessel-header-img {
-      max-height: 55px;
-      @media (max-width: 767px) {
-            max-height: 35px;
-      }
+  max-height: 55px;
+  @media (max-width: 767px) {
+    max-height: 35px;
+  }
 }

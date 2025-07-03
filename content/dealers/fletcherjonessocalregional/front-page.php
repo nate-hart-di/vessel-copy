@@ -8,20 +8,20 @@ $fj_blue = '#0059a8';
 $button_link = get_field('button_link', 'option');
 ?>
 
-<?php if(get_field('override_videobanner')) { ?>
+<?php if (get_field('override_videobanner')) { ?>
 <div id="override_videobanner" data-acf="override_videobanner" data-acf-location="Homepage">
   <?php the_field('override_videobanner_content'); ?>
 </div>
 <?php } else { ?>
 
-<?php if( get_field('header_banner') ) : ?>
+<?php if (get_field('header_banner')): ?>
     <div class="row">
     <div class="col-sm-12 overlay-title">
         <div class="bannerAnnaoucement hidden-xs">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        <?php echo get_field('header_banner')?>
+                        <?php echo get_field('header_banner'); ?>
                     </div>
                 </div>
             </div>
@@ -38,47 +38,57 @@ $button_link = get_field('button_link', 'option');
                                     <div class="dealerList">
 
                                         <?php
-                                        $brands = get_terms(array(
-                                            'taxonomy' => 'dealer_cat',
-                                        ));
+                                        $brands = get_terms([
+                                          'taxonomy' => 'dealer_cat',
+                                        ]);
 
-                                        if(count($brands) > 0):
-                                            foreach($brands as $brand):
-                                                $brand_name = $brand->name;
-                                                $brand_slug = $brand->slug;
-                                                $brand_location_list = [];
-                                                $args = array(
-                                                    'post_type' => 'dealers',
-                                                    'posts_per_page' => -1,
-                                                    'dealer_cat' => $brand_slug
-                                                );
-                                                $dealers = get_posts($args); ?>
+                                        if (count($brands) > 0):
+                                          foreach ($brands as $brand):
+
+                                            $brand_name = $brand->name;
+                                            $brand_slug = $brand->slug;
+                                            $brand_location_list = [];
+                                            $args = [
+                                              'post_type' => 'dealers',
+                                              'posts_per_page' => -1,
+                                              'dealer_cat' => $brand_slug,
+                                            ];
+                                            $dealers = get_posts($args);
+                                            ?>
 
                                                 <div id="loc-<?= $brand_slug ?>" class="center brand-wrapper matchable-heights">
                                                     <div class="loc-brand-logo">
-                                                        <img src="<?=  get_stylesheet_directory_uri(); ?>/images/<?= $brand_slug ?>-logo.png" alt="<?= $brand_name ?> Logo" />
+                                                        <img src="<?= get_stylesheet_directory_uri() ?>/images/<?= $brand_slug ?>-logo.png" alt="<?= $brand_name ?> Logo" />
                                                     </div>
-                                                    <?php foreach($dealers as $dealer):
-                                                        $post_id = $dealer->ID;
+                                                    <?php foreach ($dealers as $dealer):
 
-                                                        extract(array(
-                                                            "name" => get_the_title($post_id),
-                                                            "url" => get_field('_dealer_website_url', $post_id),
-                                                            "phone" => get_field('_dealer_sales_phone', $post_id),
-                                                            "service" => get_field('_dealer_service_phone', $post_id),
-                                                            "address" => str_replace("|", "<br />", get_field('_dealer_address', $post_id)),
-                                                            "city" => get_field('_dealer_address_map',$post_id)
+                                                      $post_id = $dealer->ID;
 
-                                                        ));
-                                                        if( isset($city['address']) ){
-                                                            $city = explode(',',$city['address']);
-                                                            $city = $city[1]; //index of city name
-                                                            if( strpos($city,'Costa Mesa') !== false  ){
-                                                                $city = "Newport Beach";
-                                                            }
+                                                      extract([
+                                                        'name' => get_the_title($post_id),
+                                                        'url' => get_field('_dealer_website_url', $post_id),
+                                                        'phone' => get_field('_dealer_sales_phone', $post_id),
+                                                        'service' => get_field('_dealer_service_phone', $post_id),
+                                                        'address' => str_replace(
+                                                          '|',
+                                                          '<br />',
+                                                          get_field('_dealer_address', $post_id),
+                                                        ),
+                                                        'city' => get_field('_dealer_address_map', $post_id),
+                                                      ]);
+                                                      if (isset($city['address'])) {
+                                                        $city = explode(',', $city['address']);
+                                                        $city = $city[1]; //index of city name
+                                                        if (strpos($city, 'Costa Mesa') !== false) {
+                                                          $city = 'Newport Beach';
                                                         }
-                                                    ?>
-                                                        <div class="popover-wrapper <?php echo str_replace(" ","_",$name);?>">
+                                                      }
+                                                      ?>
+                                                        <div class="popover-wrapper <?php echo str_replace(
+                                                          ' ',
+                                                          '_',
+                                                          $name,
+                                                        ); ?>">
                                                             <h3 > <a trid="396c14ec0cfa43aba9d059" trc href="<?= $url ?>"><?php echo $city; ?> </a></h3>
 
                                                             <div class="info-box dealer-<?= count($dealers) ?>">
@@ -89,13 +99,16 @@ $button_link = get_field('button_link', 'option');
                                                                         <h3 > <?php echo $name; ?> </h3>
 
                                                                         <div class="address">
-                                                                            <?= $address;
+                                                                            <?=
+                                                                            $address
 
                                                                             //Koral was here
-                                                                            if ($name === "Audi Beverly Hills") {
-                                                                                echo '<br/> <br/>' . 'Service: 2340 S. Fairfax Ave.' . '<br/>' .'Los Angeles, CA 90016';
+                                                                            if ($name === 'Audi Beverly Hills') {
+                                                                              echo '<br/> <br/>' .
+                                                                                'Service: 2340 S. Fairfax Ave.' .
+                                                                                '<br/>' .
+                                                                                'Los Angeles, CA 90016';
                                                                             }
-
                                                                             ?>
                                                                         </div>
 
@@ -113,11 +126,14 @@ $button_link = get_field('button_link', 'option');
                                                             </div>
                                                         </div>
 
-                                                        <?php endforeach; ?>
+                                                        <?php
+                                                    endforeach; ?>
                                                 </div>
 
-                                            <?php endforeach;
-                                        endif; ?>
+                                            <?php
+                                          endforeach;
+                                        endif;
+                                        ?>
                                     </div>
                                     </div>
                                 </div>
@@ -151,47 +167,58 @@ $button_link = get_field('button_link', 'option');
                                 <div class="container-fluid">
                                     <div class="row">
                                         <?php
-                                        $brands = get_terms(array(
-                                            'taxonomy' => 'dealer_cat',
-                                        ));
+                                        $brands = get_terms([
+                                          'taxonomy' => 'dealer_cat',
+                                        ]);
 
-                                        if(count($brands) > 0):
-                                            foreach($brands as $brand):
-                                                $brand_name = $brand->name;
-                                                $brand_slug = $brand->slug;
-                                                $brand_location_list = [];
-                                                $args = array(
-                                                    'post_type' => 'dealers',
-                                                    'posts_per_page' => -1,
-                                                    'dealer_cat' => $brand_slug
-                                                );
-                                                $dealers = get_posts($args); ?>
+                                        if (count($brands) > 0):
+                                          foreach ($brands as $brand):
 
-                                                <div id="loc-<?= $brand_slug ?>" class="col-sm-<?= (12 / (count($brands))) ?> center brand-wrapper matchable-heights">
+                                            $brand_name = $brand->name;
+                                            $brand_slug = $brand->slug;
+                                            $brand_location_list = [];
+                                            $args = [
+                                              'post_type' => 'dealers',
+                                              'posts_per_page' => -1,
+                                              'dealer_cat' => $brand_slug,
+                                            ];
+                                            $dealers = get_posts($args);
+                                            ?>
+
+                                                <div id="loc-<?= $brand_slug ?>" class="col-sm-<?= 12 /
+  count($brands) ?> center brand-wrapper matchable-heights">
                                                     <div class="loc-brand-logo">
-                                                        <img src="<?=  get_stylesheet_directory_uri(); ?>/images/<?= $brand_slug ?>-logo.png" alt="<?= $brand_name ?> Logo" />
+                                                        <img src="<?= get_stylesheet_directory_uri() ?>/images/<?= $brand_slug ?>-logo.png" alt="<?= $brand_name ?> Logo" />
                                                     </div>
-                                                    <?php foreach($dealers as $dealer):
-                                                        $post_id = $dealer->ID;
+                                                    <?php foreach ($dealers as $dealer):
 
-                                                        extract(array(
-                                                            "name" => get_the_title($post_id),
-                                                            "url" => get_field('_dealer_website_url', $post_id),
-                                                            "phone" => get_field('_dealer_sales_phone', $post_id),
-                                                            "service" => get_field('_dealer_service_phone', $post_id),
-                                                            "address" => str_replace("|", "<br />", get_field('_dealer_address', $post_id)),
-                                                            "city" => get_field('_dealer_address_map',$post_id)
+                                                      $post_id = $dealer->ID;
 
-                                                        ));
-                                                        if( isset($city['address']) ){
-                                                            $city = explode(',',$city['address']);
-                                                            $city = $city[1]; //index of city name
-                                                            if( strpos($city,'Costa Mesa') !== false  ){
-                                                                $city = "Newport Beach";
-                                                            }
+                                                      extract([
+                                                        'name' => get_the_title($post_id),
+                                                        'url' => get_field('_dealer_website_url', $post_id),
+                                                        'phone' => get_field('_dealer_sales_phone', $post_id),
+                                                        'service' => get_field('_dealer_service_phone', $post_id),
+                                                        'address' => str_replace(
+                                                          '|',
+                                                          '<br />',
+                                                          get_field('_dealer_address', $post_id),
+                                                        ),
+                                                        'city' => get_field('_dealer_address_map', $post_id),
+                                                      ]);
+                                                      if (isset($city['address'])) {
+                                                        $city = explode(',', $city['address']);
+                                                        $city = $city[1]; //index of city name
+                                                        if (strpos($city, 'Costa Mesa') !== false) {
+                                                          $city = 'Newport Beach';
                                                         }
-                                                    ?>
-                                                        <div class="popover-wrapper <?php echo str_replace(" ","_",$name);?>">
+                                                      }
+                                                      ?>
+                                                        <div class="popover-wrapper <?php echo str_replace(
+                                                          ' ',
+                                                          '_',
+                                                          $name,
+                                                        ); ?>">
                                                             <h3 > <a trid="a0333f323c8b41fc86d99a" trc href="<?= $url ?>"><?php echo $city; ?> </a></h3>
 
                                                             <div class="info-box dealer-<?= count($dealers) ?>">
@@ -202,13 +229,16 @@ $button_link = get_field('button_link', 'option');
                                                                         <h3 > <?php echo $name; ?> </h3>
 
                                                                         <div class="address">
-                                                                            <?= $address;
+                                                                            <?=
+                                                                            $address
 
                                                                             //Koral was here
-                                                                            if ($name === "Audi Beverly Hills") {
-                                                                                echo '<br/> <br/>' . 'Service: 2340 S. Fairfax Ave.' . '<br/>' .'Los Angeles, CA 90016';
+                                                                            if ($name === 'Audi Beverly Hills') {
+                                                                              echo '<br/> <br/>' .
+                                                                                'Service: 2340 S. Fairfax Ave.' .
+                                                                                '<br/>' .
+                                                                                'Los Angeles, CA 90016';
                                                                             }
-
                                                                             ?>
                                                                         </div>
 
@@ -226,11 +256,14 @@ $button_link = get_field('button_link', 'option');
                                                             </div>
                                                         </div>
 
-                                                        <?php endforeach; ?>
+                                                        <?php
+                                                    endforeach; ?>
                                                 </div>
 
-                                            <?php endforeach;
-                                        endif; ?>
+                                            <?php
+                                          endforeach;
+                                        endif;
+                                        ?>
 
                                     </div>
                                 </div>
@@ -259,19 +292,27 @@ $button_link = get_field('button_link', 'option');
             <?php if (get_field('featurebtn', 'option')): ?>
             <div class="row">
                 <div class="col-sm-12">
-                    <a trid="29572a34574349afbcd245" trc style="margin-top: 15px; padding: 25px; background: <?= (!empty($feature_button_color)) ? $feature_button_color .'!important;' : $fj_blue . '!important;';?>"
-                        class="button secondary-button <?= (glow()) ? 'button-radioactive' : ''; ?>"
-                       data-gtm="desktop.homepage.btn.etron" href="<?= (!empty($button_link)) ? $button_link : '/current-offers/' ?>"><?= (!empty($feature_button_text) ? $feature_button_text : 'Why FJ') ?></a>
+                    <a trid="29572a34574349afbcd245" trc style="margin-top: 15px; padding: 25px; background: <?= !empty(
+                      $feature_button_color
+                    )
+                      ? $feature_button_color . '!important;'
+                      : $fj_blue . '!important;' ?>"
+                        class="button secondary-button <?= glow() ? 'button-radioactive' : '' ?>"
+                       data-gtm="desktop.homepage.btn.etron" href="<?= !empty($button_link)
+                         ? $button_link
+                         : '/current-offers/' ?>"><?= !empty($feature_button_text)
+  ? $feature_button_text
+  : 'Why FJ' ?></a>
                 </div>
             </div>
             <?php endif; ?>
 		</div>
 
-        <?= get_field('overlay_text') ? get_field('overlay_text') : "" ?>
+        <?= get_field('overlay_text') ? get_field('overlay_text') : '' ?>
 
     </div>
 
-      <?php if(get_field('bottom_text')): ?>
+      <?php if (get_field('bottom_text')): ?>
           <div class="videooverlay-buttons hidden-xs">
               <div class="container-fluid">
                   <div class="row">
@@ -280,7 +321,7 @@ $button_link = get_field('button_link', 'option');
                   </div>
               </div>
           </div>
-      <?php endif ?>
+      <?php endif; ?>
 
 
 

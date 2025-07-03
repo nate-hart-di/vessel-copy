@@ -2,17 +2,17 @@
 	VARIABLES
 *************************************************************************************************/
 
-$primary: #0059a8;													/* site main color */
-$primaryhover: darken($primary,10%);
+$primary: #0059a8; /* site main color */
+$primaryhover: darken($primary, 10%);
 
-$secondary: #ed8b00;												/* site accent color */
-$secondaryhover: darken($secondary,10%);
+$secondary: #ed8b00; /* site accent color */
+$secondaryhover: darken($secondary, 10%);
 
 $cta: green;
-$ctahover: darken($cta,10%);
+$ctahover: darken($cta, 10%);
 $cta-font: 14px/30px;
 
-$maintextcolor: #333;											/* default text color across the site */
+$maintextcolor: #333; /* default text color across the site */
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
 
 // TEXT STYLING ***************
@@ -77,7 +77,7 @@ $button-padding: 13px 20px;
 $darkbutton-bg: #000;
 // $darkbutton-color: #fff;
 
-$cta-color: #fff;												/* text color for colored buttons */
+$cta-color: #fff; /* text color for colored buttons */
 $primary-color: #fff;
 $secondary-color: #fff;
 
@@ -121,7 +121,6 @@ $sociallink-hover-color: #fff;
 $sociallink-hover-backgroundcolor: $primary;
 
 // NAVIGATION ******************
-
 
 $navbar-height: 70px;
 $navbar-lineheight: 70px;
@@ -269,7 +268,7 @@ $noDelay: 00ms;
 $fastSpeedTime: 500ms;
 
 // BUTTON SIDEBAR *********************
-$button-toolbar-button-background:$primary;
+$button-toolbar-button-background: $primary;
 $button-toolbar-saved-vehicle-button-background: darken(red, 10%);
 $button-toolbar-saved-vehicle-button-background-hover: red;
 

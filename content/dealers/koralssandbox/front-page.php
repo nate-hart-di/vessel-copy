@@ -1,10 +1,7 @@
-<?php /*
+<?php
+/*
 	Home page of the site
 */
-
-
-
-
 ?>
 
 <div class="visible-xs">   	<!-- DEFAULT MOBILE HOMEPAGE -->

@@ -8,16 +8,16 @@
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/reviews";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/form/base";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss';
 
 //Porsche general styles
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/porsche-general";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/porsche-general';
 @import '../../../shared/styles/porsche-support';
 
 p a:not(.button) {
@@ -34,7 +34,7 @@ p a:not(.button) {
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/header-vertical';
 
 //Porsche header styles
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/header";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/header';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-search-overlay';
 
 #header {
@@ -43,7 +43,7 @@ p a:not(.button) {
     a {
       color: $primary;
     }
-    .dealer-hours .hours{
+    .dealer-hours .hours {
       border-right: unset;
     }
   }
@@ -62,11 +62,20 @@ p a:not(.button) {
 //	NAVIGATION
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/basic-navigation";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/offcanvasnav";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/basic-navigation';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/offcanvasnav';
 
 @media only screen and (min-width: 1024px) and (max-width: 1296px) {
-  #header #header-bottom .header-wrapper .header-bottom-wrap .header-bottom-bottom .navbar .navbar-inner ul.nav>li>a {
+  #header
+    #header-bottom
+    .header-wrapper
+    .header-bottom-wrap
+    .header-bottom-bottom
+    .navbar
+    .navbar-inner
+    ul.nav
+    > li
+    > a {
     padding: 0 5px;
   }
 }
@@ -75,27 +84,29 @@ p a:not(.button) {
   float: right;
 }
 
-.visible-xs .menu-top .dealer-title, .visible-sm .menu-top .dealer-title {
+.visible-xs .menu-top .dealer-title,
+.visible-sm .menu-top .dealer-title {
   font-size: 17px;
 }
 
-#header #header-bottom .navbar .navbar-inner ul.nav .caret{
+#header #header-bottom .navbar .navbar-inner ul.nav .caret {
   display: none;
 }
 
-@media screen and (min-width: 1199px){
+@media screen and (min-width: 1199px) {
   #header #header-bottom .header-wrapper .header-bottom-wrap .header-bottom-bottom .navbar .navbar-inner {
-    ul.nav>li:hover>a:after {
+    ul.nav > li:hover > a:after {
       -ms-transform: none;
       -webkit-transform: none;
       transform: none;
     }
-    ul.nav>li.open>a:after {
+    ul.nav > li.open > a:after {
       -ms-transform: rotate(-180deg);
       -webkit-transform: rotate(-180deg);
       transform: rotate(-180deg);
     }
-    ul.nav>li.menu-item-has-children>a:after,ul.nav>li.menu-item.with-dropdown>a:after {
+    ul.nav > li.menu-item-has-children > a:after,
+    ul.nav > li.menu-item.with-dropdown > a:after {
       color: #000;
     }
   }
@@ -105,12 +116,12 @@ p a:not(.button) {
 //	FOOTER
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/footers/footer-basic";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/footers/prefooter-widelists";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/footer-basic';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/prefooter-widelists';
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
 
 // Porsche footer styles
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/footer";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/footer';
 #footer {
   .section-porsche h2.section-title {
     text-align: center;
@@ -127,34 +138,34 @@ p a:not(.button) {
       margin-bottom: 30px;
       padding-bottom: 50px;
     }
-    .linkWrapper__widgets li.widget .widgettitle{
-      color: #949A9B;
+    .linkWrapper__widgets li.widget .widgettitle {
+      color: #949a9b;
       font-size: 14px;
       line-height: 22px;
       font-weight: 400;
     }
-    .linkWrapper__widgets li.widget ul li a{
+    .linkWrapper__widgets li.widget ul li a {
       color: #333;
     }
-    .prefooter-widgets{
+    .prefooter-widgets {
       list-style: none;
       margin: 0;
       padding: 0;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      .widgettitle{
-        color: #949A9B;
+      .widgettitle {
+        color: #949a9b;
         font-size: 14px;
         line-height: 22px;
         display: block;
         margin-bottom: 10px;
       }
-      .menu{
+      .menu {
         list-style: none;
         padding: 0;
         margin: 0;
-        a{
+        a {
           color: #333;
           display: block;
           font-size: 16px;
@@ -166,38 +177,38 @@ p a:not(.button) {
       }
     }
   }
-  .footer-bottom{
+  .footer-bottom {
     background-color: #fff;
     color: #333;
-    .footer-social{
+    .footer-social {
       color: #333;
       border-top: 1px solid #eff0f1;
       border-bottom: 1px solid #eff0f1;
       padding: 25px 0;
       margin-bottom: 50px;
-      h2{
+      h2 {
         font-size: 24px;
         font-weight: 300;
       }
-      .social a i{
+      .social a i {
         background-color: #333;
       }
-    }    
+    }
   }
 }
 // *************************************************************************************************
 //	PRINT PAGE
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/_vehicle-print-view.scss";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/_vehicle-print-view.scss';
 
 // ************************************************************************************************
 //  DEALER INSPIRE & THIRD PARTY PLUGINS
 // ************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/components/glovebox/_glovebox-main.scss";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/glovebox/_glovebox-main.scss';
 
 @include breakpoint(sm) {
   .glovebox-container-wrap {
@@ -206,15 +217,14 @@ p a:not(.button) {
 }
 
 // Porsche map styles
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/map-row";
-
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/map-row';
 
 /*************************************************************************************************
 TABLET ELEMENT STYLING
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic";
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
 }
 
 /*************************************************************************************************
@@ -222,13 +232,13 @@ MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
 @media (max-width: 767px) {
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic";
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar";
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link";
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models";
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather";
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs";
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide";
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide';
 }
 
 /*************************************************************************************************
@@ -241,7 +251,6 @@ EXTRA SMALL MOBILE ELEMENT STYLING
       .logo {
         img {
           max-height: 30px;
-          
         }
       }
       .dealer-title {
@@ -254,7 +263,9 @@ EXTRA SMALL MOBILE ELEMENT STYLING
     .overlay-container {
       .overlay-content {
         #contact-overlay {
-          .sales-phone, .service-phone, .parts-phone {
+          .sales-phone,
+          .service-phone,
+          .parts-phone {
             .phone {
               margin-right: 60px;
             }
@@ -328,13 +339,14 @@ THIRD PARTY STYLING/REQUESTS
 
 img#vessel-header-img {
   position: absolute;
-  left:170px;
+  left: 170px;
 }
 
 .nav ul.sub-menu .di-vehicle-icon {
   &.porsche {
-    &.cayenne-coupe a:before{
-      background: transparent url(/wp-content/themes/DealerInspireDealerTheme/images/porsche-sprites-custom.png) no-repeat;
+    &.cayenne-coupe a:before {
+      background: transparent url(/wp-content/themes/DealerInspireDealerTheme/images/porsche-sprites-custom.png)
+        no-repeat;
       background-size: 150px auto;
       background-position: 0px 0px;
     }

@@ -1,17 +1,18 @@
-<?php /*
+<?php
+/*
   Home page of the site
 */
-
-
- ?>
+?>
 
 <div class="visible-xs">   	<!-- DEFAULT MOBILE HOMEPAGE -->
-  <?php if(is_active_sidebar("holiday-hours")): ?>
+  <?php if (is_active_sidebar('holiday-hours')): ?>
   <div id="openhoursbar" class="container">
   	<div class="row">
   		<div class="col-xs-12">
   			<span class="dynamic-hours seasonal-hours">
-					<a trid="1d6eddce63d54e1487ff9b" trc class="white" href="javascript:void(0)" data-toggle="modal" data-target="#DIModal" data-modal-content="#holiday-hours" data-modal-class="" data-modal-title="<?= get_option("di_name") ?> Holiday Hours">
+					<a trid="1d6eddce63d54e1487ff9b" trc class="white" href="javascript:void(0)" data-toggle="modal" data-target="#DIModal" data-modal-content="#holiday-hours" data-modal-class="" data-modal-title="<?= get_option(
+       'di_name',
+     ) ?> Holiday Hours">
 					  Holiday Hours <i class="fa fa-clock-o fa-lg fa-fw"></i>
 					</a>
   			</span>
@@ -20,10 +21,10 @@
 
   </div>
   <?php else: ?>
-   <?php get_scoped_template_part('partials/homepage/mobile/open','hours', array()); ?>
-  <?php endif ?>
+   <?php get_scoped_template_part('partials/homepage/mobile/open', 'hours', []); ?>
+  <?php endif; ?>
 </div>
-<?php get_scoped_template_part('partials/dealer-groups/fletcherjones/home', 'videobanner', array()) ?>
+<?php get_scoped_template_part('partials/dealer-groups/fletcherjones/home', 'videobanner', []); ?>
 
 <a trid="4356c66ea4c14593a9ece8" trc href="#belowvideo" class="striped-icon divider scroll hidden-xs hidden-sm" data-scrollto="#belowvideo"><i class="fa fa-chevron-down"></i></a>
 
@@ -96,28 +97,28 @@
 </div>
 
 <div class="hidden-xs">
-	<?php get_template_part('partials/dealer-groups/fletcherjones/home-fullpageslider') ?>
+	<?php get_template_part('partials/dealer-groups/fletcherjones/home-fullpageslider'); ?>
 </div>
 
-<?php 
-  $youtube = get_field('featured_video_id');
-  if(!empty($youtube)):
-?>
+<?php
+$youtube = get_field('featured_video_id');
+if (!empty($youtube)): ?>
 <div id="youtube-row" class="hidden-xs">
   <div class="container-wide">
     <div class="row">
       <div class="col-md-10 col-sm-offset-1">
         <div class="embed-responsive embed-responsive-16by9">
-          <?php 
-            //this way the person entering the video doesn't have to remember to add the parameters on to the end of the vid embed url. wmode is vital for ie9, and the others mimic the look of the mock-up
-          ?>
+          <?php
+  //this way the person entering the video doesn't have to remember to add the parameters on to the end of the vid embed url. wmode is vital for ie9, and the others mimic the look of the mock-up
+  ?>
               <iframe width="560" height="315" data-src="https://www.youtube.com/embed/<?php echo $youtube; ?>?wmode=transparent&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
-<?php endif; ?>
+<?php endif;
+?>
 
 <div id="storyRow">
   <div class="container-wide">

@@ -13,26 +13,26 @@
 
 .ctaRow {
   padding: 20px 0;
-	.box {
-		position: relative;
-		width: 100%;
-		@include flexbox();
-		@include justify-content(center);
-		@include align-items(flex-start);
+  .box {
+    position: relative;
+    width: 100%;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(flex-start);
     a:hover {
       text-decoration: none;
     }
 
-		&__image {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			z-index: 0;
-			background-color: rgba(#111111, 0.3);
+    &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      background-color: rgba(#111111, 0.3);
       &:after {
-        content: " ";
+        content: ' ';
         z-index: 10;
         display: block;
         position: absolute;
@@ -47,18 +47,18 @@
         background: rgba(0, 0, 0, 0.5);
       }
 
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				object-position: center;
-			}
-		}
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
 
-		&__info {
-			text-align: center;
-			color: #fff;
-			z-index: 1;
+    &__info {
+      text-align: center;
+      color: #fff;
+      z-index: 1;
       position: relative;
       &--title {
         margin-top: 30px;
@@ -68,66 +68,65 @@
           text-decoration: none;
         }
       }
-		}
+    }
 
-		.button {
-			margin: 0px;
-		}
+    .button {
+      margin: 0px;
+    }
 
-		&.small {
-			height: 180px;
-			margin-bottom: 15px;
+    &.small {
+      height: 180px;
+      margin-bottom: 15px;
+    }
 
-		}
+    &.wide {
+      height: 180px;
+    }
 
-		&.wide {
-			height: 180px;
-		}
+    &.big {
+      margin-top: 15px;
+      height: 180px;
+    }
+  }
 
-		&.big {
-			margin-top: 15px;
-			height: 180px;
-		}
-	}
+  // ********** Media Queries ********** //
 
-	// ********** Media Queries ********** //
-
-	// Tablet +
-	@include breakpoint(sm) {
-		.box {
+  // Tablet +
+  @include breakpoint(sm) {
+    .box {
       &.small {
         height: 250px;
       }
-  
+
       &.wide {
         height: 250px;
       }
-  
+
       &.big {
         margin-top: 0px;
         height: 515px;
       }
-		}
-	}
+    }
+  }
 
-	// Desktop (medium) +
-	@include breakpoint(md) {
-		.box {
-			&:hover {
-				.box__info {
-					&--button {
-						@include transform(scaleY(1));
-						opacity: 1;
-					}
-				}
-			}
-			&__info {
-				&--button {
-					@include transition(all 450ms ease);
-					opacity: 0;
-					@include transform(scaleY(0));
-				}
-			}
-		}
-	}
+  // Desktop (medium) +
+  @include breakpoint(md) {
+    .box {
+      &:hover {
+        .box__info {
+          &--button {
+            @include transform(scaleY(1));
+            opacity: 1;
+          }
+        }
+      }
+      &__info {
+        &--button {
+          @include transition(all 450ms ease);
+          opacity: 0;
+          @include transform(scaleY(0));
+        }
+      }
+    }
+  }
 }

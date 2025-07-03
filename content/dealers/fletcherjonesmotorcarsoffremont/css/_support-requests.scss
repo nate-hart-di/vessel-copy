@@ -4,34 +4,45 @@
 
 //52250 - Overriding bold styles in Prem Options on VDP
 #vehicleDetails {
-    .premium-options-list {
-        h3 {
-            font-weight: 300 !important;
-        }
-        p {
-            font-weight: 500 !important;
-        }
+  .premium-options-list {
+    h3 {
+      font-weight: 300 !important;
     }
+    p {
+      font-weight: 500 !important;
+    }
+  }
 }
-
 
 //54699 Custom styles for overview vehicle number
 #di-page-composer {
-	#vehicle-count-overview-number {
-			font-size: 29px;
-			color: white;
-			margin-bottom: 25px;
-			font-family: 'Playfair Display', serif;
-			text-align: center;
-			text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
-			-moz-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
-			-webkit-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
-			#count-number {
-					font-size: 50px;
-					font-weight: 700;
-					font-style: italic;
-			}
-	}
+  #vehicle-count-overview-number {
+    font-size: 29px;
+    color: white;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    text-shadow:
+      0px 0px 10px rgba(0, 0, 0, 0.8),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.8);
+    -moz-text-shadow:
+      0px 0px 10px rgba(0, 0, 0, 0.8),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.8);
+    -webkit-text-shadow:
+      0px 0px 10px rgba(0, 0, 0, 0.8),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.8);
+    #count-number {
+      font-size: 50px;
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
 }
 
 //55573 - Customizing service menu
@@ -57,58 +68,56 @@
 // #00062688 - TEMP holiday cta button style homepage
 
 #videoOverlay .videooverlay-content .cta-buttons .primary-button {
-    background: red;
-    padding: 13px 5px !important;
-    border-radius: 0;
+  background: red;
+  padding: 13px 5px !important;
+  border-radius: 0;
 
-    &:hover {
-        background: #bb0117;
-    }
+  &:hover {
+    background: #bb0117;
+  }
 }
 
 // #00062688 - END
 
-
-.specialCoupon .specialRight .modelName{
-    color: #0059a8 !important;
-    font-size: 21px !important;
+.specialCoupon .specialRight .modelName {
+  color: #0059a8 !important;
+  font-size: 21px !important;
 }
 
-.specialCoupon .specialRight .description p{
-    font-size: 14px !important;
+.specialCoupon .specialRight .description p {
+  font-size: 14px !important;
 }
 
-a.view-disclaimer-link{
-    color: #a7a7a7 !important;
-    font-size: 11px !important;
-    font-style: italic !important;
-            
+a.view-disclaimer-link {
+  color: #a7a7a7 !important;
+  font-size: 11px !important;
+  font-style: italic !important;
 }
 
 //62845
 .page-vehicle-results-page {
-    a.button.inquire {
-        width: 100% !important;
-    }
-    .hide-the-main-cta a.fancy.button-form.button.cta-button {
-        display: none;
-    }
+  a.button.inquire {
+    width: 100% !important;
+  }
+  .hide-the-main-cta a.fancy.button-form.button.cta-button {
+    display: none;
+  }
 }
 .page-vehicle-display-page {
-    .hide-the-main-cta .maincta-row.ctabox-row {
-        display: none;
-    }
-    div#inquire-button a {
-        width: 100% !important;
-        margin-top: -10px;
-        display: none;
-    }
+  .hide-the-main-cta .maincta-row.ctabox-row {
+    display: none;
+  }
+  div#inquire-button a {
+    width: 100% !important;
+    margin-top: -10px;
+    display: none;
+  }
 }
 //end 62845
-@media(max-width: 767px) {
-    #videobanner {
-        background-position: 50% 50%;
-    }
+@media (max-width: 767px) {
+  #videobanner {
+    background-position: 50% 50%;
+  }
 }
 
 // #00068477 - New Menu Model Carousel
@@ -210,52 +219,51 @@ a.view-disclaimer-link{
 */
 
 .vdp-print-view .logo {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
 #results-page .unlock-offer {
-    background: #d01e1c;
-    text-align: center;
-    padding: 10px;
-    clear: both;
-    a {
-        color: #fff !important;
-        text-decoration: none;
-    } 
+  background: #d01e1c;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  a {
+    color: #fff !important;
+    text-decoration: none;
   }
-  #vehicleDetails .unlock-offer {
-    display: block;
-    width: 100% !important;
-    background: #d01e1c;
-  }
+}
+#vehicleDetails .unlock-offer {
+  display: block;
+  width: 100% !important;
+  background: #d01e1c;
+}
 
-  #header .search-anything-toggle .tt-dropdown-menu .inventorySearchResult .invPrice { 
-    display: none;
+#header .search-anything-toggle .tt-dropdown-menu .inventorySearchResult .invPrice {
+  display: none;
 }
 
 #results-page .vehicle .vehicle-price a.button {
+  width: 100% !important;
+  max-width: unset !important;
+}
+
+#results-page .advanced-pricing-stack.courtesy-vehicles-stack.vertical-stack {
+  text-align: center;
+}
+
+.page-vehicle-display-page #ctabox-pricing {
+  a.ctabox-price {
+    float: unset;
     width: 100% !important;
-    max-width: unset !important;
+  }
 }
 
-#results-page .advanced-pricing-stack.courtesy-vehicles-stack.vertical-stack{
-    text-align: center;    
-}
-
-.page-vehicle-display-page #ctabox-pricing{
-   
-    a.ctabox-price {
-        float: unset;
-        width: 100% !important;
-    }
-}
-
-#ff_link img:not(:first-child){
-    display:none;
+#ff_link img:not(:first-child) {
+  display: none;
 }
 
 .page-id-38749 .video-button {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }

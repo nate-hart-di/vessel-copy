@@ -2,7 +2,7 @@
 //	VARIABLES
 // *************************************************************************************************
 
-@import "_variables";
+@import '_variables';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
@@ -15,34 +15,33 @@ $vdp-lease-finance: false !default;
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss';
 
-@media (min-width:1025px) {
-	.container-wide.contentcontainer {
-		padding-top: 30px;
-	}
+@media (min-width: 1025px) {
+  .container-wide.contentcontainer {
+    padding-top: 30px;
+  }
 }
-
 
 p {
-	font-weight: 300;
+  font-weight: 300;
 }
 
-a[href^=tel]{
-	color:inherit;
+a[href^='tel'] {
+  color: inherit;
 }
 
 .hidden {
-    display:none;
+  display: none;
 }
 
-@media (max-width:767px) {
-	#carcodesms-default-widget {
-		bottom: 40px !important;
-		z-index: 1 !important;
-	}
+@media (max-width: 767px) {
+  #carcodesms-default-widget {
+    bottom: 40px !important;
+    z-index: 1 !important;
+  }
 }
 
 // *************************************************************************************************
@@ -51,7 +50,7 @@ a[href^=tel]{
 //@import '../../../shared/styles/header/fj_header_v2';
 
 #header .header-bottom .header-mid .fj-navbar-brand .text-logo img {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 // *************************************************************************************************
@@ -69,123 +68,122 @@ a[href^=tel]{
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-footer';
 
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
 }
 
 //========================================
 // FOOTER ROW STYLES DESKTOP 06/20
 //========================================
 .footerRow {
-	z-index: 1;
-	background: #fff;
+  z-index: 1;
+  background: #fff;
 
-	.footerBottom {
-		background: #fff;
-		color: #333;
-		text-align: center;
-		padding: 40px 0 80px;
+  .footerBottom {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px 0 80px;
 
-        .social {
-            padding: 10px 0 30px;
-        }
+    .social {
+      padding: 10px 0 30px;
+    }
 
-		.infoWrapper {
-			&__menu {
-				ul {
-					margin: 0;
-					padding: 0;
+    .infoWrapper {
+      &__menu {
+        ul {
+          margin: 0;
+          padding: 0;
 
-					li {
-						display: inline-block;
+          li {
+            display: inline-block;
 
-						+ li:before {
-							content: '\|';
-						}
-
-						a {
-							color: $primary;
-							margin: 0 5px;
-						}
-					}
-				}
-			}
-
-			&__di {
-				a {
-					color: $primary;
-					text-decoration: underline;
-				}
-			}
-
-			div + div {
-				margin: 15px 0 0;
-			}
-		}
-
-        .email-button {
-            float: none;
-            margin: 20px 0 0 !important;
-            @include breakpoint(xs) {
-                font-size: 12px !important;
+            + li:before {
+              content: '\|';
             }
+
+            a {
+              color: $primary;
+              margin: 0 5px;
+            }
+          }
         }
-	}
+      }
 
-	// ********** Media Queries ********** //
+      &__di {
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
 
-	// Tablet +
-	@include breakpoint(sm) {
+      div + div {
+        margin: 15px 0 0;
+      }
+    }
 
-		.footerBottom {
-			padding: 80px 0;
-			a.link__logo img {
-			    max-width: 315px;
-			    width: 100%;
-			}
-		}
-	}
+    .email-button {
+      float: none;
+      margin: 20px 0 0 !important;
+      @include breakpoint(xs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  // ********** Media Queries ********** //
+
+  // Tablet +
+  @include breakpoint(sm) {
+    .footerBottom {
+      padding: 80px 0;
+      a.link__logo img {
+        max-width: 315px;
+        width: 100%;
+      }
+    }
+  }
 }
 #footer {
-	position: relative !important;
-    background: #fff;
+  position: relative !important;
+  background: #fff;
 }
 // ************************************************************************************************
 //  DEALER INSPIRE & THIRD PARTY PLUGINS
@@ -194,43 +192,43 @@ a[href^=tel]{
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
 
 .lo_container {
-	.lo_head {
-		background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
-		background-size: cover;
-	}
+  .lo_head {
+    background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
+    background-size: cover;
+  }
 }
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-plugins';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-inspire-plugins/national-offers-mercedes-benz';
 
-@media (max-width:767px){
-	.eNTJzz {
-	    bottom: 0 !important;
-	}
+@media (max-width: 767px) {
+  .eNTJzz {
+    bottom: 0 !important;
+  }
 }
 
 //=================================================
 //		HOMEPAGE ADJUSTMENTS DESKTOP-06/20
 //=================================================
 .heroRow__container {
-    max-width: 1200px !important;
-	.personalizer-wrap {
-	    float: right !important;
-	}
+  max-width: 1200px !important;
+  .personalizer-wrap {
+    float: right !important;
+  }
 }
 p.smaller {
-    font-size: 23px;
-    color: #3f3f3f;
-    margin: 15px 0px 10px 0px;
-    font-weight: 500;
+  font-size: 23px;
+  color: #3f3f3f;
+  margin: 15px 0px 10px 0px;
+  font-weight: 500;
 }
 p.below-cta {
-    font-size: 23px;
-    color: white;
-    margin: 5px 0px;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  font-size: 23px;
+  color: white;
+  margin: 5px 0px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 //=================================================
 //		HOMEPAGE ADJUSTMENTS DESKTOP-06/20 - END
@@ -247,152 +245,149 @@ p.below-cta {
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-
-	li.rotating-logos .menu-item-img a img {
-	    opacity: 0;
-	    &.showing {
-		    opacity: 1;
-	    }
-	}
-
+  li.rotating-logos .menu-item-img a img {
+    opacity: 0;
+    &.showing {
+      opacity: 1;
+    }
+  }
 }
 
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-	@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay";
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay';
 
-	.mobile-cta {
-	    .ctaItem {
-	        a {
-	            bottom: 0;
-	        }
-	    }
-	}
+  .mobile-cta {
+    .ctaItem {
+      a {
+        bottom: 0;
+      }
+    }
+  }
 
-	// THIS STYLE IS FOR THE CORONA VIRUS MOBILE CTA
-	.home .mobile-cta .ctaItem:first-child a {
-	    bottom: -35px;
-	}
+  // THIS STYLE IS FOR THE CORONA VIRUS MOBILE CTA
+  .home .mobile-cta .ctaItem:first-child a {
+    bottom: -35px;
+  }
 
-	.carWashHrs {
-		.department, .hours {
-			width: 50%;
-			display: inline-block;
-			font-weight: 300;
-			color: #333;
-			font-size: 16px;
-		}
-		.hours {
-			text-align: right;
-		}
-	}
+  .carWashHrs {
+    .department,
+    .hours {
+      width: 50%;
+      display: inline-block;
+      font-weight: 300;
+      color: #333;
+      font-size: 16px;
+    }
+    .hours {
+      text-align: right;
+    }
+  }
 
-	#footer .footer-middle {
-		padding: 30px 15px 60px;
-	}
-	.home #footer .footer-middle {
-		padding: 30px 15px;
-	}
-
-
+  #footer .footer-middle {
+    padding: 30px 15px 60px;
+  }
+  .home #footer .footer-middle {
+    padding: 30px 15px;
+  }
 }
 
 /*************************************************************************************************
 	SUPPORT
 *************************************************************************************************/
 
-@import "support-requests";
+@import 'support-requests';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-support';
 @import '../../../shared/styles/shared-support';
 @import '../../../shared/styles/header/header-v3.scss';
 
-@media (max-width: 1024px){
-	#search-overlay .overlay-container .overlay-content #contact-overlay .wash-phone {
-		font-size: 15px;
-		font-weight: 300;
-		display: block;
-		.department {
-			text-align: left;
-			margin-left: 40px;
-		}
-		.phone {
-			float: right;
-			margin-right: 40px;
-			a {
-				color: #0059a8;
-			}
-		}
-	}
+@media (max-width: 1024px) {
+  #search-overlay .overlay-container .overlay-content #contact-overlay .wash-phone {
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    .department {
+      text-align: left;
+      margin-left: 40px;
+    }
+    .phone {
+      float: right;
+      margin-right: 40px;
+      a {
+        color: #0059a8;
+      }
+    }
+  }
 }
 
 #header.menu-top .header-top div.logo img {
-	width: 90%;
+  width: 90%;
 }
 
 @media (max-width: 767px) {
-	.page-vehicle-display-page .vdp-top-banner.box-gallery .box-gallery-wrap {
+  .page-vehicle-display-page .vdp-top-banner.box-gallery .box-gallery-wrap {
     padding-top: 0 !important;
-	}
+  }
 }
 
 @media (max-width: 1024px) {
-	#vrp-custom-filter {
+  #vrp-custom-filter {
     margin: 0;
-	}
+  }
 }
 //==============================================
 // ADDED STYLE BELOW FOR DESKTOP 06/20 - END
 //==============================================
 
-#heroRow{
-	padding: 0;
-	.heroRow__cta{
-	  background: #fff;
-	  position: relative;
-	  height: 100%;
-	  &--wrap{
-		background: #f1f1f1;
-		width: 100%;
-		justify-content: center;
-		flex-direction: column;
-		height: 150px;
-		padding: 8px 0 22px 0;
-		text-decoration: none;
-		// &:hover{
-		//   background: #fff;
-		// }
-		p{
-		  color: #000;
-		  font-weight: 500;
-		}
-		&:hover {
-			background: white;
-		}
-	  }
-	}
+#heroRow {
+  padding: 0;
+  .heroRow__cta {
+    background: #fff;
+    position: relative;
+    height: 100%;
+    &--wrap {
+      background: #f1f1f1;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      height: 150px;
+      padding: 8px 0 22px 0;
+      text-decoration: none;
+      // &:hover{
+      //   background: #fff;
+      // }
+      p {
+        color: #000;
+        font-weight: 500;
+      }
+      &:hover {
+        background: white;
+      }
+    }
   }
-
-  @media (max-width: 767px){
-	div.details-page-row:nth-child(2) {
-	  display: block !important;
-	}
-  }
-  
-.page-id-51117 #lvrp-results-wrapper .result-wrap .hit-price__customize {
-	display: none;
 }
 
-#eqe-suv-show{
+@media (max-width: 767px) {
+  div.details-page-row:nth-child(2) {
+    display: block !important;
+  }
+}
+
+.page-id-51117 #lvrp-results-wrapper .result-wrap .hit-price__customize {
+  display: none;
+}
+
+#eqe-suv-show {
   display: none !important;
 }
 
-#eqe-suv-hidden{
+#eqe-suv-hidden {
   display: inline-block !important;
   visibility: visible !important;
 }

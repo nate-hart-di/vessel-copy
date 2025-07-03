@@ -18,28 +18,28 @@
         .lvrp-container {
           .lvrp-results-column {
             #lvrp-results-wrapper {
-             #hits {
-              .result-wrap {
-                .hit {
-                  .hit-content {
-                    .hit-content-title-wrap {
-                      .result-title {
-                        .title-top {
+              #hits {
+                .result-wrap {
+                  .hit {
+                    .hit-content {
+                      .hit-content-title-wrap {
+                        .result-title {
+                          .title-top {
+                            display: none;
+                          }
+                        }
+                        .result-features-container {
                           display: none;
                         }
-                      }
-                      .result-features-container {
-                        display: none;
                       }
                     }
                   }
                 }
               }
-             } 
             }
           }
         }
       }
     }
-  } 
+  }
 }

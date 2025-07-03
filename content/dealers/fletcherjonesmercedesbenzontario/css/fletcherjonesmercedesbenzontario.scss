@@ -2,7 +2,7 @@
 //	VARIABLES
 // *************************************************************************************************
 
-@import "variables";
+@import 'variables';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
@@ -13,26 +13,26 @@ $vdp-lease-finance: false !default;
 // *************************************************************************************************
 //	GENERAL
 // *************************************************************************************************
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss';
 
-@media (min-width:1025px) {
-	.container-wide.contentcontainer {
-		padding-top: 30px;
-	}
+@media (min-width: 1025px) {
+  .container-wide.contentcontainer {
+    padding-top: 30px;
+  }
 }
 
 p {
-	font-weight: 300;
+  font-weight: 300;
 }
 
-a[href^=tel]{
-	color:inherit;
+a[href^='tel'] {
+  color: inherit;
 }
 
 .hidden {
-    display:none;
+  display: none;
 }
 
 // *************************************************************************************************
@@ -53,157 +53,154 @@ a[href^=tel]{
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-footer';
 
-footer #footerMobile .footerTop__Menu{
-	display:none!important;
+footer #footerMobile .footerTop__Menu {
+  display: none !important;
 }
 
 @media (max-width: 767px) {
-	.home #footer {
-		border-top: 1px solid #ccc;
-		position: relative;
-	}
+  .home #footer {
+    border-top: 1px solid #ccc;
+    position: relative;
+  }
 }
 
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
 }
 
 .footerRow {
-	z-index: 1;
-	background: #fff;
+  z-index: 1;
+  background: #fff;
 
-	.footerBottom {
-		background: #fff;
-		color: #333;
-		text-align: center;
-		padding: 0;
+  .footerBottom {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0;
 
-        .social {
-            padding: 10px 0 30px;
-        }
+    .social {
+      padding: 10px 0 30px;
+    }
 
-		.infoWrapper {
-			&__menu {
-				ul {
-					margin: 0;
-					padding: 0;
+    .infoWrapper {
+      &__menu {
+        ul {
+          margin: 0;
+          padding: 0;
 
-					li {
-						display: inline-block;
+          li {
+            display: inline-block;
 
-						+ li:before {
-							content: '\|';
-						}
-
-						a {
-							color: $primary;
-							margin: 0 5px;
-						}
-					}
-				}
-			}
-
-			&__di {
-				a {
-					color: $primary;
-					text-decoration: underline;
-				}
-			}
-
-			div + div {
-				margin: 15px 0 0;
-			}
-		}
-
-        .email-button {
-            float: none;
-            margin: 20px 0 0 !important;
-            @include breakpoint(xs) {
-                font-size: 12px !important;
+            + li:before {
+              content: '\|';
             }
+
+            a {
+              color: $primary;
+              margin: 0 5px;
+            }
+          }
         }
-	}
+      }
 
-	// ********** Media Queries ********** //
+      &__di {
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
 
-	// Tablet +
-	@include breakpoint(sm) {
+      div + div {
+        margin: 15px 0 0;
+      }
+    }
 
-		.footerBottom {
-			a.link__logo img {
-			    max-width: 315px;
-			    width: 100%;
-			}
-		}
-	}
+    .email-button {
+      float: none;
+      margin: 20px 0 0 !important;
+      @include breakpoint(xs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  // ********** Media Queries ********** //
+
+  // Tablet +
+  @include breakpoint(sm) {
+    .footerBottom {
+      a.link__logo img {
+        max-width: 315px;
+        width: 100%;
+      }
+    }
+  }
 }
 #footer {
-    background: #fff;
+  background: #fff;
 }
 
 // *************************************************************************************************
 //	HOMEPAGE
 // *************************************************************************************************
 
-
 .heroRow__container {
-    max-width: 1200px !important;
-	.personalizer-wrap {
-	    float: right !important;
-	}
+  max-width: 1200px !important;
+  .personalizer-wrap {
+    float: right !important;
+  }
 }
 p.smaller {
-    font-size: 23px;
-    color: #3f3f3f;
-    margin: 15px 0px 10px 0px;
-    font-weight: 500;
+  font-size: 23px;
+  color: #3f3f3f;
+  margin: 15px 0px 10px 0px;
+  font-weight: 500;
 }
 p.below-cta {
-    font-size: 23px;
-    color: white;
-    margin: 5px 0px;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  font-size: 23px;
+  color: white;
+  margin: 5px 0px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 
 // *************************************************************************************************
 //	INSIDE PAGES
@@ -223,10 +220,10 @@ p.below-cta {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
 
 .lo_container {
-	.lo_head {
-		background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
-		background-size: cover;
-	}
+  .lo_head {
+    background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
+    background-size: cover;
+  }
 }
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-plugins';
@@ -244,27 +241,27 @@ p.below-cta {
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-	//@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
-  	//@import '../../../shared/styles/mobile/mobile-menu';
-	@import '../../../shared/styles/dynamic-hours-bar-mobile';
+  //@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
+  //@import '../../../shared/styles/mobile/mobile-menu';
+  @import '../../../shared/styles/dynamic-hours-bar-mobile';
 }
 
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-	@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay";
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay';
 }
 
 /*************************************************************************************************
 	SUPPORT
 *************************************************************************************************/
 
-@import "support-requests";
+@import 'support-requests';
 //@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-support';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-support';
 @import '../../../shared/styles/shared-support';
@@ -272,66 +269,65 @@ p.below-cta {
 
 //00419993
 @media (min-width: 768px) {
-	.difo-tel9099069965 {
-		display: none;
-	}
+  .difo-tel9099069965 {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-	.coupon-coupon li[class*="difo-contact"] {
-		display: none;
-	}
+  .coupon-coupon li[class*='difo-contact'] {
+    display: none;
+  }
 }
 //End 00419993
 
-.vdp-third-party-shopping-tools .shopping-tool.icon, .vehicle .grid-view-badges .button-bar-item img {
-	width:100px;
+.vdp-third-party-shopping-tools .shopping-tool.icon,
+.vehicle .grid-view-badges .button-bar-item img {
+  width: 100px;
 }
 
 #vehicleDetails .vdp-top-banner.box-gallery .details-page-ctawrap {
-	div#ctabox-custom-ctas .test-drive-cta {
-		display: none;
-	}
+  div#ctabox-custom-ctas .test-drive-cta {
+    display: none;
+  }
 }
 
-
-@media(min-width:767px){
-	.home{
-		#footer{
-			position: relative;
-    	}
-	}
+@media (min-width: 767px) {
+  .home {
+    #footer {
+      position: relative;
+    }
+  }
 }
 
-@media(min-width:1024px){
-	#videobanner {
-		max-height: 750px;
+@media (min-width: 1024px) {
+  #videobanner {
+    max-height: 750px;
   }
 }
 
 @media (max-width: 1024px) {
-	#vrp-custom-filter {
+  #vrp-custom-filter {
     margin: 0;
-	}
-}
-
-@media (max-width: 767px){
-	div.details-page-row:nth-child(2) {
-	  display: block !important;
-	}
   }
-  
-img#vessel-header-img {
-    height: 100%;
 }
 
+@media (max-width: 767px) {
+  div.details-page-row:nth-child(2) {
+    display: block !important;
+  }
+}
+
+img#vessel-header-img {
+  height: 100%;
+}
 
 .page-id-234213 #lvrp-results-wrapper .result-wrap .hit-price__customize {
-	display: none;
+  display: none;
 }
 
 .dynamic-hours .open {
-    display: none;
+  display: none;
 }
 
 @import '../../../shared/styles/header/header-v3.scss';

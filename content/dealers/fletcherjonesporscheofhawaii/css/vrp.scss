@@ -8,7 +8,7 @@
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -23,28 +23,27 @@
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/vrp';
 
-
-#results-page td.gridview .vehicle.grid-view  {
-    padding-bottom: 0;
-    display: flex !important;
+#results-page td.gridview .vehicle.grid-view {
+  padding-bottom: 0;
+  display: flex !important;
+  @include flex-direction(column);
+  .vehicle-quick-stats {
+    @include flexbox();
     @include flex-direction(column);
-    .vehicle-quick-stats {
-        @include flexbox();
-        @include flex-direction(column);
-        @include justify-content(flex-start);
-        @include flex-grow(1);
+    @include justify-content(flex-start);
+    @include flex-grow(1);
+  }
+  .button-bar {
+    position: relative;
+    height: auto;
+  }
+  .vehicle-price {
+    @include flexbox();
+    @include flex-direction(column);
+    .price-block.bottom-text {
+      @include flex-grow(1);
     }
-    .button-bar {
-        position: relative;
-        height: auto;
-    }
-    .vehicle-price {
-        @include flexbox();
-        @include flex-direction(column);
-        .price-block.bottom-text {
-            @include flex-grow(1);
-        }
-    }
+  }
 }
 
 // *************************************************************************************************

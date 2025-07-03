@@ -1,36 +1,34 @@
-@media screen and (max-width:767px){
-  #vehicleDetails{
-    .maincta-row{
-      .button{
+@media screen and (max-width: 767px) {
+  #vehicleDetails {
+    .maincta-row {
+      .button {
         position: relative;
         top: 0 !important;
-        &.fixed-top{
+        &.fixed-top {
           position: fixed;
           top: 75px !important;
           z-index: 999;
         }
       }
     }
-    #ctabox-premium-features{
+    #ctabox-premium-features {
       max-height: 100%;
       overflow-y: hidden;
     }
   }
 }
 
-#details-page-ctabox{
-  .button{
+#details-page-ctabox {
+  .button {
     line-height: 20px;
     padding: 10px;
     font-size: 16px;
   }
-  .shopping-tool{
-    &.ctabox-conditional-ctas{
-      .shopping-icon{
+  .shopping-tool {
+    &.ctabox-conditional-ctas {
+      .shopping-icon {
         display: none;
       }
     }
   }
 }
-
-

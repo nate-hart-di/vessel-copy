@@ -1,26 +1,27 @@
-#DIModal{
-	#saleshours, #servicehours{
+#DIModal {
+  #saleshours,
+  #servicehours {
     max-width: 90%;
     margin-left: 5%;
-    .dealer-info{
-      .widget-subtitle{
+    .dealer-info {
+      .widget-subtitle {
         font-size: 24px;
         font-weight: 500;
       }
-      .widget-subtitle-icon{
+      .widget-subtitle-icon {
         display: none;
       }
-      .hours{
+      .hours {
         list-style: none;
         padding-inline-start: 0px;
         -moz-padding-inline-start: 0px;
       }
-      .day{
+      .day {
         float: left;
       }
-      .right{
+      .right {
         float: right;
       }
     }
-	}
+  }
 }

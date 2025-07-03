@@ -2,7 +2,7 @@
 //	VARIABLES
 // *************************************************************************************************
 
-@import "variables";
+@import 'variables';
 
 // *************************************************************************************************
 //	GENERAL
@@ -13,10 +13,9 @@
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles';
 @import '../../../shared/styles/shared-support';
-
 
 $header-vertical-width: 200px;
 
@@ -26,317 +25,329 @@ $header-vertical-width: 200px;
 }
 html,
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .event .button {
-  font-size:32px;
+  font-size: 32px;
 }
 
-@media (max-width:1024px) {
-	div.contentcontainer {
-		margin-top: 0px !important;
-	}
+@media (max-width: 1024px) {
+  div.contentcontainer {
+    margin-top: 0px !important;
+  }
 }
 
 @media (min-width: 1025px) {
-	.contentcontainer {
-		margin-top: 0;
-	}
+  .contentcontainer {
+    margin-top: 0;
+  }
 }
 
-#videobanner #videooverlay .videooverlay-contentwrapper .videooverlay-content h3 a{
-	color: #333;
-	text-decoration: none;
+#videobanner #videooverlay .videooverlay-contentwrapper .videooverlay-content h3 a {
+  color: #333;
+  text-decoration: none;
 }
 // *************************************************************************************************
 //	HEADER
 // *************************************************************************************************
 
-.fixed-top-spacer{
-	height: 75px;
+.fixed-top-spacer {
+  height: 75px;
 }
 
 #header {
-	background: transparent;
-	position: fixed!important;
-	top: 0;
-	left: 0;
-	height: 75px;
-	width: 100%;
-	z-index: 1000;
-	color: #fff;
-	&:hover {
-		.header-bottom {
-			.header-left {
-				#mobile-menu-toggle {
-					i {
-						color: #000;
-					}
-				}
-			}
-			.header-mid {
-				.header-image a img {
-					filter: invert(1);
-				}
-			}
-			.header-right {
-				i,span,a {
-					color: #000;
-				}
-			}
-		}
-		background: #fff;
-	}
-	&.visible-header {
-		.header-bottom {
-			.header-left {
-				#mobile-menu-toggle {
-					i {
-						color: #000;
-					}
-				}
-			}
-			.header-mid {
-				.header-image a img {
-					filter: invert(1);
-				}
-			}
-			.header-right {
-				i,span,a {
-					color: #000;
-				}
-			}
-		}
-		background: #fff;
-	}
-	.header-bottom{
-		@include flexbox();
-		@include justify-content(space-between);
-		@include align-items(center);
-		@include flex-wrap(nowrap);
-		padding: 0;
-		height: 100%;
-		width: 100%;
-		z-index: 1000;
-		@include breakpoint(xs) {
-			@include justify-content(flex-start);
-			@include align-items(center);
-		}
-		.header-left {
-			height: 75px;
-			width: 100%;
-			@include flexbox();
-			@include align-items(center);
-			@include justify-content(flex-start);
-			@include breakpoint(xs) {
-				width: auto;
-				@include justify-content(flex-start);
-			}
-			#mobile-menu-toggle {
-				@include flexbox();
-				@include align-items(center);
-				@include justify-content(flex-start);
-				position: relative;
-				width: 100%;
-				height: 100%;
-				cursor: pointer;
-				&:hover {
-					text-decoration: none;
-				}
-				i {
-					font-size: 30px;
-					color: #fff;
-					padding: 0 20px;
-				}
-			}
-		}
-		.header-mid {
-			@include flexbox;
-			@include justify-content(center);
-			@include align-items(center);
-			@include breakpoint(xs) {
-				@include justify-content(flex-start);
-				a img {
-					max-height: 55px;
-				}
-			}
-		}
-		.header-right {
-			@include flexbox;
-			@include justify-content(flex-end);
-			@include align-items(center);
-			font-size: 17px;
-			width: 100%;
-			.header-search,.store-locator {
-				padding: 10px 15px;
-				color: #fff;
-				cursor: pointer;
-				&:hover {
-					text-decoration: none;
-				}
-				.fa {
-					margin-right: 5px;
-				}
-			}
-			.search-bar {
-				display: none;
-				form {
-					display: inline-block;
-					input {
-						cursor: pointer;
-					}
-				}
-			}
-			@include breakpoint(xs) {
-				display: none;
-			}
-		}
-	}
+  background: transparent;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  &:hover {
+    .header-bottom {
+      .header-left {
+        #mobile-menu-toggle {
+          i {
+            color: #000;
+          }
+        }
+      }
+      .header-mid {
+        .header-image a img {
+          filter: invert(1);
+        }
+      }
+      .header-right {
+        i,
+        span,
+        a {
+          color: #000;
+        }
+      }
+    }
+    background: #fff;
+  }
+  &.visible-header {
+    .header-bottom {
+      .header-left {
+        #mobile-menu-toggle {
+          i {
+            color: #000;
+          }
+        }
+      }
+      .header-mid {
+        .header-image a img {
+          filter: invert(1);
+        }
+      }
+      .header-right {
+        i,
+        span,
+        a {
+          color: #000;
+        }
+      }
+    }
+    background: #fff;
+  }
+  .header-bottom {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    @include breakpoint(xs) {
+      @include justify-content(flex-start);
+      @include align-items(center);
+    }
+    .header-left {
+      height: 75px;
+      width: 100%;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(flex-start);
+      @include breakpoint(xs) {
+        width: auto;
+        @include justify-content(flex-start);
+      }
+      #mobile-menu-toggle {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(flex-start);
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
+        i {
+          font-size: 30px;
+          color: #fff;
+          padding: 0 20px;
+        }
+      }
+    }
+    .header-mid {
+      @include flexbox;
+      @include justify-content(center);
+      @include align-items(center);
+      @include breakpoint(xs) {
+        @include justify-content(flex-start);
+        a img {
+          max-height: 55px;
+        }
+      }
+    }
+    .header-right {
+      @include flexbox;
+      @include justify-content(flex-end);
+      @include align-items(center);
+      font-size: 17px;
+      width: 100%;
+      .header-search,
+      .store-locator {
+        padding: 10px 15px;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
+        .fa {
+          margin-right: 5px;
+        }
+      }
+      .search-bar {
+        display: none;
+        form {
+          display: inline-block;
+          input {
+            cursor: pointer;
+          }
+        }
+      }
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+  }
 }
 
 body:not(.home) {
-	#header {
-		background: #fff;
-		.header-bottom {
-			.header-mid {
-				.header-image a img {
-					filter: invert(1);
-				}
-			}
-		}
-		&>* >* >* {
-			color: #000!important;
-			&>* {
-				color: #000!important;
-			}
-		}
-	}
+  #header {
+    background: #fff;
+    .header-bottom {
+      .header-mid {
+        .header-image a img {
+          filter: invert(1);
+        }
+      }
+    }
+    & > * > * > * {
+      color: #000 !important;
+      & > * {
+        color: #000 !important;
+      }
+    }
+  }
 }
 @include breakpoint(md) {
-	body.home {
-		.fixed-top-spacer {
-			display: none;
-		}
-	}
+  body.home {
+    .fixed-top-spacer {
+      display: none;
+    }
+  }
 }
 @media (max-width: 1024px) {
-	div#header {
-		.header-bottom {
-			background: #fff;
-			.header-left {
-				#mobile-menu-toggle {
-					i {
-						color: #000;
-					}
-				}
-			}
-			.header-mid {
-				.header-image a img {
-					filter: invert(1);
-				}
-			}
-			.header-right {
-				order: 3;
-				i,span,a,.store-locator,.header-search {
-					color: #000;
-				}
-			}
-		}
-	}
+  div#header {
+    .header-bottom {
+      background: #fff;
+      .header-left {
+        #mobile-menu-toggle {
+          i {
+            color: #000;
+          }
+        }
+      }
+      .header-mid {
+        .header-image a img {
+          filter: invert(1);
+        }
+      }
+      .header-right {
+        order: 3;
+        i,
+        span,
+        a,
+        .store-locator,
+        .header-search {
+          color: #000;
+        }
+      }
+    }
+  }
 }
 // *************************************************************************************************
 //	NAVIGATION
 // *************************************************************************************************
 
 #header {
-	#mobile-menu,.sidr,#sidr,.device-nav-menu {
-		width: 400px;
-		height: 100%;
-		position: fixed;
-		top: unset;
-		right: unset;
-		overflow-y: unset!important;
-		.navbar-inner {
-			background-color: #fff;
-			height: 1300px;
-			.nav_section {
-				#collapse-1.collapse {
-					width: unset;
-					padding: 0;
-				}
-				ul#menu-mobile-menu {
-					list-style-type: none;
-					padding-inline-start: 20px;
-					cursor: pointer;
-					background: #fff;
-					height: 1300px;
-					position: relative;
-					//this style makes it possible to set grandchild elements as relative to this position(to fix sub menu positions)
-					-webkit-transform: rotate(0deg);
-					-moz-transform: rotate(0deg);
-					-ms-transform: rotate(0deg);
-					-o-transform: rotate(0deg);
-					transform: rotate(0deg);
-					@include breakpoint(xs) {
-						height: auto;
-					}
-					li {
-						border-bottom: none!important;
-						margin: 0 0 5px 0;
-						a {
-							font-size: 25px;
-							.caret {
-								display: none;
-								float: right;
-								border-left: 5px solid;
-								border-top: 5px solid transparent;
-								border-bottom: 5px solid transparent;
-								border-right: unset;
-								margin-top: 5px;
-							}
-							&:hover {
-								.caret {
-									display: inline-block;
-								}
-							}
-						}
-						ul.dropdown-menu {
-							left: 100%;
-							top: 0;
-							position: fixed;
-							background: #fff;
-							width: 400px;
-							height: 1300px;
-							border-left: 2px solid #eee;
-							z-index: 1001;
-							overflow: visible;
-							li a {
-								.caret {
-									display: none;
-									float: right;
-									border-left: 5px solid;
-									border-top: 5px solid transparent;
-									border-bottom: 5px solid transparent;
-									border-right: unset;
-									margin-top: 5px;
-									padding-right: 15px;
-								}
-								&:hover {
-									.caret {
-										display: inline-block;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			.close-mobile-wrap {
-				display: none;
-			}
-		}
-	}
+  #mobile-menu,
+  .sidr,
+  #sidr,
+  .device-nav-menu {
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: unset;
+    right: unset;
+    overflow-y: unset !important;
+    .navbar-inner {
+      background-color: #fff;
+      height: 1300px;
+      .nav_section {
+        #collapse-1.collapse {
+          width: unset;
+          padding: 0;
+        }
+        ul#menu-mobile-menu {
+          list-style-type: none;
+          padding-inline-start: 20px;
+          cursor: pointer;
+          background: #fff;
+          height: 1300px;
+          position: relative;
+          //this style makes it possible to set grandchild elements as relative to this position(to fix sub menu positions)
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          @include breakpoint(xs) {
+            height: auto;
+          }
+          li {
+            border-bottom: none !important;
+            margin: 0 0 5px 0;
+            a {
+              font-size: 25px;
+              .caret {
+                display: none;
+                float: right;
+                border-left: 5px solid;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-right: unset;
+                margin-top: 5px;
+              }
+              &:hover {
+                .caret {
+                  display: inline-block;
+                }
+              }
+            }
+            ul.dropdown-menu {
+              left: 100%;
+              top: 0;
+              position: fixed;
+              background: #fff;
+              width: 400px;
+              height: 1300px;
+              border-left: 2px solid #eee;
+              z-index: 1001;
+              overflow: visible;
+              li a {
+                .caret {
+                  display: none;
+                  float: right;
+                  border-left: 5px solid;
+                  border-top: 5px solid transparent;
+                  border-bottom: 5px solid transparent;
+                  border-right: unset;
+                  margin-top: 5px;
+                  padding-right: 15px;
+                }
+                &:hover {
+                  .caret {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .close-mobile-wrap {
+        display: none;
+      }
+    }
+  }
 }
 // *************************************************************************************************
 //	FOOTER
@@ -346,164 +357,163 @@ body:not(.home) {
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-footer';
 
-footer #footerMobile .footerTop__Menu{
-	display:none!important;
+footer #footerMobile .footerTop__Menu {
+  display: none !important;
 }
 
 @media (max-width: 767px) {
-	.home #footer {
-		border-top: 1px solid #ccc;
-		position: relative;
-	}
+  .home #footer {
+    border-top: 1px solid #ccc;
+    position: relative;
+  }
 }
 
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
 }
 
 .footerRow {
-	z-index: 1;
-	background: #fff;
+  z-index: 1;
+  background: #fff;
 
-	.footerBottom {
-		background: #fff;
-		color: #333;
-		text-align: center;
-		padding: 0;
+  .footerBottom {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0;
 
-        .social {
-            padding: 10px 0 30px;
-			a i {
-				background-color: transparent;
-				color: #000;
-			}
+    .social {
+      padding: 10px 0 30px;
+      a i {
+        background-color: transparent;
+        color: #000;
+      }
+    }
+
+    #disclaimer {
+      @include flexbox;
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-wrap(nowrap);
+      p {
+        margin: 0 2px 10px;
+      }
+      @include breakpoint(md) {
+        text-wrap: nowrap;
+      }
+      @include breakpoint(mobile-tablet) {
+        @include flex-direction(column);
+        p {
+          margin: 0;
         }
+      }
+    }
 
-		#disclaimer {
-			@include flexbox;
-			@include justify-content(center);
-			@include align-items(center);
-			@include flex-wrap(nowrap);
-			p {
-				margin: 0 2px 10px;
-			}
-			@include breakpoint(md) {
-				text-wrap: nowrap;
-			}
-			@include breakpoint(mobile-tablet) {
-				@include flex-direction(column);
-				p {
-					margin: 0;
-				}
-			}
-		}
+    .infoWrapper {
+      @include flexbox;
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-wrap(nowrap);
+      @include breakpoint(md) {
+        text-wrap: nowrap;
+      }
+      @include breakpoint(mobile-tablet) {
+        @include flex-direction(column);
+      }
+      &__copyright {
+        order: 1;
+      }
+      &__menu {
+        order: 3;
+        ul {
+          margin: 0;
+          padding: 0;
 
-		.infoWrapper {
-			@include flexbox;
-			@include justify-content(center);
-			@include align-items(center);
-			@include flex-wrap(nowrap);
-			@include breakpoint(md) {
-				text-wrap: nowrap;
-			}
-			@include breakpoint(mobile-tablet) {
-				@include flex-direction(column);
-			}
-			&__copyright {
-				order: 1;
-			}
-			&__menu {
-				order: 3;
-				ul {
-					margin: 0;
-					padding: 0;
+          li {
+            display: inline-block;
 
-					li {
-						display: inline-block;
-
-						+ li:before {
-							content: '\|';
-						}
-
-						a {
-							color: $primary;
-							margin: 0 5px;
-						}
-					}
-				}
-			}
-
-			&__di {
-				order: 2;
-				a {
-					color: $primary;
-					text-decoration: underline;
-				}
-			}
-		}
-
-        .email-button {
-            float: none;
-            margin: 20px 0 0 !important;
-            @include breakpoint(xs) {
-                font-size: 12px !important;
+            + li:before {
+              content: '\|';
             }
+
+            a {
+              color: $primary;
+              margin: 0 5px;
+            }
+          }
         }
-	}
+      }
 
-	// ********** Media Queries ********** //
+      &__di {
+        order: 2;
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
+    }
 
-	// Tablet +
-	@include breakpoint(sm) {
+    .email-button {
+      float: none;
+      margin: 20px 0 0 !important;
+      @include breakpoint(xs) {
+        font-size: 12px !important;
+      }
+    }
+  }
 
-		.footerBottom {
-			a.link__logo img {
-			    max-width: 315px;
-			    width: 100%;
-			}
-		}
-	}
+  // ********** Media Queries ********** //
+
+  // Tablet +
+  @include breakpoint(sm) {
+    .footerBottom {
+      a.link__logo img {
+        max-width: 315px;
+        width: 100%;
+      }
+    }
+  }
 }
 #footer {
-    background: #fff;
+  background: #fff;
 }
 
 // *************************************************************************************************
@@ -535,89 +545,89 @@ footer #footerMobile .footerTop__Menu{
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
 
 #detailspage .maincardetails {
-  padding-top:70px;
+  padding-top: 70px;
 }
 
 // VDP dealer location popover styles //
 
 #dealer-location-popover-trigger {
-	background-color: #f4f4f4;
-	color: #333;
-	padding: 8px 20px;
-	font-weight: bold;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 8px 20px;
+  font-weight: bold;
 
-	.popover-trigger-label{
-		text-transform: uppercase;
-		color: #999;
-		font-weight: normal;
-		font-size: 12px;
-	}
+  .popover-trigger-label {
+    text-transform: uppercase;
+    color: #999;
+    font-weight: normal;
+    font-size: 12px;
+  }
 
-	&:after {
-		content: "\f05a";
-		font-family: "FontAwesome";
-		position: relative;
-		display: inline-block;
-		margin-left: 16px;
-		vertical-align: middle;
-	}
+  &:after {
+    content: '\f05a';
+    font-family: 'FontAwesome';
+    position: relative;
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: middle;
+  }
 
-	&:hover:after {
-		color: $primary;
-	}
+  &:hover:after {
+    color: $primary;
+  }
 }
 
 .well {
   > h2 {
-    font-size:18px;
-    font-family:$heading-font;
-    font-weight:bold;
+    font-size: 18px;
+    font-family: $heading-font;
+    font-weight: bold;
     text-transform: uppercase;
   }
   > span {
-    display:block;
-    margin:5px 0;
-    padding:5px 0;
+    display: block;
+    margin: 5px 0;
+    padding: 5px 0;
   }
   .dealer-links {
-    margin-top:20px;
+    margin-top: 20px;
   }
 }
 
 .location-popover-wrap {
-	.btn {
-		color: #fff;
-	}
+  .btn {
+    color: #fff;
+  }
 
-	.dealer-name,
-	.dealer-address,
-	.dealer-phone {
-		display: block;
-	}
+  .dealer-name,
+  .dealer-address,
+  .dealer-phone {
+    display: block;
+  }
 
-	.dealer-name {
-		font-weight: bold;
-	}
+  .dealer-name {
+    font-weight: bold;
+  }
 
-	.dealer-phone {
-		margin-bottom: 5px;
+  .dealer-phone {
+    margin-bottom: 5px;
 
-		@media (min-width: 1025px) {
-			text-align: center;
-		}
-	}
+    @media (min-width: 1025px) {
+      text-align: center;
+    }
+  }
 }
 
 .mainvehicleheaderbox {
-	.popover-close {
-		font-weight: bold;
-		font-size: 16px;
-		color: #333;
+  .popover-close {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
 
-		&:hover {
-			text-decoration: none;
-		}
-	}
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 // End VDP dealer location popover styles //
@@ -645,86 +655,86 @@ footer #footerMobile .footerTop__Menu{
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/vehicle-print-view';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/payment-calculator';
 
-.vdp-shopping-tools{
-    .shopping-tools-wrapper{
-      @include flexbox;
-	    border-top: 1px solid #565656;
-	    border-bottom: 1px solid #565656;
-	    padding: 30px 0;
-      .shopping-tool{
-        position: relative;
-        padding: 0 10px;
-        @include flex(1 1 12.75%);
-        &:nth-child(n+2){
-        &:after{
-          content : "";
+.vdp-shopping-tools {
+  .shopping-tools-wrapper {
+    @include flexbox;
+    border-top: 1px solid #565656;
+    border-bottom: 1px solid #565656;
+    padding: 30px 0;
+    .shopping-tool {
+      position: relative;
+      padding: 0 10px;
+      @include flex(1 1 12.75%);
+      &:nth-child(n + 2) {
+        &:after {
+          content: '';
           position: absolute;
-          left : 0;
+          left: 0;
           z-index: 100;
-          top : 5%;
-          width : 1px;
-          height : 90%;
+          top: 5%;
+          width: 1px;
+          height: 90%;
           background: #565656;
         }
       }
-        &:last-child{
-          &:after{
-            content : "";
-            position: absolute;
-            left : 0;
-            z-index: 100;
-            top : 5%;
-            width : 1px;
-            height : 90%;
-            background: #565656;
-          }
-        }
-        &.third-party-ipacket {
-          @include flex-basis(23.5%);
+      &:last-child {
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          z-index: 100;
+          top: 5%;
+          width: 1px;
+          height: 90%;
+          background: #565656;
         }
       }
-      @media (max-width:1199px) {
-        @include flex-wrap(wrap);
-      }
-      @media (min-width:1025px) and (max-width:1199px) {
-        .shopping-tool {
-          //@include flex-basis();
-        }
+      &.third-party-ipacket {
+        @include flex-basis(23.5%);
       }
     }
-    svg{
-      fill: #0059a8
+    @media (max-width: 1199px) {
+      @include flex-wrap(wrap);
     }
-    .shopping-label{
-      a{
-        font-size: 14px;
-        font-weight: bold;
+    @media (min-width: 1025px) and (max-width: 1199px) {
+      .shopping-tool {
+        //@include flex-basis();
       }
     }
   }
+  svg {
+    fill: #0059a8;
+  }
+  .shopping-label {
+    a {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
 
 // HOTWHEELS VDP *********************************************************** //
-.page-vehicle-display-page{
+.page-vehicle-display-page {
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
 }
 .project-hotwheels {
-	.vdp-related-vehicles .vdp-related-vehicle {
-		width: 100%;
-	}
+  .vdp-related-vehicles .vdp-related-vehicle {
+    width: 100%;
+  }
 }
 
 .page-vehicle-display-page {
-	.vdp-top-banner.box-gallery {
-		.details-page-ctawrap {
-			top: 230px;
-			&.affix {
-				top: 0;
-			}
-			#details-page-ctabox {
-				margin-top: 30px;
-			}
-		}
-	}
+  .vdp-top-banner.box-gallery {
+    .details-page-ctawrap {
+      top: 230px;
+      &.affix {
+        top: 0;
+      }
+      #details-page-ctabox {
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
 #ctabox-premium-features {
@@ -745,13 +755,13 @@ footer #footerMobile .footerTop__Menu{
     color: inherit;
   }
   .ui-accordion-header-icon {
-    background:none;
-    color:#222 !important;
-    position:relative;
-    z-index:99;
+    background: none;
+    color: #222 !important;
+    position: relative;
+    z-index: 99;
   }
   .features-title {
-    cursor:pointer;
+    cursor: pointer;
   }
 }
 
@@ -763,74 +773,74 @@ footer #footerMobile .footerTop__Menu{
   overflow-y: auto;
   width: 100%;
   .features-link {
-	  color: $primary;
+    color: $primary;
   }
-	.list-group-item {
-	  padding: 10px 15px;
-	  margin: 10px 0;
-	  color: #333;
-	  border-radius: 0 !important;
-	  border: none;
-	  h3 {
-		  margin-top: 0;
-		  font-size: 15px;
-	  }
-	}
-	.ui-icon {
-  	height:auto;
-  	overflow:inherit;
-  	text-indent:initial;
-  	width:auto;
-	}
+  .list-group-item {
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #333;
+    border-radius: 0 !important;
+    border: none;
+    h3 {
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+  .ui-icon {
+    height: auto;
+    overflow: inherit;
+    text-indent: initial;
+    width: auto;
+  }
 }
 
 .maincta-row .cta-button {
-  background:$vdp-cta-bg;
-  border:none;
+  background: $vdp-cta-bg;
+  border: none;
   &:hover {
     background: darken($vdp-cta-bg, 10%);
   }
 }
 
 #ctabox-secondary-ctas {
-	.save-vehicle i {
+  .save-vehicle i {
     font-size: inherit;
     vertical-align: inherit;
     line-height: inherit;
     margin-left: inherit;
-	}
+  }
 }
 
 #info-accordion #history.panel-heading h4.panel-title {
-	a {
-		height: 50px;
-		line-height: 50px;
-		padding-left: 20px;
-	}
+  a {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+  }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #vehicleDetails.project-hotwheels {
-    margin-top:10px;
+    margin-top: 10px;
   }
   .vdp-shopping-tools .shopping-tool .shopping-icon svg {
-    height:40px;
+    height: 40px;
     @include transition(none);
-    width:40px;
+    width: 40px;
   }
   .maincta-row .button {
     animation: text-grow 2s infinite;
-    font-size:18px;
+    font-size: 18px;
     left: 0px;
-    line-height:18px;
-    padding:10px 5px;
+    line-height: 18px;
+    padding: 10px 5px;
     position: fixed;
     top: 55px;
     z-index: 2;
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .page-vehicle-display-page #vehicleDetails .maincta-row .button.fixed-top {
     top: 55px !important;
   }
@@ -838,26 +848,26 @@ footer #footerMobile .footerTop__Menu{
 
 @keyframes text-grow {
   0% {
-    font-size:18px;
+    font-size: 18px;
   }
   50% {
-    font-size:20px;
+    font-size: 20px;
   }
 }
 @-webkit-keyframes text-grow {
   0% {
-    font-size:18px;
+    font-size: 18px;
   }
   50% {
-    font-size:20px;
+    font-size: 20px;
   }
 }
 @-moz-keyframes text-grow {
   0% {
-    font-size:18px;
+    font-size: 18px;
   }
   50% {
-    font-size:20px;
+    font-size: 20px;
   }
 }
 
@@ -866,438 +876,441 @@ footer #footerMobile .footerTop__Menu{
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-	//@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-touch-header';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
-	
+  //@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-touch-header';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
 }
 
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
 
-	.tt-dropdown-menu {
-		width: 100%;
-		min-width: 100%;
-		.tt-dataset-inventory, .tt-dataset-pages, .tt-dataset-email, .tt-dataset-phone, .tt-dataset-departmentHours {
-			width: 94%;
-			margin: 0 3%;
-		}
-	}
+  .tt-dropdown-menu {
+    width: 100%;
+    min-width: 100%;
+    .tt-dataset-inventory,
+    .tt-dataset-pages,
+    .tt-dataset-email,
+    .tt-dataset-phone,
+    .tt-dataset-departmentHours {
+      width: 94%;
+      margin: 0 3%;
+    }
+  }
 
-	.mobile-tab-4 .mobile-tab-content {
-		display:none !important;
-	}
-	.mobile-tabs {
-		left: 0;
-	}
+  .mobile-tab-4 .mobile-tab-content {
+    display: none !important;
+  }
+  .mobile-tabs {
+    left: 0;
+  }
 
-	#preferredownersRow {
-		background-position:60% bottom;
-		.preferredownerscontent {
-			background:rgba(255,255,255,.4);
-			@include border-radius(6px);
-			margin:15px auto;
-		}
-	}
-  	#storyRow .storycontent {
-		padding:0 20px;
-	}
+  #preferredownersRow {
+    background-position: 60% bottom;
+    .preferredownerscontent {
+      background: rgba(255, 255, 255, 0.4);
+      @include border-radius(6px);
+      margin: 15px auto;
+    }
+  }
+  #storyRow .storycontent {
+    padding: 0 20px;
+  }
 
-	#header {
-		#mobile-menu,.sidr,#sidr,.device-nav-menu {
-			width: 100%;
-			height: auto;
-			.navbar-inner {
-				.nav_section {
-					#collapse-1.collapse {
-						display: block;
-					}
-					ul#menu-mobile-menu {
-						height: auto;
-						li {
-							&.open {
-								position: absolute;
-								top: 0;
-								z-index: 10;
-								border-bottom: 1px solid #eee;
-								.caret {
-									float: left;
-									border-left: unset;
-									border-right: 5px solid;
-									margin-right: 10px;
-								}
-								ul.dropdown-menu {
-									left: 0;
-									top: 40px;
-									border-left: none;
-									width: 100%;
-								}
-							}
-							a {
-								.caret {
-									display: inline-block;
-								}
-							}
-							.dropdown-menu {
-								left: 0px;
-								top: 40px;
-								width: 100%;
-								border-left: none;
-							}
-						}
-					}
-				}
-				.close-mobile-wrap {
-					display: block;
-					position: relative;
-					z-index: 9999;
-					.close-mobile-nav {
-						cursor: pointer;
-					}
-				}
-			}
-		}
-	}
+  #header {
+    #mobile-menu,
+    .sidr,
+    #sidr,
+    .device-nav-menu {
+      width: 100%;
+      height: auto;
+      .navbar-inner {
+        .nav_section {
+          #collapse-1.collapse {
+            display: block;
+          }
+          ul#menu-mobile-menu {
+            height: auto;
+            li {
+              &.open {
+                position: absolute;
+                top: 0;
+                z-index: 10;
+                border-bottom: 1px solid #eee;
+                .caret {
+                  float: left;
+                  border-left: unset;
+                  border-right: 5px solid;
+                  margin-right: 10px;
+                }
+                ul.dropdown-menu {
+                  left: 0;
+                  top: 40px;
+                  border-left: none;
+                  width: 100%;
+                }
+              }
+              a {
+                .caret {
+                  display: inline-block;
+                }
+              }
+              .dropdown-menu {
+                left: 0px;
+                top: 40px;
+                width: 100%;
+                border-left: none;
+              }
+            }
+          }
+        }
+        .close-mobile-wrap {
+          display: block;
+          position: relative;
+          z-index: 9999;
+          .close-mobile-nav {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }
 
-
-@media (max-width:370px) {
-	.break-fix {
-  		display:inline;
-	}
+@media (max-width: 370px) {
+  .break-fix {
+    display: inline;
+  }
 }
 
 @import 'support-requests';
 
 #desktop-cta {
-	padding: 30px 0;
-	z-index: 900;
-	margin-top: 85px;
-	.dealerList{
-		@include flexbox;
-		@include flex-direction(column);
-	}
-	.brand-wrapper {
-		position: relative;
-		@include flexbox;
-		@include flex-direction(column);
-		// @include align-items(flex-start);
-		margin: 6% 0 7% 0;
-		@media(max-height:790px){
-			margin: 3% 0 3% 0;
-		}
-		.loc-brand-logo {
-			margin: 0 auto;
-			img{
-				max-width: 60%;
-				@media(max-height:790px){
-					max-width: 50%;
-				}
-				@media(max-height:680px){
-					max-width: 40%;
-				}
-			}
-		}
-		.popover-wrapper {
-			//  display: inline-block;
-			//  margin: 0 auto;
-			h3 {
-				margin: 10px 0 0;
-				text-transform: uppercase;
-				@media(max-height:790px){
-					margin-top: 5px;
-				}
-				a {
-					color: #000;
-					text-decoration: none;
-					@media(max-height:790px){
-						font-size: 15px;
-					}
-				}
-				//   display: inline-block;
-			}
-			&.Audi_Beverly_Hills {
-				order: 1;
-			}
-			&.Audi_Fletcher_Jones {
-				order: 2;
-			}
-			&.Audi_Fremont {
-				order: 3;
-			}
-			&.Fletcher_Jones_Motorcars_of_Fremont {
-				order: 3;
-			}
-			&.Mercedes-Benz_of_Ontario {
-				order: 2;
-			}
-			&.Fletcher_Jones_Motorcars {
-				order: 1;
-			}
-		}
-		img {
-			@include flex(none); // IE fix
-			@include align-self(center);
-			max-width: 70%;
-		}
-		&#loc-mercedes-benz{
-			order: 1;
-			.popover-wrapper.Fletcher_Jones_Motorcars {
-				.info-box.dealer-3 {
-					bottom: -100px;
-					&::before {
-						bottom: 100px;
-					}
-					&::after {
-						bottom: 100px;
-					}
-				}
-			}
-		}
-		&#loc-audi{
-			order: 2;
-			.popover-wrapper.Audi_Beverly_Hills {
-				margin-top: -12px;
-			}
-		}
-		&#loc-porsche{
-			order: 3;
-			.loc-brand-logo img{
-				width: 48%;
-			}
-		}
-	}
-	.popover-wrapper {
-		position: relative;
-		// -webkit-transform: translateZ(0); /* webkit flicker fix */
-		-webkit-font-smoothing: antialiased; /* webkit text rendering
+  padding: 30px 0;
+  z-index: 900;
+  margin-top: 85px;
+  .dealerList {
+    @include flexbox;
+    @include flex-direction(column);
+  }
+  .brand-wrapper {
+    position: relative;
+    @include flexbox;
+    @include flex-direction(column);
+    // @include align-items(flex-start);
+    margin: 6% 0 7% 0;
+    @media (max-height: 790px) {
+      margin: 3% 0 3% 0;
+    }
+    .loc-brand-logo {
+      margin: 0 auto;
+      img {
+        max-width: 60%;
+        @media (max-height: 790px) {
+          max-width: 50%;
+        }
+        @media (max-height: 680px) {
+          max-width: 40%;
+        }
+      }
+    }
+    .popover-wrapper {
+      //  display: inline-block;
+      //  margin: 0 auto;
+      h3 {
+        margin: 10px 0 0;
+        text-transform: uppercase;
+        @media (max-height: 790px) {
+          margin-top: 5px;
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+          @media (max-height: 790px) {
+            font-size: 15px;
+          }
+        }
+        //   display: inline-block;
+      }
+      &.Audi_Beverly_Hills {
+        order: 1;
+      }
+      &.Audi_Fletcher_Jones {
+        order: 2;
+      }
+      &.Audi_Fremont {
+        order: 3;
+      }
+      &.Fletcher_Jones_Motorcars_of_Fremont {
+        order: 3;
+      }
+      &.Mercedes-Benz_of_Ontario {
+        order: 2;
+      }
+      &.Fletcher_Jones_Motorcars {
+        order: 1;
+      }
+    }
+    img {
+      @include flex(none); // IE fix
+      @include align-self(center);
+      max-width: 70%;
+    }
+    &#loc-mercedes-benz {
+      order: 1;
+      .popover-wrapper.Fletcher_Jones_Motorcars {
+        .info-box.dealer-3 {
+          bottom: -100px;
+          &::before {
+            bottom: 100px;
+          }
+          &::after {
+            bottom: 100px;
+          }
+        }
+      }
+    }
+    &#loc-audi {
+      order: 2;
+      .popover-wrapper.Audi_Beverly_Hills {
+        margin-top: -12px;
+      }
+    }
+    &#loc-porsche {
+      order: 3;
+      .loc-brand-logo img {
+        width: 48%;
+      }
+    }
+  }
+  .popover-wrapper {
+    position: relative;
+    // -webkit-transform: translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering
 		 fix */
-		.info-box {
-			background: #fff;
-			font-size: 13px;
-			//top: 100%;
-			color: #333;
-			pointer-events: none;
-			display: block;
-			margin-bottom: 15px;
-			opacity: 0;
-			padding: 15px;
-			width: 250px;
-			//		left: auto;
-			//  right: calc(-50% + -10px);
-			//bottom: 0;
-			//	margin: auto;
-			position: absolute;
-			bottom: 0;
-			/* bottom: 0; */
-			left: auto;
-			right: -200px;
-			margin: 0;
-			top: auto;
-			//	@include transform(translateY(-20px));
-			@include transition(all 0.25s ease-out);
-			@include box-shadow(2px 2px 6px rgba(0, 0, 0, 0.25));
-			@include flexbox;
-			@include justify-content(center);
-			@media (max-width: 1024px) {
-				display: none;
-			}
-			.single-dealer {
-				padding: 5px 10px;
-				display: inline-block;
-				vertical-align: top;
-			}
-			h3 {
-				margin-top: 0;
-				font-size: 14px;
-				color: $primary;
-				font-weight: bold;
-			}
-			.address {
-				padding-bottom: 10px;
-			}
-			.info-link {
-				color: #333;
-				display: block;
-				&:hover {
-					color: #333;
-					text-decoration: none;
-				}
-			}
-			.view-link {
-				margin-top: 10px;
-				display: block;
-				font-weight: bold;
-				color: #333;
-				&:hover {
-					color: $primary;
-				}
-			}
-			&::after,
-			&::before {
-				border-left: solid transparent 10px;
-				border-right: solid #fff 10px;
-				border-top: solid transparent 10px;
-				border-bottom: solid transparent 10px;
-				bottom: 0;
-				content: " ";
-				height: 0;
-				left: -20px;
-				right: auto;
-				position: absolute;
-				width: 0;
-				top: auto;
-			}
-			&::before {
-				border-left: solid transparent 9px;
-				border-right: solid #eee 9px;
-				border-top: solid transparent 9px;
-				border-bottom: solid transparent 9px;
-				bottom: 1px;
-				left: -21px;
-			}
-			&.dealer-3 {
-				//	width: 820px;
-				//	left: -265px;
-			}
-			&.dealer-2 {
-				//	width: 590px;
-				//	left: -180px;
-			}
-
-		}
-		&:hover {
-			.info-box {
-				opacity: 1;
-				pointer-events: auto;
-				z-index: 99;
-				//	@include transform(translateY(0px));
-			}
-		}
-	}
+    .info-box {
+      background: #fff;
+      font-size: 13px;
+      //top: 100%;
+      color: #333;
+      pointer-events: none;
+      display: block;
+      margin-bottom: 15px;
+      opacity: 0;
+      padding: 15px;
+      width: 250px;
+      //		left: auto;
+      //  right: calc(-50% + -10px);
+      //bottom: 0;
+      //	margin: auto;
+      position: absolute;
+      bottom: 0;
+      /* bottom: 0; */
+      left: auto;
+      right: -200px;
+      margin: 0;
+      top: auto;
+      //	@include transform(translateY(-20px));
+      @include transition(all 0.25s ease-out);
+      @include box-shadow(2px 2px 6px rgba(0, 0, 0, 0.25));
+      @include flexbox;
+      @include justify-content(center);
+      @media (max-width: 1024px) {
+        display: none;
+      }
+      .single-dealer {
+        padding: 5px 10px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      h3 {
+        margin-top: 0;
+        font-size: 14px;
+        color: $primary;
+        font-weight: bold;
+      }
+      .address {
+        padding-bottom: 10px;
+      }
+      .info-link {
+        color: #333;
+        display: block;
+        &:hover {
+          color: #333;
+          text-decoration: none;
+        }
+      }
+      .view-link {
+        margin-top: 10px;
+        display: block;
+        font-weight: bold;
+        color: #333;
+        &:hover {
+          color: $primary;
+        }
+      }
+      &::after,
+      &::before {
+        border-left: solid transparent 10px;
+        border-right: solid #fff 10px;
+        border-top: solid transparent 10px;
+        border-bottom: solid transparent 10px;
+        bottom: 0;
+        content: ' ';
+        height: 0;
+        left: -20px;
+        right: auto;
+        position: absolute;
+        width: 0;
+        top: auto;
+      }
+      &::before {
+        border-left: solid transparent 9px;
+        border-right: solid #eee 9px;
+        border-top: solid transparent 9px;
+        border-bottom: solid transparent 9px;
+        bottom: 1px;
+        left: -21px;
+      }
+      &.dealer-3 {
+        //	width: 820px;
+        //	left: -265px;
+      }
+      &.dealer-2 {
+        //	width: 590px;
+        //	left: -180px;
+      }
+    }
+    &:hover {
+      .info-box {
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 99;
+        //	@include transform(translateY(0px));
+      }
+    }
+  }
 }
 
-
-
-@media(min-width:1024px){
-	.home {
-		div#desktop-cta {
-			display: inline-block;
-			width: 25%;
-		}
-		div#videobanner {
-			display: inline-block;
-			width: 75%;
-			float: right;
-		}
-	}
+@media (min-width: 1024px) {
+  .home {
+    div#desktop-cta {
+      display: inline-block;
+      width: 25%;
+    }
+    div#videobanner {
+      display: inline-block;
+      width: 75%;
+      float: right;
+    }
+  }
 }
 
-.bannerAnnaoucement{
-	text-transform: none;
-	position: fixed;
-	top: 70px;
-	height: 40px;
-	line-height: 40px;
-	color: white;
-	font-size: 12px;
-	letter-spacing: .03em;
-	width: 100%;
-	background: #0059a8;
-	z-index: 999;
-	left: 0px;
-	font-family: "Montserrat",sans-serif;
-	border: 1px solid #d9d9d9;
-	text-shadow: none;
-	text-align: center;
+.bannerAnnaoucement {
+  text-transform: none;
+  position: fixed;
+  top: 70px;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  width: 100%;
+  background: #0059a8;
+  z-index: 999;
+  left: 0px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #d9d9d9;
+  text-shadow: none;
+  text-align: center;
 }
 
 #lvrp-results-wrapper .hit-price.hit-price--below .hit-price__customize {
-	display: none;
+  display: none;
 }
 
 @include breakpoint(md) {
-	.page-vehicle-display-page div#header, .page-vehicle-display-page div.di-stacks--top {
-		position: fixed;
-	}
-	.page-vehicle-display-page .vdp-top-banner.box-gallery .details-page-ctawrap.affix {
-		top: 50px !important;
-	}
+  .page-vehicle-display-page div#header,
+  .page-vehicle-display-page div.di-stacks--top {
+    position: fixed;
+  }
+  .page-vehicle-display-page .vdp-top-banner.box-gallery .details-page-ctawrap.affix {
+    top: 50px !important;
+  }
 }
 
 form span.tt-dropdown-menu {
-	left: auto!important;
-	right: 0!important;
-	top: 75px!important;
-	position: fixed!important;
-	z-index: 10001!important;
-	font-family: "Montserrat",sans-serif;
-	padding: 0 0 60px;
-	width: 550px;
-	min-width: unset;
-	min-height: 100%;
-	font-weight: 400;
-	line-height: 20px;
-	text-align: left;
-	.algolia-dataset {
-		width: 100%;
-		padding: 0;
-		.category.catTitle {
-			background: #ddd;
-			border: none;
-			border-top: 1px solid #aaa;
-			border-bottom: 1px solid #aaa;
-			padding: 10px 15px;
-			text-transform: uppercase;
-			font-family: "Montserrat",sans-serif;
-			font-weight: 400;
-			margin: 0;
-			font-size: 16px;
-		}
-		.tt-suggestions {
-			padding: 15px;
-			margin-bottom: 30px;
-		}
-		.inventorySearchResult {
-			padding: 10px 15px;
-		}
-		&.tt-dataset-defaults .pageResultLink {
-			padding: 0 15px;
-		}
-		.contentSearchResult {
-			padding: 10px 15px 10px 45px;
-			margin: 0;
-			text-align: left;
-			line-height: 20px;
-			clear: both;
-			overflow: hidden;
-			position: relative;
-			i {
-				left: 15px;
-				top: 10px;
-				font-size: 18px;
-				position: absolute;
-				min-width: 22px;
-			}
-		}
-	}
+  left: auto !important;
+  right: 0 !important;
+  top: 75px !important;
+  position: fixed !important;
+  z-index: 10001 !important;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0 60px;
+  width: 550px;
+  min-width: unset;
+  min-height: 100%;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  .algolia-dataset {
+    width: 100%;
+    padding: 0;
+    .category.catTitle {
+      background: #ddd;
+      border: none;
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #aaa;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      margin: 0;
+      font-size: 16px;
+    }
+    .tt-suggestions {
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    .inventorySearchResult {
+      padding: 10px 15px;
+    }
+    &.tt-dataset-defaults .pageResultLink {
+      padding: 0 15px;
+    }
+    .contentSearchResult {
+      padding: 10px 15px 10px 45px;
+      margin: 0;
+      text-align: left;
+      line-height: 20px;
+      clear: both;
+      overflow: hidden;
+      position: relative;
+      i {
+        left: 15px;
+        top: 10px;
+        font-size: 18px;
+        position: absolute;
+        min-width: 22px;
+      }
+    }
+  }
 }
 
 .di-stacks.di-stacks--bottom {
-	z-index: 200!important;
-	height: 0;
+  z-index: 200 !important;
+  height: 0;
 }
 
 body {
-	position: absolute;
-	width: 100%;
-	left: 0!important;
+  position: absolute;
+  width: 100%;
+  left: 0 !important;
 }

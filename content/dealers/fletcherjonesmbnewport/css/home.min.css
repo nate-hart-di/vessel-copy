@@ -1,1 +1,5 @@
-@media (min-width: 1025px){.home #footer{position:relative}}
+@media (min-width: 1025px) {
+  .home #footer {
+    position: relative;
+  }
+}

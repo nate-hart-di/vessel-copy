@@ -1,57 +1,56 @@
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins/flexbox";
-
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins/flexbox';
 
 .home {
-    .mobile-cta {
-        margin-top: 65px;
-    }
+  .mobile-cta {
+    margin-top: 65px;
+  }
 }
 
 .mobile-cta {
   width: 100%;
-    .ctaItem {
-        width: 100%;
-        @include flexbox;
-        @include flex-flow(column);
-        @include align-items(center);
-        position: relative;
-        padding-top: 92.5%;
-        &.di-lazyloaded{
-            padding: 12px 9px 3px;
-        }
-        img{
-          width: 100%;
-
-          &::before {
-            //content: '';
-            //display: block;
-            padding-top: 92.5%;
-          }
-        }
-        a {
-            position: absolute;
-            bottom: 15px;
-        }
-        .button {
-            font-size: 17px;
-            padding: 12px 40px;
-            margin: 10px 5px 25px;
-            letter-spacing: 0;
-            border: 0;
-        }
-        &:first-child {
-            padding-top: 20%;
-            &.di-lazyloaded{
-                padding: 12px 9px 3px;
-            }
-            .button.mobile-button{
-                position: relative;
-                max-width: 100% !important;
-            }
-        }
-        &:last-child {
-            padding-bottom: 12px;
-            padding-top: 12px;
-        }
+  .ctaItem {
+    width: 100%;
+    @include flexbox;
+    @include flex-flow(column);
+    @include align-items(center);
+    position: relative;
+    padding-top: 92.5%;
+    &.di-lazyloaded {
+      padding: 12px 9px 3px;
     }
+    img {
+      width: 100%;
+
+      &::before {
+        //content: '';
+        //display: block;
+        padding-top: 92.5%;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 15px;
+    }
+    .button {
+      font-size: 17px;
+      padding: 12px 40px;
+      margin: 10px 5px 25px;
+      letter-spacing: 0;
+      border: 0;
+    }
+    &:first-child {
+      padding-top: 20%;
+      &.di-lazyloaded {
+        padding: 12px 9px 3px;
+      }
+      .button.mobile-button {
+        position: relative;
+        max-width: 100% !important;
+      }
+    }
+    &:last-child {
+      padding-bottom: 12px;
+      padding-top: 12px;
+    }
+  }
 }

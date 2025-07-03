@@ -6,10 +6,9 @@ $feature_button_text = get_field('button_text', 'option');
 $feature_button_color = get_field('button_color', 'option');
 $fj_blue = '#0059a8';
 $button_link = get_field('button_link', 'option');
-
 ?>
 
-<?php if(get_field('override_videobanner')) { ?>
+<?php if (get_field('override_videobanner')) { ?>
 <div id="override_videobanner" data-acf="override_videobanner" data-acf-location="Homepage">
   <?php the_field('override_videobanner_content'); ?>
 </div>
@@ -41,66 +40,77 @@ $button_link = get_field('button_link', 'option');
                                 <div class="container-fluid">
                                     <div class="row">
                                         <?php
-                                        $brands = get_terms(array(
-                                            'taxonomy' => 'dealer_cat',
-                                            'orderby' => $brands -> term_id,
-                                            'order' => 'ASC',
-                                        ));
-                                                                                
-                                        if(count($brands) > 0):
-                                            foreach($brands as $brand):
-                                                $brand_name = $brand->name;
-                                                $brand_slug = $brand->slug;
-                                                $brand_location_list = [];
-                                                $args = array(
-                                                    'post_type' => 'dealers',
-                                                    'posts_per_page' => -1,
-                                                    'dealer_cat' => $brand_slug,
-                                                    'order' => 'ASC'
-                                                );
-                                                $dealers = get_posts($args); 
-                                                
-                                                ?>
+                                        $brands = get_terms([
+                                          'taxonomy' => 'dealer_cat',
+                                          'orderby' => $brands->term_id,
+                                          'order' => 'ASC',
+                                        ]);
 
-                                                <div id="loc-<?= $brand_slug ?>" class="col-sm-<?= (12 / (count($brands))) ?> center brand-wrapper matchable-heights">
+                                        if (count($brands) > 0):
+                                          foreach ($brands as $brand):
+
+                                            $brand_name = $brand->name;
+                                            $brand_slug = $brand->slug;
+                                            $brand_location_list = [];
+                                            $args = [
+                                              'post_type' => 'dealers',
+                                              'posts_per_page' => -1,
+                                              'dealer_cat' => $brand_slug,
+                                              'order' => 'ASC',
+                                            ];
+                                            $dealers = get_posts($args);
+                                            ?>
+
+                                                <div id="loc-<?= $brand_slug ?>" class="col-sm-<?= 12 /
+  count($brands) ?> center brand-wrapper matchable-heights">
 	                                                
-                                                    <?php foreach($dealers as $dealer):
-                                                        $post_id = $dealer->ID;
+                                                    <?php foreach ($dealers as $dealer):
 
-                                                        extract(array(
-                                                            "name" => get_the_title($post_id),
-                                                            "url" => get_field('_dealer_website_url', $post_id),
-                                                            "phone" => get_field('_dealer_sales_phone', $post_id),
-                                                            "service" => get_field('_dealer_service_phone', $post_id),
-                                                            "address" => str_replace("|", "<br />", get_field('_dealer_address', $post_id)),
-                                                            "city" => get_field('_dealer_address_map',$post_id)
+                                                      $post_id = $dealer->ID;
 
-															
-                                                        ));
-                                                        
-                                                        $term_id = ($brand->term_id);
+                                                      extract([
+                                                        'name' => get_the_title($post_id),
+                                                        'url' => get_field('_dealer_website_url', $post_id),
+                                                        'phone' => get_field('_dealer_sales_phone', $post_id),
+                                                        'service' => get_field('_dealer_service_phone', $post_id),
+                                                        'address' => str_replace(
+                                                          '|',
+                                                          '<br />',
+                                                          get_field('_dealer_address', $post_id),
+                                                        ),
+                                                        'city' => get_field('_dealer_address_map', $post_id),
+                                                      ]);
 
-														$taxonomy = $brand->taxonomy;
-		                                                $term_id = $brand->term_id;
-		                                                $termImage = get_field( 'dealer_category_logo', $taxonomy.'_'.$term_id);
-														                                                        
-                                                        if( isset($city['address']) ){
-                                                            $city = explode(',',$city['address']);
-                                                            $city = $city[1]; //index of city name
-                                                            if($post_id == 166){
-		                                                       $city = trim(preg_replace('/\s+/', ' ', $city));
-	                                                            if( $city == 'Las Vegas'){
-	                                                                $city = "FJ Used Cars";
-	                                                            }
-	                                                        }
-                                                        
-	                                                        
+                                                      $term_id = $brand->term_id;
+
+                                                      $taxonomy = $brand->taxonomy;
+                                                      $term_id = $brand->term_id;
+                                                      $termImage = get_field(
+                                                        'dealer_category_logo',
+                                                        $taxonomy . '_' . $term_id,
+                                                      );
+
+                                                      if (isset($city['address'])) {
+                                                        $city = explode(',', $city['address']);
+                                                        $city = $city[1]; //index of city name
+                                                        if ($post_id == 166) {
+                                                          $city = trim(preg_replace('/\s+/', ' ', $city));
+                                                          if ($city == 'Las Vegas') {
+                                                            $city = 'FJ Used Cars';
+                                                          }
                                                         }
-                                                    ?>
-                                                        <div class="popover-wrapper <?php echo str_replace(" ","_",$name);?>">
+                                                      }
+                                                      ?>
+                                                        <div class="popover-wrapper <?php echo str_replace(
+                                                          ' ',
+                                                          '_',
+                                                          $name,
+                                                        ); ?>">
 	                                                        
 	                                                        <div class="loc-brand-logo">
-		                                                        <img src="<?php echo esc_url($termImage['url']); ?>" alt="<?php echo esc_attr($termImage['alt']); ?>" />
+		                                                        <img src="<?php echo esc_url(
+                                                            $termImage['url'],
+                                                          ); ?>" alt="<?php echo esc_attr($termImage['alt']); ?>" />
 		                                                       
 		                                                    </div>
 
@@ -112,7 +122,7 @@ $button_link = get_field('button_link', 'option');
                                                                         <h3 > <?php echo $name; ?> </h3>
 
                                                                         <div class="address">
-                                                                            <?= $address; ?>
+                                                                            <?= $address ?>
                                                                         </div>
 
                                                                         <div class="sales">
@@ -129,11 +139,14 @@ $button_link = get_field('button_link', 'option');
                                                             </div>
                                                         </div>
 
-                                                        <?php endforeach; ?>
+                                                        <?php
+                                                    endforeach; ?>
                                                 </div>
 
-                                            <?php endforeach;
-                                        endif; ?>
+                                            <?php
+                                          endforeach;
+                                        endif;
+                                        ?>
 
                                     </div>
                                 </div>
@@ -146,36 +159,44 @@ $button_link = get_field('button_link', 'option');
             </div>
             
             <div class="fj-additional-ctas"> 
-	            <?php
-		        if( have_rows('cta-button') ):
-				    while ( have_rows('cta-button') ) : the_row();?>
+	            <?php if (have_rows('cta-button')):
+               while (have_rows('cta-button')):
+                 the_row(); ?>
 				
 				    <a trid="718868424bc74f84b80b64" trc href="<?php the_sub_field('cta-button-link'); ?>" class="button cta-button">
 						<?php the_sub_field('cta-button-name'); ?>
 					</a>
 				
-				    <?php endwhile;
-				endif;
-				?>
+				    <?php
+               endwhile;
+             endif; ?>
 				
 			</div>
 
             <?php if (get_field('featurebtn', 'option')): ?>
             <div class="row">
                 <div class="col-sm-12">
-                    <a trid="3663d8c3290840608b8c57" trc style="margin-top: 15px; padding: 25px; background: <?= (!empty($feature_button_color)) ? $feature_button_color .'!important;' : $fj_blue . '!important;';?>"
-                        class="button secondary-button <?= (glow()) ? 'button-radioactive' : ''; ?>"
-                       data-gtm="desktop.homepage.btn.etron" href="<?= (!empty($button_link)) ? $button_link : '/current-offers/' ?>"><?= (!empty($feature_button_text) ? $feature_button_text : 'Why FJ') ?></a>
+                    <a trid="3663d8c3290840608b8c57" trc style="margin-top: 15px; padding: 25px; background: <?= !empty(
+                      $feature_button_color
+                    )
+                      ? $feature_button_color . '!important;'
+                      : $fj_blue . '!important;' ?>"
+                        class="button secondary-button <?= glow() ? 'button-radioactive' : '' ?>"
+                       data-gtm="desktop.homepage.btn.etron" href="<?= !empty($button_link)
+                         ? $button_link
+                         : '/current-offers/' ?>"><?= !empty($feature_button_text)
+  ? $feature_button_text
+  : 'Why FJ' ?></a>
                 </div>
             </div>
             <?php endif; ?>
 		</div>
 
-        <?= get_field('overlay_text') ? get_field('overlay_text') : "" ?>
+        <?= get_field('overlay_text') ? get_field('overlay_text') : '' ?>
 
     </div>
 
-      <?php if(get_field('bottom_text')): ?>
+      <?php if (get_field('bottom_text')): ?>
           <div class="videooverlay-buttons hidden-xs">
               <div class="container-fluid">
                   <div class="row">
@@ -184,7 +205,7 @@ $button_link = get_field('button_link', 'option');
                   </div>
               </div>
           </div>
-      <?php endif ?>
+      <?php endif; ?>
 
 
 

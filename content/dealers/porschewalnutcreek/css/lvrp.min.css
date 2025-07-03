@@ -1,1 +1,3 @@
-#lvrp-container #lvrp-results-wrapper .hit-content h2.result-title .title-top{display:none}
+#lvrp-container #lvrp-results-wrapper .hit-content h2.result-title .title-top {
+  display: none;
+}

@@ -13,10 +13,10 @@ $vessel = new \DealerInspire\Vessel\Vessel($FJ);
 
 get_header();
 
-if($vessel->get_vessel_template('front-page.php')) {
-    include $vessel->get_vessel_template('front-page.php');
+if ($vessel->get_vessel_template('front-page.php')) {
+  include $vessel->get_vessel_template('front-page.php');
 } else {
-    echo '<h1>Front page template for '. get_option('di_slug') . ' not found. Check your file paths and names.</h1>';
+  echo '<h1>Front page template for ' . get_option('di_slug') . ' not found. Check your file paths and names.</h1>';
 }
 
 get_footer();

@@ -1,7 +1,7 @@
 // *************************************************************************************************
 //	VARIABLES
 // *************************************************************************************************
-@import "variables";
+@import 'variables';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
@@ -11,18 +11,18 @@ $red: red;
 // *************************************************************************************************
 //	GENERAL
 // *************************************************************************************************
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss';
 .contentcontainer {
-	margin-top: unset!important;
-	margin-bottom: unset!important;
+  margin-top: unset !important;
+  margin-bottom: unset !important;
 }
 p {
   font-weight: 300;
 }
 
-a[href^=tel] {
+a[href^='tel'] {
   color: inherit;
 }
 
@@ -44,7 +44,7 @@ a[href^=tel] {
   @include justify-content(center);
   a.button {
     @include flex(1 1 48%);
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       @include flex-basis(100%);
       margin-right: 0;
     }
@@ -55,7 +55,7 @@ a[href^=tel] {
 //	HEADER
 // *************************************************************************************************
 //@import '../../../shared/styles/header/fj_header_v2';
-@import "../../../shared/styles/holiday-hours";
+@import '../../../shared/styles/holiday-hours';
 
 // *********************
 //	FOOTER
@@ -66,253 +66,251 @@ a[href^=tel] {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-footer';
 
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
 }
 //========================================
 // FOOTER ROW STYLES DESKTOP 06/20
 //========================================
 .footerRow {
-	z-index: 1;
+  z-index: 1;
 
-	.footerBottom {
-		background: #fff;
-		color: #333;
-		text-align: center;
-		padding: 40px 0 80px;
+  .footerBottom {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px 0 80px;
 
-        .social {
-            padding: 10px 0 30px;
-        }
+    .social {
+      padding: 10px 0 30px;
+    }
 
-		.infoWrapper {
-			&__menu {
-				ul {
-					margin: 0;
-					padding: 0;
+    .infoWrapper {
+      &__menu {
+        ul {
+          margin: 0;
+          padding: 0;
 
-					li {
-						display: inline-block;
+          li {
+            display: inline-block;
 
-						+ li:before {
-							content: '\|';
-						}
-
-						a {
-							color: $primary;
-							margin: 0 5px;
-						}
-					}
-				}
-			}
-
-			&__di {
-				a {
-					color: $primary;
-					text-decoration: underline;
-				}
-			}
-
-			div + div {
-				margin: 15px 0 0;
-			}
-		}
-
-        .email-button {
-            float: none;
-            margin: 20px 0 0 !important;
-            @include breakpoint(xs) {
-                font-size: 12px !important;
+            + li:before {
+              content: '\|';
             }
+
+            a {
+              color: $primary;
+              margin: 0 5px;
+            }
+          }
         }
-	}
+      }
 
-	// ********** Media Queries ********** //
+      &__di {
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
 
-	// Tablet +
-	@include breakpoint(sm) {
+      div + div {
+        margin: 15px 0 0;
+      }
+    }
 
-		.footerBottom {
-			padding: 80px 0;
-		}
-	}
+    .email-button {
+      float: none;
+      margin: 20px 0 0 !important;
+      @include breakpoint(xs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  // ********** Media Queries ********** //
+
+  // Tablet +
+  @include breakpoint(sm) {
+    .footerBottom {
+      padding: 80px 0;
+    }
+  }
 }
 
-footer #footerMobile .footerTop__Menu{
-	display:none!important;
+footer #footerMobile .footerTop__Menu {
+  display: none !important;
 }
 
 @media (max-width: 767px) {
-	.home #footer {
-		border-top: 1px solid #ccc;
-		position: relative;
-	}
+  .home #footer {
+    border-top: 1px solid #ccc;
+    position: relative;
+  }
 }
 
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
 }
 
 .footerRow {
-	z-index: 1;
-	background: #fff;
+  z-index: 1;
+  background: #fff;
 
-	.footerBottom {
-		background: #fff;
-		color: #333;
-		text-align: center;
-		padding: 0;
+  .footerBottom {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0;
 
-        .social {
-            padding: 10px 0 30px;
-        }
+    .social {
+      padding: 10px 0 30px;
+    }
 
-		.infoWrapper {
-			&__menu {
-				ul {
-					margin: 0;
-					padding: 0;
+    .infoWrapper {
+      &__menu {
+        ul {
+          margin: 0;
+          padding: 0;
 
-					li {
-						display: inline-block;
+          li {
+            display: inline-block;
 
-						+ li:before {
-							content: '\|';
-						}
-
-						a {
-							color: $primary;
-							margin: 0 5px;
-						}
-					}
-				}
-			}
-
-			&__di {
-				a {
-					color: $primary;
-					text-decoration: underline;
-				}
-			}
-
-			div + div {
-				margin: 15px 0 0;
-			}
-		}
-
-        .email-button {
-            float: none;
-            margin: 20px 0 0 !important;
-            @include breakpoint(xs) {
-                font-size: 12px !important;
+            + li:before {
+              content: '\|';
             }
+
+            a {
+              color: $primary;
+              margin: 0 5px;
+            }
+          }
         }
-	}
+      }
 
-	// ********** Media Queries ********** //
+      &__di {
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
 
-	// Tablet +
-	@include breakpoint(sm) {
+      div + div {
+        margin: 15px 0 0;
+      }
+    }
 
-		.footerBottom {
-			a.link__logo img {
-			    max-width: 315px;
-			    width: 100%;
-			}
-		}
-	}
+    .email-button {
+      float: none;
+      margin: 20px 0 0 !important;
+      @include breakpoint(xs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  // ********** Media Queries ********** //
+
+  // Tablet +
+  @include breakpoint(sm) {
+    .footerBottom {
+      a.link__logo img {
+        max-width: 315px;
+        width: 100%;
+      }
+    }
+  }
 }
 #footer {
-    background: #fff;
+  background: #fff;
 }
 
 // ************************************************************************************************
 //  VRP
 // ************************************************************************************************
 
-.inventory-owl{
-  #results-page{
-    .gridview{
-      .vehicle.grid-view{
-        .button-bar{
+.inventory-owl {
+  #results-page {
+    .gridview {
+      .vehicle.grid-view {
+        .button-bar {
           @include flexbox;
         }
-        .vehicle-menu-overlay .vehicle-menu{
+        .vehicle-menu-overlay .vehicle-menu {
           padding: 40px 10px;
         }
       }
@@ -349,34 +347,33 @@ footer #footerMobile .footerTop__Menu{
   //@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
   //@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
   @import '../../../shared/styles/dynamic-hours-bar-mobile';
-  
- #openhoursbar .open {
-	display: none;
+
+  #openhoursbar .open {
+    display: none;
   }
 }
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-  @import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay";
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay';
 
-  	.page-template-page-di-page-composer #di-page-composer .fullcontentrow .container-fluid .inner-wysiwyg {
-    	padding: 0 15px;
-  	}
-  	.page-builder {
-    	//padding-top: 32px;
-  	}
-
+  .page-template-page-di-page-composer #di-page-composer .fullcontentrow .container-fluid .inner-wysiwyg {
+    padding: 0 15px;
+  }
+  .page-builder {
+    //padding-top: 32px;
+  }
 }
 
-@media (max-width:370px) {
-	.break-fix {
-  		display:inline;
-	}
+@media (max-width: 370px) {
+  .break-fix {
+    display: inline;
+  }
 }
 
 /*************************************************************************************************
@@ -385,48 +382,47 @@ footer #footerMobile .footerTop__Menu{
 
 //DO NOT REMOVE
 //Dealer timer styles
-@import "_amg-sprite.scss";
-@import "support-requests";
+@import '_amg-sprite.scss';
+@import 'support-requests';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-support';
 @import '../../../shared/styles/shared-support';
-@import "../../../shared/styles/button-styles";
-@import "../../../shared/styles/vdp/cpo-brochures";
-@import "lightning";
+@import '../../../shared/styles/button-styles';
+@import '../../../shared/styles/vdp/cpo-brochures';
+@import 'lightning';
 @import '../../../shared/styles/header/header-v3.scss';
 
 #difo-default-coupon-wrap {
-  @media screen and (max-width: 767px){
-    li[class^="difo-contact-us"] {
-      display:none;
+  @media screen and (max-width: 767px) {
+    li[class^='difo-contact-us'] {
+      display: none;
     }
   }
-  @media screen and (min-width: 768px){
-    li[class^="difo-tel"] {
-      display:none;
+  @media screen and (min-width: 768px) {
+    li[class^='difo-tel'] {
+      display: none;
     }
   }
 }
 
-#ctabox-custom-ctas [href='#gravity-form-10']{
+#ctabox-custom-ctas [href='#gravity-form-10'] {
   display: none;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   div.details-page-row:nth-child(2) {
     display: block !important;
   }
 }
 
-  .difo-wrapper .difo-card .coupon-header .coupon-header-inner .coupon-pricing {
-  font-weight:bold;
+.difo-wrapper .difo-card .coupon-header .coupon-header-inner .coupon-pricing {
+  font-weight: bold;
   font-size: 23px;
 }
 
 .difo-wrapper .difo-card .coupon-content .coupon-description {
-    
-    font-size: 12px;
+  font-size: 12px;
 }
 
-.difo-wrapper .difo-card .coupon-content .coupon-disclaimer{
-  font-size:11px!important;
-} 
+.difo-wrapper .difo-card .coupon-content .coupon-disclaimer {
+  font-size: 11px !important;
+}

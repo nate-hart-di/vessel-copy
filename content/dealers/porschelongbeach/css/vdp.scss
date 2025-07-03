@@ -8,7 +8,7 @@
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 
 // *************************************************************************************************
 //	VEHICLE DETAILS PAGE
@@ -17,13 +17,13 @@
 //NEW VDP STYLING: DO NOT REMOVE
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/_payment-calculator.scss';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/_vehicle-details.scss';
-.page-vehicle-display-page{
+.page-vehicle-display-page {
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
 }
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/vdp';
 
 $secondary: #000000;
-#vehicleDetails.project-hotwheels{
+#vehicleDetails.project-hotwheels {
   #breadcrumbs-row #breadcrumbs {
     color: $secondary;
   }
@@ -33,47 +33,45 @@ $secondary: #000000;
 }
 
 @media (min-width: 768px) {
-    .vdp-shopping-tools .shopping-tool {
-        &.text-us-now-mobile {
-            display: none !important;
-        }
-    }
-}
-
-  #vehicleDetails.project-hotwheels {
-    margin-top: 0;
-    .vdp-top-banner.box-gallery div.box-gallery-wrap {
-      padding: 0 0 0 0;
+  .vdp-shopping-tools .shopping-tool {
+    &.text-us-now-mobile {
+      display: none !important;
     }
   }
+}
 
-
+#vehicleDetails.project-hotwheels {
+  margin-top: 0;
+  .vdp-top-banner.box-gallery div.box-gallery-wrap {
+    padding: 0 0 0 0;
+  }
+}
 
 // *************************************************************************************************
 //	SUPPORT REQUESTS
 // *************************************************************************************************
-#ctabox-pricing{
-  .roadster-btn{
+#ctabox-pricing {
+  .roadster-btn {
     margin-bottom: 20px;
   }
-  .ctabox-price.cta-button{
+  .ctabox-price.cta-button {
     font-size: 16px;
     line-height: 20px;
   }
-  .cta-button{
+  .cta-button {
     font-size: 16px;
-    line-height: 20px;    
+    line-height: 20px;
   }
 }
-#vehicleDetails #ctabox-pricing a[href="#gravity-form-77"] {
+#vehicleDetails #ctabox-pricing a[href='#gravity-form-77'] {
   display: none !important;
 }
 
 .vdp-shopping-tools div.shopping-tool div.shopping-icon {
-	width: 70px;
-	a svg{
-		width: 50px;
-	}
+  width: 70px;
+  a svg {
+    width: 50px;
+  }
 }
 
 // hide second included features CTA

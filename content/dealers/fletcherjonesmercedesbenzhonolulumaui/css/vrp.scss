@@ -1,12 +1,12 @@
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
 // *************************************************************************************************
-@import "variables";
+@import 'variables';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-listview';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-gridview';
@@ -15,34 +15,34 @@ $vdp-lease-finance: false !default;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-mobile';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/resultspage-common-elements';
 
-#results-page td.gridview .vehicle.grid-view  {
-	padding-bottom: 0;
-	display: flex !important;
-	@include flex-direction(column);
-	.vehicle-quick-stats {
-			@include flexbox();
-			@include flex-direction(column);
-			@include justify-content(flex-start);
-			@include flex-grow(1);
-	}
-	.button-bar {
-			position: relative;
-			height: auto;
-	}
-	.vehicle-price {
-			@include flexbox();
-			@include flex-direction(column);
-			.price-block.bottom-text {
-					@include flex-grow(1);
-			}
-	}
+#results-page td.gridview .vehicle.grid-view {
+  padding-bottom: 0;
+  display: flex !important;
+  @include flex-direction(column);
+  .vehicle-quick-stats {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex-grow(1);
+  }
+  .button-bar {
+    position: relative;
+    height: auto;
+  }
+  .vehicle-price {
+    @include flexbox();
+    @include flex-direction(column);
+    .price-block.bottom-text {
+      @include flex-grow(1);
+    }
+  }
 }
 
 //00621076
 div.online-shopper-cta-button--v2 {
-	background: green;
-	&:hover {
-		background: darken(green, 10%);
-	}
+  background: green;
+  &:hover {
+    background: darken(green, 10%);
+  }
 }
 //End 00621076

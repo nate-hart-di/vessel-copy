@@ -10,24 +10,24 @@ $vdp-lease-finance: false !default;
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../mixins";
-@import "../../buttons-basic";
+@import '../../mixins';
+@import '../../buttons-basic';
 @import '../../components/common-elements';
 @import '../../components/form/base';
 @import '../../components/social/links-iconfont';
 
-@media (min-width:1025px) {
-	.container-wide.contentcontainer {
-		padding-top: 140px;
-	}
+@media (min-width: 1025px) {
+  .container-wide.contentcontainer {
+    padding-top: 140px;
+  }
 }
 
-a[href^=tel]{
-	color:inherit;
+a[href^='tel'] {
+  color: inherit;
 }
 
 .hidden {
-    display:none;
+  display: none;
 }
 
 // *************************************************************************************************
@@ -46,7 +46,6 @@ a[href^=tel]{
 @import '../../components/navigation/offcanvasnav';
 
 @import 'fj-navigation';
-
 
 // *************************************************************************************************
 //	FOOTER
@@ -70,7 +69,6 @@ a[href^=tel]{
 @import 'fj-video-overlay';
 @import 'fj-search-overlay';
 
-
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
@@ -85,257 +83,262 @@ a[href^=tel]{
 @import '../../components/shortcodes/incentives-listview-2014';
 @import '../../components/reviews';
 
-@import "../fletcherjones/shared-pagebuilderstyles";
+@import '../fletcherjones/shared-pagebuilderstyles';
 
 // Fixing overlap of scroll button
 #di-page-composer .bgimagerow {
-  overflow-x:initial;
+  overflow-x: initial;
 }
 
 div#dealer-inspire input {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .specialCoupon {
-	@extend .card;
-	margin: 10px 1% 30px;
-	width: 48%;
-	display: inline-block;
-	background: #fff;
-	vertical-align:top;
-	.specialLeft {
-		border: none;
-		right: 0;
-	}
-	.specialRight {
+  @extend .card;
+  margin: 10px 1% 30px;
+  width: 48%;
+  display: inline-block;
+  background: #fff;
+  vertical-align: top;
+  .specialLeft {
+    border: none;
+    right: 0;
+  }
+  .specialRight {
     margin: 0 20% 0 5%;
-	}
-	.view-disclaimer-link {
-		cursor: pointer;
-	}
-	.disclaimer {
-		background: #fff;
-		background: rgba(255,255,255,.9);
-		height: 0%;
-		left: 0px;
-		overflow: hidden;
-		padding: 0px;
-		position: absolute;
-		top: 0px;
-		@include transition(all .5s ease);
-		width: 100%;
-		&.open {
-			height: 100%;
-			overflow-y: auto;
-			padding: 15px;
-		}
-		.fa-close {
-			cursor: pointer;
-			float: right;
-			font-size: 18px;
-			margin: 0 0 15px 15px;
-		}
-	}
-	.specialFooter {
-		background: #fff;
-		border-top: 1px solid #ccc;
-		a, a:visited, a:link, a:active {
-			&.button {
-      			background: none transparent;
-      			color: $primary;
-      			margin-bottom: 0;
-      			margin-right: 15px;
-      			font-weight: 500;
-      			padding: 0;
-      			font-size: 14px;
-      			&:hover {
-      				color: lighten($primary, 20%);
-      			}
-      			&:nth-child(2) {
-      				float: right;
-      				@extend .cta-button;
-      				color: #fff;
-      				margin: 0;
-      				padding: 6px 15px;
-      				@include border-radius(0);
-      				@include transition(all 0.25s ease);
-      			}
-      			@media (max-width:767px) {
-        			float: none !important;
-        			margin:0 auto 10px;
-      			}
-			}
-		}
-	}
+  }
+  .view-disclaimer-link {
+    cursor: pointer;
+  }
+  .disclaimer {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    height: 0%;
+    left: 0px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    @include transition(all 0.5s ease);
+    width: 100%;
+    &.open {
+      height: 100%;
+      overflow-y: auto;
+      padding: 15px;
+    }
+    .fa-close {
+      cursor: pointer;
+      float: right;
+      font-size: 18px;
+      margin: 0 0 15px 15px;
+    }
+  }
+  .specialFooter {
+    background: #fff;
+    border-top: 1px solid #ccc;
+    a,
+    a:visited,
+    a:link,
+    a:active {
+      &.button {
+        background: none transparent;
+        color: $primary;
+        margin-bottom: 0;
+        margin-right: 15px;
+        font-weight: 500;
+        padding: 0;
+        font-size: 14px;
+        &:hover {
+          color: lighten($primary, 20%);
+        }
+        &:nth-child(2) {
+          float: right;
+          @extend .cta-button;
+          color: #fff;
+          margin: 0;
+          padding: 6px 15px;
+          @include border-radius(0);
+          @include transition(all 0.25s ease);
+        }
+        @media (max-width: 767px) {
+          float: none !important;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
 }
 .printSection {
-	.view-disclaimer-link, .fa-close {
-		display: none;
-	}
+  .view-disclaimer-link,
+  .fa-close {
+    display: none;
+  }
 }
 
 #ctaRow {
-	background: #fff;
-	padding: 50px 0;
-	a.ctabox {
-		width: 100%;
-		display: block;
-		position: relative;
-		overflow: hidden;
-		background-color: #333;
-		img {
-			vertical-align: center;
-			@include transition(all 0.5s ease);
-		}
-		h2 {
-			color: #fff;
-			font-weight: 300;
-			font-size: 40px;
-			margin-top: 0;
-			position: absolute;
-			z-index: 888;
-			top: 25px;
-			left: 25px;
-		}
-		.ctabox-overlay {
-			opacity: 0;
-			background: rgba(0,0,0,0.75);
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			@include transition(opacity 0.25s ease-in);
-			.ctabox-linktext {
-				opacity: 0;
-				position: absolute;
-				bottom: 30px;
-				left: 50px;
-				color: #fff;
-				font-family: $heading-font;
-				font-size: 18px;
-				font-weight: 400;
-				@include transition(all 0.5s ease 0.25s);
-			}
-		}
-		&:hover {
-			img {
-				transform:scale(1.2);
-			}
-			.ctabox-overlay {
-				opacity: 1;
-				.ctabox-linktext {
-					opacity: 1;
-					left: 25px;
-				}
-			}
-		}
-	}
+  background: #fff;
+  padding: 50px 0;
+  a.ctabox {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+    img {
+      vertical-align: center;
+      @include transition(all 0.5s ease);
+    }
+    h2 {
+      color: #fff;
+      font-weight: 300;
+      font-size: 40px;
+      margin-top: 0;
+      position: absolute;
+      z-index: 888;
+      top: 25px;
+      left: 25px;
+    }
+    .ctabox-overlay {
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include transition(opacity 0.25s ease-in);
+      .ctabox-linktext {
+        opacity: 0;
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        color: #fff;
+        font-family: $heading-font;
+        font-size: 18px;
+        font-weight: 400;
+        @include transition(all 0.5s ease 0.25s);
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      .ctabox-overlay {
+        opacity: 1;
+        .ctabox-linktext {
+          opacity: 1;
+          left: 25px;
+        }
+      }
+    }
+  }
 }
 
 #directionsRow {
-	padding: 15px 0;
-	background: #aaa;
-	color: #fff;
-	font-family: $heading-font;
-	text-align: center;
-	font-weight: 100;
-	position: relative;
-	.getdirectionstext {
-		color: #333;
-		display: inline-block;
-		position: absolute;
-		top: -60px;
-		font-size: 22px;
-		font-weight: 400;
-		line-height: 50px;
-		width: 640px;
-		text-align: center;
-		left: 50%;
-		margin-left: -320px;
-	}
-	form.getdirections {
-		display: inline-block;
-		position: relative;
-		height: 40px;
-		input {
-			height: 40px;
-			line-height: 40px;
-			padding: 0px 10px;
-			background: #fff;
-			border: none;
-			@include border-radius(0px);
-			width: 440px;
-			margin-left: 0px;
-			font-family: $heading-font;
-			font-weight: 400;
-			color: #333;
-			font-size: 16px;
-		}
-		button {
-			height: 40px;
-			line-height: 32px;
-			margin: 0 0 0 5px;
-			padding: 0 15px;
-			font-size: 18px;
-			font-family: $heading-font;
-			vertical-align: top;
-		}
-	}
+  padding: 15px 0;
+  background: #aaa;
+  color: #fff;
+  font-family: $heading-font;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  .getdirectionstext {
+    color: #333;
+    display: inline-block;
+    position: absolute;
+    top: -60px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 50px;
+    width: 640px;
+    text-align: center;
+    left: 50%;
+    margin-left: -320px;
+  }
+  form.getdirections {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    input {
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 10px;
+      background: #fff;
+      border: none;
+      @include border-radius(0px);
+      width: 440px;
+      margin-left: 0px;
+      font-family: $heading-font;
+      font-weight: 400;
+      color: #333;
+      font-size: 16px;
+    }
+    button {
+      height: 40px;
+      line-height: 32px;
+      margin: 0 0 0 5px;
+      padding: 0 15px;
+      font-size: 18px;
+      font-family: $heading-font;
+      vertical-align: top;
+    }
+  }
 }
 
- // For Finance Form Styling
-.fullcontentrow	{
-	div#dealer-inspire {
-		padding: 0px;
-		background-color: white;
-		font-family: $heading-font;
-		font-size: 14px;
-		color: #333333;
-		line-height: 18px;
-		.column.page-left-copy {
-			display: none;
-		}
-		.column {
-			margin: 0;
-			width: 100%;
-			input {
-				width: 100%;
-			}
-		}
-		fieldset {
-			border: 1px solid #ccc;
-			margin-bottom: 20px;
-			background: #eee;
-			padding: 30px;
-		}
-		button {
-			padding: 5px 30px;
-			background: $cta;
-			font-family: $heading-font;
-			font-weight: 500;
-			color: #fff;
-			display: inline-block;
-			border: none;
-			line-height: 30px;
-			font-size: 14px;
-			text-shadow: none;
-			@include border-radius(0px);
-			@include box-shadow(none);
-			&:hover {
-				background: none lighten($cta, 10%);
-			}
-		}
-		.progress-indicator {
-			.step1.active, .step2.active {
-				background-color: #0071b9;
-				@include box-shadow(none);
-				color: #fff;
-				text-shadow: none;
-				border: none;
-			}
-		}
-	}
+// For Finance Form Styling
+.fullcontentrow {
+  div#dealer-inspire {
+    padding: 0px;
+    background-color: white;
+    font-family: $heading-font;
+    font-size: 14px;
+    color: #333333;
+    line-height: 18px;
+    .column.page-left-copy {
+      display: none;
+    }
+    .column {
+      margin: 0;
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      background: #eee;
+      padding: 30px;
+    }
+    button {
+      padding: 5px 30px;
+      background: $cta;
+      font-family: $heading-font;
+      font-weight: 500;
+      color: #fff;
+      display: inline-block;
+      border: none;
+      line-height: 30px;
+      font-size: 14px;
+      text-shadow: none;
+      @include border-radius(0px);
+      @include box-shadow(none);
+      &:hover {
+        background: none lighten($cta, 10%);
+      }
+    }
+    .progress-indicator {
+      .step1.active,
+      .step2.active {
+        background-color: #0071b9;
+        @include box-shadow(none);
+        color: #fff;
+        text-shadow: none;
+        border: none;
+      }
+    }
+  }
 }
 
 .videooverlay-contentwrap {
@@ -368,129 +371,129 @@ div#dealer-inspire input {
 }
 
 #ctabar {
-	position: absolute;
-	left: 30px;
-	bottom: 30px;
-	right: 30px;
-	background: rgba(0,0,0,0.6);
-	border: 1px solid rgba(255,255,255,0.15);
-	padding: 20px 0;
-	.ctacell {
-		text-align: center;
-		color: #fff;
-		border-left: 1px solid rgba(255,255,255,0.15);
-		h3 {
-			text-transform: uppercase;
-			font-size: 14px;
-			font-weight: bold;
-			margin: 0;
-		}
-		.rule {
-			border:0;
-			border-top: 1px solid #f0f0f0;
-			margin: 10px auto;
-			width: 50px;
-			opacity: 0.6;
-		}
-		p {
-			font-size: 14px;
-			font-family: 'Lato', Arial;
-			font-weight: 300;
-			margin: 0 auto 12px;
-			width: 50%;
-		}
-		.button {
-			background-color: darken($primary, 10%);
-			background-color: rgba($primary, 0.6);
-			color:#fff;
-			margin: 0;
-			&:hover {
-				background-color: $primary;
-				color: #fff;
-			}
-		}
-	}
-	.ctacell.first {
-		border: 0;
-	}
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px 0;
+  .ctacell {
+    text-align: center;
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    h3 {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .rule {
+      border: 0;
+      border-top: 1px solid #f0f0f0;
+      margin: 10px auto;
+      width: 50px;
+      opacity: 0.6;
+    }
+    p {
+      font-size: 14px;
+      font-family: 'Lato', Arial;
+      font-weight: 300;
+      margin: 0 auto 12px;
+      width: 50%;
+    }
+    .button {
+      background-color: darken($primary, 10%);
+      background-color: rgba($primary, 0.6);
+      color: #fff;
+      margin: 0;
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+  }
+  .ctacell.first {
+    border: 0;
+  }
 }
 
 // CONNECT WITH US PAGE
 .fb-recent-post {
-	padding: 10px 0;
-	border-bottom: 1px solid #e8e8e8;
-	.fbp-header {
-		margin-bottom: 5px;
-	}
-	.fbp-photo {
-		margin-right: 10px;
-		float: left;
-		margin-top: 3px;
-		@include border-radius(3px);
-		width: 50px;
-		overflow: hidden;
-	}
-	.fbp-dealer-name {
-		font-weight: bold;
-	}
-	.fbp-date {
-		display: block;
-		font-size: 12px;
-	}
-	.front-post-preview {
-		display: block;
-		margin-left: 60px;
-	}
-	.fbp-link {
-		display: block;
-		text-align: right;
-		font-size: 12px;
-	}
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+  .fbp-header {
+    margin-bottom: 5px;
+  }
+  .fbp-photo {
+    margin-right: 10px;
+    float: left;
+    margin-top: 3px;
+    @include border-radius(3px);
+    width: 50px;
+    overflow: hidden;
+  }
+  .fbp-dealer-name {
+    font-weight: bold;
+  }
+  .fbp-date {
+    display: block;
+    font-size: 12px;
+  }
+  .front-post-preview {
+    display: block;
+    margin-left: 60px;
+  }
+  .fbp-link {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1199px) {
-	#ctaRow a.ctabox h2 {
-		font-size: 32px;
-	}
+  #ctaRow a.ctabox h2 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 1024px) {
-	.specialCoupon {
-		width:98%;
-	}
+  .specialCoupon {
+    width: 98%;
+  }
 }
 
-@media (max-width:768px) {
-	#directionsRow {
-		background: #eee;
-		.locationtext {
-			color: #333;
-			font-size: 14px;
-			font-weight: 400;
-			display: block;
-		}
-		.getdirectionstext {
-			font-size: 14px;
-			left: 0;
-			line-height:normal;
-			margin: 10px;
-			position: relative;
-			top: 0;
-			width: auto;
-		}
-		form.getdirections {
-			display: inline-block;
-			position: relative;
-			height: 40px;
-			input {
-				width: 220px;
-				font-size: 14px;
-				font-weight: 400;
-				border: 1px solid #aaa;
-				margin: 0;
-			}
-		}
-	}
+@media (max-width: 768px) {
+  #directionsRow {
+    background: #eee;
+    .locationtext {
+      color: #333;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+    }
+    .getdirectionstext {
+      font-size: 14px;
+      left: 0;
+      line-height: normal;
+      margin: 10px;
+      position: relative;
+      top: 0;
+      width: auto;
+    }
+    form.getdirections {
+      display: inline-block;
+      position: relative;
+      height: 40px;
+      input {
+        width: 220px;
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid #aaa;
+        margin: 0;
+      }
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -499,10 +502,10 @@ div#dealer-inspire input {
 @import '../../components/lease-calculator/lease-calculator-styled';
 
 #lo_original_container {
-	.lo_head {
-		background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
-		background-size: cover;
-	}
+  .lo_head {
+    background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
+    background-size: cover;
+  }
 }
 
 // *************************************************************************************************
@@ -516,96 +519,97 @@ div#dealer-inspire input {
 @import '../../components/vehicle-results-page/filters-mobile';
 @import '../../components/vehicle-results-page/resultspage-common-elements';
 
-
 // ************************************************************************************************
 //    DEALER INSPIRE & THIRD PARTY PLUGINS
 // ************************************************************************************************
 @if $vdp-lease-finance == true {
-    .mainPriceContainer {
-    	text-align: center;
-    	.vdp-pricing-group {
-    		display: inline-block;
-    		position: relative;
-    		top: -10px;
-    		width: 25%;
-    	}
-    	.finance-container {
-    		width: 25%;
-    		display: inline-block;
-    	}
-    	.leasepayment {
-    		width: 25%;
-    		display: inline-block;
-    	}
-    	.finance-container {
-    		text-align: center;
-    		a{
-    			color: #000;
-    		}
-    		.monthly_payment {
-    			font-size: em(20);
-    			text-decoration: underline;
-    			//font-weight: bold;
-    			b {
-    				font-weight: normal;
-    			}
-    		}
-    		.finance_label {
-    			display: block;
-    			clear: both;
-    		}
-    	}
-    	.leasepayment {
-    		text-align: center;
-    		&:hover{
-    			cursor: pointer !important;
-    		}
-    		.term_container {
-    			display: block;
-    			clear: both;
-    		}
-    		.payment_amount,.per_month {
-    			font-size: em(20);
-    			text-decoration: underline;
-    		}
-    	}
-
-    	@media(min-width: 300px) and (max-width: 1024px){
-    		.vdp-pricing-group {
-    			width: 100%;
-    			margin-bottom: 10px;
-    			top: 0;
-    		}
-    		.finance-container {
-    			width: 100%;
-    			margin-bottom: 10px;
-    		}
-    		.leasepayment {
-    			width: 100%;
-    			margin-bottom: 10px;
-    		}
-    	}
-
-    	@media(min-width: 1025px) and (max-width: 1399px){
-    		.vdp-pricing-group {
-    			top: 0;
-    			font-size: 85%;
-    			width: 36%;
-    		}
-    		.finance-container {
-    			font-size: 85%;
-    		}
-    		.leasepayment {
-    			font-size: 85%;
-    		}
-    	}
+  .mainPriceContainer {
+    text-align: center;
+    .vdp-pricing-group {
+      display: inline-block;
+      position: relative;
+      top: -10px;
+      width: 25%;
+    }
+    .finance-container {
+      width: 25%;
+      display: inline-block;
+    }
+    .leasepayment {
+      width: 25%;
+      display: inline-block;
+    }
+    .finance-container {
+      text-align: center;
+      a {
+        color: #000;
+      }
+      .monthly_payment {
+        font-size: em(20);
+        text-decoration: underline;
+        //font-weight: bold;
+        b {
+          font-weight: normal;
+        }
+      }
+      .finance_label {
+        display: block;
+        clear: both;
+      }
+    }
+    .leasepayment {
+      text-align: center;
+      &:hover {
+        cursor: pointer !important;
+      }
+      .term_container {
+        display: block;
+        clear: both;
+      }
+      .payment_amount,
+      .per_month {
+        font-size: em(20);
+        text-decoration: underline;
+      }
     }
 
-    #results-page .vehicle .vehicle-price .price-leaseandfinance {
-    	.btn-customize-lease, .price-block {
-    		cursor: pointer;
-    	}
+    @media (min-width: 300px) and (max-width: 1024px) {
+      .vdp-pricing-group {
+        width: 100%;
+        margin-bottom: 10px;
+        top: 0;
+      }
+      .finance-container {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .leasepayment {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
+
+    @media (min-width: 1025px) and (max-width: 1399px) {
+      .vdp-pricing-group {
+        top: 0;
+        font-size: 85%;
+        width: 36%;
+      }
+      .finance-container {
+        font-size: 85%;
+      }
+      .leasepayment {
+        font-size: 85%;
+      }
+    }
+  }
+
+  #results-page .vehicle .vehicle-price .price-leaseandfinance {
+    .btn-customize-lease,
+    .price-block {
+      cursor: pointer;
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -613,116 +617,117 @@ div#dealer-inspire input {
 // *************************************************************************************************
 
 .fj-model-page {
-    p, li{
-        font-size: 16px;
+  p,
+  li {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+    &.overlay-title span {
+      &.normal {
+        font-size: 50px;
+      }
+      &.smaller {
+        font-size: 20px !important;
+        text-transform: uppercase;
+      }
     }
+  }
+  .overlay-buttons {
+    text-align: center;
+  }
+  .contentcontainer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .lightboxForm_wrapper {
+    background: none;
+    padding: 0px;
+  }
+  #di-page-composer > div.leftbox.bgimagerow.no-cover > div > div > div > div {
+    margin-left: 40px;
+  }
+  .model-content {
+    padding: 30px 15px;
+  }
+  .mlp-specials ul.special-offers li.special-offer {
+    box-shadow: none;
+    margin-bottom: 20px;
+    width: 100%;
     h2 {
-        font-size: 24px;
-        &.overlay-title span {
-            &.normal {
-                font-size: 50px;
-            }
-            &.smaller {
-                font-size: 20px !important;
-                text-transform: uppercase;
-            }
-        }
+      display: none;
     }
-    .overlay-buttons {
+    .rates {
+      border-top: 0px;
+    }
+    .offer-image-link {
+      margin: auto;
+      width: 35%;
+    }
+    .offer-content {
+      margin: auto;
+      width: 60%;
+    }
+    .offerbuttonbar {
+      border-top: 0px;
+    }
+    .offeritem span {
+      &.offerlabel {
+        font-size: 20px;
+      }
+      &.offerrate {
+        font-size: 30px;
+      }
+    }
+  }
+  .skmetro {
+    padding-left: 8%;
+  }
+  #footer {
+    clear: both;
+  }
+  .hero-section {
+    background-size: cover !important;
+    height: 70vh;
+    position: relative;
+    div[class*='col-'] {
+      position: initial;
+    }
+    .row {
+      .overlay-title {
+        left: 50%;
+        margin-left: -300px;
+        position: absolute;
+        top: 40%;
         text-align: center;
+        width: 600px;
+      }
     }
-    .contentcontainer {
-        margin-top: 0px;
-        margin-bottom:0px;
+    .inner-wysiwyg .overlay-buttons {
+      bottom: 5%;
+      left: 50%;
+      margin-left: -50%;
+      position: absolute;
+      width: 100%;
     }
-    .lightboxForm_wrapper {
-        background: none;
-        padding: 0px;
+  }
+  .inventory-owl {
+    margin: 0 5%;
+    #results-page td.gridview {
+      .vehicle-wrap {
+        float: none;
+        margin: 0 auto;
+        width: 90% !important;
+      }
+      .owl-item {
+        text-align: center;
+      }
     }
-    #di-page-composer > div.leftbox.bgimagerow.no-cover > div > div > div > div {
-        margin-left: 40px;
-    }
-    .model-content {
-        padding: 30px 15px;
-    }
-    .mlp-specials ul.special-offers li.special-offer {
-        box-shadow:none;
-        margin-bottom:20px;
-        width:100%;
-        h2 {
-            display:none;
-        }
-        .rates {
-            border-top:0px;
-        }
-        .offer-image-link {
-            margin:auto;
-            width:35%;
-        }
-        .offer-content {
-            margin:auto;
-            width:60%;
-        }
-        .offerbuttonbar {
-            border-top: 0px;
-        }
-        .offeritem span {
-            &.offerlabel {
-                font-size:20px;
-            }
-            &.offerrate {
-                font-size:30px;
-            }
-        }
-    }
-    .skmetro {
-        padding-left: 8%;
-    }
-    #footer {
-         clear:both;
-    }
-    .hero-section {
-        background-size: cover!important;
-        height:70vh;
-        position:relative;
-        div[class*="col-"] {
-            position:initial;
-        }
-        .row {
-            .overlay-title {
-                left:50%;
-                margin-left:-300px;
-                position:absolute;
-                top:40%;
-                text-align:center;
-                width:600px;
-            }
-        }
-        .inner-wysiwyg .overlay-buttons {
-            bottom:5%;
-            left:50%;
-            margin-left:-50%;
-            position:absolute;
-            width:100%;
-        }
-    }
-    .inventory-owl {
-        margin: 0 5%;
-        #results-page td.gridview {
-            .vehicle-wrap {
-                float:none;
-                margin:0 auto;
-                width:90% !important;
-            }
-            .owl-item {
-                text-align:center;
-            }
-        }
-    }
-    .owl-prev i,
-    .owl-next i{
-        font-size: .5em !important;
-    }
+  }
+  .owl-prev i,
+  .owl-next i {
+    font-size: 0.5em !important;
+  }
 }
 
 @import '../../components/algolia-search/default-algolia';
@@ -738,83 +743,87 @@ div#dealer-inspire input {
 @import '../../components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
 
 @import 'fj-vdp';
-@import "fj-fixed-ops";
+@import 'fj-fixed-ops';
 
 /********************************************************************************
     FJ DRIVE STYLES
 ********************************************************************************/
 
 @if $fj-drive == true {
-    .fj-drive {
-        display:none;
-        text-align:center;
-        background:#222 url('/wp-content/themes/DealerInspireCommonTheme/partials/dealer-groups/fletcherjones/FJDrive_banner_bg.jpg') no-repeat center center;
-        background-size:cover;
+  .fj-drive {
+    display: none;
+    text-align: center;
+    background: #222
+      url('/wp-content/themes/DealerInspireCommonTheme/partials/dealer-groups/fletcherjones/FJDrive_banner_bg.jpg')
+      no-repeat
+      center
+      center;
+    background-size: cover;
+    img {
+      margin: 0 auto;
+    }
+    > img {
+      height: 45px;
+    }
+    &.vdp {
+      display: block;
+      padding: 10px 0;
+      margin: 10px 0px 0px;
+    }
+    a {
+      color: #fff;
+      .mobile {
+        display: none;
+      }
+      &:first-child {
         img {
-            margin: 0 auto;
+          margin-right: 7px;
         }
-        > img {
-            height:45px;
-        }
-        &.vdp {
-            display:block;
-            padding:10px 0;
-            margin:10px 0px 0px;
-        }
-        a {
-            color:#fff;
-            .mobile {
-                display:none;
-            }
-            &:first-child {
-                img {
-                    margin-right:7px;
-                }
-            }
-        }
-        .buttons {
-            margin-bottom:7px;
-        }
-        &.homepage {
-            clear:both;
-            padding:15px 10px 10px;
-        }
+      }
     }
+    .buttons {
+      margin-bottom: 7px;
+    }
+    &.homepage {
+      clear: both;
+      padding: 15px 10px 10px;
+    }
+  }
 
-    @media (max-width: 1024px) {
-        .fj-drive {
-            a {
-                .desktop {
-                    display:none;
-                }
-                .mobile {
-                    display:inline;
-                }
-            }
+  @media (max-width: 1024px) {
+    .fj-drive {
+      a {
+        .desktop {
+          display: none;
         }
+        .mobile {
+          display: inline;
+        }
+      }
     }
+  }
 
-    @media (max-width:768px) {
-        .fj-drive {
-            > img {
-                height:55px;
-            }
-            &.vdp {
-                padding: 10px 10px 15px;
-                > a {
-                    display:none;
-                }
-            }
-            &.homepage {
-                display:block;
-            }
-            a:first-child {
-                img {
-                    margin-right:auto;
-                }
-            }
+  @media (max-width: 768px) {
+    .fj-drive {
+      > img {
+        height: 55px;
+      }
+      &.vdp {
+        padding: 10px 10px 15px;
+        > a {
+          display: none;
         }
+      }
+      &.homepage {
+        display: block;
+      }
+      a:first-child {
+        img {
+          margin-right: auto;
+        }
+      }
     }
+  }
 }
 
 /*************************************************************************************************
@@ -822,30 +831,29 @@ div#dealer-inspire input {
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-	@import 'fj-touch-header';	
-	
-	#mobile-menu {
-		background: #fff;
-	}
-}
+  @import 'fj-touch-header';
 
+  #mobile-menu {
+    background: #fff;
+  }
+}
 
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../components/homepage/mobile/openhours-bar';
-	@import '../../components/mobile/mobile-tabs';
-	
-	.menu-top {
-		.logo {
-			padding: 15px;
-			img {
-				max-height: 25px;
-			}
-		}
-	}
+@media (max-width: 767px) {
+  @import '../../components/homepage/mobile/openhours-bar';
+  @import '../../components/mobile/mobile-tabs';
+
+  .menu-top {
+    .logo {
+      padding: 15px;
+      img {
+        max-height: 25px;
+      }
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -854,22 +862,34 @@ div#dealer-inspire input {
 
 //***START #44422
 .overlay-title {
-    font-size: 50px;
-    font-weight: 300;
-    text-transform: uppercase;
-    &.no-shadow {
-        text-shadow: none!important;
-        -moz-text-shadow:none !important;
-        -webkit-text-shadow:none !important;
-    }
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+  &.no-shadow {
+    text-shadow: none !important;
+    -moz-text-shadow: none !important;
+    -webkit-text-shadow: none !important;
+  }
 }
 .page-builder > div:first-child,
 .modelpagebuilder > div:first-child + div {
-    .overlay-title {
-        text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
-        -moz-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
-        -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
-    }
+  .overlay-title {
+    text-shadow:
+      0px 0px 10px rgba(0, 0, 0, 0.8),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.8);
+    -moz-text-shadow:
+      0px 0px 10px rgba(0, 0, 0, 0.8),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.8);
+    -webkit-text-shadow:
+      0px 0px 10px rgba(0, 0, 0, 0.8),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(0, 0, 0, 0.8);
+  }
 }
 
 /********************************************************************************
@@ -877,149 +897,149 @@ div#dealer-inspire input {
 ********************************************************************************/
 
 .red-button.button {
-    background: red !important;
-    color:#fff !important;
-    margin-top:15px;
-    &:hover {
-        background:darken(red, 10%) !important;
-        color:#fff;
-    }
+  background: red !important;
+  color: #fff !important;
+  margin-top: 15px;
+  &:hover {
+    background: darken(red, 10%) !important;
+    color: #fff;
+  }
 }
 
 // Holiday Hours styles
 ul.holiday-hours {
-    padding:0px 5px;
-    li {
-        clear:both;
-        display:block;
-        text-align:right;
-        span {
-            float:left;
-        }
-        &.hours-title {
-            font-size:16px;
-            font-weight:bold;
-            text-align:left;
-        }
+  padding: 0px 5px;
+  li {
+    clear: both;
+    display: block;
+    text-align: right;
+    span {
+      float: left;
     }
+    &.hours-title {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
 }
 
 // Holiday slider style
 #featuredSpecials {
-    img {
-	    width: 100%;
+  img {
+    width: 100%;
+  }
+  h2.feature-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px auto !important;
+  }
+  ul.special-offers {
+    margin: 30px auto;
+    opacity: 0;
+    padding: 0px;
+    @include transition(opacity 0.5s ease);
+    width: 100%;
+    &.shown {
+      opacity: 1;
     }
-    h2.feature-title {
-        text-align:center;
-        font-size:3rem;
-        font-weight:bold;
-        margin:10px auto !important;
-    }
-    ul.special-offers {
-        margin:30px auto;
-        opacity:0;
-        padding:0px;
-        @include transition(opacity .5s ease);
-        width:100%;
-        &.shown {
-            opacity:1;
-        }
-        li.special-offer {
-            margin:10px auto;
-            width:90%;
-            a {
-                color:#222;
-                text-decoration:none;
-            }
-            h2 {
-                margin-top:0px;
-                font-size:20px;
-            }
-            .offer-content {
-                padding-bottom:0px;
-            }
-            .rates {
-                border-bottom:none;
-                text-align:center;
-                > div {
-                    > span {
-                        display:block;
-                    }
-                }
-            }
-            .offerlabel {
-                color:$primary;
-                font-size:34px;
-            }
-            .offerbuttonbar {
-                .button {
-                    color:#fff;
-                }
-            }
-        }
-    }
-    .divider.striped-icon {
-        margin-top:-100px;
-    }
-    .owl-buttons {
-        .striped-icon{
-            &:after {
-                background:$primary;
-            }
-            &:hover {
-                background:#fff;
-            }
-        }
+    li.special-offer {
+      margin: 10px auto;
+      width: 90%;
+      a {
+        color: #222;
+        text-decoration: none;
+      }
+      h2 {
+        margin-top: 0px;
+        font-size: 20px;
+      }
+      .offer-content {
+        padding-bottom: 0px;
+      }
+      .rates {
+        border-bottom: none;
+        text-align: center;
         > div {
-            position:absolute;
-            top:40%;
-            span {
-                display:inline-block;
-                color:#fff;
-            }
+          > span {
+            display: block;
+          }
         }
-        .owl-prev {
-            left:-50px;
-            .fa {
-                margin-left:-3px;
-            }
+      }
+      .offerlabel {
+        color: $primary;
+        font-size: 34px;
+      }
+      .offerbuttonbar {
+        .button {
+          color: #fff;
         }
-        .owl-next {
-            right:-50px;
-            .fa {
-                margin-right:-3px;
-            }
-        }
+      }
     }
+  }
+  .divider.striped-icon {
+    margin-top: -100px;
+  }
+  .owl-buttons {
+    .striped-icon {
+      &:after {
+        background: $primary;
+      }
+      &:hover {
+        background: #fff;
+      }
+    }
+    > div {
+      position: absolute;
+      top: 40%;
+      span {
+        display: inline-block;
+        color: #fff;
+      }
+    }
+    .owl-prev {
+      left: -50px;
+      .fa {
+        margin-left: -3px;
+      }
+    }
+    .owl-next {
+      right: -50px;
+      .fa {
+        margin-right: -3px;
+      }
+    }
+  }
 }
 
-@media (max-width:1024px) {
-    #featuredSpecials {
-        h2.feature-title {
-            font-size:2.6rem;
-            margin: -20px auto 70px !important;
-        }
-        ul.special-offers {
-            margin-top:50px;
-            width:100%;
-            li.special-offer {
-                @include box-shadow(none);
-            }
-        }
-        .owl-buttons {
-            > div {
-                font-size:18px;
-                padding: 6px 13px;
-                top:-60px;
-            }
-            .owl-prev {
-                padding-left:8px;
-                left:10px;
-            }
-            .owl-next {
-                padding-right:8px;
-                right:10px;
-            }
-        }
+@media (max-width: 1024px) {
+  #featuredSpecials {
+    h2.feature-title {
+      font-size: 2.6rem;
+      margin: -20px auto 70px !important;
     }
+    ul.special-offers {
+      margin-top: 50px;
+      width: 100%;
+      li.special-offer {
+        @include box-shadow(none);
+      }
+    }
+    .owl-buttons {
+      > div {
+        font-size: 18px;
+        padding: 6px 13px;
+        top: -60px;
+      }
+      .owl-prev {
+        padding-left: 8px;
+        left: 10px;
+      }
+      .owl-next {
+        padding-right: 8px;
+        right: 10px;
+      }
+    }
+  }
 }

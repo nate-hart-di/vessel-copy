@@ -1,18 +1,15 @@
 //Related Posts Styles
-.crp_related
-{
+.crp_related {
   clear: both;
 
   padding-top: 20px;
 }
 
-.crp_related ul
-{
+.crp_related ul {
   //text-align: center;
 }
 
-.crp_related li
-{
+.crp_related li {
   display: inline-block;
 
   width: 100%;
@@ -23,8 +20,7 @@
   vertical-align: top;
 }
 
-.crp_related h3
-{
+.crp_related h3 {
   font-size: 20px;
 
   position: relative;
@@ -38,16 +34,14 @@
   color: #ddd;
 }
 
-.crp_related h3 span
-{
+.crp_related h3 span {
   position: relative;
 
   display: inline-block;
 }
 
 .crp_related h3 span:before,
-.crp_related h3 span:after
-{
+.crp_related h3 span:after {
   position: absolute;
   top: 50%;
 
@@ -61,37 +55,31 @@
   background: #ddd;
 }
 
-.crp_related h3 span:before
-{
+.crp_related h3 span:before {
   right: 100%;
 
   margin-right: 15px;
 }
 
-.crp_related h3 span:after
-{
+.crp_related h3 span:after {
   left: 100%;
 
   margin-left: 15px;
 }
 
-.crp_related li a
-{
+.crp_related li a {
   color: #333;
 }
-.crp_related li a:hover
-{
+.crp_related li a:hover {
   color: #0059a8;
 }
 
 .crp_related li img,
-.crp_related .crp_title
-{
+.crp_related .crp_title {
   display: block;
 }
 
-.crp_related li img
-{
+.crp_related li img {
   margin: 0 auto;
 }
 

@@ -7,7 +7,7 @@
   z-index: 99;
   background: white;
   border: 1px solid black;
-  transition: right .35s ease;
+  transition: right 0.35s ease;
   z-index: 99999;
   @media (max-width: 767px) {
     width: 270px;
@@ -17,7 +17,7 @@
     right: 0;
     .ask-question-btn {
       right: 390px;
-      @media(max-width: 767px) {
+      @media (max-width: 767px) {
         right: 210px;
       }
     }
@@ -29,7 +29,9 @@
 
     text-transform: uppercase;
     color: white;
-    transition: right .35s ease, background .35s ease;
+    transition:
+      right 0.35s ease,
+      background 0.35s ease;
     position: fixed;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);

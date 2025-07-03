@@ -2,15 +2,15 @@
 //	VARIABLES
 // *************************************************************************************************
 
-$primary: #0059a8;															// site main color
-$primaryhover: darken($primary,10%);
+$primary: #0059a8; // site main color
+$primaryhover: darken($primary, 10%);
 
-$secondary: #222;																// site accent color
-$secondaryhover: darken($secondary,10%);
+$secondary: #222; // site accent color
+$secondaryhover: darken($secondary, 10%);
 
 $cta: #ed8b00;
-$ctahover: darken($cta,10%);
-$cta-font: 14px/30px; 
+$ctahover: darken($cta, 10%);
+$cta-font: 14px/30px;
 
 // *************************************************************************************************
 //	TEXT STYLING
@@ -63,7 +63,7 @@ $button-radius: 0px;
 
 // BUTTON TEXT COLORS
 
-$cta-color: #fff;												
+$cta-color: #fff;
 $primary-color: #fff;
 $secondary-color: #fff;
 
@@ -115,9 +115,8 @@ $secondary-color: #fff;
 // $darkbutton-bg: #555;
 // $darkbutton-color: #fff;
 
-
 // *************************************************************************************************
-//	HEADER 
+//	HEADER
 // *************************************************************************************************
 
 $tablet-header-background: #fff;
@@ -132,7 +131,6 @@ $phoneicon-color: #434343;
 $directionsicon-color: #434343;
 $directionstext-color: #fff;
 $header-vertical-width: 200px;
-
 
 // *************************************************************************************************
 //	NAVIGATION
@@ -207,8 +205,6 @@ $offcanvas-submenuitem-border-bottom: 1px solid #fff;
 $offcanvas-submenuitem-hover-background: #fff;
 // $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
 
-
-
 // *************************************************************************************************
 //	FOOTER
 // *************************************************************************************************
@@ -245,7 +241,6 @@ $prefooter-listtitle-color: $prefooter-color;
 $prefooter-listtitle-underline: 1px solid $prefooter-color;
 
 $prefooter-listitem-color: $prefooter-color;
-
 
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -290,7 +285,7 @@ $prefooter-listitem-color: $prefooter-color;
 // $vehicle-listing-borderradius: 3px;
 // $vehicle-listing-boxshadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 // $vehicle-listing-fontfamily: 'Open Sans', sans-serif;
-	
+
 // $vehicle-listing-special-banner-background: $primary;
 
 // GRID VIEW
@@ -318,7 +313,6 @@ $prefooter-listitem-color: $prefooter-color;
 // $vehicle-grid-overlay-toggle-hover-background: $primary;
 // $vehicle-grid-overlay-toggle-hover-color: #fff;
 
-
 // *************************************************************************************************
 //	VEHICLE DETAILS PAGE
 // *************************************************************************************************
@@ -339,7 +333,6 @@ $vdp-urgency-icon-color: #aaa;
 $vdp-basicinfo-wrapper-bg: #eee;
 $vdp-basicinfo-wrapper-padding: 30px;
 
-
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
@@ -350,7 +343,6 @@ $staffbutton-bg: #333;
 $staffbutton-color: #fff;
 $staffbox-bg: #f9f9f9;
 $staffbox-border: 1px solid #ccc;
-
 
 // *************************************************************************************************
 //	PLUGINS
@@ -374,11 +366,9 @@ $algolia-results-categorytitle-border: 1px solid #ccc;
 $algolia-results-categorytitle-fontfamily: $maintextfont;
 $algolia-results-categorytitle-fontsize: 16px;
 
-
 // LEASE CALCULATOR
 
 $lease_offer_calc_button_color: $cta;
-
 
 // *************************************************************************************************
 //	MISC

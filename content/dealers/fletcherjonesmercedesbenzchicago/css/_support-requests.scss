@@ -1,9 +1,8 @@
-
 // Styles for video button on VDP
 .shopping-box .more-action ul ul li.icons-box.st-vid {
   background-color: #0059a8;
   a {
-    background-position:center -80px;
+    background-position: center -80px;
   }
   &:hover {
     background-color: #eee;
@@ -12,11 +11,11 @@
     }
   }
 }
-#videobanner #videooverlay .videooverlay-content .service-button .outline-button{
+#videobanner #videooverlay .videooverlay-content .service-button .outline-button {
   background-color: #ed8b00;
 }
-#videobanner #videooverlay .videooverlay-content .service-button .outline-button:hover{
-      background-color: transparent;
+#videobanner #videooverlay .videooverlay-content .service-button .outline-button:hover {
+  background-color: transparent;
 }
 
 img.kbb-logo {
@@ -35,9 +34,9 @@ img.kbb-logo {
     text-align: center;
     padding: 20px 10px;
     position: relative;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
     h2 {
       font-weight: 700;
     }
@@ -55,7 +54,7 @@ img.kbb-logo {
         left: 0;
         padding: 10px;
         opacity: 0;
-        @include transition(all .5s ease);
+        @include transition(all 0.5s ease);
         h3 {
           margin-bottom: 0px;
         }
@@ -73,64 +72,65 @@ img.kbb-logo {
 }
 
 #locationsRow .location-row {
-    height: 100px;
+  height: 100px;
 }
 
-@media (min-width: 768px)and (max-width: 1023px){
-#videobanner #videooverlay .videooverlay-content h2 {
+@media (min-width: 768px) and (max-width: 1023px) {
+  #videobanner #videooverlay .videooverlay-content h2 {
     font-size: 41px;
-}
+  }
 }
 
 .header-dropdown .header-dropdown-container {
   .menu-image-navigation {
-      float: left;
-      width: 70%;
-      text-align: left;
-      margin-top: 0px;
-      position: absolute;
-      bottom: 10px;
-      right: 0;
-      text-align: center;
+    float: left;
+    width: 70%;
+    text-align: left;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    text-align: center;
   }
   .menu-image-sidebar {
-      padding: 15px 0 0 0;
-      float: right;
-      width: 70%;
-      min-height: 300px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      a {
-        text-align: center !important;
-      }
-      img {
-        max-width: 90%;
+    padding: 15px 0 0 0;
+    float: right;
+    width: 70%;
+    min-height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    a {
+      text-align: center !important;
+    }
+    img {
+      max-width: 90%;
     }
   }
 }
-.navbar .navbar-inner ul.nav li a, .navbar .navbar-inner ul.nav li a.dropdown-menu {
+.navbar .navbar-inner ul.nav li a,
+.navbar .navbar-inner ul.nav li a.dropdown-menu {
   display: inline-block;
 }
 
 //78528 - MOving CTAs from nav menu to front page and adding mobile padding.
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .videooverlay-content .custom-button img.loading {
     padding-bottom: 5px;
   }
 }
 
-@media (min-width: 767px){
+@media (min-width: 767px) {
   .custom-cta-buttons {
     margin-right: 10px;
   }
 }
 
-#videobanner{
+#videobanner {
   position: relative;
 }
 
-.popup-btn-memorial{
+.popup-btn-memorial {
   position: absolute;
   top: 153px;
   left: 0;
@@ -140,52 +140,50 @@ img.kbb-logo {
   border: none;
 }
 
-@media(max-width: 1024px){
-  .popup-btn-memorial{
+@media (max-width: 1024px) {
+  .popup-btn-memorial {
     top: 0px;
   }
 }
 
 //82226 Moving MB logo into header, moving phone numbers
 #header {
-  .mb-homepage-logo{
-      width: 250px;
+  .mb-homepage-logo {
+    width: 250px;
   }
   .dealer-phone {
-      float: right;
+    float: right;
   }
   .dealer-hours-group {
-      padding-top: 21px;
+    padding-top: 21px;
   }
 }
-@media(min-width: 1260px){
+@media (min-width: 1260px) {
   .col-sm-4.right-edge {
-      padding-left: 5%;
+    padding-left: 5%;
   }
 }
 #sliderRow {
-    background: #f5f5f5;
-    overflow: visible;
-    position: relative;
-    margin-top: -150px !important;
+  background: #f5f5f5;
+  overflow: visible;
+  position: relative;
+  margin-top: -150px !important;
 }
 #videobanner #videorow {
-    min-height: 0px;
-    top: -100px;
-    overflow: hidden;
+  min-height: 0px;
+  top: -100px;
+  overflow: hidden;
 }
-
 
 //86749 - Custom border around Shopping Tools
 
 .shopping-tool:first-child {
-    border-left: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
 }
 
 .shopping-tool {
-    border-right: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
 }
-
 
 @media (min-width: 768px) {
   #videoOverlay .videooverlay-content .cta-buttons .button {
@@ -193,102 +191,96 @@ img.kbb-logo {
   }
 }
 
-
 //Override font size for Payment Calculator button
 .lo_container .lo_lock_button {
   font-size: 1.2em !important;
 }
-.showme{
-display: none;
-
+.showme {
+  display: none;
 }
 
 .showme a {
-color: black;
-text-decoration: none;
-padding-left: 100px;
-display: block;
-position: relative;
-top: 30px;
+  color: black;
+  text-decoration: none;
+  padding-left: 100px;
+  display: block;
+  position: relative;
+  top: 30px;
 }
 .showhim:hover .showme {
-    display: block;
-    position: absolute;
-    font-size: 23px;
-    margin-top: -20px;
-    margin-left: -14px;
-    z-index: 997;
-    padding-top: 70px;
-    padding-left: -50px;
-    line-height: 30px;
-    width: 100%;
-    min-height: 400px;
-   background-image: linear-gradient(transparent 100px, white 80px);
-
-
+  display: block;
+  position: absolute;
+  font-size: 23px;
+  margin-top: -20px;
+  margin-left: -14px;
+  z-index: 997;
+  padding-top: 70px;
+  padding-left: -50px;
+  line-height: 30px;
+  width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(transparent 100px, white 80px);
 }
 //REF #38277 Line up buttons
 #results-page .vehicle .vehicle-price .price-leaseandfinance .leaseoffer {
-  padding: 13px 10px 14px!important;
-  }
+  padding: 13px 10px 14px !important;
+}
 //END #38277
-
 
 //**START 00037978**//
 
-.showme a{
-   width: 38%;
-   height: 150px;
-   margin-left: 7%;
-   padding-left: 0;
-   float: left;
-  img{
+.showme a {
+  width: 38%;
+  height: 150px;
+  margin-left: 7%;
+  padding-left: 0;
+  float: left;
+  img {
     left: 0px !important;
     width: 100% !important;
     max-width: 100% !important;
     opacity: 1 !important;
   }
 }
-.showhim:hover .showme{
+.showhim:hover .showme {
   min-height: 250px;
 }
 //**END 00037978**//
 
 // Styled lease button
 #details-page-ctabox {
-    .maincta-row,
-    #ctabox-pricing-bottom {
-        padding-bottom: 0;
+  .maincta-row,
+  #ctabox-pricing-bottom {
+    padding-bottom: 0;
+  }
+  .lease-box {
+    margin-bottom: 10px;
+    .shopping-icon {
+      display: none;
     }
-    .lease-box {
-        margin-bottom: 10px;
-        .shopping-icon {
-            display:none;
-        }
-        .shopping-label .button {
-            margin: 0;
-            color: #fff;
-            background: #0059a8;
-            border: none;
-            width: 100% !important;
-            &:hover {
-                background: #003e75;
-            }
-        }
+    .shopping-label .button {
+      margin: 0;
+      color: #fff;
+      background: #0059a8;
+      border: none;
+      width: 100% !important;
+      &:hover {
+        background: #003e75;
+      }
     }
+  }
 }
-
 
 //52250 - Overriding bold styles in Prem Options on VDP
 #vehicleDetails {
-    .premium-options-list {
-        h3 {
-            font-weight: 300 !important;
-        }
-        p {
-            font-weight: 500 !important;
-        }
+  .premium-options-list {
+    h3 {
+      font-weight: 300 !important;
     }
+    p {
+      font-weight: 500 !important;
+    }
+  }
 }
 // #60105 Custom VRP CTA
 #results-page .vehicle {
@@ -314,25 +306,24 @@ top: 30px;
 
 //62845
 .page-vehicle-results-page {
-    a.button.inquire {
-        width: 100% !important;
-    }
-    .hide-the-main-cta a.fancy.button-form.button.cta-button {
-        display: none;
-    }
+  a.button.inquire {
+    width: 100% !important;
+  }
+  .hide-the-main-cta a.fancy.button-form.button.cta-button {
+    display: none;
+  }
 }
 .page-vehicle-display-page {
-    .hide-the-main-cta .maincta-row.ctabox-row {
-        display: none;
-    }
-    div#inquire-button a {
-        width: 100% !important;
-        margin-top: -10px;
-        display: none;
-    }
+  .hide-the-main-cta .maincta-row.ctabox-row {
+    display: none;
+  }
+  div#inquire-button a {
+    width: 100% !important;
+    margin-top: -10px;
+    display: none;
+  }
 }
 //end 62845
-
 
 // 00066052 - Customizing service menu
 .service-menu-right {
@@ -355,16 +346,16 @@ top: 30px;
 //end 00066052
 
 @media (max-width: 767px) {
-    #videoOverlay {
-        margin-top: 30px;
-        margin-bottom: 120px;
-        .videooverlay-content .cta-buttons {
-            margin-top: 20px;
-            h1 {
-                font-size: 22px;
-            }
-        }
+  #videoOverlay {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    .videooverlay-content .cta-buttons {
+      margin-top: 20px;
+      h1 {
+        font-size: 22px;
+      }
     }
+  }
 }
 
 // Hiding custom ctas while jquery is running #00060105
@@ -406,7 +397,8 @@ top: 30px;
   }
 }
 
-.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev, .difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev,
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
   width: 65px !important;
 }
 
@@ -415,50 +407,45 @@ top: 30px;
   animation: shake 3s infinite;
 }
 //whoops
-#header-ask-a-question
-{
-    .header-btn
-    {
-        font-size: 11.5px;
-        line-height: 2;
+#header-ask-a-question {
+  .header-btn {
+    font-size: 11.5px;
+    line-height: 2;
 
-        position: fixed;
-        top: 50%;
-        right: -60px;
+    position: fixed;
+    top: 50%;
+    right: -60px;
 
-        float: right;
+    float: right;
 
-        width: 140px !important;
-        height: 40px;
-        padding-top: 8px;
+    width: 140px !important;
+    height: 40px;
+    padding-top: 8px;
 
-        transform: rotate(270deg);
+    transform: rotate(270deg);
 
-        color: white;
-        background: darkorange;
-        @media screen and (max-width:1330px)
-        {
-            font-size: 10px;
+    color: white;
+    background: darkorange;
+    @media screen and (max-width: 1330px) {
+      font-size: 10px;
 
-            width: 150px !important;
-            margin-left: 20%;
-        }
-        @media screen and (max-width:900px)
-        {
-            display: none;
-        }
+      width: 150px !important;
+      margin-left: 20%;
     }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
 }
 
 .vdp-print-view .logo {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
 #results-page .vehicle .button-bar .primary-cta .lease-for-less {
   background: orange;
 }
-
 
 .mb-homepage-logo * {
   display: inline-block;
@@ -472,13 +459,14 @@ top: 30px;
 //  VEHICLE RESULTS PAGE
 // *************************************************************************************************
 #results-page .vehicle .vehicle-badges .button-bar-item.icon.play-button {
-    max-width:100%;
-    width:100%;
+  max-width: 100%;
+  width: 100%;
 }
-#results-page{
-  .vehicle{
-    .vehicle-price, .button-bar{
-      .button.orange-button{
+#results-page {
+  .vehicle {
+    .vehicle-price,
+    .button-bar {
+      .button.orange-button {
         background: $orange;
         &:hover {
           background: darken($orange, 5%);
@@ -496,19 +484,19 @@ top: 30px;
 #details-page-ctabox {
   .maincta-row,
   #ctabox-pricing-bottom {
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
-  .shopping-tool{
+  .shopping-tool {
     .shopping-icon {
-      display:none;
+      display: none;
     }
-    &.orange-button{
-      .shopping-label a{
+    &.orange-button {
+      .shopping-label a {
         background: $orange;
         color: #fff;
         width: 100% !important;
-        &:hover{
-          background: darken($orange,5%);
+        &:hover {
+          background: darken($orange, 5%);
         }
       }
     }
@@ -533,7 +521,6 @@ top: 30px;
   */
 }
 
-
 //52250 - Overriding bold styles in Prem Options on VDP
 #vehicleDetails {
   .premium-options-list {
@@ -552,8 +539,8 @@ top: 30px;
   padding: 10px;
   clear: both;
   a {
-      color: #fff !important;
-      text-decoration: none;
+    color: #fff !important;
+    text-decoration: none;
   }
 }
 #vehicleDetails .unlock-offer {
@@ -563,13 +550,13 @@ top: 30px;
 }
 
 .menu-top .mobile-header-top .logo #vessel-header-img {
-    max-height: 60px !important;
-    margin-top: -5%;
+  max-height: 60px !important;
+  margin-top: -5%;
 }
-#main-navbar ul.nav>li>a{
-  font-size: .8vw !important;
+#main-navbar ul.nav > li > a {
+  font-size: 0.8vw !important;
 }
-#header.menu-top .header-top .logo #vessel-header-img{
+#header.menu-top .header-top .logo #vessel-header-img {
   max-height: 70px !important;
 }
 
@@ -581,9 +568,8 @@ top: 30px;
     .line {
       position: relative;
       left: -3.7em;
-
     }
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       display: none;
     }
   }

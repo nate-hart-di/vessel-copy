@@ -1,6 +1,5 @@
 <?php
-$top_text = isset($top_text) && !empty($top_text) ? $top_text : 'Advanced Search';
-?>
+$top_text = isset($top_text) && !empty($top_text) ? $top_text : 'Advanced Search'; ?>
 
 <div class="search-section__content">
     <div class="row pzRow">
@@ -18,7 +17,7 @@ $top_text = isset($top_text) && !empty($top_text) ? $top_text : 'Advanced Search
     <div class="row dropdownFiltersRow">
         <div class="col-sm-12 dropdownFiltersRow__container filters-container">
             <div class="dropdownFiltersRow__filters flex-container" id="homepage-advanced-search">
-                <?php get_scoped_template_part('partials/search/tymm', '', isset($tymm)?$tymm:array()); ?>
+                <?php get_scoped_template_part('partials/search/tymm', '', isset($tymm) ? $tymm : []); ?>
             </div>
         </div>
     </div>

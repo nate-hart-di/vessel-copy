@@ -2,22 +2,21 @@
 //	VARIABLES
 // *************************************************************************************************
 
-$primary: #0059a8;															// site main color
-$primaryhover: darken($primary,10%);
+$primary: #0059a8; // site main color
+$primaryhover: darken($primary, 10%);
 
-$secondary: #313130;														// site accent color
-$secondaryhover: darken($secondary,10%);
+$secondary: #313130; // site accent color
+$secondaryhover: darken($secondary, 10%);
 
 $cta: #00a651;
-$ctahover: darken($cta,10%);
+$ctahover: darken($cta, 10%);
 $cta-font: 14px/30px;
 
 $greenCTA: #65c114;
-$greenCTAHover: darken($greenCTA,10%);
+$greenCTAHover: darken($greenCTA, 10%);
 
 $mobileCTA: #000;
 $mobileCTAHover: $primary;
-
 
 // *************************************************************************************************
 //	TEXT STYLING
@@ -210,15 +209,15 @@ $navbar-submenuitem-hover-color: #111;
 
 // OFF CANVAS MENU
 
- $offcanvasflyout-bg: #fff;
- $offcanvas-menuitem-height: 70px;
- $offcanvas-menuitem-lineheight: 70px;
- $offcanvas-menuitem-padding: 0px;
+$offcanvasflyout-bg: #fff;
+$offcanvas-menuitem-height: 70px;
+$offcanvas-menuitem-lineheight: 70px;
+$offcanvas-menuitem-padding: 0px;
 // $offcanvas-menuitem-textalign: left;
- $offcanvas-menuitem-background: #fff;
- $offcanvas-menuitem-color: #111;
- $offcanvas-menuitem-border-bottom: 1px solid #fff;
- $offcanvas-menuitem-hover-background: #fff;
+$offcanvas-menuitem-background: #fff;
+$offcanvas-menuitem-color: #111;
+$offcanvas-menuitem-border-bottom: 1px solid #fff;
+$offcanvas-menuitem-hover-background: #fff;
 $offcanvas-menuitem-hover-color: #111;
 $offcanvas-menuitem-font: $maintextfont;
 $offcanvas-menuitem-fontsize: 20px;
@@ -228,15 +227,14 @@ $offcanvas-menuitem-fontweight: 300;
 $offcanvas-current-background: #fff;
 //$offcanvas-current-color: $offcanvas-menuitem-hover-color;
 
- $offcanvas-submenu-background: #fff;
- //$offcanvas-submenuitem-height: 40px;
+$offcanvas-submenu-background: #fff;
+//$offcanvas-submenuitem-height: 40px;
 // $offcanvas-submenuitem-textalign: left;
- $offcanvas-submenuitem-border-bottom: 1px solid #fff;
+$offcanvas-submenuitem-border-bottom: 1px solid #fff;
 //$offcanvas-submenuitem-lineheight: 40px;
 // $offcanvas-submenuitem-color: $offcanvas-menuitem-color;
 $offcanvas-submenuitem-hover-background: #fff;
 // $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
-
 
 // *************************************************************************************************
 //	FOOTER
@@ -274,7 +272,6 @@ $footer-right-margin: 0 0 0 0;
 // $prefooter-listtitle-underline: 1px solid $prefooter-color;
 
 // $prefooter-listitem-color: $prefooter-color;
-
 
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -347,11 +344,9 @@ $vehicle-listing-fontfamily: $maintextfont;
 // $vehicle-grid-overlay-toggle-hover-background: $primary;
 // $vehicle-grid-overlay-toggle-hover-color: #fff;
 
-
 // *************************************************************************************************
 //	VEHICLE DETAILS PAGE
 // *************************************************************************************************
-
 
 //**********************************************
 //  MAIN VARIABLES
@@ -413,7 +408,6 @@ $vdp-print-bg: #fff !default;
 // $vdp-ctabox-main-cta-font-size: 10px;
 
 // $vdp-ctabox-border-top: 5px solid $primary;
-
 
 // $ctabox-pricing-background: #f7f7f7;
 // $ctabox-price-label-transform: uppercase;
@@ -529,29 +523,27 @@ $vdp-print-bg: #fff !default;
 // $staffbox-bg: #f9f9f9;
 // $staffbox-border: 1px solid #ccc;
 
-
 // *************************************************************************************************
 //	PLUGINS
 // *************************************************************************************************
 
 // ALGOLIA SEARCH
 
- $algolia-search-fontfamily: $maintextfont;
- $algolia-search-fontsize: 14px;
+$algolia-search-fontfamily: $maintextfont;
+$algolia-search-fontsize: 14px;
 
- $algolia-results-fontfamily: $maintextfont;
- $algolia-results-fontsize: 14px;
- $algolia-results-background: #fff;
- $algolia-results-border: none;
- $algolia-results-color: #333;
- $algolia-results-padding: 10px 0px;
- $algolia-results-label-color: #777;
- $algolia-results-icon-color: #333;
+$algolia-results-fontfamily: $maintextfont;
+$algolia-results-fontsize: 14px;
+$algolia-results-background: #fff;
+$algolia-results-border: none;
+$algolia-results-color: #333;
+$algolia-results-padding: 10px 0px;
+$algolia-results-label-color: #777;
+$algolia-results-icon-color: #333;
 
- $algolia-results-categorytitle-border: 1px solid #ccc;
- $algolia-results-categorytitle-fontfamily: $maintextfont;
- $algolia-results-categorytitle-fontsize: 16px;
-
+$algolia-results-categorytitle-border: 1px solid #ccc;
+$algolia-results-categorytitle-fontfamily: $maintextfont;
+$algolia-results-categorytitle-fontsize: 16px;
 
 // LEASE CALCULATOR
 
@@ -602,7 +594,6 @@ $vdp-print-bg: #fff !default;
 // $dc_cta_button_hover_background: $dc_accent_color;
 // $dc_cta_button_hover_color: #fff;
 
-
 // *************************************************************************************************
 //	MISC
 // *************************************************************************************************
@@ -611,4 +602,3 @@ $vdp-print-bg: #fff !default;
 // $fastSpeedTime: 500ms;
 
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
-

@@ -2,14 +2,14 @@
 //	VARIABLES
 // *************************************************************************************************
 $orange: orange;
-$primary: #0059a8;															// site main color
-$primaryhover: darken($primary,10%);
+$primary: #0059a8; // site main color
+$primaryhover: darken($primary, 10%);
 
-$secondary: #313130;														// site accent color
-$secondaryhover: darken($secondary,10%);
+$secondary: #313130; // site accent color
+$secondaryhover: darken($secondary, 10%);
 
 $cta: #00a651;
-$ctahover: darken($cta,10%);
+$ctahover: darken($cta, 10%);
 $cta-font: 14px/30px;
 
 // *************************************************************************************************
@@ -228,7 +228,6 @@ $offcanvas-submenuitem-border-bottom: 1px solid #e1e1e1;
 $offcanvas-submenuitem-hover-background: #eee;
 // $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
 
-
 // *************************************************************************************************
 //	FOOTER
 // *************************************************************************************************
@@ -265,7 +264,6 @@ $footer-right-margin: 0 0 0 0;
 // $prefooter-listtitle-underline: 1px solid $prefooter-color;
 
 // $prefooter-listitem-color: $prefooter-color;
-
 
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -338,7 +336,6 @@ $vehicle-listing-fontfamily: $maintextfont;
 // $vehicle-grid-overlay-toggle-hover-background: $primary;
 // $vehicle-grid-overlay-toggle-hover-color: #fff;
 
-
 // *************************************************************************************************
 //	VEHICLE DETAILS PAGE
 // *************************************************************************************************
@@ -353,8 +350,6 @@ $vehicle-listing-fontfamily: $maintextfont;
 // $vdp_shopping_tool_background : #eee; // shopping tool background
 // $vdp_shopping_tool_background_hover : $primary; // shopping tool background on hover
 
-
-
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
@@ -365,7 +360,6 @@ $vehicle-listing-fontfamily: $maintextfont;
 // $staffbutton-color: #fff;
 // $staffbox-bg: #f9f9f9;
 // $staffbox-border: 1px solid #ccc;
-
 
 // *************************************************************************************************
 //	PLUGINS
@@ -388,7 +382,6 @@ $vehicle-listing-fontfamily: $maintextfont;
 // $algolia-results-categorytitle-border: 1px solid #ccc;
 // $algolia-results-categorytitle-fontfamily: $maintextfont;
 // $algolia-results-categorytitle-fontsize: 16px;
-
 
 // LEASE CALCULATOR
 
@@ -438,7 +431,6 @@ $vehicle-listing-fontfamily: $maintextfont;
 // $dc_cta_button_hover_border: none;
 // $dc_cta_button_hover_background: $dc_accent_color;
 // $dc_cta_button_hover_color: #fff;
-
 
 // *************************************************************************************************
 //	MISC

@@ -1,14 +1,16 @@
-jQuery(document).ready(function($) {
-
+jQuery(document).ready(function ($) {
   $('.featured-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    navigation:true,
-    navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+    loop: true,
+    margin: 10,
+    navigation: true,
+    navigationText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    ],
     items: 4,
-    itemsDesktop: [1200,3],
-    itemsDesktopSmall: [1024,2],
-    itemsTablet: [767,1],
+    itemsDesktop: [1200, 3],
+    itemsDesktopSmall: [1024, 2],
+    itemsTablet: [767, 1],
   });
 
   // *************************************************************************************************
@@ -17,33 +19,33 @@ jQuery(document).ready(function($) {
   var windowHeight = jQuery(window).height();
 
   isVRP = {
-    listview: function() {
+    listview: function () {
       return $('.vehicle.list-view').length ? true : false;
     },
-    gridview: function() {
+    gridview: function () {
       return $('.vehicle.grid-view').length ? true : false;
     },
-    any: function() {
+    any: function () {
       return $('#results-page').length ? true : false;
-    }
+    },
   };
 
   isVDP = {
-    wide1400: function() {
+    wide1400: function () {
       return $('.maincardetails').length ? true : false;
     },
-    hotwheels: function() {
+    hotwheels: function () {
       return $('.project-hotwheels').length ? true : false;
     },
-    any: function() {
+    any: function () {
       return $('.vdpModals').length ? true : false;
-    }
+    },
   };
 
   isSmallMobile = {
-    any: function() {
+    any: function () {
       return window.outerWidth < 767;
-    }
+    },
   };
 
   // *************************************************************************************************
@@ -53,9 +55,9 @@ jQuery(document).ready(function($) {
   $('[rel=popover]').popover({
     html: true,
     placement: 'bottom',
-    content: function() {
+    content: function () {
       return $('.savingsDetailsList').html();
-    }
+    },
   });
 
   $('.dealersnav ul.sub-menu').css('max-height', '400px');
@@ -66,64 +68,71 @@ jQuery(document).ready(function($) {
   }
 
   //  Fix Mix Panel "resume" intention with hrefs using leading "#"
-  $('[href="#"]').attr("href", "javascript:void(0)");
+  $('[href="#"]').attr('href', 'javascript:void(0)');
 
-  if(isSmallMobile.any()) {
+  if (isSmallMobile.any()) {
     $('.gallery a.large-img').removeClass('fancybox');
-    $('#gallerycarousel').find('a').removeClass('fancybox').click(function(e) {
-      e.preventDefault();
-      $('.gallery').find('a.large-img').attr('href', $(this).attr('href'));
-      $('.gallery').find('a.large-img img').attr('src', $(this).attr('href'));
-    });
+    $('#gallerycarousel')
+      .find('a')
+      .removeClass('fancybox')
+      .click(function (e) {
+        e.preventDefault();
+        $('.gallery').find('a.large-img').attr('href', $(this).attr('href'));
+        $('.gallery').find('a.large-img img').attr('src', $(this).attr('href'));
+      });
 
     $('#gallerycarousel').touchwipe({
-      wipeLeft: function() {
+      wipeLeft: function () {
         $('#gallerycarousel').jcarousel('next');
         jQuery('.carousel').tooltip('close');
       },
-      wipeRight: function() {
+      wipeRight: function () {
         $('#gallerycarousel').jcarousel('prev');
         jQuery('.carousel').tooltip('close');
-      }
+      },
     });
 
     $('.carousel').tooltip({
       content: 'Swipe Left/Right to Scroll Gallery!',
-      position: { my: "center", at: "center"}
+      position: { my: 'center', at: 'center' },
     });
   }
 
   // JS for custom service/parts coupon template disclaimer
-  $('.specialCoupon .view-disclaimer-link').on('click', function(e) {
+  $('.specialCoupon .view-disclaimer-link').on('click', function (e) {
     var disclaimer = $(this).parents('.specialCoupon').find('.disclaimer');
     $(disclaimer).addClass('open');
   });
-  $('.specialCoupon .disclaimer .fa-close').on('click', function(e){
-    $(this).parents('.disclaimer').removeClass("open");
+  $('.specialCoupon .disclaimer .fa-close').on('click', function (e) {
+    $(this).parents('.disclaimer').removeClass('open');
   });
 
-  $("body").on('homepage-usp-hidden', function() {
-    $("#search-overlay .overlay-content").html("");
+  $('body').on('homepage-usp-hidden', function () {
+    $('#search-overlay .overlay-content').html('');
   });
 
-  $('a.scroll').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  $('a.scroll').click(function () {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+      location.hostname == this.hostname
+    ) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
+        $('html,body').animate(
+          {
+            scrollTop: target.offset().top,
+          },
+          1000,
+        );
         return false;
       }
     }
   });
 
-  if($(window).width() < 768) {
-    if(isMobile.iOS())
-      $('.fj-drive .android').hide();
-    else
-      $(".fj-drive .iOS").hide();
+  if ($(window).width() < 768) {
+    if (isMobile.iOS()) $('.fj-drive .android').hide();
+    else $('.fj-drive .iOS').hide();
   }
 
   //  Clicking outside of the mobile side menu closes it
@@ -134,21 +143,21 @@ jQuery(document).ready(function($) {
   // *************************************************************************************************
   //  HEADER
   // *************************************************************************************************
-  if($(window).width() > 1024) {
+  if ($(window).width() > 1024) {
     // Rotate through Smart and Sprinter logos in header
-    var rotatingImgs = $(".rotating-logos .showhim .main-nav img");
+    var rotatingImgs = $('.rotating-logos .showhim .main-nav img');
     //var rotateMenuImgs = $("#menu-overlay .rotating-logos img");
     var imgI = 0;
     rotateLogos();
     var logoRotation = setInterval(rotateLogos, 3000);
 
     function rotateLogos() {
-      $(rotatingImgs).removeClass("showing");
+      $(rotatingImgs).removeClass('showing');
       //$(rotateMenuImgs).removeClass("showing");
-      $(rotatingImgs).eq(imgI).addClass("showing");
+      $(rotatingImgs).eq(imgI).addClass('showing');
       //$(rotateMenuImgs).eq(imgI).addClass("showing");
 
-      if(imgI == (rotatingImgs.length - 1)) {
+      if (imgI == rotatingImgs.length - 1) {
         imgI = 0;
       } else {
         imgI++;
@@ -156,21 +165,21 @@ jQuery(document).ready(function($) {
     }
   }
 
-  if($(window).width() < 1024) {
+  if ($(window).width() < 1024) {
     // Rotate through Smart and Sprinter logos in header for tablet
-    var rotatingImgsTablet = $(".rotating-logos-tablet img");
+    var rotatingImgsTablet = $('.rotating-logos-tablet img');
     //var rotateMenuImgs = $("#menu-overlay .rotating-logos img");
     var imgIt = 0;
     rotateLogosTablet();
     var logoRotationTablet = setInterval(rotateLogosTablet, 3000);
 
     function rotateLogosTablet() {
-      $(rotatingImgsTablet).removeClass("showing");
+      $(rotatingImgsTablet).removeClass('showing');
       //$(rotateMenuImgs).removeClass("showing");
-      $(rotatingImgsTablet).eq(imgIt).addClass("showing");
+      $(rotatingImgsTablet).eq(imgIt).addClass('showing');
       //$(rotateMenuImgs).eq(imgI).addClass("showing");
 
-      if(imgIt == (rotatingImgsTablet.length - 1)) {
+      if (imgIt == rotatingImgsTablet.length - 1) {
         imgIt = 0;
       } else {
         imgIt++;
@@ -179,7 +188,7 @@ jQuery(document).ready(function($) {
   }
 
   // Add day of week to header hours
-  $(".dayOW").appendTo(".dealer-hours span.department");
+  $('.dayOW').appendTo('.dealer-hours span.department');
 
   if ($('#count-number').html() == 0) {
     $('#vehicle-count-overview-number').hide();
@@ -187,12 +196,18 @@ jQuery(document).ready(function($) {
   // *************************************************************************************************
   //  VRP
   // *************************************************************************************************
-  if(isVRP.any()) {
-    $('body').on('vrp-ready vrp-ajax-complete', function() {
-      if($(document).width() < 768 && $('.show-filters-button').length == 0) {
+  if (isVRP.any()) {
+    $('body').on('vrp-ready vrp-ajax-complete', function () {
+      if ($(document).width() < 768 && $('.show-filters-button').length == 0) {
         var sort = $('.sorting-options');
-        $(sort).removeClass("hidden-xs hidden-phone").append("<a trid='f8b3b4a04ac845fca3c8ad' trc class='button primary-button show-filters-button align-left' style='margin:0'>Filter Results</a>").find('select').css({width:"40%"});
-        $('.show-filters-button').click(function(e) {
+        $(sort)
+          .removeClass('hidden-xs hidden-phone')
+          .append(
+            "<a trid='f8b3b4a04ac845fca3c8ad' trc class='button primary-button show-filters-button align-left' style='margin:0'>Filter Results</a>",
+          )
+          .find('select')
+          .css({ width: '40%' });
+        $('.show-filters-button').click(function (e) {
           $('.mobile-tab-1 .mobile-tab-label').trigger('click');
         });
       }
@@ -202,16 +217,21 @@ jQuery(document).ready(function($) {
   // *************************************************************************************************
   //  VDP
   // *************************************************************************************************
-  if(isVDP.hotwheels()) {
-    $('body').on('click', "#ctabox-premium-features .features-link", function(e) {
-      $("#factory_options .panel-title a").trigger("click");
+  if (isVDP.hotwheels()) {
+    $('body').on('click', '#ctabox-premium-features .features-link', function (e) {
+      $('#factory_options .panel-title a').trigger('click');
     });
-    $('#mini-header').css("display", "none");
-    $('.details-page-titlewrap .details-page-row').removeClass("no-spacer");
+    $('#mini-header').css('display', 'none');
+    $('.details-page-titlewrap .details-page-row').removeClass('no-spacer');
 
-    $('.cta-caption > p:first').insertAfter(".disclaimer-small > p:first");
+    $('.cta-caption > p:first').insertAfter('.disclaimer-small > p:first');
 
-    $(".panel-title a").not(".collapsed").addClass('collapsed').parents('.panel').find('.panel-collapse').removeClass('in');
+    $('.panel-title a')
+      .not('.collapsed')
+      .addClass('collapsed')
+      .parents('.panel')
+      .find('.panel-collapse')
+      .removeClass('in');
     $(window).resize();
 
     var newHome = $('.details-page-gallerywrap .details-page-row')[0];
@@ -221,7 +241,7 @@ jQuery(document).ready(function($) {
   }
 
   //CTABOX PREMIUM OPTIONS
-  $('#ctabox-premium-features .features-link').click(function() {
+  $('#ctabox-premium-features .features-link').click(function () {
     $(this).parent().toggleClass('open');
   });
 
@@ -230,11 +250,10 @@ jQuery(document).ready(function($) {
   $('#details-page-ctabox .lease-box a').addClass('button');
 
   // VRP MOBILE FILTERS
-  $('#vrp-custom-filter').click(function(e) {
-      e.preventDefault();
-      $('.filter .mobile-tab-label').trigger('click');
+  $('#vrp-custom-filter').click(function (e) {
+    e.preventDefault();
+    $('.filter .mobile-tab-label').trigger('click');
   });
-
 
   //===================================
   // DESKTOP REDESIGN 06/20
@@ -242,53 +261,50 @@ jQuery(document).ready(function($) {
   window.sr = ScrollReveal();
 
   window.sr = ScrollReveal({
-      duration: 1000,
-      scale: 1,
-      origin: 'bottom',
-      distance: '150px',
-      easing: 'cubic-bezier(0.5, 1.10, 0.4, 1.19)',
-      viewFactor: .65,
-      mobile: false
-
+    duration: 1000,
+    scale: 1,
+    origin: 'bottom',
+    distance: '150px',
+    easing: 'cubic-bezier(0.5, 1.10, 0.4, 1.19)',
+    viewFactor: 0.65,
+    mobile: false,
   });
 
   sr.reveal('.fly-in-left', {
-      mobile: false,
-      origin: 'left',
-      duration: 700,
-      viewFactor: .65,
-      distance: '150px'
+    mobile: false,
+    origin: 'left',
+    duration: 700,
+    viewFactor: 0.65,
+    distance: '150px',
   });
 
   sr.reveal('.fly-in-right', {
-      mobile: false,
-      origin: 'right',
-      duration: 700,
-      viewFactor: .65,
-      distance: '150px'
+    mobile: false,
+    origin: 'right',
+    duration: 700,
+    viewFactor: 0.65,
+    distance: '150px',
   });
 
   sr.reveal('.fly-in-bottom', {
-      mobile: false,
-      origin: 'bottom',
-      duration: 700,
-      viewFactor: .65,
-      distance: '150px'
+    mobile: false,
+    origin: 'bottom',
+    duration: 700,
+    viewFactor: 0.65,
+    distance: '150px',
   });
 
   //grab all elements that have the .ux-loading-item class
   var uxElements = $('.lazy-loading');
 
   //run through the uxElements object array
-  uxElements.each(function(index) {
-      //make instances of each one - this
-      var uiElement = $(this);
+  uxElements.each(function (index) {
+    //make instances of each one - this
+    var uiElement = $(this);
 
-      //run a time out and add class of active and multiply the delay times the position it is in the object
-      setTimeout(function() {
-          uiElement.addClass('active');
-      }, 350 * index);
-
+    //run a time out and add class of active and multiply the delay times the position it is in the object
+    setTimeout(function () {
+      uiElement.addClass('active');
+    }, 350 * index);
   });
-
 });

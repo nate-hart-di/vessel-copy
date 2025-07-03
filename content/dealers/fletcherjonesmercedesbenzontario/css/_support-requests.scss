@@ -1,247 +1,224 @@
 // *************************************************************************************************
 //	Support request & third-party related styles
 // *************************************************************************************************
-#header-ask-a-question
-{
-    .header-btn
-    {
-        font-size: 11.5px;
-        line-height: 2;
+#header-ask-a-question {
+  .header-btn {
+    font-size: 11.5px;
+    line-height: 2;
 
-        position: fixed;
-        z-index: 10000;
-        top: 50%;
-        top: 50%;
-        right: -70px;
+    position: fixed;
+    z-index: 10000;
+    top: 50%;
+    top: 50%;
+    right: -70px;
 
-        float: right;
+    float: right;
 
-        width: 160px !important;
-        height: 40px;
-        padding-top: 8px;
+    width: 160px !important;
+    height: 40px;
+    padding-top: 8px;
 
-        transform: rotate(270deg);
+    transform: rotate(270deg);
 
-        color: white;
-        background: darkorange;
-        @media screen and (max-width:1330px)
-        {
-            font-size: 10px;
+    color: white;
+    background: darkorange;
+    @media screen and (max-width: 1330px) {
+      font-size: 10px;
 
-            width: 140px !important;
-            margin-left: 20%;
-        }
-        @media screen and (max-width:900px)
-        {
-            display: none;
-        }
+      width: 140px !important;
+      margin-left: 20%;
     }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
 }
 
 //hack to prevent fancybox jumping to the top of the page #00044779
-html.fancybox-lock
-{
-    overflow: visible !important;
+html.fancybox-lock {
+  overflow: visible !important;
 }
-#videoOverlay .videooverlay-content .cta-buttons .button
-{
-    padding: 13px 20px;
+#videoOverlay .videooverlay-content .cta-buttons .button {
+  padding: 13px 20px;
 }
 
 //Related Posts Style
 
-.crp_related
-{
-    clear: both;
+.crp_related {
+  clear: both;
 
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
-.crp_related ul
-{
-    //text-align: center;
+.crp_related ul {
+  //text-align: center;
 }
 
-.crp_related li
-{
-    display: inline-block;
+.crp_related li {
+  display: inline-block;
 
-    width: 100%;
-    max-width: 200px;
+  width: 100%;
+  max-width: 200px;
 
-    list-style: none;
+  list-style: none;
 
-    vertical-align: top;
+  vertical-align: top;
 }
 
-.crp_related h3
-{
-    font-size: 20px;
+.crp_related h3 {
+  font-size: 20px;
 
-    position: relative;
+  position: relative;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 
-    color: #ddd;
+  color: #ddd;
 }
 
-.crp_related h3 span
-{
-    position: relative;
+.crp_related h3 span {
+  position: relative;
 
-    display: inline-block;
+  display: inline-block;
 }
 
 .crp_related h3 span:before,
-.crp_related h3 span:after
-{
-    position: absolute;
-    top: 50%;
+.crp_related h3 span:after {
+  position: absolute;
+  top: 50%;
 
-    display: block;
+  display: block;
 
-    width: 100%;
-    height: 1px;
+  width: 100%;
+  height: 1px;
 
-    content: '';
+  content: '';
 
-    background: #ddd;
+  background: #ddd;
 }
 
-.crp_related h3 span:before
-{
-    right: 100%;
+.crp_related h3 span:before {
+  right: 100%;
 
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
-.crp_related h3 span:after
-{
-    left: 100%;
+.crp_related h3 span:after {
+  left: 100%;
 
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
-.crp_related li a
-{
-    color: #333;
+.crp_related li a {
+  color: #333;
 }
-.crp_related li a:hover
-{
-    color: #0059a8;
+.crp_related li a:hover {
+  color: #0059a8;
 }
 
 .crp_related li img,
-.crp_related .crp_title
-{
-    display: block;
+.crp_related .crp_title {
+  display: block;
 }
 
-.crp_related li img
-{
-    margin: 0 auto;
+.crp_related li img {
+  margin: 0 auto;
 }
 
-.crp_related .crp_title
-{
-    font-size: 14px;
-    font-weight: normal;
+.crp_related .crp_title {
+  font-size: 14px;
+  font-weight: normal;
 
-    width: 100%;
-    max-width: 190px;
-    margin: 5px auto 0 auto;
+  width: 100%;
+  max-width: 190px;
+  margin: 5px auto 0 auto;
 
-    text-align: center;
+  text-align: center;
 }
 
 //video banner fix
-#videobanner
-{
-    @media screen and (max-width: 1024px)
-    {
-        height: 100vh;
-    }
+#videobanner {
+  @media screen and (max-width: 1024px) {
+    height: 100vh;
+  }
 }
 
 //52250 - Overriding bold styles in Prem Options on VDP
 #vehicleDetails {
-    .premium-options-list {
-        h3 {
-            font-weight: 300 !important;
-        }
-        p {
-            font-weight: 500 !important;
-        }
+  .premium-options-list {
+    h3 {
+      font-weight: 300 !important;
     }
+    p {
+      font-weight: 500 !important;
+    }
+  }
 }
 
 // #00059456 - Blog Header styles
 .post {
-    a.entry-title{
-        color: black !important;
-        font-size: 25px !important;
-        font-weight: 500 !important;
-    }
+  a.entry-title {
+    color: black !important;
+    font-size: 25px !important;
+    font-weight: 500 !important;
+  }
 
-    @media(max-width: 767px) {
-        h1.entry-title {
-            font-size: 25px;
-            line-height: 30px;
-            font-weight: 500;
-        }
+  @media (max-width: 767px) {
+    h1.entry-title {
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 500;
     }
+  }
 }
 // #00059456 - Blog Header styles - END
 
 // #00062688 - TEMP holiday cta button style homepage
 
 #videoOverlay .videooverlay-content .cta-buttons .primary-button {
-    background: red;
+  background: red;
 
-    &:hover {
-        background: #bb0117;
-    }
+  &:hover {
+    background: #bb0117;
+  }
 }
 
 // #00062688 - END
 
-
 .difo-wrapper .difo-card .coupon-header .coupon-header-inner .coupon-pricing {
-    font-weight:bold;
-    font-size: 23px;
+  font-weight: bold;
+  font-size: 23px;
 }
 
 .difo-wrapper .difo-card .coupon-content .coupon-description {
-
-    font-size: 12px;
+  font-size: 12px;
 }
 
-.difo-wrapper .difo-card .coupon-content .coupon-disclaimer{
-    font-size:11px!important;
+.difo-wrapper .difo-card .coupon-content .coupon-disclaimer {
+  font-size: 11px !important;
 }
 
 //62845
 .page-vehicle-results-page {
-    a.button.inquire {
-        width: 100% !important;
-    }
-    .hide-the-main-cta a.fancy.button-form.button.cta-button {
-        display: none;
-    }
+  a.button.inquire {
+    width: 100% !important;
+  }
+  .hide-the-main-cta a.fancy.button-form.button.cta-button {
+    display: none;
+  }
 }
 .page-vehicle-display-page {
-    .hide-the-main-cta .maincta-row.ctabox-row {
-        display: none;
-    }
-    div#inquire-button a {
-        width: 100% !important;
-        margin-top: -10px;
-        display: none;
-    }
+  .hide-the-main-cta .maincta-row.ctabox-row {
+    display: none;
+  }
+  div#inquire-button a {
+    width: 100% !important;
+    margin-top: -10px;
+    display: none;
+  }
 }
 //end 62845
 
@@ -266,59 +243,60 @@ html.fancybox-lock
 
 //Make dem arrows bouncy
 .difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev {
-    background: url(/wp-content/plugins/vessel/content/shared/images/arrows/arrow-blue-left.png) no-repeat center center !important;
-    left: -50px !important;
-    animation: shake 3s infinite;
-    @media (max-width: 767px) {
-        left: -28px !important;
-    }
+  background: url(/wp-content/plugins/vessel/content/shared/images/arrows/arrow-blue-left.png) no-repeat center center !important;
+  left: -50px !important;
+  animation: shake 3s infinite;
+  @media (max-width: 767px) {
+    left: -28px !important;
+  }
 }
 
 .difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
-    right: -50px !important;
-    @media (max-width: 767px) {
-        right: -20px !important;
-    }
+  right: -50px !important;
+  @media (max-width: 767px) {
+    right: -20px !important;
+  }
 }
 
-.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev, .difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
-    width: 65px !important;
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev,
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
+  width: 65px !important;
 }
 
 .difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
-    background: url(/wp-content/plugins/vessel/content/shared/images/arrows/arrow-blue-right.png) no-repeat center center !important;
-    animation: shake 3s infinite;
+  background: url(/wp-content/plugins/vessel/content/shared/images/arrows/arrow-blue-right.png) no-repeat center center !important;
+  animation: shake 3s infinite;
 }
 //test
 .vdp-print-view .logo {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
 #sehabla {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    width: 150px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 150px;
 
-    @media(max-width: 767px) {
-        width: 85px;
-        right: 10px;
-    }
+  @media (max-width: 767px) {
+    width: 85px;
+    right: 10px;
+  }
 }
 
 #results-page .unlock-offer {
-    background: #d01e1c;
-    text-align: center;
-    padding: 10px;
-    clear: both;
-    a {
-        color: #fff !important;
-        text-decoration: none;
-    }
+  background: #d01e1c;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  a {
+    color: #fff !important;
+    text-decoration: none;
   }
-  #vehicleDetails .unlock-offer {
-    display: block;
-    width: 100% !important;
-    background: #d01e1c;
-  }
+}
+#vehicleDetails .unlock-offer {
+  display: block;
+  width: 100% !important;
+  background: #d01e1c;
+}

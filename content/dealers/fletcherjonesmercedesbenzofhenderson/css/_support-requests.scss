@@ -1,126 +1,126 @@
-
 .conversations-embed #conversations-simple-icon {
-	z-index: 998 !important;
+  z-index: 998 !important;
 }
 //  HERO IMAGE STYLE COUPONS
 .specialCoupon {
-	.specialLeft {
-	  max-height: 350px;
-	  overflow: hidden;
-	  position: relative;
-	  width: 100%;
-	}
-	.specialFooter {
-		a, a:visited, a:link, a:active {
-			&.button {
-  			@media (max-width:767px) {
-    			margin:10px auto !important;
-  			}
-			}
-		}
-	}
+  .specialLeft {
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .specialFooter {
+    a,
+    a:visited,
+    a:link,
+    a:active {
+      &.button {
+        @media (max-width: 767px) {
+          margin: 10px auto !important;
+        }
+      }
+    }
+  }
 }
 
 // 72600  Added star logo
 
 .star-logo {
-    max-width: 163px;
-    margin-left: -70px;
+  max-width: 163px;
+  margin-left: -70px;
 }
-
 
 // Add To Any CTA Box VDP #71250
 #vehicleDetails {
-	.ctabox-inner {
-		.share-button-container {
-			text-align: center;
-			margin-bottom: 15px;
-		}
-	}
+  .ctabox-inner {
+    .share-button-container {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
 }
 // End #71250
 
-@media (min-width: 768px)and (max-width: 1023px){
-#videobanner #videooverlay .videooverlay-content h2 {
+@media (min-width: 768px) and (max-width: 1023px) {
+  #videobanner #videooverlay .videooverlay-content h2 {
     font-size: 41px;
-}
+  }
 }
 
 @media (max-width: 767px) {
-    .sms-share {
-        text-align: center;
-        position: relative;
-        top: 3px;
-        i {
-            font-size: 32px;
-            background: #00357b;
-            height: 32px;
-            color: #fff;
-            width: 32px;
-            border-radius: 3px;
-        }
+  .sms-share {
+    text-align: center;
+    position: relative;
+    top: 3px;
+    i {
+      font-size: 32px;
+      background: #00357b;
+      height: 32px;
+      color: #fff;
+      width: 32px;
+      border-radius: 3px;
     }
+  }
 }
 
 .col-sm-4.text-center.custom-holiday-styles a {
-	color: white !important;
+  color: white !important;
 }
 
-#videoOverlay .videooverlay-content .cta-buttons .primary-button{
+#videoOverlay .videooverlay-content .cta-buttons .primary-button {
   /*background-color: #fa68aa;*/
 }
 
 // #00062688 - TEMP holiday cta button style homepage
 
 #videoOverlay .videooverlay-content .cta-buttons .primary-button {
-    background: red;
-    padding: 10px 5px !important;
+  background: red;
+  padding: 10px 5px !important;
 
-    &:hover {
-        background: #bb0117;
-    }
+  &:hover {
+    background: #bb0117;
+  }
 }
 
 // #00062688 - END
 
-.specialCoupon .specialRight .modelName{
-    color: #0059a8 !important;
-    font-size: 21px !important;
+.specialCoupon .specialRight .modelName {
+  color: #0059a8 !important;
+  font-size: 21px !important;
 }
 
-.specialCoupon .specialRight .description p{
-    font-size: 14px !important;
+.specialCoupon .specialRight .description p {
+  font-size: 14px !important;
 }
 
-a.view-disclaimer-link{
-    color: #a7a7a7 !important;
-    font-size: 11px !important;
-    font-style: italic !important;
-            
+a.view-disclaimer-link {
+  color: #a7a7a7 !important;
+  font-size: 11px !important;
+  font-style: italic !important;
 }
 
 //62845
 .page-vehicle-results-page {
-    a.button.inquire {
-        width: 100% !important;
-    }
-    .hide-the-main-cta a.fancy.button-form.button.cta-button {
-        display: none;
-    }
+  a.button.inquire {
+    width: 100% !important;
+  }
+  .hide-the-main-cta a.fancy.button-form.button.cta-button {
+    display: none;
+  }
 }
 .page-vehicle-display-page {
-    .hide-the-main-cta .maincta-row.ctabox-row {
-        display: none;
-    }
-    div#inquire-button a {
-        width: 100% !important;
-    }
+  .hide-the-main-cta .maincta-row.ctabox-row {
+    display: none;
+  }
+  div#inquire-button a {
+    width: 100% !important;
+  }
 }
 //end 62845
-@media(max-width: 767px) {
-    #videobanner {
-        background-position: 50% 50%;
-    }
+@media (max-width: 767px) {
+  #videobanner {
+    background-position: 50% 50%;
+  }
 }
 
 // 00066052 - Customizing service menu
@@ -143,12 +143,11 @@ a.view-disclaimer-link{
 }
 //end 00066052
 
-
 //72517 - increase social fa size
 #footer {
-    .social a i {
-        font-size: 26px;
-    }
+  .social a i {
+    font-size: 26px;
+  }
 }
 /*
 #menu_modelRow {
@@ -249,81 +248,83 @@ a.view-disclaimer-link{
 */
 
 #header .menu-item.new {
-    &.open {
-        .header-dropdown.dropdown-full {
-            //top: 350px !important;
-        }
+  &.open {
+    .header-dropdown.dropdown-full {
+      //top: 350px !important;
     }
+  }
 }
 
-#header .header-top .navbar .navbar-inner ul#menu-top-menu>li.menu-item.active.new>.header-dropdown {
-    opacity: 0;
-    height: 0 !important;
-    overflow: hidden;
+#header .header-top .navbar .navbar-inner ul#menu-top-menu > li.menu-item.active.new > .header-dropdown {
+  opacity: 0;
+  height: 0 !important;
+  overflow: hidden;
 }
 
-#header .header-top .navbar .navbar-inner ul#menu-top-menu>li.menu-item.open.new>.header-dropdown {
-    opacity: 1;
-    -webkit-transition: ease all .5s;
-    -moz-transition: ease all .5s;
-    -o-transition: ease all .5s;
-    transition: ease all .5s;
-    height: 100% !important;
-    overflow: visible;
-    top: 110px !important;
+#header .header-top .navbar .navbar-inner ul#menu-top-menu > li.menu-item.open.new > .header-dropdown {
+  opacity: 1;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  height: 100% !important;
+  overflow: visible;
+  top: 110px !important;
 }
 
-#coupeModels .owl-prev{
-    text-indent: 0 !important;
+#coupeModels .owl-prev {
+  text-indent: 0 !important;
 }
 
-#coupeModels .owl-next{
-    text-indent: 0 !important;
+#coupeModels .owl-next {
+  text-indent: 0 !important;
 }
 
-#convertModels .owl-next{
-    text-indent: 0 !important;
+#convertModels .owl-next {
+  text-indent: 0 !important;
 }
 
-#convertModels .owl-prev{
-    text-indent: 0 !important;
+#convertModels .owl-prev {
+  text-indent: 0 !important;
 }
 
-#footer #white-sprinter-logo, #footer #white-amg-logo {
+#footer #white-sprinter-logo,
+#footer #white-amg-logo {
   margin-top: 35px !important;
 }
 
-#footer #white-sprinter-logo, #footer #white-amg-logo {
+#footer #white-sprinter-logo,
+#footer #white-amg-logo {
   max-width: 155px !important;
 }
 
 //Hide Get E-Price CTA on vehicles that have the Inquire CTA
 .hide-the-main-cta {
-    .als-btn.button.green.block.button-primary.cta-button {
-        display: none !important;
-    }
+  .als-btn.button.green.block.button-primary.cta-button {
+    display: none !important;
+  }
 }
 
 .grid-view .primary-cta.button-bar-item a {
-    background: #0059a8 !important;
+  background: #0059a8 !important;
 }
 .vdp-print-view .logo {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
 #results-page .unlock-offer {
-    background: #d01e1c;
-    text-align: center;
-    padding: 10px;
-    clear: both;
-    a {
-        color: #fff !important;
-        text-decoration: none;
-    } 
+  background: #d01e1c;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  a {
+    color: #fff !important;
+    text-decoration: none;
   }
-  #vehicleDetails .unlock-offer {
-    display: block;
-    width: 100% !important; 
-    background: #d01e1c;
-  }
+}
+#vehicleDetails .unlock-offer {
+  display: block;
+  width: 100% !important;
+  background: #d01e1c;
+}

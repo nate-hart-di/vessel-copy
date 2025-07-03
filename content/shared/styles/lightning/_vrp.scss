@@ -1,84 +1,81 @@
 :root {
-	--lvrp-hit-specials-banner-bg: #0059a8;
+  --lvrp-hit-specials-banner-bg: #0059a8;
 }
 
 @import 'conditional-no-results-ctas';
 
-#lvrp-container{
-	.results-pagination{
-		.pagination-toggle{
- 			font-size: 20px; 
-		}
-		.pagination-arrow i{
-			font-size: 26px; 
-			font-weight: bold;
-		}
-	}
-	@media screen and (min-width:768px){
-		#lvrp-post-results-wrapper #results-footer-pagination{
-  			margin: 0 auto;
-		}
-	}
-	#lvrp-results-wrapper{
-		.hit{
-			position: relative;
-			.hit-image-wrap{
-				position: relative;
-			}
-		}
-		.hit-special{
-		    position: absolute;
-		    right: 0px;
-		    top: 0px;
-		    padding: 7px;
-		    font-size: .75em;
-		    line-height: .75em;
-		    letter-spacing: 0;
-		    @media screen and (min-width: 768px){
-			    right: 15px;
-		    	top: 15px;	    	
-		    }
-		}
-		.result-wrap.inline-banner{
-			.hit.hit--inline-banner{
-				justify-content: flex-start;
-				.inline-banner-content{
-					flex-grow: 2;
-					.inline-banner-content__img{
-					    width: 100%;
-					    height: 100%;
-					    img{
-							padding: 0;
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
-					}
-					.inline-banner-content__data{
-						position: absolute;
-						bottom: 0;
-						.inline-banner-ctas{
-							padding: 0;
-						}
-					}
-				}
-			}
-		}
-	}
-
+#lvrp-container {
+  .results-pagination {
+    .pagination-toggle {
+      font-size: 20px;
+    }
+    .pagination-arrow i {
+      font-size: 26px;
+      font-weight: bold;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    #lvrp-post-results-wrapper #results-footer-pagination {
+      margin: 0 auto;
+    }
+  }
+  #lvrp-results-wrapper {
+    .hit {
+      position: relative;
+      .hit-image-wrap {
+        position: relative;
+      }
+    }
+    .hit-special {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      padding: 7px;
+      font-size: 0.75em;
+      line-height: 0.75em;
+      letter-spacing: 0;
+      @media screen and (min-width: 768px) {
+        right: 15px;
+        top: 15px;
+      }
+    }
+    .result-wrap.inline-banner {
+      .hit.hit--inline-banner {
+        justify-content: flex-start;
+        .inline-banner-content {
+          flex-grow: 2;
+          .inline-banner-content__img {
+            width: 100%;
+            height: 100%;
+            img {
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .inline-banner-content__data {
+            position: absolute;
+            bottom: 0;
+            .inline-banner-ctas {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.lightning-vehicle-results-page .refinement-filters{
-  .refinement[data-value*="false"],.refinement[data-value*="true"]{
+.lightning-vehicle-results-page .refinement-filters {
+  .refinement[data-value*='false'],
+  .refinement[data-value*='true'] {
     display: none;
   }
 }
 
 // 1125266 Start
 .lightning #lvrp-results-wrapper #hits div.hit-price__customize {
-	display: none;
+  display: none;
 }
 // 1125266 End
-
-
-

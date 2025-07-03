@@ -6,29 +6,29 @@
 
 actor: AcceptanceTester
 modules:
-    enabled:
-        - WebDriver:
-            url: http://127.0.0.1:9081
-            browser: chrome
-            wait: 0
+  enabled:
+    - WebDriver:
+        url: http://127.0.0.1:9081
+        browser: chrome
+        wait: 0
 #        - \Helper\Acceptance
 
 env:
-    fjimports:
-        modules:
-            config:
-                WebDriver:
-                    url: 'https://www.fjimports.com/'
-                    browser: 'chrome'
-    fjmercedes:
-        modules:
-            config:
-                WebDriver:
-                    url: 'https://www.fjmercedes.com/'
-                    browser: 'chrome'
-    mbontario:
-        modules:
-            config:
-                WebDriver:
-                    url: 'https://www.mbontario.com/'
-                    browser: 'chrome'
+  fjimports:
+    modules:
+      config:
+        WebDriver:
+          url: 'https://www.fjimports.com/'
+          browser: 'chrome'
+  fjmercedes:
+    modules:
+      config:
+        WebDriver:
+          url: 'https://www.fjmercedes.com/'
+          browser: 'chrome'
+  mbontario:
+    modules:
+      config:
+        WebDriver:
+          url: 'https://www.mbontario.com/'
+          browser: 'chrome'

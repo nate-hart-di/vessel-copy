@@ -1,7 +1,6 @@
 <?php /*
 Home page of the site
-*/
-get_header(); ?>
+*/ get_header(); ?>
 
 <div class="visible-xs">   	<!-- DEFAULT MOBILE HOMEPAGE -->
 	<?php get_template_part('partials/homepage/mobile/open-hours'); ?>
@@ -11,7 +10,7 @@ get_header(); ?>
 <?php get_template_part('/partials/dealer-groups/porsche/full-overlay'); ?>
 <?php get_template_part('/partials/dealer-groups/porsche/model-row'); ?>
 
-<?php if(get_field('above_shopping')) { ?>
+<?php if (get_field('above_shopping')) { ?>
 <div id="above-shopping" data-acf="above_shopping">
 <?php the_field('above_shopping'); ?>
 </div>

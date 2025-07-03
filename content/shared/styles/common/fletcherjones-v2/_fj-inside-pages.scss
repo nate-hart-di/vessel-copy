@@ -1,12 +1,12 @@
 a.floating-button {
-  display:none;
+  display: none;
 }
 
-.section-header { 
+.section-header {
   margin: 20px 30%;
   text-align: center;
   position: relative;
-  .section-header-bar { 
+  .section-header-bar {
     height: 1px;
     width: 100%;
     background: #333;
@@ -36,35 +36,34 @@ a.floating-button {
   text-align: center;
   font-family: $mercedes-font;
 }
-.savingscard-box { 
-  background: #008ffe; 
-  padding: 20px; 
-  width: 100%; 
-  color: #fff; 
-  display: inline-block; 
-  position: relative; 
-  text-align: center; 
-  font-family: 'Lato', sans-serif; 
-  margin-bottom: 20px; 
-  .button { 
-    margin-right: 0; 
-    min-width: 200px; 
+.savingscard-box {
+  background: #008ffe;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 20px;
+  .button {
+    margin-right: 0;
+    min-width: 200px;
   }
-  .savingscard-title { 
-    font-size: 24px; 
-    font-weight: 400; 
+  .savingscard-title {
+    font-size: 24px;
+    font-weight: 400;
   }
-  .savingscard-titlebolder { 
+  .savingscard-titlebolder {
     font-size: 32px;
-     font-weight: 700; 
+    font-weight: 700;
   }
-  h2.bold-subtitle { 
-    font-size: 32px; 
-    font-weight: 700; 
-    text-transform: uppercase; 
+  h2.bold-subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }
-
 
 h2.overlay-title {
   font-size: 50px;
@@ -72,13 +71,13 @@ h2.overlay-title {
   letter-spacing: 3px;
   font-family: $mercedes-font;
   span {
-    display:block;
+    display: block;
     &.larger {
       font-size: 1.28em;
       font-family: $mercedes-font;
     }
     &.smaller {
-      font-size: .4em;
+      font-size: 0.4em;
       font-family: $mercedes-font;
       font-weight: 700;
       margin-top: 10px;
@@ -108,20 +107,21 @@ h2.overlay-title {
   box-shadow: 0 2px 5px #aaa;
 }
 
-.divider.striped-icon{
+.divider.striped-icon {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   margin: -50px 0;
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     color: #ed8b00;
   }
 }
 
-section.divider.striped-icon{
+section.divider.striped-icon {
   position: relative;
 }
 
@@ -134,12 +134,12 @@ section.divider.striped-icon{
   height: 60px;
   margin: auto;
   cursor: pointer;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   text-align: center;
   border-radius: 50%;
-  background: rgba(232,233,237,.5);
+  background: rgba(232, 233, 237, 0.5);
   &:after {
     position: absolute;
     z-index: -1;
@@ -148,19 +148,20 @@ section.divider.striped-icon{
     bottom: 4px;
     left: 4px;
     content: '';
-    border: 1px solid rgba(0,0,0,.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50%;
     background: content-box #fff;
   }
   &:hover {
-    background: rgba(237, 139, 0, .3);
+    background: rgba(237, 139, 0, 0.3);
   }
 }
 
 .bottom-line {
   position: absolute;
   bottom: -230px;
-  left: 50%;width: 2px;
+  left: 50%;
+  width: 2px;
   height: 150px;
   margin-left: -1px;
   background: #fff;
@@ -230,7 +231,7 @@ a.row-anchor {
 
 // Fixing overlap of scroll button
 #di-page-composer .bgimagerow {
-  overflow-x:initial;
+  overflow-x: initial;
 }
 
 div#dealer-inspire input {
@@ -238,12 +239,12 @@ div#dealer-inspire input {
 }
 
 .specialCoupon {
- //@extend .card;
+  //@extend .card;
   margin: 10px 1% 30px;
   width: 48%;
   display: inline-block;
   background: #fff;
-  vertical-align:top;
+  vertical-align: top;
   .specialLeft {
     border: none;
     right: 0;
@@ -256,14 +257,14 @@ div#dealer-inspire input {
   }
   .disclaimer {
     background: #fff;
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, 0.9);
     height: 0%;
     left: 0px;
     overflow: hidden;
     padding: 0px;
     position: absolute;
     top: 0px;
-    @include transition(all .5s ease);
+    @include transition(all 0.5s ease);
     width: 100%;
     &.open {
       height: 100%;
@@ -280,37 +281,41 @@ div#dealer-inspire input {
   .specialFooter {
     background: #fff;
     border-top: 1px solid #ccc;
-    a, a:visited, a:link, a:active {
+    a,
+    a:visited,
+    a:link,
+    a:active {
       &.button {
-            background: none transparent;
-            color: $primary;
-            margin-bottom: 0;
-            margin-right: 15px;
-            font-weight: 500;
-            padding: 0;
-            font-size: 14px;
-            &:hover {
-              color: lighten($primary, 20%);
-            }
-            &:nth-child(2) {
-              float: right;
-              @extend .cta-button;
-              color: #fff;
-              margin: 0;
-              padding: 6px 15px;
-              @include border-radius(0);
-              @include transition(all 0.25s ease);
-            }
-            @media (max-width:767px) {
-              float: none !important;
-              margin:0 auto 10px;
-            }
+        background: none transparent;
+        color: $primary;
+        margin-bottom: 0;
+        margin-right: 15px;
+        font-weight: 500;
+        padding: 0;
+        font-size: 14px;
+        &:hover {
+          color: lighten($primary, 20%);
+        }
+        &:nth-child(2) {
+          float: right;
+          @extend .cta-button;
+          color: #fff;
+          margin: 0;
+          padding: 6px 15px;
+          @include border-radius(0);
+          @include transition(all 0.25s ease);
+        }
+        @media (max-width: 767px) {
+          float: none !important;
+          margin: 0 auto 10px;
+        }
       }
     }
   }
 }
 .printSection {
-  .view-disclaimer-link, .fa-close {
+  .view-disclaimer-link,
+  .fa-close {
     display: none;
   }
 }
@@ -340,7 +345,7 @@ div#dealer-inspire input {
     }
     .ctabox-overlay {
       opacity: 0;
-      background: rgba(0,0,0,0.75);
+      background: rgba(0, 0, 0, 0.75);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -361,7 +366,7 @@ div#dealer-inspire input {
     }
     &:hover {
       img {
-        transform:scale(1.2);
+        transform: scale(1.2);
       }
       .ctabox-overlay {
         opacity: 1;
@@ -425,7 +430,7 @@ div#dealer-inspire input {
   }
 }
 
- // For Finance Form Styling
+// For Finance Form Styling
 .fullcontentrow {
   div#dealer-inspire {
     padding: 0px;
@@ -468,7 +473,8 @@ div#dealer-inspire input {
       }
     }
     .progress-indicator {
-      .step1.active, .step2.active {
+      .step1.active,
+      .step2.active {
         background-color: #0071b9;
         @include box-shadow(none);
         color: #fff;
@@ -513,13 +519,13 @@ div#dealer-inspire input {
   left: 30px;
   bottom: 30px;
   right: 30px;
-  background: rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 20px 0;
   .ctacell {
     text-align: center;
     color: #fff;
-    border-left: 1px solid rgba(255,255,255,0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
     h3 {
       text-transform: uppercase;
       font-size: 14px;
@@ -527,7 +533,7 @@ div#dealer-inspire input {
       margin: 0;
     }
     .rule {
-      border:0;
+      border: 0;
       border-top: 1px solid #f0f0f0;
       margin: 10px auto;
       width: 50px;
@@ -543,7 +549,7 @@ div#dealer-inspire input {
     .button {
       background-color: darken($primary, 10%);
       background-color: rgba($primary, 0.6);
-      color:#fff;
+      color: #fff;
       margin: 0;
       &:hover {
         background-color: $primary;
@@ -597,11 +603,11 @@ div#dealer-inspire input {
 
 @media (max-width: 1024px) {
   .specialCoupon {
-    width:98%;
+    width: 98%;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #directionsRow {
     background: #eee;
     .locationtext {
@@ -613,7 +619,7 @@ div#dealer-inspire input {
     .getdirectionstext {
       font-size: 14px;
       left: 0;
-      line-height:normal;
+      line-height: normal;
       margin: 10px;
       position: relative;
       top: 0;
@@ -686,8 +692,8 @@ ul.video-gallery {
   ul.video-gallery {
     li.video {
       width: 31%;
-        .video-bottom-wrap {
-          font-size: 12px;
+      .video-bottom-wrap {
+        font-size: 12px;
         h3 {
           font-size: 16px;
         }
@@ -719,6 +725,6 @@ ul.video-gallery {
   }
 }
 
-.comments ul.post-comments .comment-num{
+.comments ul.post-comments .comment-num {
   display: none;
 }

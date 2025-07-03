@@ -3,14 +3,13 @@
 	Not all FJ sites have the same header.
 	New partials will need to be created since we have about 4 different headers types
 -->
-<?php //get_shared_homepage_template('desktop-header'); ?>
+<?php
+//get_shared_homepage_template('desktop-header');
+?>
 <?php get_frontend_component('header/header-v2'); ?>
 
-<?php get_scoped_template_part(
-    'partials/translate/google', 'translate',
-    array(
-        'mobile' => 'true'
-    )
-); ?>
+<?php get_scoped_template_part('partials/translate/google', 'translate', [
+  'mobile' => 'true',
+]); ?>
 
 <?php get_frontend_component('header/model-row'); ?>

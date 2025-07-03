@@ -1,7 +1,9 @@
-<?php /*================================
+<?php
+/*================================
 	Home page of the site
-===================================*/ ?>
-<?php if(get_field('before_videobanner')) { ?>
+===================================*/
+?>
+<?php if (get_field('before_videobanner')) { ?>
 <div id="before-videobanner" data-acf="before_videobanner">
 <?php the_field('before_videobanner'); ?>
 </div>

@@ -8,15 +8,15 @@
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 
-#main-content{
-	&:target:before{
-		content: '';
-	    display: block;
-	    height: $header-height-desktop;
-	    margin: -$header-height-desktop 0 0;
-	}
+#main-content {
+  &:target:before {
+    content: '';
+    display: block;
+    height: $header-height-desktop;
+    margin: -$header-height-desktop 0 0;
+  }
 }
 
 // *************************************************************************************************
@@ -31,128 +31,129 @@
 
 // Defaults for PZ font mixin: $font-family:$heading-font, $color:$primary, $weight:bold, $line-height:normal, $align:center
 @include pz-font-defaults() {
-// 		(optional additional styles)
+  // 		(optional additional styles)
 }
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample2/toyotaexample2-home.scss';
 
 #openhoursbar.container {
-	background: $primary;
-	font-weight: 600;
-	max-width: 100%;
-	overflow-x: hidden;
+  background: $primary;
+  font-weight: 600;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-@import "sliderOverlay";
+@import 'sliderOverlay';
 
 .pzRow {
-	max-width: 100%;
-	overflow-x: hidden;
-	.personalizer-wrap {
-		h2 {
-			padding: 40px 10px 50px 10px;
-			margin: 0;
-			color: $maintextcolor;
-			font-weight: 300;
-			text-transform: none;
-		}
-	}
-	@include breakpoint(xs) {
-		max-width: 100%;
-		margin: 0 auto;
-		.personalizer-wrap {
-			h2 {
-				padding: 20px 0px 10px 0px;
-				font-size: 30px;
-			}
-		}
-	}
+  max-width: 100%;
+  overflow-x: hidden;
+  .personalizer-wrap {
+    h2 {
+      padding: 40px 10px 50px 10px;
+      margin: 0;
+      color: $maintextcolor;
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+  @include breakpoint(xs) {
+    max-width: 100%;
+    margin: 0 auto;
+    .personalizer-wrap {
+      h2 {
+        padding: 20px 0px 10px 0px;
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample2/cta-row.scss';
 // Model Row
 .modelRow {
-	.wrapperRow__carousel {
-		.vehicle-box__count {
-			display: none;
-		}
-	}
-	@include breakpoint(xs) {
-		.wrapperRow__carousel {
-			.vehicle-box__info {
-				h3 {
-					text-align: center;
-				}
-			}
-		}
-	}
+  .wrapperRow__carousel {
+    .vehicle-box__count {
+      display: none;
+    }
+  }
+  @include breakpoint(xs) {
+    .wrapperRow__carousel {
+      .vehicle-box__info {
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
-
 
 @import 'content-row';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample2/content-service.scss';
 #serviceRow {
-	.serviceRow {
-		&__imageWrap {
-			&--1 {
-				width: 100%;
-			}
-		}
-	}
+  .serviceRow {
+    &__imageWrap {
+      &--1 {
+        width: 100%;
+      }
+    }
+  }
 }
 @import 'cta-row';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample2/reviews-row.scss';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample3/seo-row.scss';
 .seoRow {
-	.seo__content {
-		text-align: left;
-		h1 {
-			font-weight: 500;
-			@include responsive-font(4vw, 30px, 48px);
-		}
-		a, a:visited, a:active {
-			color: #fff;
-			font-weight: 700;
-			font-size: 16px;
-			&:hover {
-				color: $primary;
-			}
-		}
-	}
+  .seo__content {
+    text-align: left;
+    h1 {
+      font-weight: 500;
+      @include responsive-font(4vw, 30px, 48px);
+    }
+    a,
+    a:visited,
+    a:active {
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
 }
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample3/map-row.scss';
 .mapRow {
-	.mapWrapper {
-		&__directions {
-			h2 {
-				font-weight: 300;
-			}
-			form {
-				input {
-					border: none;
-				}
-				.button {
-					padding: 12px 30px;
-				}
-			}
-		}
-	}
-	// Media Queries
-	@include breakpoint (xs) {
-		.mapWrapper {
-			&__directions {
-				form {
-					@include flex-direction(column);
-					input[type="text"] {
-						padding: 10px;
-					}
-				}
-				button.button.primary-button {
-					margin-top: 10px;
-				}
-			}
-		}
-	}
+  .mapWrapper {
+    &__directions {
+      h2 {
+        font-weight: 300;
+      }
+      form {
+        input {
+          border: none;
+        }
+        .button {
+          padding: 12px 30px;
+        }
+      }
+    }
+  }
+  // Media Queries
+  @include breakpoint(xs) {
+    .mapWrapper {
+      &__directions {
+        form {
+          @include flex-direction(column);
+          input[type='text'] {
+            padding: 10px;
+          }
+        }
+        button.button.primary-button {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
 }
 
 // *************************************************************************************************

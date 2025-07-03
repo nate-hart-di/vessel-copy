@@ -1,14 +1,14 @@
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
-@import "variables";
+@import 'variables';
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sidebars/sidebar-basicboxy';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/specials/specials-coupons';
@@ -20,17 +20,17 @@ $vdp-lease-finance: false !default;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/content/simple-blogarchive';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/shortcodes/incentives-listview-2014';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
-@import "../../../shared/styles/common/fletcherjones-v2/_fj-service-page";
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-service-page';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-inside-pages';
 
-#di-page-composer{
-  .body-header, .desktop-margin{
+#di-page-composer {
+  .body-header,
+  .desktop-margin {
     margin-top: 0;
   }
   &.contentcontainer {
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       padding-top: 0;
     }
   }
 }
-

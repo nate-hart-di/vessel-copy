@@ -3,85 +3,84 @@
 // *************************************************************************************************
 
 //54719
-@media (max-width:768px) {
+@media (max-width: 768px) {
   img#pink-ribbon-oct {
     display: none;
   }
 }
 //end 54719
-.specialCoupon .specialRight .modelName{
-    color: #0059a8 !important;
-    font-size: 21px !important;
+.specialCoupon .specialRight .modelName {
+  color: #0059a8 !important;
+  font-size: 21px !important;
 }
 
-.specialCoupon .specialRight .description p{
-    font-size: 14px !important;
+.specialCoupon .specialRight .description p {
+  font-size: 14px !important;
 }
 
-a.view-disclaimer-link{
-    color: #a7a7a7 !important;
-    font-size: 11px !important;
-    font-style: italic !important;
-            
+a.view-disclaimer-link {
+  color: #a7a7a7 !important;
+  font-size: 11px !important;
+  font-style: italic !important;
 }
 
 //62845
 .page-vehicle-results-page {
-    a.button.inquire {
-        width: 100% !important;
-    }
-    .hide-the-main-cta a.fancy.button-form.button.cta-button {
-        display: none;
-    }
+  a.button.inquire {
+    width: 100% !important;
+  }
+  .hide-the-main-cta a.fancy.button-form.button.cta-button {
+    display: none;
+  }
 }
 .page-vehicle-display-page {
-    .hide-the-main-cta .maincta-row.ctabox-row {
-        display: none;
-    }
-    div#inquire-button a {
-        width: 100% !important;
-        margin-top: -10px;
-        display: none;
-    }
+  .hide-the-main-cta .maincta-row.ctabox-row {
+    display: none;
+  }
+  div#inquire-button a {
+    width: 100% !important;
+    margin-top: -10px;
+    display: none;
+  }
 }
 //end 62845
 
 a.fancy.button-form.button.cta-button.block.green.button-primary {
-    background: green;
+  background: green;
 }
-
 
 //Fix crappy styles for those buttons on the VDP
 .col-md-6.test-drive-cta.no-padding a {
-    width: 90% !important;
+  width: 90% !important;
 }
 .vdp-print-view .logo {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
-.page-id-2313, .page-id-22 {
-    .content {
-        font-size: 16px !important;
-    }
+.page-id-2313,
+.page-id-22 {
+  .content {
+    font-size: 16px !important;
+  }
 }
 
 .sidr {
-    color: #222;
+  color: #222;
 }
 
 #results-page .unlock-offer {
-    background: #d01e1c;
-    text-align: center;
-    padding: 10px;
-    clear: both;
-    a {
-        color: #fff !important;
-        text-decoration: none;
-    } 
+  background: #d01e1c;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  a {
+    color: #fff !important;
+    text-decoration: none;
   }
-  #vehicleDetails .unlock-offer {
-    display: block;
-    width: 100% !important;
-    background: #d01e1c;
-  }
+}
+#vehicleDetails .unlock-offer {
+  display: block;
+  width: 100% !important;
+  background: #d01e1c;
+}

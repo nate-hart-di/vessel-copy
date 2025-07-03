@@ -1,13 +1,18 @@
-.difo-owlcard-specials, #difo-default-coupon-wrap{
-  .coupon-coupon{
-    .difo-parts-button{
+.difo-owlcard-specials,
+#difo-default-coupon-wrap {
+  .coupon-coupon {
+    .difo-parts-button {
       display: none;
     }
-    &.parts-specials, &.parts{
-      .difo-parts, .difo-custom, .difo-parts-button{
+    &.parts-specials,
+    &.parts {
+      .difo-parts,
+      .difo-custom,
+      .difo-parts-button {
         display: block;
       }
-      .difo-schedule-service, .difo-service-button{
+      .difo-schedule-service,
+      .difo-service-button {
         display: none;
       }
     }

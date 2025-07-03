@@ -1,13 +1,13 @@
-.lightning{
-  #hits{
-    .hit-price__customize{
+.lightning {
+  #hits {
+    .hit-price__customize {
       display: none;
     }
   }
 }
 
 #lvrp-results-wrapper {
-  .hit-content h2.result-title .title-top{
+  .hit-content h2.result-title .title-top {
     display: none !important;
   }
 
@@ -30,18 +30,18 @@
   }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width: 1024px) {
   .page-template-page-lightning {
-    #openhoursbar{
+    #openhoursbar {
       display: none;
     }
   }
 
-	.page-template-page-lightning {
+  .page-template-page-lightning {
     #search-overlay {
       z-index: 1100;
       &.open {
-      //  top: 50px;
+        //  top: 50px;
       }
       .overlay-container {
         margin-top: 0;

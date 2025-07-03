@@ -9,7 +9,7 @@ $button_link = get_field('button_link', 'option');
 
 <?php get_header(); ?>
 
-<?php if(get_field('before_videobanner')) { ?>
+<?php if (get_field('before_videobanner')) { ?>
 <div id="before-videobanner" data-acf="before_videobanner">
 <?php the_field('before_videobanner'); ?>
 </div>

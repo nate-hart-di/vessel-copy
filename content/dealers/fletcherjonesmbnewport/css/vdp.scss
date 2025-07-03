@@ -1,12 +1,11 @@
-@import "variables.scss";
+@import 'variables.scss';
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 $orange: orange;
 $red: red;
 $vdp-ctabox-offset-top-start: 100px;
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 
 //NEW VDP STYLING: DO NOT REMOVE
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-details';
@@ -14,25 +13,25 @@ $vdp-ctabox-offset-top-start: 100px;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp';
 
-#vehicleDetails{
-  &.used-vehicle{
-    .reserve-now{
+#vehicleDetails {
+  &.used-vehicle {
+    .reserve-now {
       display: none;
     }
   }
-  &.previous-loaner-vehicle:not(.in-transit-vehicle){
-    .payment-options{
+  &.previous-loaner-vehicle:not(.in-transit-vehicle) {
+    .payment-options {
       display: none;
     }
   }
-  &.previous-loaner-vehicle.in-transit-vehicle{
-    .get-eprice{
+  &.previous-loaner-vehicle.in-transit-vehicle {
+    .get-eprice {
       display: none;
     }
-    .payment-options{
+    .payment-options {
       display: none;
     }
-    .reserve-now{
+    .reserve-now {
       display: block;
     }
   }
@@ -40,67 +39,68 @@ $vdp-ctabox-offset-top-start: 100px;
     display: none;
   }
   //padding-top: 110px;
-  &.locked_pricing_vehicle{
-    #details-page-ctabox{
-      .locked-reveal-text{
+  &.locked_pricing_vehicle {
+    #details-page-ctabox {
+      .locked-reveal-text {
         display: none;
-        .locked-pricing-price-unlocked &{
+        .locked-pricing-price-unlocked & {
           display: block;
         }
       }
     }
   }
-  .carfax-report, .history_report{
-    img{
+  .carfax-report,
+  .history_report {
+    img {
       max-width: 150px;
     }
   }
-  .vdp-shopping-tools{
+  .vdp-shopping-tools {
     border-top-color: #565656;
     border-bottom-color: #565656;
-    .shopping-tools-wrapper{
+    .shopping-tools-wrapper {
       @include flexbox;
-      .shopping-tool{
+      .shopping-tool {
         border-color: #565656;
         padding: 0 10px;
         @include flex(1 1 12.75%);
-        &:first-child{
+        &:first-child {
           border-color: #565656;
         }
         &.third-party-ipacket {
           @include flex-basis(23.5%);
         }
-        @media screen and (max-width:767px){
+        @media screen and (max-width: 767px) {
           @include flex(1 1 25.75%);
         }
       }
-      @media (max-width:1199px) {
+      @media (max-width: 1199px) {
         @include flex-wrap(wrap);
       }
-      @media (min-width:1025px) and (max-width:1199px) {
+      @media (min-width: 1025px) and (max-width: 1199px) {
         .shopping-tool {
           //@include flex-basis();
         }
       }
     }
-    svg{
-      fill: #0059a8
+    svg {
+      fill: #0059a8;
     }
-    .shopping-label{
-      a{
+    .shopping-label {
+      a {
         font-size: 14px;
         font-weight: bold;
       }
     }
   }
-  #ctabox-custom-ctas .financing-cta{
+  #ctabox-custom-ctas .financing-cta {
     display: none;
   }
-  @media screen and (max-width:1024px){
+  @media screen and (max-width: 1024px) {
     padding-top: 0px;
   }
-  #review-box{
-    .review{
+  #review-box {
+    .review {
       padding: 10px;
     }
   }
@@ -112,20 +112,20 @@ body.previous-loaner-vehicle {
   }
 }
 
-@media screen and (max-width:767px){
-  .page-vehicle-display-page{
-    #openhoursbar{
+@media screen and (max-width: 767px) {
+  .page-vehicle-display-page {
+    #openhoursbar {
       top: 50px;
     }
-    .reviews-slide{
+    .reviews-slide {
       z-index: 1;
     }
   }
-  #vehicleDetails .maincta-row{
-    .button{
+  #vehicleDetails .maincta-row {
+    .button {
       position: relative;
       top: 0 !important;
-      &.fixed-top{
+      &.fixed-top {
         position: fixed;
         top: 75px !important;
         z-index: 999;

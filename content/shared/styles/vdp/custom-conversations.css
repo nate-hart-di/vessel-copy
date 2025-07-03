@@ -1,3 +1,3 @@
-body:not(.page-vehicle-display-page) #di-conversations-embed > div[class*="Proactive"] {
-    display: none;
+body:not(.page-vehicle-display-page) #di-conversations-embed > div[class*='Proactive'] {
+  display: none;
 }

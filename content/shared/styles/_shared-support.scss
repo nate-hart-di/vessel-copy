@@ -1,49 +1,50 @@
 // CLIENT REQUESTED TO REMOVED FOCUS STYLES - START
-a:focus, .focus a {
-    outline: none !important;
+a:focus,
+.focus a {
+  outline: none !important;
 }
 // CLIENT REQUESTED TO REMOVED FOCUS STYLES - END
-#header{
-  .header-dropdown{
-    h2{
+#header {
+  .header-dropdown {
+    h2 {
       display: none;
     }
-    .widgettitle{
+    .widgettitle {
       margin-top: 0;
       font-weight: 400;
       font-size: 30px;
       text-transform: uppercase;
-      font-family: "corposregular",sans-serif;
+      font-family: 'corposregular', sans-serif;
     }
-    .widget ul.menu{
+    .widget ul.menu {
       @include flexbox;
       @include align-items(flex-start);
       @include flex-wrap(wrap);
-      > li{
+      > li {
         width: 100%;
       }
-      .column{
+      .column {
         width: 24%;
         display: inline-block;
       }
     }
-    .menu-item.column{
+    .menu-item.column {
       width: 49%;
       display: inline-block !important;
-      > a{
+      > a {
         font-weight: 400 !important;
         font-size: 30px !important;
         text-transform: uppercase;
-        font-family: "corposregular",sans-serif;
+        font-family: 'corposregular', sans-serif;
         margin-bottom: 10px;
         height: 30px !important;
         line-height: 30px !important;
       }
-      > .sub-menu{
+      > .sub-menu {
         display: block;
         position: relative;
-        a{
-          &:hover{
+        a {
+          &:hover {
             background: transparent;
           }
         }
@@ -52,15 +53,15 @@ a:focus, .focus a {
   }
 }
 
-@media screen and (max-width:1024px){
-  #full-overlay.open{
+@media screen and (max-width: 1024px) {
+  #full-overlay.open {
     z-index: 999999999;
   }
 }
 
-#vehicleDetails{
-  #review-box{
-    .review{
+#vehicleDetails {
+  #review-box {
+    .review {
       padding: 10px;
       .overviewbox {
         @include flexbox;
@@ -72,20 +73,20 @@ a:focus, .focus a {
   }
 }
 
-.hidden-all{
+.hidden-all {
   display: none;
 }
 
-.home #videobanner{
-  @media screen and (min-width:1025px){
+.home #videobanner {
+  @media screen and (min-width: 1025px) {
     min-height: 500px;
     width: 100%;
   }
 }
 
-#DIModal{
-  #saleshours{
-    .department-hours{
+#DIModal {
+  #saleshours {
+    .department-hours {
       @include flexbox;
     }
   }

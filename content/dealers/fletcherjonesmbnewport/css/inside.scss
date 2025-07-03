@@ -1,14 +1,14 @@
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
-@import "variables.scss";
+@import 'variables.scss';
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 $orange: orange;
 $red: red;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sidebars/sidebar-basicboxy';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/specials/specials-coupons';
@@ -20,7 +20,7 @@ $red: red;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/content/simple-blogarchive';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/shortcodes/incentives-listview-2014';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
-@import "../../../shared/styles/common/fletcherjones-v2/_fj-service-page";
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-service-page';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-inside-pages';
 
 .sharing .fa.button.primary-button.twitter {

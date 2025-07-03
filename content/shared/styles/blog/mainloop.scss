@@ -1,197 +1,198 @@
 @import '../../../../../../themes/DealerInspireCommonTheme/css/mixins/breakpoints';
 
+.blog,
+.category {
+  .featured-carousel {
+    margin-bottom: 20px;
+  }
+  .featured-carousel.owl-carousel .owl-item {
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(sm) {
+      padding: 5px;
+    }
+    .item {
+      height: 500px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .post-content .post-thumbnail {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .post-content h2 .entry-title {
+    font-weight: 700 !important;
+  }
+  .owl-buttons {
+    display: flex;
+    padding: 5px 15px;
+    @include breakpoint(md) {
+      padding: 5px;
+    }
+  }
+  .owl-buttons > div {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+    width: 49.5%;
+    @include breakpoint(sm) {
+      width: 58px;
+      position: absolute;
+      top: 44%;
+    }
+  }
 
-.blog, .category {
-    .featured-carousel {
-      margin-bottom: 20px;
+  .owl-prev {
+    margin-right: 1%;
+    @include breakpoint(sm) {
+      left: -60px;
     }
-    .featured-carousel.owl-carousel .owl-item {
-      padding: 15px;
-      position: relative;
-      z-index: 1;
-      @include breakpoint(sm){
-        padding: 5px;
-      }
-      .item {
-        height: 500px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+  }
+  .owl-next {
+    @include breakpoint(sm) {
+      right: -60px;
     }
-    .post-content .post-thumbnail {
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
+  }
+
+  .featuredImage {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .featuredContent {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .featuredContent h3 {
+    padding: 0 10px;
+    margin-bottom: 45px;
+    a {
+      color: #fff;
     }
-    .post-content h2 .entry-title {
-      font-weight: 700 !important;
+  }
+
+  .featuredContent .cta {
+    padding-left: 20px;
+  }
+
+  .featuredContent .cta a {
+    background: var(--primary);
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  .back-button {
+    display: none !important;
+  }
+  .featuredCats {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .featuredCategory {
+    text-transform: uppercase;
+    color: #000;
+    &.active {
+      color: #0059a8;
     }
-    .owl-buttons {
-      display: flex;
-      padding: 5px 15px;
-      @include breakpoint(md){
-        padding: 5px;
-      }
-  
-    }
-    .owl-buttons > div {
-      height: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 50px;
-      background: rgba(0,0,0,0.3);
-      color: rgba(255,255,255,0.7);
-      z-index: 999;
-      width: 49.5%;
-      @include breakpoint(sm){
-        width: 58px;
-        position: absolute;
-        top: 44%;
-      }
-    }
-  
-    .owl-prev {
-      margin-right: 1%;
-      @include breakpoint(sm){
-        left: -60px;
-      }
-    }
-    .owl-next {
-      @include breakpoint(sm){
-        right: -60px;
-      }
-    }
-  
-    .featuredImage {
-      display: flex;
-      align-items: flex-end;  
-    }
-  
-    .featuredContent {
-      background: rgba(0, 0, 0, .7);
-      width: 100%;
+  }
+  .featuredCats__wrapper {
+    @include breakpoint(sm) {
+      border-top: 1px #333 solid;
+      border-bottom: 1px #333 solid;
+      padding-top: 10px;
       padding-bottom: 10px;
     }
-  
-    .featuredContent h3 {
-      padding: 0 10px;
-      margin-bottom: 45px;
-      a{
-        color: #fff;
-      }
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .featuredCats__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    appearance: none;
+    cursor: pointer;
+    background: url(/wp-content/themes/DealerInspireCommonTheme/images/caret.png) no-repeat right center #fff;
+    padding: 5px 20px 5px 10px;
+    font-size: 16px;
+    color: #555;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  @include breakpoint(md) {
+    .contentcontainer {
+      padding-top: 15px;
     }
-  
-    .featuredContent .cta {
-      padding-left: 20px;
-    }
-  
-    .featuredContent .cta a {
-      background: var(--primary);
-      padding: 10px;
-      text-transform: capitalize;
-    }
-    .back-button {
-      display: none !important;
-    }
-    .featuredCats {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
-    }
-    .featuredCategory {
-      text-transform: uppercase;
-      color: #000;
-      &.active {
-        color: #0059a8;
-      }
-    }
-    .featuredCats__wrapper {
-      @include breakpoint(sm){
-        border-top: 1px #333 solid;
-        border-bottom: 1px #333 solid;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      font-size: 20px;
-      display: flex;
-      justify-content: space-around;
-    }
-    .featuredCats__select{
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      text-indent: 0.01px;
-      text-overflow: '';
-      appearance: none;
-      cursor: pointer;
-      background: url(/wp-content/themes/DealerInspireCommonTheme/images/caret.png) no-repeat right center #fff;
-      padding: 5px 20px 5px 10px;
-      font-size: 16px;
-      color: #555;
-      font-family: inherit;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-      width: 300px;
-    }
-    @include breakpoint(md){
-      .contentcontainer {
-        padding-top: 15px;
-      }
-    }
-  
-    .content {
-      h1 {
-        font-size: 50px;
-        font-weight: 400;
-        text-align: center;
-        padding: 0 15px;
-      }
-      h5{
-        text-align: center;
-        margin: 10px 0 30px;
-        padding: 0 15px;
-      }
-    }
-  
-    div.post-content a.moretag, .post-content a.moretag:visited {
-      display: inline-block;
-      border: none;
-      border-radius: 0;
-      background-clip: padding-box;
-      height: unset;
-      box-shadow: none;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      text-transform: capitalize; 
-      padding: 10px 20px;
-      font-family: "Montserrat",sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1;
-      color: #fff;
-      position: relative;
-      text-shadow: none;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      width: auto !important;
-      margin: 0px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-    }
-  
   }
 
-  .blog .featuredCategory, .category .featuredCategory {
-    text-align: center;  
-    padding: 0 10px;
-  }
-    @media screen and (max-width: 1000px){
-      .blog div.featuredCats, .category div.featuredCats {
-        width: unset;
-      }
+  .content {
+    h1 {
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 15px;
     }
+    h5 {
+      text-align: center;
+      margin: 10px 0 30px;
+      padding: 0 15px;
+    }
+  }
+
+  div.post-content a.moretag,
+  .post-content a.moretag:visited {
+    display: inline-block;
+    border: none;
+    border-radius: 0;
+    background-clip: padding-box;
+    height: unset;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    position: relative;
+    text-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto !important;
+    margin: 0px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+}
+
+.blog .featuredCategory,
+.category .featuredCategory {
+  text-align: center;
+  padding: 0 10px;
+}
+@media screen and (max-width: 1000px) {
+  .blog div.featuredCats,
+  .category div.featuredCats {
+    width: unset;
+  }
+}

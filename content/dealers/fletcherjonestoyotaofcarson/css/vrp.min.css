@@ -1,1 +1,38 @@
-.lightning-vehicle-results-page #lvrp-container #lvrp-filters-column #facets-menu #react-facets .facet.type-facet,.lightning-vehicle-results-page #lvrp-container #lvrp-filters-column #facets-menu #react-facets .facet.slider-facet{display:none}.lightning-vehicle-results-page #lvrp-container #lvrp-results-column #lvrp-results-container #key-features{display:none}.lightning-vehicle-results-page #lvrp-container #lvrp-results-column #lvrp-results-container .lvrp-container .lvrp-results-column #lvrp-results-wrapper #hits .result-wrap .hit .hit-content .hit-content-title-wrap .result-title .title-top{display:none}.lightning-vehicle-results-page #lvrp-container #lvrp-results-column #lvrp-results-container .lvrp-container .lvrp-results-column #lvrp-results-wrapper #hits .result-wrap .hit .hit-content .hit-content-title-wrap .result-features-container{display:none}
+.lightning-vehicle-results-page #lvrp-container #lvrp-filters-column #facets-menu #react-facets .facet.type-facet,
+.lightning-vehicle-results-page #lvrp-container #lvrp-filters-column #facets-menu #react-facets .facet.slider-facet {
+  display: none;
+}
+.lightning-vehicle-results-page #lvrp-container #lvrp-results-column #lvrp-results-container #key-features {
+  display: none;
+}
+.lightning-vehicle-results-page
+  #lvrp-container
+  #lvrp-results-column
+  #lvrp-results-container
+  .lvrp-container
+  .lvrp-results-column
+  #lvrp-results-wrapper
+  #hits
+  .result-wrap
+  .hit
+  .hit-content
+  .hit-content-title-wrap
+  .result-title
+  .title-top {
+  display: none;
+}
+.lightning-vehicle-results-page
+  #lvrp-container
+  #lvrp-results-column
+  #lvrp-results-container
+  .lvrp-container
+  .lvrp-results-column
+  #lvrp-results-wrapper
+  #hits
+  .result-wrap
+  .hit
+  .hit-content
+  .hit-content-title-wrap
+  .result-features-container {
+  display: none;
+}

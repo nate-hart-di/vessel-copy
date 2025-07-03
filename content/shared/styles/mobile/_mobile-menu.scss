@@ -7,495 +7,497 @@ $mobileCTAHover: $primary;
 $header-height-mobile: 50px;
 $hamburger-background: #fff;
 .deviceWrapper__menu {
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  text-align: center;
+  width: 35px;
+  font-size: 2rem;
+  height: calc(#{$header-height-mobile} - 1px);
+  &.menu-hamburger {
+    width: 60px;
+    background: $hamburger-background;
     @include flexbox();
     @include justify-content(center);
     @include align-items(center);
-    text-align: center;
-    width: 35px;
-    font-size: 2rem;
-    height: calc(#{$header-height-mobile} - 1px);
+    .icon-label {
+      display: none;
+    }
+  }
+  a {
+    @include flexbox();
+    @include align-items(center);
+    text-decoration: none;
+  }
+  .active {
+    opacity: 1;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+  }
+  .fa {
+    color: $maintextcolor;
+  }
+  @media (min-width: 768px) {
+    width: 50px;
+    font-size: 2.5rem;
     &.menu-hamburger {
-        width: 60px;
-        background: $hamburger-background;
-        @include flexbox();
-        @include justify-content(center);
-        @include align-items(center);
-        .icon-label {
-            display: none;
-        }
+      width: 60px;
     }
-    a {
-        @include flexbox();
-        @include align-items(center);
-        text-decoration: none;
-    }
-    .active {
-        opacity: 1;
-        @include flexbox();
-        @include justify-content(center);
-        @include align-items(center);
-    }
-    .fa {
-        color: $maintextcolor;
-    }
-    @media (min-width: 768px) {
-        width: 50px;
-        font-size: 2.5rem;
-        &.menu-hamburger {
-            width: 60px;
-        }
-    }
+  }
 }
 
-/// Menu Full Overlay 
+/// Menu Full Overlay
 #full-overlay {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    left: 0;
-    right: 0;
-    background-size: cover;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 450ms ease);
+  &.open {
     @include transition(all 450ms ease);
-    &.open {
-        @include transition(all 450ms ease);
-        visibility: visible;
-        overflow-y: scroll;
-        opacity: 1;
-        padding-bottom: 81px;
-        @include z-index("overlay");
-        .tool-overlay.showTarget .wrapper {
-            display: block !important;
-        }
+    visibility: visible;
+    overflow-y: scroll;
+    opacity: 1;
+    padding-bottom: 81px;
+    @include z-index('overlay');
+    .tool-overlay.showTarget .wrapper {
+      display: block !important;
     }
-    .tool-overlay .wrapper {
-        color: $maintextcolor;
+  }
+  .tool-overlay .wrapper {
+    color: $maintextcolor;
+  }
+  .overlay-controls {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    span {
+      margin: 0 10px;
     }
-    .overlay-controls {
-        position: absolute;
-        left: 0;
-        bottom: 30px;
-        width: 100%;
-        text-align: center;
-        span {
-            margin: 0 10px;
-        }
-    }
-    #overlayInner {
-        width: 100%;
-    }
+  }
+  #overlayInner {
+    width: 100%;
+  }
 }
 
 /// Overlay Styles for Menu (Mobile/tablet)
 #fullmenu-overlay {
-    .device-nav-menu {
-        display: block !important;
-        top: 0;
-        left: 0px;
-        position: relative;
-        width: 100vw;
-        background: #fff;
-        overflow-y: scroll !important;
-        height: 100vh;
-        font-family: $heading-font;
-        #close-button {
-            text-align: center;
-            width: 40px;
+  .device-nav-menu {
+    display: block !important;
+    top: 0;
+    left: 0px;
+    position: relative;
+    width: 100vw;
+    background: #fff;
+    overflow-y: scroll !important;
+    height: 100vh;
+    font-family: $heading-font;
+    #close-button {
+      text-align: center;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      height: 70px;
+      opacity: 1;
+      z-index: 20;
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+    }
+    .caret {
+      display: none;
+    }
+    > .navbar {
+      height: auto;
+      padding: 0 25px 60px;
+      .navbar-inner {
+        .nav_section {
+          position: relative;
+          > ul.nav {
+            position: relative;
+            z-index: 10;
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            right: 0px;
+            transition:
+              transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1),
+              opacity 550ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            margin-top: 70px;
+            border-top: 1px solid #979797;
+            li a {
+              font-family: $heading-font;
+              line-height: 70px;
+              height: 70px;
+            }
+            &.hide-item {
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              @include transform(translateX(60px));
+            }
+            li {
+              &.menu-item-has-children {
+                > a {
+                  position: relative;
+                  line-height: 70px;
+                  height: 70px;
+                  &:before {
+                    content: '\f054';
+                    font-family: 'FontAwesome';
+                    position: absolute;
+                    display: inline-block;
+                    vertical-align: middle;
+                    top: -1px;
+                    right: 5px;
+                    margin-left: 5px;
+                    font-size: 16px;
+                    color: #111;
+                    @include transition(all 0.2s ease);
+                  }
+                }
+              }
+            }
+          } // submenu overlay
+          .overlay {
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            min-height: 100vh;
+            background: $offcanvasflyout-bg;
+            z-index: -100;
             position: absolute;
             top: 0;
-            right: 25px;
-            height: 70px;
-            opacity: 1;
-            z-index: 20;
-            @include flexbox();
-            @include justify-content(center);
-            @include align-items(center);
-        }
-        .caret {
-            display: none;
-        }
-        >.navbar {
-            height: auto;
-            padding: 0 25px 60px;
-            .navbar-inner {
-                .nav_section {
-                    position: relative;
-                    >ul.nav {
-                        position: relative;
-                        z-index: 10;
-                        display: block;
-                        opacity: 1;
-                        visibility: visible;
-                        right: 0px;
-                        transition: transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1), opacity 550ms cubic-bezier(0.25, 0.1, 0.25, 1);
-                        margin-top: 70px;
-                        border-top: 1px solid #979797;
-                        li a {
-                            font-family: $heading-font;
-                            line-height: 70px;
-                            height: 70px;
-                        }
-                        &.hide-item {
-                            display: none;
-                            opacity: 0;
-                            visibility: hidden;
-                            @include transform(translateX(60px));
-                        }
-                        li {
-                            &.menu-item-has-children {
-                                >a {
-                                    position: relative;
-                                    line-height: 70px;
-                                    height: 70px;
-                                    &:before {
-                                        content: '\f054';
-                                        font-family: 'FontAwesome';
-                                        position: absolute;
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                        top: -1px;
-                                        right: 5px;
-                                        margin-left: 5px;
-                                        font-size: 16px;
-                                        color: #111;
-                                        @include transition(all .2s ease);
-                                    }
-                                }
-                            }
-                        }
-                    } // submenu overlay
-                    .overlay {
-                        visibility: hidden;
-                        opacity: 0;
-                        width: 0;
-                        min-height: 100vh;
-                        background: $offcanvasflyout-bg;
-                        z-index: -100;
-                        position: absolute;
-                        top: 0;
-                        right: -60px;
-                        overflow: hidden; // @include transition(opacity 450ms ease);
-                        // @include transition(right 450ms ease);
-                        transition: right 450ms cubic-bezier(0.25, 0.1, 0.25, 1), opacity 450ms cubic-bezier(0.25, 0.1, 0.25, 1);
-                        width: 0vw;
-                        &.active {
-                            z-index: 900;
-                            width: 100%;
-                            display: block;
-                            opacity: 1; // @include transition(opacity 450ms ease);
-                            right: 0px;
-                            visibility: visible;
-                        }
-                        .dropdown-menu.nav {
-                            border: none;
-                            box-shadow: none;
-                        }
-                        .back-button {
-                            position: relative;
-                            width: 100%;
-                            height: 70px;
-                            line-height: 70px;
-                            @include flexbox();
-                            background: #fff;
-                            color: #111;
-                            border-bottom: 1px solid #979797;
-                            .back {
-                                text-align: center;
-                                width: 30px;
-                                position: absolute;
-                                height: 100%;
-                                @include flexbox();
-                                @include justify-content(center);
-                                @include align-items(center);
-                            }
-                            .title {
-                                padding: 0px 10px;
-                                width: 100%;
-                                width: calc(100% - 40px);
-                                margin: 0 auto;
-                                text-align: center;
-                                span {
-                                    font-size: 22px;
-                                    text-transform: uppercase;
-                                    font-weight: 700;
-                                }
-                            }
-                        }
-                        &.active {
-                            ul.dropdown-menu {
-                                display: block;
-                                position: relative;
-                                top: 0;
-                                padding-bottom: 81px;
-                            }
-                        }
-                    }
-                    .dropdown-menu.nav,
-                    ul.nav {
-                        >li {
-                            >a {
-                                width: 100%;
-                                font-size: 22px;
-                                text-transform: uppercase;
-                                line-height: 70px;
-                                height: 70px;
-                            }
-                            >ul.dropdown-menu {
-                                display: none;
-                                padding: 0 15px 20px;
-                                li {
-                                    a {
-                                        font-size: 20px;
-                                        text-transform: none;
-                                    }
-                                }
-                            }
-                            &.active:not(.current-menu-item) {
-                                >ul.dropdown-menu {
-                                    display: block;
-                                }
-                            }
-                        }
-                        .inner-submenu {
-                            &.menu-item-has-children {
-                                a:hover {
-                                    background: #f9f9f9;
-                                }
-                                >a {
-                                    position: relative;
-                                    line-height: 70px;
-                                    height: 70px;
-                                    &:before {
-                                        content: '\f067';
-                                        font-family: 'FontAwesome';
-                                        position: absolute;
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                        top: -1px;
-                                        right: 5px;
-                                        margin-left: 5px;
-                                        font-size: 16px;
-                                        color: #a2a2a2;
-                                        @include transition(all .2s ease);
-                                    }
-                                }
-                                &.active {
-                                    >a {
-                                        &:before {
-                                            content: '\f068';
-                                        }
-                                    }
-                                }
-                                ul {
-                                    li {
-                                        float: left;
-                                        min-width: 50%;
-                                        width: 50%;
-                                        border-bottom: none;
-                                        a {
-                                            @include responsive-font(2.35vw, 17px, 20px);
-                                            background: #fff;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            right: -60px;
+            overflow: hidden; // @include transition(opacity 450ms ease);
+            // @include transition(right 450ms ease);
+            transition:
+              right 450ms cubic-bezier(0.25, 0.1, 0.25, 1),
+              opacity 450ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            width: 0vw;
+            &.active {
+              z-index: 900;
+              width: 100%;
+              display: block;
+              opacity: 1; // @include transition(opacity 450ms ease);
+              right: 0px;
+              visibility: visible;
             }
+            .dropdown-menu.nav {
+              border: none;
+              box-shadow: none;
+            }
+            .back-button {
+              position: relative;
+              width: 100%;
+              height: 70px;
+              line-height: 70px;
+              @include flexbox();
+              background: #fff;
+              color: #111;
+              border-bottom: 1px solid #979797;
+              .back {
+                text-align: center;
+                width: 30px;
+                position: absolute;
+                height: 100%;
+                @include flexbox();
+                @include justify-content(center);
+                @include align-items(center);
+              }
+              .title {
+                padding: 0px 10px;
+                width: 100%;
+                width: calc(100% - 40px);
+                margin: 0 auto;
+                text-align: center;
+                span {
+                  font-size: 22px;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                }
+              }
+            }
+            &.active {
+              ul.dropdown-menu {
+                display: block;
+                position: relative;
+                top: 0;
+                padding-bottom: 81px;
+              }
+            }
+          }
+          .dropdown-menu.nav,
+          ul.nav {
+            > li {
+              > a {
+                width: 100%;
+                font-size: 22px;
+                text-transform: uppercase;
+                line-height: 70px;
+                height: 70px;
+              }
+              > ul.dropdown-menu {
+                display: none;
+                padding: 0 15px 20px;
+                li {
+                  a {
+                    font-size: 20px;
+                    text-transform: none;
+                  }
+                }
+              }
+              &.active:not(.current-menu-item) {
+                > ul.dropdown-menu {
+                  display: block;
+                }
+              }
+            }
+            .inner-submenu {
+              &.menu-item-has-children {
+                a:hover {
+                  background: #f9f9f9;
+                }
+                > a {
+                  position: relative;
+                  line-height: 70px;
+                  height: 70px;
+                  &:before {
+                    content: '\f067';
+                    font-family: 'FontAwesome';
+                    position: absolute;
+                    display: inline-block;
+                    vertical-align: middle;
+                    top: -1px;
+                    right: 5px;
+                    margin-left: 5px;
+                    font-size: 16px;
+                    color: #a2a2a2;
+                    @include transition(all 0.2s ease);
+                  }
+                }
+                &.active {
+                  > a {
+                    &:before {
+                      content: '\f068';
+                    }
+                  }
+                }
+                ul {
+                  li {
+                    float: left;
+                    min-width: 50%;
+                    width: 50%;
+                    border-bottom: none;
+                    a {
+                      @include responsive-font(2.35vw, 17px, 20px);
+                      background: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
-
-
 
 .container-wide.contentcontainer,
 .container.contentcontainer {
-    padding-top: 42px;
+  padding-top: 42px;
 }
 
 #di-page-composer {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 #openhoursbar .dynamic-hours .department {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 #search-overlay {
-    background: #fff;
-    .overlay-container {
-        height: 100%;
-    }
+  background: #fff;
+  .overlay-container {
+    height: 100%;
+  }
 }
 
 #searchform {
-    .twitter-typeahead {
-        border: none;
-        font-size: 14px;
-        #alg-search {
-            font-size: 14px;
-            padding: 0 10px;
-            font-weight: 300;
-            border-bottom: 1px solid #ccc;
-            border-radius: 0;
-            @include transition(all 0.5s ease);
-        }
+  .twitter-typeahead {
+    border: none;
+    font-size: 14px;
+    #alg-search {
+      font-size: 14px;
+      padding: 0 10px;
+      font-weight: 300;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      @include transition(all 0.5s ease);
     }
+  }
 }
 
 #algolia-overlay.active {
-    position: unset;
+  position: unset;
 }
 
 #mobile-menu {
-    background: #fff;
+  background: #fff;
 }
 
 .menu-top {
-    .mobile-header-top {
-        @include justify-content(space-between);
-        .icon-menu {
-            min-width: 70px;
-            @include justify-content(flex-start);
-            .menu-hamburger {
-                border-left: 0;
-            }
-        }
-        .icons {
-            margin-left: 0;
-            padding-right: 6px;
-            .menu-search,
-            .menu-phone,
-            .menu-address {
-                border-left: 0;
-                width: 42px;
-                font-size: 20px;
-                @include flexbox;
-                @include align-items(center);
-                @include justify-content(center);
-                a {
-                    @include flexbox;
-                    @include align-items(center);
-                    @include justify-content(center);
-                }
-            }
-            .menu-address {
-                a,
-                svg {
-                    color: $primary;
-                    fill: $primary;
-                }
-            }
-            .menu-search,
-            .menu-phone {
-                a,
-                svg {
-                    color: $mobileCTA;
-                    fill: $mobileCTA;
-                }
-            }
-        }
+  .mobile-header-top {
+    @include justify-content(space-between);
+    .icon-menu {
+      min-width: 70px;
+      @include justify-content(flex-start);
+      .menu-hamburger {
+        border-left: 0;
+      }
     }
-    .logo {
-        padding: 5px;
-        img {
-            max-height: 40px;
+    .icons {
+      margin-left: 0;
+      padding-right: 6px;
+      .menu-search,
+      .menu-phone,
+      .menu-address {
+        border-left: 0;
+        width: 42px;
+        font-size: 20px;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        a {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
         }
+      }
+      .menu-address {
+        a,
+        svg {
+          color: $primary;
+          fill: $primary;
+        }
+      }
+      .menu-search,
+      .menu-phone {
+        a,
+        svg {
+          color: $mobileCTA;
+          fill: $mobileCTA;
+        }
+      }
     }
+  }
+  .logo {
+    padding: 5px;
+    img {
+      max-height: 40px;
+    }
+  }
 }
 
 .navbar .navbar-inner ul.nav li ul.sub-menu .di-vehicle-icon a:before,
 .navbar .navbar-inner ul.nav li ul.dropdown-menu .di-vehicle-icon a:before {
-    height: 40px !important;
-    width: 60px !important;
+  height: 40px !important;
+  width: 60px !important;
 }
 
 .device-nav-menu .navbar .navbar-inner ul.nav li a {
-    font-family: $heading-font;
+  font-family: $heading-font;
 }
 
 .page-template-page-lightning {
-    #search-overlay {
-        z-index: 1100;
-        &.open {
-            top: 50px;
-        }
-        .overlay-container {
-            margin-top: 0;
-        }
+  #search-overlay {
+    z-index: 1100;
+    &.open {
+      top: 50px;
     }
+    .overlay-container {
+      margin-top: 0;
+    }
+  }
 }
 
 #vrp-custom-filter {
-    margin: 25px 0 0;
+  margin: 25px 0 0;
 }
 
 // Footer Styles
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
-    }
-    .social {
-        background: #525252;
-        text-align: center;
-        padding: 15px;
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
         a {
-            background: #d7d7d7;
-            color: #525252;
-            border-radius: 100%;
-            font-size: 20px;
-            margin: 5px 7px;
-            &:last-child {
-                background: none;
-                color: #d7d7d7;
-            }
-            .fa-youtube-play {
-                font-size: 28px;
-                vertical-align: middle;
-                &:before {
-                    content: '\f167';
-                }
-            }
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
+  .social {
+    background: #525252;
+    text-align: center;
+    padding: 15px;
+    a {
+      background: #d7d7d7;
+      color: #525252;
+      border-radius: 100%;
+      font-size: 20px;
+      margin: 5px 7px;
+      &:last-child {
+        background: none;
+        color: #d7d7d7;
+      }
+      .fa-youtube-play {
+        font-size: 28px;
+        vertical-align: middle;
+        &:before {
+          content: '\f167';
+        }
+      }
+    }
+  }
 }

@@ -2,63 +2,59 @@
 //	VARIABLES
 // *************************************************************************************************
 
-@import "variables";
+@import 'variables';
 
 @mixin modal-spans() {
-  display:block;
-  font-size:2rem;
-  margin:15px auto;
-  text-align:center;
+  display: block;
+  font-size: 2rem;
+  margin: 15px auto;
+  text-align: center;
 }
 
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 
-
-
 // *************************************************************************************************
 //	GENERAL
 // *************************************************************************************************
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
 
-@media (min-width:1025px) {
-	.container-wide.contentcontainer {
-		padding-top: 30px;
-	}
+@media (min-width: 1025px) {
+  .container-wide.contentcontainer {
+    padding-top: 30px;
+  }
 }
 
 p {
-	font-weight: 300;
+  font-weight: 300;
 }
 
-a[href^=tel]{
-	color:inherit;
+a[href^='tel'] {
+  color: inherit;
 }
 
 .hidden {
-    display:none;
+  display: none;
 }
-
 
 #google_translate_element {
-    position: absolute;
-    right: 15px;
-    top: 110px;
-    @media (max-width: 1024px) {
-		top: 50px;
-		right: 0;
-		z-index: 999;
-    }
+  position: absolute;
+  right: 15px;
+  top: 110px;
+  @media (max-width: 1024px) {
+    top: 50px;
+    right: 0;
+    z-index: 999;
+  }
 }
 .home #google_translate_element {
-    top: 150px;
-    @media (max-width: 1024px) {
-		top: 50px;
-    }
+  top: 150px;
+  @media (max-width: 1024px) {
+    top: 50px;
+  }
 }
-
 
 // *************************************************************************************************
 //	HEADER
@@ -67,48 +63,48 @@ a[href^=tel]{
 //@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-header';
 
 #openhoursbar {
-	top: 50px;
+  top: 50px;
 }
 
 body .fixed-top-spacer {
-	height: 110px;
+  height: 110px;
 
-	@media screen and (max-width: 1024px) {
-		height: 75px;
-	}
+  @media screen and (max-width: 1024px) {
+    height: 75px;
+  }
 
-	@media screen and (max-width: 767px) {
-		height: 78px;
-	}
+  @media screen and (max-width: 767px) {
+    height: 78px;
+  }
 }
 
 //==================================
 // HEADER ADJUSTMENTS DESKTOP 07/20
 //==================================
 #header.menu-top .header-top {
-    a.hours-icon i {
-        color: #111;
-    }
-    .search-anything-toggle form {
-        background: #fff url('../images/searchicon-black.png') no-repeat right 10px center;
-        border: none !important;
-        border-bottom: 1px solid #111 !important;
-    }
+  a.hours-icon i {
+    color: #111;
+  }
+  .search-anything-toggle form {
+    background: #fff url('../images/searchicon-black.png') no-repeat right 10px center;
+    border: none !important;
+    border-bottom: 1px solid #111 !important;
+  }
 }
 @media screen and (max-width: 1024px) {
-    .tt-dropdown-menu {
-        margin-top: 0px !important;
-    }
+  .tt-dropdown-menu {
+    margin-top: 0px !important;
+  }
 }
 @include breakpoint(sm) {
-	#header.menu-top .header-top .search-anything-toggle .tt-dropdown-menu {
-	    padding: 0 0 160px !important;
-	}
-	.header-bottom.corona {
-	    height: auto !important;
-	    line-height: inherit !important;
-		padding: 15px 10px;
-	}
+  #header.menu-top .header-top .search-anything-toggle .tt-dropdown-menu {
+    padding: 0 0 160px !important;
+  }
+  .header-bottom.corona {
+    height: auto !important;
+    line-height: inherit !important;
+    padding: 15px 10px;
+  }
 }
 //=========================================
 // HEADER ADJUSTMENTS DESKTOP 07/20 - END
@@ -118,24 +114,21 @@ body .fixed-top-spacer {
 // HEADER ADJUSTMENTS DESKTOP 03/25
 //==================================
 
-
 #header .header-bottom {
-    .dealer-hours-container {
-        @media screen and (max-width: 1100px) {
-            padding-left: 41px;
-        }
+  .dealer-hours-container {
+    @media screen and (max-width: 1100px) {
+      padding-left: 41px;
     }
-    .dealer-phone {
-        overflow: visible;
-        white-space: nowrap;
-    }
-
+  }
+  .dealer-phone {
+    overflow: visible;
+    white-space: nowrap;
+  }
 }
 
 //=========================================
 // HEADER ADJUSTMENTS DESKTOP 03/25 - END
 //=========================================
-
 
 // *************************************************************************************************
 //	NAVIGATION
@@ -147,9 +140,8 @@ body .fixed-top-spacer {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/offcanvasnav';
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-navigation';
 
-
 .header-dropdown .header-dropdown-container .menu-navigation {
-    padding-left: 60px;
+  padding-left: 60px;
 }
 
 // *************************************************************************************************
@@ -160,133 +152,127 @@ body .fixed-top-spacer {
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-footer';
 
-
 .footerTop {
-    background: #1b1b1b;
-    &__Menu {
-        padding: 0;
-        color: #fff;
-        border-top: 1px solid #1c1c1c;
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #fff;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+  background: #1b1b1b;
+  &__Menu {
+    padding: 0;
+    color: #fff;
+    border-top: 1px solid #1c1c1c;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        li.menu-item {
-            width: inherit;
-            list-style-type: none;
-            min-height: auto;
-            border-bottom: 1px solid #444;
-            a {
-                display: block;
-                margin: 0;
-                padding: 25px;
-                font-size: 17px;
-                &:after {
-                    content: '\f054';
-                    font-family: 'FontAwesome';
-                    float: right;
-                    color: #706f6c;
-                    @include transition(all .5s ease);
-                }
-            }
-        }
+      }
     }
+    li.menu-item {
+      width: inherit;
+      list-style-type: none;
+      min-height: auto;
+      border-bottom: 1px solid #444;
+      a {
+        display: block;
+        margin: 0;
+        padding: 25px;
+        font-size: 17px;
+        &:after {
+          content: '\f054';
+          font-family: 'FontAwesome';
+          float: right;
+          color: #706f6c;
+          @include transition(all 0.5s ease);
+        }
+      }
+    }
+  }
 }
-
-
 
 //========================================
 // FOOTER ROW STYLES DESKTOP 06/20
 //========================================
 #footer {
-
-    background: white !important;
-
+  background: white !important;
 }
 .footerRow {
-	z-index: 1;
+  z-index: 1;
 
-	.footerBottom {
-		background: #fff;
-		color: #333;
-		text-align: center;
-		padding: 40px 0 80px;
+  .footerBottom {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px 0 80px;
 
-        .social {
-            padding: 10px 0 30px;
-			a i {
-			    font-size: 18px !important;
-			}
-        }
+    .social {
+      padding: 10px 0 30px;
+      a i {
+        font-size: 18px !important;
+      }
+    }
 
-		.infoWrapper {
-			&__menu {
-				ul {
-					margin: 0;
-					padding: 0;
+    .infoWrapper {
+      &__menu {
+        ul {
+          margin: 0;
+          padding: 0;
 
-					li {
-						display: inline-block;
+          li {
+            display: inline-block;
 
-						+ li:before {
-							content: '\|';
-						}
-
-						a {
-							color: $primary;
-							margin: 0 5px;
-						}
-					}
-				}
-			}
-
-			&__di {
-				a {
-					color: $primary;
-					text-decoration: underline;
-				}
-			}
-
-			div + div {
-				margin: 15px 0 0;
-			}
-		}
-
-        .email-button {
-            float: none;
-            margin: 20px 0 0 !important;
-            @include breakpoint(xs) {
-                font-size: 12px !important;
+            + li:before {
+              content: '\|';
             }
+
+            a {
+              color: $primary;
+              margin: 0 5px;
+            }
+          }
         }
-	}
+      }
 
-	// ********** Media Queries ********** //
+      &__di {
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
 
-	// Tablet +
-	@include breakpoint(sm) {
+      div + div {
+        margin: 15px 0 0;
+      }
+    }
 
-		.footerBottom {
-			padding: 80px 0;
-			a.link__logo img {
-			    max-width: 315px;
-			    width: 100%;
-			}
-		}
-	}
+    .email-button {
+      float: none;
+      margin: 20px 0 0 !important;
+      @include breakpoint(xs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  // ********** Media Queries ********** //
+
+  // Tablet +
+  @include breakpoint(sm) {
+    .footerBottom {
+      padding: 80px 0;
+      a.link__logo img {
+        max-width: 315px;
+        width: 100%;
+      }
+    }
+  }
 }
 #footer {
-    background: #fff;
+  background: #fff;
 }
 
 // ************************************************************************************************
@@ -296,10 +282,10 @@ body .fixed-top-spacer {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
 
 .lo_container {
-	.lo_head {
-		background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
-		background-size: cover;
-	}
+  .lo_head {
+    background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
+    background-size: cover;
+  }
 }
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-plugins';
@@ -310,7 +296,6 @@ body .fixed-top-spacer {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
-
 
 /********************************************************************************
     FJ DRIVE STYLES
@@ -323,80 +308,81 @@ body .fixed-top-spacer {
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
-	@import '../../../shared/styles/mobile/mobile-menu';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
+  @import '../../../shared/styles/mobile/mobile-menu';
 
-	#mobile-menu {
-		background: #fff;
-	}
+  #mobile-menu {
+    background: #fff;
+  }
 }
 
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-	@import '../../../shared/styles/mobile/mobile';
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import '../../../shared/styles/mobile/mobile';
 
-	.mobile-cta {
-	    .ctaItem {
-	        a {
-	            bottom: 0;
-	        }
-	    }
-	}
+  .mobile-cta {
+    .ctaItem {
+      a {
+        bottom: 0;
+      }
+    }
+  }
 
-	// THIS STYLE IS FOR THE CORONA VIRUS MOBILE CTA
-	.home .mobile-cta .ctaItem:first-child a {
-	    bottom: -35px;
-	}
+  // THIS STYLE IS FOR THE CORONA VIRUS MOBILE CTA
+  .home .mobile-cta .ctaItem:first-child a {
+    bottom: -35px;
+  }
 
-	#footer {
-		padding-bottom: 70px;
-	}
-	.menu-top {
-		.logo {
-			padding: 15px;
-			img {
-				max-height: 25px;
-			}
-		}
-	}
+  #footer {
+    padding-bottom: 70px;
+  }
+  .menu-top {
+    .logo {
+      padding: 15px;
+      img {
+        max-height: 25px;
+      }
+    }
+  }
 
-	.mobile-tabs {
-	    height: 0 !important;
-	}
+  .mobile-tabs {
+    height: 0 !important;
+  }
 }
 
-@media (max-width:450px){
-	.home .mobile-cta {
-	    margin-top: 80px;
-	}
+@media (max-width: 450px) {
+  .home .mobile-cta {
+    margin-top: 80px;
+  }
 }
 
 /*************************************************************************************************
 	SUPPORT
 *************************************************************************************************/
 
-@import "support-requests";
+@import 'support-requests';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-support';
 
 // *****************************************
 //  VRP STYLES
 // *****************************************
 
-@mixin save-vehicle-styles($top:5px, $left:10px, $zIndex:11, $fontSize: 30px, $color: $maintextcolor) {
-  color:$color;
-  font-size:$fontSize;
-  position:absolute;
-  top:$top;
+@mixin save-vehicle-styles($top: 5px, $left: 10px, $zIndex: 11, $fontSize: 30px, $color: $maintextcolor) {
+  color: $color;
+  font-size: $fontSize;
+  position: absolute;
+  top: $top;
   left: $left;
-  text-shadow: 1px 1px 1px #fff,
-  -1px 1px 1px #fff,
-  1px -1px 1px #fff,
-  -1px -1px 1px #fff;
+  text-shadow:
+    1px 1px 1px #fff,
+    -1px 1px 1px #fff,
+    1px -1px 1px #fff,
+    -1px -1px 1px #fff;
   z-index: $zIndex;
 }
 
@@ -405,13 +391,13 @@ body .fixed-top-spacer {
     .save-things-save {
       @include save-vehicle-styles();
       span {
-        display:none;
+        display: none;
       }
     }
   }
   // CASE #36423 - NOW PRICE STYLING //
   .vehicle-price .price-block.withsavings .price {
-  	color: #16900a;
+    color: #16900a;
   }
 }
 
@@ -426,100 +412,98 @@ body .fixed-top-spacer {
   }
   #gallery-carousel {
     .save-things-save {
-      @include save-vehicle-styles($left:5px);
+      @include save-vehicle-styles($left: 5px);
       i {
-        font-size:40px;
-        margin:0;
+        font-size: 40px;
+        margin: 0;
       }
     }
   }
 }
 
 .location-popover-wrap .dealer-name {
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
 }
 @import '../../../shared/styles/shared-support';
 
-
-@media(min-width:1024px){
-	.home{
-		#videobanner {
+@media (min-width: 1024px) {
+  .home {
+    #videobanner {
       max-height: initial;
-		}
-		#footer{
-			position: relative;
     }
-	}
+    #footer {
+      position: relative;
+    }
+  }
 }
 
 .corona-icon {
-	@media (max-width:1024px){
-		width: 120px !important;
-	}
+  @media (max-width: 1024px) {
+    width: 120px !important;
+  }
 }
-
 
 //=====================================
 // ADDED STYLE BELOW FOR DESKTOP 06/20
 //=====================================
 a:focus,
 .focus a,
-#header .header-top .navbar .navbar-inner ul#menu-top-menu>li.menu-item {
-    outline: none !important;
+#header .header-top .navbar .navbar-inner ul#menu-top-menu > li.menu-item {
+  outline: none !important;
 }
 @media (max-width: 1024px) {
-    #search-overlay .overlay-container {
-        margin: 50px 0 0 !important;
-        position: relative;
-        left: 0;
-        .home &{
-          margin: 75px 0 0 !important;
-        }
-        .close-overlay {
-            display: block !important;
-        }
-        .overlay-content{
-        //  padding:
-        }
-        .search-section {
-          margin: 50px;
-        }
+  #search-overlay .overlay-container {
+    margin: 50px 0 0 !important;
+    position: relative;
+    left: 0;
+    .home & {
+      margin: 75px 0 0 !important;
     }
+    .close-overlay {
+      display: block !important;
+    }
+    .overlay-content {
+      //  padding:
+    }
+    .search-section {
+      margin: 50px;
+    }
+  }
 }
 //==============================================
 // ADDED STYLE BELOW FOR DESKTOP 06/20 - END
 //==============================================
 
-@media (max-width: 767px){
-    div.details-page-row:nth-child(2) {
-      display: block !important;
-    }
+@media (max-width: 767px) {
+  div.details-page-row:nth-child(2) {
+    display: block !important;
   }
-  
+}
+
 img#vessel-header-img {
-    height: 100%;
+  height: 100%;
 }
 
 .page-id-30263 #lvrp-results-wrapper .result-wrap .hit-price__customize {
-	display: none;
+  display: none;
 }
 
 .dynamic-hours .open {
-    display: none;
+  display: none;
 }
 
 // 1125266 Start
 #lvrp-results-wrapper div.hit-price__customize {
-	display: none;
+  display: none;
 }
 // 1125266 End
 
-#eqe-suv-show{
+#eqe-suv-show {
   display: none !important;
 }
 
-#eqe-suv-hidden{
+#eqe-suv-hidden {
   display: inline-block !important;
   visibility: visible !important;
 }

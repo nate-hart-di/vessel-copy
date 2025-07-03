@@ -1,1 +1,1386 @@
-iframe.iframe-responsive{width:1px;min-width:100%;*width:100%}.di-z-modal,.di-z-overlay,.di-z-extra-high,.di-z-high,.di-z-mid,.di-z-low,.di-z-half,.di-z-impact,.di-z-buried{position:relative}.di-z-modal{z-index:1050}.di-z-overlay{z-index:1000}.di-z-mobile-overlay{z-index:1030}.di-z-extra-top{z-index:500}.di-z-extra-high{z-index:400}.di-z-high{z-index:300}.di-z-mid{z-index:200}.di-z-low{z-index:100}.di-z-half{z-index:50}.di-z-impact{z-index:1}.di-z-buried{z-index:-1}.sidebar{background:#eee;border:2px solid #e4e4e4;padding:10px;list-style:none}.sidebar.vertical{margin:15px 0}.sidebar.vertical li.widget{font-size:14px;color:#333;border:2px solid #e4e4e4;padding:10px;background:#fff;margin-bottom:15px}.sidebar.vertical li.widget span.widgettitle{font-size:18px;font-family:"PorscheNext",sans-serif;font-weight:bold;text-transform:none;border-bottom:1px solid #e4e4e4;margin:0 0 10px 0;width:100%;display:block;letter-spacing:normal}.sidebar.vertical li.widget span.right{float:right;white-space:nowrap}.sidebar.vertical li.widget span.right a{color:#333}.sidebar.vertical li.widget span.right a:hover{text-decoration:none}.sidebar.vertical li.widget span.widget-subtitle{background:#f3f3f3;padding:0 15px;font-size:14px;font-family:"PorscheNext",sans-serif;font-weight:bold;text-transform:none;color:#333;border-bottom:none;display:block;height:auto;line-height:24px;letter-spacing:normal}.sidebar.vertical li.widget span.widget-subtitle+span.widget-subtitle.sub-label{margin-top:5px}.sidebar.vertical li.widget .widget-subtitle-icon{float:left;background:#000;color:#fff;width:24px;height:24px;line-height:24px;text-align:center;margin-right:10px}.sidebar.vertical li.widget .dealer-info{font-weight:bold}.sidebar.vertical li.widget .dealer-info ul{clear:both;list-style:none;padding:5px 15px;font-weight:normal}.sidebar.vertical li.widget .dealer-info ul li{clear:both;display:block}.sidebar.vertical li.widget .dealer-info>span:before,.sidebar.vertical li.widget .dealer-info>span:after{display:block;clear:both;content:" "}@media (max-width: 1199px){.sidebar.vertical li.widget{font-size:.9em}}@media (max-width: 1024px){.sidebar{padding:5px}.sidebar.vertical li.widget{font-size:.9em;padding:10px}.sidebar.vertical li.widget .dealer-info{min-height:200px}.sidebar.vertical li.widget .dealer-info ul{padding:5px}.sidebar.vertical li.widget .dealer-info .day,.sidebar.vertical li.widget .dealer-info .line{display:block}.sidebar.vertical li.widget .dealer-info li{font-weight:bold}.sidebar.vertical li.widget .googlemap{height:200px}.sidebar.vertical li.widget span.right{display:block;font-weight:normal;float:left;width:100%}}@media (max-width: 768px){.sidebar.vertical li.widget span.widget-subtitle{font-size:11px}.sidebar.vertical li.widget .dealer-info .day{display:block;font-weight:normal}.textwidget .well .di-dealer-address{font-size:14px}}.textwidget .well{background:none;border:none;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;border-radius:0px;background-clip:padding-box;border-bottom:1px solid #e4e4e4;margin:0px auto;padding:15px 0px;width:90%}.textwidget .well h2{font-size:18px;margin-top:0px}.textwidget .di-dealer-image{display:none}.textwidget .di-dealer-address{display:block;font-size:16px;margin:10px 0}.textwidget .dealer-phone{display:block}.textwidget .dealer-links{margin-top:10px}.textwidget .well-row>div:last-child .well{border-bottom:0px}.specialCoupon{border:2px solid #eee;margin-bottom:50px;width:100%;position:relative}.specialCoupon .specialLeft,.specialCoupon .special-left{width:20%;height:100%;min-height:180px;position:absolute;padding:15px;border-right:2px solid #eee}.specialCoupon .specialLeft img,.specialCoupon .special-left img{width:100%;height:auto}.specialCoupon .specialRight,.specialCoupon .special-right{margin-left:20%;padding:15px;min-height:160px}.specialCoupon .specialRight .modelName,.specialCoupon .special-right .modelName{font-size:18px;font-weight:bold;color:#fff}.specialCoupon .specialFooter,.specialCoupon .special-below{width:100%;margin-top:20px;padding:15px;background:#eee}.printSection{display:none;border:1px dashed #000;padding:20px 25px}.printSection form input.fancy_print{margin-right:0}.printSection div[id^=printThis-] .address{padding-bottom:15px;border-bottom:1px solid #000}@media (max-width: 767px){.specialCoupon{margin-bottom:30px}.specialCoupon .specialLeft,.specialCoupon .special-left{width:100%;height:auto;min-height:0;position:relative;padding:15px 15px 0 15px;border:none}.specialCoupon .specialLeft img,.specialCoupon .special-left img{width:auto;height:auto}.specialCoupon .specialRight,.specialCoupon .special-right{margin-left:0%}.specialCoupon .specialFooter a.button,.specialCoupon .specialFooter a.button:active,.specialCoupon .specialFooter a.button:active,.specialCoupon .special-below a.button,.specialCoupon .special-below a.button:active,.specialCoupon .special-below a.button:active{width:100% !important;margin-right:0}}.staff-container.list ul.staff{list-style:none;margin:0;padding:0}.staff-container.list ul.staff li{border:1px solid #ccc;padding:10px;display:block;margin:0 0 10px 0;background-color:#f9f9f9}.staff-container.list ul.staff li img{max-width:30%;margin-right:2%;float:left;margin-top:10px;border:1px solid #ccc}.staff-container.list ul.staff li div{float:left;margin-top:10px;width:68%}.staff-container.list ul.staff li div h3,.staff-container.list ul.staff li div h4{margin:0}.staff-container.list ul.staff li:after{content:'';display:block;clear:both}.staff-container.grid ul.staff{list-style:none;margin:0;padding:0}.staff-container.grid ul.staff li{border:1px solid #ccc;padding:10px;display:inline-block;margin:10px 1%;width:200px;max-width:47%;text-align:center;vertical-align:top;background-color:#f9f9f9}.staff-container.grid ul.staff li img.staffpic{width:100%;display:block;border:1px solid #ccc}.staff-container.grid ul.staff li h3{margin:5px 0;font-size:18px}.staff-container.grid ul.staff li h4{margin:0;font-size:12px;border-bottom:1px solid #ccc;padding-bottom:5px;margin-bottom:5px}.staff-container.grid ul.staff li .staffphone{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-moz-align-items:center;align-items:center;font-size:14px;line-height:24px}.staff-container.grid ul.staff li .staffphone .glyphicon{margin-right:2px;color:#000}.button.staff-button,.button.staff-button:visited{background-color:#333;color:#fff;display:block;margin:5px 0 0 0;font-size:12px}.button.staff-button:hover,.button.staff-button:visited:hover{background:#1a1a1a}.staff-bio h3{font-size:24px;margin-bottom:5px}.staff-bio h4{font-size:14px}.staff-bio .bio{border-top:1px solid #ccc;padding-top:10px}.staff-bio .button.staff-button{display:inline-block;margin:0 10px 10px 0}ul.staff li a.btn{color:white}@media (max-width: 767px){.staff-container .staff .lightbox.staff-button{display:none}}.dealer-contact-info{padding:15px;background:#eee;font-weight:bold;font-size:14px}.dealer-contact-info span.widget-subtitle{background:#fff;padding:0 15px;font-size:14px;font-family:"PorscheNext",sans-serif;font-weight:bold;text-transform:none;color:#333;border-bottom:none;display:block;height:24px;line-height:24px;letter-spacing:normal}.dealer-contact-info span.widget-subtitle+span.widget-subtitle.sub-label{margin-top:5px}.dealer-contact-info .widget-subtitle-icon{float:left;background:#000;color:#fff;width:24px;height:24px;line-height:24px;text-align:center;margin-right:10px}.dealer-contact-info .dealer-info{font-weight:bold;min-height:375px}.dealer-contact-info .dealer-info ul{list-style:none;padding:5px 15px;font-weight:normal}.dealer-contact-info .dealer-info ul li{clear:both}.dealer-contact-info .dealer-info span.right{float:right;white-space:nowrap}.dealer-contact-info .dealer-info span.right a{color:#333}.dealer-contact-info .dealer-info span.right a:hover{text-decoration:none}#modelsliderRow{height:auto}#modelsliderRow .flexslider{border:none;margin:0;box-shadow:none;overflow-x:hidden}#modelsliderRow .flexslider .slides{margin:0;padding:0;list-style:none}#modelsliderRow .flexslider .slides li img{width:100%}#modelsliderRow .flexslider ul.flex-direction-nav{list-style:none}#modelsliderRow .flexslider .flex-control-nav.flex-control-thumbs{margin-top:15px;text-align:center}#modelsliderRow .flexslider .flex-control-nav.flex-control-thumbs li{float:none;max-width:200px;margin:0 0.5%;width:18%}#bigNumbers{margin:30px 0}#bigNumbers .bignumbersbox{color:#555;font-weight:100;letter-spacing:1px;text-shadow:1px 1px 1px #FFF;font-size:60px;border-top:1px solid #eee;border-bottom:1px solid #eee;padding-top:30px;padding-bottom:30px;margin-bottom:30px;line-height:120%;font-family:'Open Sans', arial, sans-serif;text-align:center}#bigNumbers .bignumbersbox .desc{font-size:18px;vertical-align:top;line-height:170%;display:block}#modelinfoRow{margin-top:20px}.single-models h1{font-size:40px;line-height:120%}.single-models .modelinfo{font-size:16px;line-height:150%}.single-models .modelinfo .startingat{margin-top:20px;font-size:24px;font-family:'Open Sans', arial, sans-serif;font-weight:100}.single-models .disclaimers{font-size:12px;text-align:center;margin-top:50px;margin-bottom:50px}ul.featuredvids{list-style:none;margin:20px 0;padding:0}ul.featuredvids li{display:block;width:100%;margin:10px 0;float:left}ul.featuredvids li .ytvid{width:200px;float:left;display:block;margin-right:20px;position:relative}ul.featuredvids li .ytvid img{width:100%}ul.featuredvids li .ytvid .playbutton{position:absolute;left:75px;top:45px;width:auto}.single-videogallery ul.featuredvids li{width:45%;margin-right:5%}ul.packages{float:left;width:100%;padding-left:0px;margin-top:0}ul.packages li.package{width:290px;float:left}ul.packages li.package:nth-child(2){margin:0 20px;padding:0 20px;border-left:1px solid #555;border-right:1px solid #555;min-height:290px}ul.packages li.package h2{color:#ed7812;margin-top:0;font-size:18px}ul.packagefeatures{padding-left:20px}ul.packagefeatures li{color:#555;font-size:14px;line-height:150%}ul.packagefeatures .packageprice{color:#333;font-size:14px;display:block;margin-top:20px;line-height:150%;font-weight:bold}@media (max-width: 1024){#modelsliderRow{margin-top:70px}}@media (max-width: 767px){#modelsliderRow{margin-top:55px}#modelinfoRow{margin-top:0px}.single-models h1{font-size:28px}.single-models .modelinfo .startingat{font-size:16px}#bigNumbers .bignumbersbox{font-size:40px}ul.featuredvids li .ytvid{width:140px}ul.featuredvids li .ytvid .playbutton{left:45px;top:25px}}.modelfeatureContent .modelfeatureHero{margin:30px 0;position:relative}.modelfeatureContent .modelfeatureHero img{width:100%;height:auto}.modelfeatureContent .modelfeatureHero img.playbutton{width:100px;position:absolute;top:50%;left:50%;margin-left:-50px;margin-top:-50px}.modelfeatureContent .subfeatureRow{float:left;margin-top:30px}.modelfeatureContent .subfeatureRow .subfeatureImage{float:left;width:30%}.modelfeatureContent .subfeatureRow .subfeatureImage img{width:100%;height:auto}.modelfeatureContent .subfeatureRow .subfeatureDesc{float:left;width:65%;margin-left:5%}.modelfeatureContent .subfeatureRow .subfeatureDesc h3{margin-top:0}.modelfeatureContent .featureButtonBar{width:100%;background:#333;display:table;table-layout:fixed}.modelfeatureContent .featureButtonBar a{background:#000;display:table-cell;text-align:center;height:40px;line-height:40px;border-left:1px solid #fff;color:#fff}.modelfeatureContent .featureButtonBar a:hover{background:#1a1a1a;text-decoration:none}.modelfeatureContent .featureButtonBar a:first-child{border-left:none}.modelfeatureContent .modelfeatureSidebar h2 a{color:#333}.modelfeatureContent .modelfeatureSidebar h2 a:hover{color:#000}.modelfeatureContent .modelfeatureSidebar .modelfeatureNav{background:#333}.modelfeatureContent .modelfeatureSidebar .modelfeatureNav a{padding:0 15px;height:40px;line-height:40px;border-bottom:1px solid #555;color:#fff;display:block;background:#333}.modelfeatureContent .modelfeatureSidebar .modelfeatureNav a:hover{background:#000;text-decoration:none}.modelfeatureContent .modelfeatureSidebar .modelfeatureNav>.modelfeatureNav a{background:#444;padding:0 15px 0 30px}.modelfeatureContent .modelfeatureSidebar .modelfeatureNav>.modelfeatureNav a:hover{background:#000;text-decoration:none}#modelfeatureRow{padding:50px 0;background:#eee;margin-bottom:50px}#modelfeatureRow h2.features-headline{font-size:24px;margin-top:0;margin-bottom:20px}#modelfeatureRow .subfeatureRow .subfeatureImage{width:240px;margin-right:15px;float:left}#modelfeatureRow .subfeatureRow .subfeatureImage img{width:100%;height:auto}#modelfeatureRow .subfeatureRow .subfeatureImage a{background:#000;display:block;text-align:center;height:40px;line-height:40px;color:#fff;margin-top:5px}#modelfeatureRow .subfeatureRow .subfeatureImage a:hover{background:#1a1a1a;text-decoration:none}.trim-models{margin:3% 0}.trim-models h3{text-align:center}.archive-model{width:30%;margin:15px 1%;display:inline-block;text-align:center}.archive-model h2{margin-top:0}.archive-model a{color:#333;text-decoration:none;display:block;padding:15px}.archive-model:nth-child(3n+1){clear:both}.post-content{display:block;margin-bottom:20px;clear:both;padding-top:10px}.post-content h2{margin:20px 0 10px}.post-content .meta-below-title{margin:10px 0}.post-content .sharing .button.primary-button.blog-share-icon{border-radius:50%;padding:5px 0;width:25px !important}.post-content .post-thumbnail{width:150px;float:left;clear:both;margin-right:10px;margin-bottom:0}.post-content a.moretag,.post-content a.moretag:visited{display:inline-block;background:#555;width:80px;text-align:center;border-radius:5px;background-clip:padding-box;background-clip:padding-box;-moz-background-clip:padding;-webkit-background-clip:padding;font-size:12px;height:20px;line-height:20px;color:#fff}.post-content a.moretag:hover,.post-content a.moretag:visited:hover{text-decoration:none;background:#555}#incentives-rates-list-2014 .disclaimer-container{display:none}#incentives-rates-list-2014 p{color:#000000}#incentives-rates-list-2014 #incentives-filters{margin-bottom:25px}#incentives-rates-list-2014 #incentives-filters select{display:inline-block;width:15%}#incentives-rates-list-2014 .vehicle-offer{width:99%;background-color:#FFF;margin-bottom:15px;padding-bottom:10px;cursor:default}#incentives-rates-list-2014 .vehicle-offer .vehicle-detail-info{min-height:150px}#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn a{padding:5px 10px;text-align:center;color:white;display:block}#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn{-moz-border-radius:4px;-webkit-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;margin-bottom:10px}#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn.view-inventory-btn{background-color:#52930b}#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn.other-offers{background-color:#585858}#incentives-rates-list-2014 .vehicle-offer .selectOptionHeader{width:100%;text-align:center}#incentives-rates-list-2014 .vehicle-offer .selectOptionHeader h4{color:#5aa20e;border-bottom:none;margin:0px;padding:0px}#incentives-rates-list-2014 .vehicle-offer:hover{-moz-box-shadow:0 0 15px #888;-webkit-box-shadow:0 0 15px #888;box-shadow:0 0 15px #888}#incentives-rates-list-2014 .vehicle-offer .relation{color:#a09c9b;font-size:0.9em;display:inline-block;padding-bottom:15px;vertical-align:bottom}#incentives-rates-list-2014 .vehicle-offer .relation.disabled{display:none}#incentives-rates-list-2014 .vehicle-thumbnail{display:inline-block;width:25%;margin-left:2%;padding:5px;padding-top:25px}#incentives-rates-list-2014 .vehicle-thumbnail img{width:100%}#incentives-rates-list-2014 .vehicle-thumbnail.no-thumbnail{display:none}#incentives-rates-list-2014 .targeted-programs{width:75%;margin-left:22%}#incentives-rates-list-2014 .offer-details{font-size:1.7em;vertical-align:top;display:inline-block;width:70%;min-height:150px}#incentives-rates-list-2014 .offer-details.no-thumbnail{width:96%;margin-left:2%}#incentives-rates-list-2014 .offer-details h2{color:#3a3a3a;padding-bottom:2px;margin-bottom:5px;border-bottom:#d3d4d3 2px solid;font-size:24px;font-weight:300}#incentives-rates-list-2014 .offer-details h2 .fancy-links{float:right;display:inline-block}#incentives-rates-list-2014 .offer-details h2 a{font-size:0.6em;color:#4387c4;padding-right:10px;padding-top:15px;font-style:normal;font-weight:bold}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail{width:42.5%;background:#f0f0f0;color:#3a3a3a;vertical-align:top;display:inline-block;padding:25px;margin:0px 0px 10px}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.finance{float:right}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .vehicle-offer-detail-terms{margin-top:10px;margin-bottom:5px}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .vehicle-offer-detail-terms a{background-color:white;padding:10px;-moz-border-radius:5px;-webkit-border-radius:5px;-khtml-border-radius:5px;border-radius:5px;color:black}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .financeTermsInfoBox{display:none}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.offer-value-cell .bottom-text{font-weight:100}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.offer-value-cell .bottom-text .offer-expiration{font-size:0.8em;position:relative;display:block;top:-5px;letter-spacing:2px;font-style:italic}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .offer-details-summary{display:none}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.disabled{color:#ccc;opacity:0.3;display:none}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .value{font-size:1.7em;vertical-align:bottom;position:relative;top:5px;left:0px}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .bottom-text{margin-top:20px;font-size:18px;font-weight:100}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .bottom-text a.show-offer-details-summary{color:#0b4b7f;text-decoration:none;font-size:1.2em}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .bottom-text a.show-offer-details-summary:hover{transition:all 0.2s ease;color:red}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.finance-term{width:100px;background-color:#fefefe;border:1px solid #fdfcfc}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.no-financing{text-align:center;display:inline-block;width:600px;letter-spacing:0.5em}#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .main-finance-term{margin-bottom:15px}#incentives-rates-list-2014 .offer-details .finance-terms{margin:10px 0px 0px 232px}#incentives-rates-list-2014 .offer-details .finance-terms h2{text-align:center}#incentives-rates-list-2014 .offer-details .finance-terms.no-bonus-cash{margin-left:0px}#incentives-rates-list-2014 .offer-details.finance-term.inpopup{width:20%;min-height:60px;background-color:#f0f0f0;margin:5px;padding:15px;text-align:center;float:left}#incentives-rates-list-2014 .offer-details.finance-term.inpopup .value{font-size:20px}#incentives-rates-list-2014 .offer-details.finance-term.inpopup .bottom-text{font-size:10px}#incentives-rates-list-2014 .vehicle-offer-detail.finance-term.inpopup{width:17%;min-height:40px;background-color:#f0f0f0;margin:5px;padding:8px;text-align:center;float:left;box-shadow:0px 0px 0px black}#incentives-rates-list-2014 .vehicle-offer-detail.finance-term.inpopup .value{font-size:20px}#incentives-rates-list-2014 .vehicle-offer-detail.finance-term.inpopup .bottom-text{font-size:10px}#incentives-rates-list-2014 #offer-details-box{display:none;position:absolute;min-height:200px;min-width:350px;background-color:#fff;z-index:1000;-moz-box-shadow:0 3px 10px #000;-webkit-box-shadow:0 3px 10px #000;box-shadow:0 3px 10px #777;-moz-border-radius:10px;-webkit-border-radius:10px;-khtml-border-radius:10px;border-radius:10px}#incentives-rates-list-2014 #offer-details-box .close-offer-details-box{display:inline-block;float:right;font-size:14px;margin:10px 20px 0px 0px;cursor:pointer;font-weight:bold}#incentives-rates-list-2014 #offer-details-box h2{font-size:1em;margin-left:10px;color:#2d2d2d;line-height:1em}#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item{background-color:transparent;padding:0px;min-width:250px;margin:10px;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item a{display:inline-block;color:#2d2d2d}#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item .offer-details-summary-item-details{max-width:250px;display:none}#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item .offer-details-summary-item-details p{color:#333;font-size:9px}#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item span{margin-right:15px}#incentives-rates-list-2014 #offer-details-box .total-value{font-size:4em;margin:20px 25px 10px 0px;margin:0px;padding-left:10px;float:none;text-align:left;display:block;color:#52930b}#incentives-rates-list-2014 #offer-details-box:after{content:"";position:absolute;width:0;height:0;border-top:15px solid #fff;border-left:15px solid transparent;border-right:15px solid transparent;background-color:transparent;top:100%;left:50%;margin-left:-55px;margin-top:0px}#incentives-rates-list-2014 #offer-details-box.expanded:after{display:none}#incentives-rates-list-2014.mobile-view .vehicle-offer{padding-left:10px;padding-right:10px;background:transparent;width:96%}#incentives-rates-list-2014.mobile-view .vehicle-offer h2{font-size:18px;text-align:left}#incentives-rates-list-2014.mobile-view .vehicle-offer h3{font-size:16px;font-weight:600 !important}#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details{text-align:center;width:97%}#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail .close-offer-details-box{font-size:14px}#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail .bottom-text{color:#333}#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail.offer-value-cell.disabled{display:none}#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail .relation{margin-left:0}#incentives-rates-list-2014 #ajax-indicator{display:none;position:fixed;height:100px;width:100px;background:#fff;box-shadow:0 0 5px #999;-moz-box-shadow:0 0 5px #999;-webkit-box-shadow:0 0 5px #999;border:solid 1px #ccc;-moz-border-radius:5px;border-radius:5px;z-index:2000;top:50%;left:50%;margin-top:-50px;margin-left:-100px}#incentives-rates-list-2014 #ajax-indicator img{margin:20px 0 0 20px}#incentives-rates-list-2014 #incentives-ajax-msg{display:none;padding:5px 10px;margin-bottom:15px;color:#333;max-width:1135px;background-color:#A5F0A3;border:1px solid #6DAD6C;-moz-box-shadow:0 0 15px #888;-webkit-box-shadow:0 0 15px #888;box-shadow:0 0 15px #888}#incentives-rates-list-2014 #incentives-ajax-msg.error{border-color:#ea0000;background-color:#ffebe8}#incentives-rates-list-2014 #change-location{display:none;margin:10px 0px}#incentives-rates-list-2014 .small.button{vertical-align:top}@media (min-width: 768px) and (max-width: 1199px){#incentives-rates-list-2014 .vehicle-offer .vehicle-thumbnail{width:35%}#incentives-rates-list-2014 .vehicle-offer .offer-details{width:60%}#incentives-rates-list-2014 .vehicle-offer .offer-details h2{margin-left:5%}#incentives-rates-list-2014 .vehicle-offer .vehicle-offer-detail{width:90%}#incentives-rates-list-2014 .vehicle-offer .vehicle-detail-info{min-height:100px}#incentives-rates-list-2014 .vehicle-offer .selectOptionHeader,#incentives-rates-list-2014 .vehicle-offer .disclaimer-container{display:none}}@media (max-width: 767px){#incentives-rates-list-2014 #incentives-filters select{width:100%;margin-bottom:10px}#incentives-rates-list-2014 .vehicle-offer .visible-xs.mobile-inventory-incentive-buttons{display:block !important}#incentives-rates-list-2014 .vehicle-offer .vehicle-thumbnail .inventory-incentive-btn.other-offers{display:none}#incentives-rates-list-2014 .vehicle-offer .vehicle-thumbnail .inventory-incentive-btn.view-inventory-btn{display:none}#incentives-rates-list-2014 .vehicle-offer .offer-details{width:100%}#incentives-rates-list-2014 .vehicle-offer .offer-details h2{margin-left:5px;width:97%}#incentives-rates-list-2014 .vehicle-offer .vehicle-offer-detail{width:100%}#incentives-rates-list-2014 .vehicle-offer .vehicle-offer-detail.finance{float:left}#incentives-rates-list-2014 .vehicle-offer .vehicle-detail-info{min-height:inherit}#incentives-rates-list-2014 .vehicle-offer .selectOptionHeader,#incentives-rates-list-2014 .vehicle-offer .disclaimer-container{display:none}#incentives-rates-list-2014 .mobile-inventory-incentive-buttons .inventory-incentive-btn{width:45%;float:left;margin:10px}}.formContent{max-width:600px}.formContent fieldset.first-fl{float:left;width:100%;padding:15px;background:#eee;margin-bottom:20px}.formContent fieldset.first-fl .field{width:49%;float:left;margin-right:2%;margin-bottom:10px}.formContent fieldset.first-fl .field input,.formContent fieldset.first-fl .field select{width:100%;border:none;font-size:18px;padding:0px 10px;border-radius:5px;min-height:30px;background:#fff}.formContent fieldset.first-fl .field.cprice{width:100%;margin-right:0}.formContent fieldset.first-fl .field:nth-child(2n+1){margin-right:0}.formContent fieldset.first-fl .field .custom-input-switcher{background:#ccc;padding:0px 5px;border-radius:3px;background-clip:padding-box;margin-top:5px;display:inline-block;color:#333}.formContent fieldset.first-fl .form-button{float:left;margin-top:10px}.formContent fieldset.second-fl{float:left;width:100%}.formContent fieldset.second-fl .payment-box{background-color:#eee;padding:15px}.formContent fieldset.second-fl .payment-box h3{margin-top:0}.formContent fieldset.second-fl .payment-box .mtable{width:100%}.formContent fieldset.second-fl .payment-box .mtable .mleft,.formContent fieldset.second-fl .payment-box .mtable .mmain,.formContent fieldset.second-fl .payment-box .mtable .mright{text-align:center;line-height:17px;padding-top:10px;font-family:inherit}.formContent fieldset.second-fl .payment-box .mtable .mmain{font-weight:bold;font-size:22px;line-height:26px}.formContent fieldset.second-fl .payment-box .payment-calculator-disclaimer{font-size:10px}@media screen and (max-width: 560px){.formContent{font-size:12px}}#payment-calculator{padding:0 !important;background:#fff}#payment-calculator .payment-calculator-cta-wrap{width:100%;padding:15px;margin-top:20px;background-color:#F0F0F0}#payment-calculator .payment-calculator-cta-wrap .payment-calculator-cta-btn{margin:0}
+iframe.iframe-responsive {
+  width: 1px;
+  min-width: 100%;
+  *width: 100%;
+}
+.di-z-modal,
+.di-z-overlay,
+.di-z-extra-high,
+.di-z-high,
+.di-z-mid,
+.di-z-low,
+.di-z-half,
+.di-z-impact,
+.di-z-buried {
+  position: relative;
+}
+.di-z-modal {
+  z-index: 1050;
+}
+.di-z-overlay {
+  z-index: 1000;
+}
+.di-z-mobile-overlay {
+  z-index: 1030;
+}
+.di-z-extra-top {
+  z-index: 500;
+}
+.di-z-extra-high {
+  z-index: 400;
+}
+.di-z-high {
+  z-index: 300;
+}
+.di-z-mid {
+  z-index: 200;
+}
+.di-z-low {
+  z-index: 100;
+}
+.di-z-half {
+  z-index: 50;
+}
+.di-z-impact {
+  z-index: 1;
+}
+.di-z-buried {
+  z-index: -1;
+}
+.sidebar {
+  background: #eee;
+  border: 2px solid #e4e4e4;
+  padding: 10px;
+  list-style: none;
+}
+.sidebar.vertical {
+  margin: 15px 0;
+}
+.sidebar.vertical li.widget {
+  font-size: 14px;
+  color: #333;
+  border: 2px solid #e4e4e4;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+.sidebar.vertical li.widget span.widgettitle {
+  font-size: 18px;
+  font-family: 'PorscheNext', sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 0 0 10px 0;
+  width: 100%;
+  display: block;
+  letter-spacing: normal;
+}
+.sidebar.vertical li.widget span.right {
+  float: right;
+  white-space: nowrap;
+}
+.sidebar.vertical li.widget span.right a {
+  color: #333;
+}
+.sidebar.vertical li.widget span.right a:hover {
+  text-decoration: none;
+}
+.sidebar.vertical li.widget span.widget-subtitle {
+  background: #f3f3f3;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: 'PorscheNext', sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  color: #333;
+  border-bottom: none;
+  display: block;
+  height: auto;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.sidebar.vertical li.widget span.widget-subtitle + span.widget-subtitle.sub-label {
+  margin-top: 5px;
+}
+.sidebar.vertical li.widget .widget-subtitle-icon {
+  float: left;
+  background: #000;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
+.sidebar.vertical li.widget .dealer-info {
+  font-weight: bold;
+}
+.sidebar.vertical li.widget .dealer-info ul {
+  clear: both;
+  list-style: none;
+  padding: 5px 15px;
+  font-weight: normal;
+}
+.sidebar.vertical li.widget .dealer-info ul li {
+  clear: both;
+  display: block;
+}
+.sidebar.vertical li.widget .dealer-info > span:before,
+.sidebar.vertical li.widget .dealer-info > span:after {
+  display: block;
+  clear: both;
+  content: ' ';
+}
+@media (max-width: 1199px) {
+  .sidebar.vertical li.widget {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    padding: 5px;
+  }
+  .sidebar.vertical li.widget {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  .sidebar.vertical li.widget .dealer-info {
+    min-height: 200px;
+  }
+  .sidebar.vertical li.widget .dealer-info ul {
+    padding: 5px;
+  }
+  .sidebar.vertical li.widget .dealer-info .day,
+  .sidebar.vertical li.widget .dealer-info .line {
+    display: block;
+  }
+  .sidebar.vertical li.widget .dealer-info li {
+    font-weight: bold;
+  }
+  .sidebar.vertical li.widget .googlemap {
+    height: 200px;
+  }
+  .sidebar.vertical li.widget span.right {
+    display: block;
+    font-weight: normal;
+    float: left;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar.vertical li.widget span.widget-subtitle {
+    font-size: 11px;
+  }
+  .sidebar.vertical li.widget .dealer-info .day {
+    display: block;
+    font-weight: normal;
+  }
+  .textwidget .well .di-dealer-address {
+    font-size: 14px;
+  }
+}
+.textwidget .well {
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border-radius: 0px;
+  background-clip: padding-box;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 0px auto;
+  padding: 15px 0px;
+  width: 90%;
+}
+.textwidget .well h2 {
+  font-size: 18px;
+  margin-top: 0px;
+}
+.textwidget .di-dealer-image {
+  display: none;
+}
+.textwidget .di-dealer-address {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.textwidget .dealer-phone {
+  display: block;
+}
+.textwidget .dealer-links {
+  margin-top: 10px;
+}
+.textwidget .well-row > div:last-child .well {
+  border-bottom: 0px;
+}
+.specialCoupon {
+  border: 2px solid #eee;
+  margin-bottom: 50px;
+  width: 100%;
+  position: relative;
+}
+.specialCoupon .specialLeft,
+.specialCoupon .special-left {
+  width: 20%;
+  height: 100%;
+  min-height: 180px;
+  position: absolute;
+  padding: 15px;
+  border-right: 2px solid #eee;
+}
+.specialCoupon .specialLeft img,
+.specialCoupon .special-left img {
+  width: 100%;
+  height: auto;
+}
+.specialCoupon .specialRight,
+.specialCoupon .special-right {
+  margin-left: 20%;
+  padding: 15px;
+  min-height: 160px;
+}
+.specialCoupon .specialRight .modelName,
+.specialCoupon .special-right .modelName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.specialCoupon .specialFooter,
+.specialCoupon .special-below {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #eee;
+}
+.printSection {
+  display: none;
+  border: 1px dashed #000;
+  padding: 20px 25px;
+}
+.printSection form input.fancy_print {
+  margin-right: 0;
+}
+.printSection div[id^='printThis-'] .address {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+@media (max-width: 767px) {
+  .specialCoupon {
+    margin-bottom: 30px;
+  }
+  .specialCoupon .specialLeft,
+  .specialCoupon .special-left {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    position: relative;
+    padding: 15px 15px 0 15px;
+    border: none;
+  }
+  .specialCoupon .specialLeft img,
+  .specialCoupon .special-left img {
+    width: auto;
+    height: auto;
+  }
+  .specialCoupon .specialRight,
+  .specialCoupon .special-right {
+    margin-left: 0%;
+  }
+  .specialCoupon .specialFooter a.button,
+  .specialCoupon .specialFooter a.button:active,
+  .specialCoupon .specialFooter a.button:active,
+  .specialCoupon .special-below a.button,
+  .specialCoupon .special-below a.button:active,
+  .specialCoupon .special-below a.button:active {
+    width: 100% !important;
+    margin-right: 0;
+  }
+}
+.staff-container.list ul.staff {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.staff-container.list ul.staff li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  margin: 0 0 10px 0;
+  background-color: #f9f9f9;
+}
+.staff-container.list ul.staff li img {
+  max-width: 30%;
+  margin-right: 2%;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.staff-container.list ul.staff li div {
+  float: left;
+  margin-top: 10px;
+  width: 68%;
+}
+.staff-container.list ul.staff li div h3,
+.staff-container.list ul.staff li div h4 {
+  margin: 0;
+}
+.staff-container.list ul.staff li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.staff-container.grid ul.staff {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.staff-container.grid ul.staff li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 1%;
+  width: 200px;
+  max-width: 47%;
+  text-align: center;
+  vertical-align: top;
+  background-color: #f9f9f9;
+}
+.staff-container.grid ul.staff li img.staffpic {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+}
+.staff-container.grid ul.staff li h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+.staff-container.grid ul.staff li h4 {
+  margin: 0;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.staff-container.grid ul.staff li .staffphone {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+.staff-container.grid ul.staff li .staffphone .glyphicon {
+  margin-right: 2px;
+  color: #000;
+}
+.button.staff-button,
+.button.staff-button:visited {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  margin: 5px 0 0 0;
+  font-size: 12px;
+}
+.button.staff-button:hover,
+.button.staff-button:visited:hover {
+  background: #1a1a1a;
+}
+.staff-bio h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.staff-bio h4 {
+  font-size: 14px;
+}
+.staff-bio .bio {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+.staff-bio .button.staff-button {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+ul.staff li a.btn {
+  color: white;
+}
+@media (max-width: 767px) {
+  .staff-container .staff .lightbox.staff-button {
+    display: none;
+  }
+}
+.dealer-contact-info {
+  padding: 15px;
+  background: #eee;
+  font-weight: bold;
+  font-size: 14px;
+}
+.dealer-contact-info span.widget-subtitle {
+  background: #fff;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: 'PorscheNext', sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  color: #333;
+  border-bottom: none;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.dealer-contact-info span.widget-subtitle + span.widget-subtitle.sub-label {
+  margin-top: 5px;
+}
+.dealer-contact-info .widget-subtitle-icon {
+  float: left;
+  background: #000;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
+.dealer-contact-info .dealer-info {
+  font-weight: bold;
+  min-height: 375px;
+}
+.dealer-contact-info .dealer-info ul {
+  list-style: none;
+  padding: 5px 15px;
+  font-weight: normal;
+}
+.dealer-contact-info .dealer-info ul li {
+  clear: both;
+}
+.dealer-contact-info .dealer-info span.right {
+  float: right;
+  white-space: nowrap;
+}
+.dealer-contact-info .dealer-info span.right a {
+  color: #333;
+}
+.dealer-contact-info .dealer-info span.right a:hover {
+  text-decoration: none;
+}
+#modelsliderRow {
+  height: auto;
+}
+#modelsliderRow .flexslider {
+  border: none;
+  margin: 0;
+  box-shadow: none;
+  overflow-x: hidden;
+}
+#modelsliderRow .flexslider .slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#modelsliderRow .flexslider .slides li img {
+  width: 100%;
+}
+#modelsliderRow .flexslider ul.flex-direction-nav {
+  list-style: none;
+}
+#modelsliderRow .flexslider .flex-control-nav.flex-control-thumbs {
+  margin-top: 15px;
+  text-align: center;
+}
+#modelsliderRow .flexslider .flex-control-nav.flex-control-thumbs li {
+  float: none;
+  max-width: 200px;
+  margin: 0 0.5%;
+  width: 18%;
+}
+#bigNumbers {
+  margin: 30px 0;
+}
+#bigNumbers .bignumbersbox {
+  color: #555;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 60px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  line-height: 120%;
+  font-family: 'Open Sans', arial, sans-serif;
+  text-align: center;
+}
+#bigNumbers .bignumbersbox .desc {
+  font-size: 18px;
+  vertical-align: top;
+  line-height: 170%;
+  display: block;
+}
+#modelinfoRow {
+  margin-top: 20px;
+}
+.single-models h1 {
+  font-size: 40px;
+  line-height: 120%;
+}
+.single-models .modelinfo {
+  font-size: 16px;
+  line-height: 150%;
+}
+.single-models .modelinfo .startingat {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 100;
+}
+.single-models .disclaimers {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+ul.featuredvids {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+ul.featuredvids li {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  float: left;
+}
+ul.featuredvids li .ytvid {
+  width: 200px;
+  float: left;
+  display: block;
+  margin-right: 20px;
+  position: relative;
+}
+ul.featuredvids li .ytvid img {
+  width: 100%;
+}
+ul.featuredvids li .ytvid .playbutton {
+  position: absolute;
+  left: 75px;
+  top: 45px;
+  width: auto;
+}
+.single-videogallery ul.featuredvids li {
+  width: 45%;
+  margin-right: 5%;
+}
+ul.packages {
+  float: left;
+  width: 100%;
+  padding-left: 0px;
+  margin-top: 0;
+}
+ul.packages li.package {
+  width: 290px;
+  float: left;
+}
+ul.packages li.package:nth-child(2) {
+  margin: 0 20px;
+  padding: 0 20px;
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  min-height: 290px;
+}
+ul.packages li.package h2 {
+  color: #ed7812;
+  margin-top: 0;
+  font-size: 18px;
+}
+ul.packagefeatures {
+  padding-left: 20px;
+}
+ul.packagefeatures li {
+  color: #555;
+  font-size: 14px;
+  line-height: 150%;
+}
+ul.packagefeatures .packageprice {
+  color: #333;
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  line-height: 150%;
+  font-weight: bold;
+}
+@media (max-width: 1024) {
+  #modelsliderRow {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  #modelsliderRow {
+    margin-top: 55px;
+  }
+  #modelinfoRow {
+    margin-top: 0px;
+  }
+  .single-models h1 {
+    font-size: 28px;
+  }
+  .single-models .modelinfo .startingat {
+    font-size: 16px;
+  }
+  #bigNumbers .bignumbersbox {
+    font-size: 40px;
+  }
+  ul.featuredvids li .ytvid {
+    width: 140px;
+  }
+  ul.featuredvids li .ytvid .playbutton {
+    left: 45px;
+    top: 25px;
+  }
+}
+.modelfeatureContent .modelfeatureHero {
+  margin: 30px 0;
+  position: relative;
+}
+.modelfeatureContent .modelfeatureHero img {
+  width: 100%;
+  height: auto;
+}
+.modelfeatureContent .modelfeatureHero img.playbutton {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.modelfeatureContent .subfeatureRow {
+  float: left;
+  margin-top: 30px;
+}
+.modelfeatureContent .subfeatureRow .subfeatureImage {
+  float: left;
+  width: 30%;
+}
+.modelfeatureContent .subfeatureRow .subfeatureImage img {
+  width: 100%;
+  height: auto;
+}
+.modelfeatureContent .subfeatureRow .subfeatureDesc {
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+}
+.modelfeatureContent .subfeatureRow .subfeatureDesc h3 {
+  margin-top: 0;
+}
+.modelfeatureContent .featureButtonBar {
+  width: 100%;
+  background: #333;
+  display: table;
+  table-layout: fixed;
+}
+.modelfeatureContent .featureButtonBar a {
+  background: #000;
+  display: table-cell;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-left: 1px solid #fff;
+  color: #fff;
+}
+.modelfeatureContent .featureButtonBar a:hover {
+  background: #1a1a1a;
+  text-decoration: none;
+}
+.modelfeatureContent .featureButtonBar a:first-child {
+  border-left: none;
+}
+.modelfeatureContent .modelfeatureSidebar h2 a {
+  color: #333;
+}
+.modelfeatureContent .modelfeatureSidebar h2 a:hover {
+  color: #000;
+}
+.modelfeatureContent .modelfeatureSidebar .modelfeatureNav {
+  background: #333;
+}
+.modelfeatureContent .modelfeatureSidebar .modelfeatureNav a {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  display: block;
+  background: #333;
+}
+.modelfeatureContent .modelfeatureSidebar .modelfeatureNav a:hover {
+  background: #000;
+  text-decoration: none;
+}
+.modelfeatureContent .modelfeatureSidebar .modelfeatureNav > .modelfeatureNav a {
+  background: #444;
+  padding: 0 15px 0 30px;
+}
+.modelfeatureContent .modelfeatureSidebar .modelfeatureNav > .modelfeatureNav a:hover {
+  background: #000;
+  text-decoration: none;
+}
+#modelfeatureRow {
+  padding: 50px 0;
+  background: #eee;
+  margin-bottom: 50px;
+}
+#modelfeatureRow h2.features-headline {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#modelfeatureRow .subfeatureRow .subfeatureImage {
+  width: 240px;
+  margin-right: 15px;
+  float: left;
+}
+#modelfeatureRow .subfeatureRow .subfeatureImage img {
+  width: 100%;
+  height: auto;
+}
+#modelfeatureRow .subfeatureRow .subfeatureImage a {
+  background: #000;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 5px;
+}
+#modelfeatureRow .subfeatureRow .subfeatureImage a:hover {
+  background: #1a1a1a;
+  text-decoration: none;
+}
+.trim-models {
+  margin: 3% 0;
+}
+.trim-models h3 {
+  text-align: center;
+}
+.archive-model {
+  width: 30%;
+  margin: 15px 1%;
+  display: inline-block;
+  text-align: center;
+}
+.archive-model h2 {
+  margin-top: 0;
+}
+.archive-model a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+.archive-model:nth-child(3n + 1) {
+  clear: both;
+}
+.post-content {
+  display: block;
+  margin-bottom: 20px;
+  clear: both;
+  padding-top: 10px;
+}
+.post-content h2 {
+  margin: 20px 0 10px;
+}
+.post-content .meta-below-title {
+  margin: 10px 0;
+}
+.post-content .sharing .button.primary-button.blog-share-icon {
+  border-radius: 50%;
+  padding: 5px 0;
+  width: 25px !important;
+}
+.post-content .post-thumbnail {
+  width: 150px;
+  float: left;
+  clear: both;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.post-content a.moretag,
+.post-content a.moretag:visited {
+  display: inline-block;
+  background: #555;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+.post-content a.moretag:hover,
+.post-content a.moretag:visited:hover {
+  text-decoration: none;
+  background: #555;
+}
+#incentives-rates-list-2014 .disclaimer-container {
+  display: none;
+}
+#incentives-rates-list-2014 p {
+  color: #000000;
+}
+#incentives-rates-list-2014 #incentives-filters {
+  margin-bottom: 25px;
+}
+#incentives-rates-list-2014 #incentives-filters select {
+  display: inline-block;
+  width: 15%;
+}
+#incentives-rates-list-2014 .vehicle-offer {
+  width: 99%;
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  cursor: default;
+}
+#incentives-rates-list-2014 .vehicle-offer .vehicle-detail-info {
+  min-height: 150px;
+}
+#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn a {
+  padding: 5px 10px;
+  text-align: center;
+  color: white;
+  display: block;
+}
+#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn.view-inventory-btn {
+  background-color: #52930b;
+}
+#incentives-rates-list-2014 .vehicle-offer .inventory-incentive-btn.other-offers {
+  background-color: #585858;
+}
+#incentives-rates-list-2014 .vehicle-offer .selectOptionHeader {
+  width: 100%;
+  text-align: center;
+}
+#incentives-rates-list-2014 .vehicle-offer .selectOptionHeader h4 {
+  color: #5aa20e;
+  border-bottom: none;
+  margin: 0px;
+  padding: 0px;
+}
+#incentives-rates-list-2014 .vehicle-offer:hover {
+  -moz-box-shadow: 0 0 15px #888;
+  -webkit-box-shadow: 0 0 15px #888;
+  box-shadow: 0 0 15px #888;
+}
+#incentives-rates-list-2014 .vehicle-offer .relation {
+  color: #a09c9b;
+  font-size: 0.9em;
+  display: inline-block;
+  padding-bottom: 15px;
+  vertical-align: bottom;
+}
+#incentives-rates-list-2014 .vehicle-offer .relation.disabled {
+  display: none;
+}
+#incentives-rates-list-2014 .vehicle-thumbnail {
+  display: inline-block;
+  width: 25%;
+  margin-left: 2%;
+  padding: 5px;
+  padding-top: 25px;
+}
+#incentives-rates-list-2014 .vehicle-thumbnail img {
+  width: 100%;
+}
+#incentives-rates-list-2014 .vehicle-thumbnail.no-thumbnail {
+  display: none;
+}
+#incentives-rates-list-2014 .targeted-programs {
+  width: 75%;
+  margin-left: 22%;
+}
+#incentives-rates-list-2014 .offer-details {
+  font-size: 1.7em;
+  vertical-align: top;
+  display: inline-block;
+  width: 70%;
+  min-height: 150px;
+}
+#incentives-rates-list-2014 .offer-details.no-thumbnail {
+  width: 96%;
+  margin-left: 2%;
+}
+#incentives-rates-list-2014 .offer-details h2 {
+  color: #3a3a3a;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  border-bottom: #d3d4d3 2px solid;
+  font-size: 24px;
+  font-weight: 300;
+}
+#incentives-rates-list-2014 .offer-details h2 .fancy-links {
+  float: right;
+  display: inline-block;
+}
+#incentives-rates-list-2014 .offer-details h2 a {
+  font-size: 0.6em;
+  color: #4387c4;
+  padding-right: 10px;
+  padding-top: 15px;
+  font-style: normal;
+  font-weight: bold;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail {
+  width: 42.5%;
+  background: #f0f0f0;
+  color: #3a3a3a;
+  vertical-align: top;
+  display: inline-block;
+  padding: 25px;
+  margin: 0px 0px 10px;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.finance {
+  float: right;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .vehicle-offer-detail-terms {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .vehicle-offer-detail-terms a {
+  background-color: white;
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  color: black;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .financeTermsInfoBox {
+  display: none;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.offer-value-cell .bottom-text {
+  font-weight: 100;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.offer-value-cell .bottom-text .offer-expiration {
+  font-size: 0.8em;
+  position: relative;
+  display: block;
+  top: -5px;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .offer-details-summary {
+  display: none;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.disabled {
+  color: #ccc;
+  opacity: 0.3;
+  display: none;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .value {
+  font-size: 1.7em;
+  vertical-align: bottom;
+  position: relative;
+  top: 5px;
+  left: 0px;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .bottom-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .bottom-text a.show-offer-details-summary {
+  color: #0b4b7f;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .bottom-text a.show-offer-details-summary:hover {
+  transition: all 0.2s ease;
+  color: red;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.finance-term {
+  width: 100px;
+  background-color: #fefefe;
+  border: 1px solid #fdfcfc;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail.no-financing {
+  text-align: center;
+  display: inline-block;
+  width: 600px;
+  letter-spacing: 0.5em;
+}
+#incentives-rates-list-2014 .offer-details .vehicle-offer-detail .main-finance-term {
+  margin-bottom: 15px;
+}
+#incentives-rates-list-2014 .offer-details .finance-terms {
+  margin: 10px 0px 0px 232px;
+}
+#incentives-rates-list-2014 .offer-details .finance-terms h2 {
+  text-align: center;
+}
+#incentives-rates-list-2014 .offer-details .finance-terms.no-bonus-cash {
+  margin-left: 0px;
+}
+#incentives-rates-list-2014 .offer-details.finance-term.inpopup {
+  width: 20%;
+  min-height: 60px;
+  background-color: #f0f0f0;
+  margin: 5px;
+  padding: 15px;
+  text-align: center;
+  float: left;
+}
+#incentives-rates-list-2014 .offer-details.finance-term.inpopup .value {
+  font-size: 20px;
+}
+#incentives-rates-list-2014 .offer-details.finance-term.inpopup .bottom-text {
+  font-size: 10px;
+}
+#incentives-rates-list-2014 .vehicle-offer-detail.finance-term.inpopup {
+  width: 17%;
+  min-height: 40px;
+  background-color: #f0f0f0;
+  margin: 5px;
+  padding: 8px;
+  text-align: center;
+  float: left;
+  box-shadow: 0px 0px 0px black;
+}
+#incentives-rates-list-2014 .vehicle-offer-detail.finance-term.inpopup .value {
+  font-size: 20px;
+}
+#incentives-rates-list-2014 .vehicle-offer-detail.finance-term.inpopup .bottom-text {
+  font-size: 10px;
+}
+#incentives-rates-list-2014 #offer-details-box {
+  display: none;
+  position: absolute;
+  min-height: 200px;
+  min-width: 350px;
+  background-color: #fff;
+  z-index: 1000;
+  -moz-box-shadow: 0 3px 10px #000;
+  -webkit-box-shadow: 0 3px 10px #000;
+  box-shadow: 0 3px 10px #777;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+#incentives-rates-list-2014 #offer-details-box .close-offer-details-box {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  margin: 10px 20px 0px 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#incentives-rates-list-2014 #offer-details-box h2 {
+  font-size: 1em;
+  margin-left: 10px;
+  color: #2d2d2d;
+  line-height: 1em;
+}
+#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item {
+  background-color: transparent;
+  padding: 0px;
+  min-width: 250px;
+  margin: 10px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item a {
+  display: inline-block;
+  color: #2d2d2d;
+}
+#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item .offer-details-summary-item-details {
+  max-width: 250px;
+  display: none;
+}
+#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item .offer-details-summary-item-details p {
+  color: #333;
+  font-size: 9px;
+}
+#incentives-rates-list-2014 #offer-details-box .offer-details-summary-item span {
+  margin-right: 15px;
+}
+#incentives-rates-list-2014 #offer-details-box .total-value {
+  font-size: 4em;
+  margin: 20px 25px 10px 0px;
+  margin: 0px;
+  padding-left: 10px;
+  float: none;
+  text-align: left;
+  display: block;
+  color: #52930b;
+}
+#incentives-rates-list-2014 #offer-details-box:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  background-color: transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: 0px;
+}
+#incentives-rates-list-2014 #offer-details-box.expanded:after {
+  display: none;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: transparent;
+  width: 96%;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer h2 {
+  font-size: 18px;
+  text-align: left;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer h3 {
+  font-size: 16px;
+  font-weight: 600 !important;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details {
+  text-align: center;
+  width: 97%;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail .close-offer-details-box {
+  font-size: 14px;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail .bottom-text {
+  color: #333;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail.offer-value-cell.disabled {
+  display: none;
+}
+#incentives-rates-list-2014.mobile-view .vehicle-offer .offer-details .vehicle-offer-detail .relation {
+  margin-left: 0;
+}
+#incentives-rates-list-2014 #ajax-indicator {
+  display: none;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  box-shadow: 0 0 5px #999;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  border: solid 1px #ccc;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 2000;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+#incentives-rates-list-2014 #ajax-indicator img {
+  margin: 20px 0 0 20px;
+}
+#incentives-rates-list-2014 #incentives-ajax-msg {
+  display: none;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #333;
+  max-width: 1135px;
+  background-color: #a5f0a3;
+  border: 1px solid #6dad6c;
+  -moz-box-shadow: 0 0 15px #888;
+  -webkit-box-shadow: 0 0 15px #888;
+  box-shadow: 0 0 15px #888;
+}
+#incentives-rates-list-2014 #incentives-ajax-msg.error {
+  border-color: #ea0000;
+  background-color: #ffebe8;
+}
+#incentives-rates-list-2014 #change-location {
+  display: none;
+  margin: 10px 0px;
+}
+#incentives-rates-list-2014 .small.button {
+  vertical-align: top;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-thumbnail {
+    width: 35%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .offer-details {
+    width: 60%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .offer-details h2 {
+    margin-left: 5%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-offer-detail {
+    width: 90%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-detail-info {
+    min-height: 100px;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .selectOptionHeader,
+  #incentives-rates-list-2014 .vehicle-offer .disclaimer-container {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  #incentives-rates-list-2014 #incentives-filters select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .visible-xs.mobile-inventory-incentive-buttons {
+    display: block !important;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-thumbnail .inventory-incentive-btn.other-offers {
+    display: none;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-thumbnail .inventory-incentive-btn.view-inventory-btn {
+    display: none;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .offer-details {
+    width: 100%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .offer-details h2 {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-offer-detail {
+    width: 100%;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-offer-detail.finance {
+    float: left;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .vehicle-detail-info {
+    min-height: inherit;
+  }
+  #incentives-rates-list-2014 .vehicle-offer .selectOptionHeader,
+  #incentives-rates-list-2014 .vehicle-offer .disclaimer-container {
+    display: none;
+  }
+  #incentives-rates-list-2014 .mobile-inventory-incentive-buttons .inventory-incentive-btn {
+    width: 45%;
+    float: left;
+    margin: 10px;
+  }
+}
+.formContent {
+  max-width: 600px;
+}
+.formContent fieldset.first-fl {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  background: #eee;
+  margin-bottom: 20px;
+}
+.formContent fieldset.first-fl .field {
+  width: 49%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 10px;
+}
+.formContent fieldset.first-fl .field input,
+.formContent fieldset.first-fl .field select {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  min-height: 30px;
+  background: #fff;
+}
+.formContent fieldset.first-fl .field.cprice {
+  width: 100%;
+  margin-right: 0;
+}
+.formContent fieldset.first-fl .field:nth-child(2n + 1) {
+  margin-right: 0;
+}
+.formContent fieldset.first-fl .field .custom-input-switcher {
+  background: #ccc;
+  padding: 0px 5px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  margin-top: 5px;
+  display: inline-block;
+  color: #333;
+}
+.formContent fieldset.first-fl .form-button {
+  float: left;
+  margin-top: 10px;
+}
+.formContent fieldset.second-fl {
+  float: left;
+  width: 100%;
+}
+.formContent fieldset.second-fl .payment-box {
+  background-color: #eee;
+  padding: 15px;
+}
+.formContent fieldset.second-fl .payment-box h3 {
+  margin-top: 0;
+}
+.formContent fieldset.second-fl .payment-box .mtable {
+  width: 100%;
+}
+.formContent fieldset.second-fl .payment-box .mtable .mleft,
+.formContent fieldset.second-fl .payment-box .mtable .mmain,
+.formContent fieldset.second-fl .payment-box .mtable .mright {
+  text-align: center;
+  line-height: 17px;
+  padding-top: 10px;
+  font-family: inherit;
+}
+.formContent fieldset.second-fl .payment-box .mtable .mmain {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+.formContent fieldset.second-fl .payment-box .payment-calculator-disclaimer {
+  font-size: 10px;
+}
+@media screen and (max-width: 560px) {
+  .formContent {
+    font-size: 12px;
+  }
+}
+#payment-calculator {
+  padding: 0 !important;
+  background: #fff;
+}
+#payment-calculator .payment-calculator-cta-wrap {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+}
+#payment-calculator .payment-calculator-cta-wrap .payment-calculator-cta-btn {
+  margin: 0;
+}

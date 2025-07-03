@@ -38,9 +38,9 @@ $glovebox-container-top-pad-desktop: 50px;
 //	GENERAL
 // *************************************************************************************************
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/mixins';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
@@ -49,17 +49,17 @@ $glovebox-container-top-pad-desktop: 50px;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyota-general-styles.scss';
 
 .fixed-top-spacer {
-	height: 85px;
-	@include breakpoint(sm) {
-		height: 100px;
-	}
-	@include breakpoint(md) {
-		height: 100px;
-	}
+  height: 85px;
+  @include breakpoint(sm) {
+    height: 100px;
+  }
+  @include breakpoint(md) {
+    height: 100px;
+  }
 }
 
 .integration-top-spacer {
-	margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 // *************************************************************************************************
@@ -70,178 +70,182 @@ $glovebox-container-top-pad-desktop: 50px;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyota-search.scss';
 
 #header {
-	.header-top {
-		&__wrapper {
-			.top_dealer-phone.dealer-info.hidden-xs.hidden-sm {
-				order: 1;
-			}
-			.dealer-hours {
-				text-align: center;
-				margin: 0 12px 0 0;
-				.sales-hours, .service-hours, .hours-sales, .hours-service{
-					&:hover{
-						cursor: pointer;
-					}
-				}
-				a {
-					color: #fff;
-					&:hover {
-						text-decoration: none;
-					}
-				}
-				.fa-clock-o{
-					display: none;
-				}
-			}
-			.dealer-hours-container{
-				order: 2;
-				position: relative;
-				margin: 0 20px 0 10px;
-				.hours-dropdown{
-					display: none;
-				}
-				&:hover{
-					cursor: pointer;
-				}
-				&.open{
-					.hours-dropdown{
-						display: flex;
-						background: #eee;
-						position: absolute;
-						z-index: 9999;
-						top: 29px;
-						right: 0;
-					}
-					&:after{
-						content: "\f077";
-					}
-				}
-				&:after{
-					content: "\f078";
-					font: normal normal normal 9px/1 FontAwesome;
-						position: absolute;
-						right: 0px;
-						top: 11px;
-						color: $primary;
-				}
-				#saleshours, #servicehours{
-					width: 245px;
-						padding: 0 5px;
-					.widget-subtitle-icon{
-						display: none;
-					}
-					.widget-subtitle{
-						font-weight: bold;
-					}
-					ul.hours{
-							list-style: none;
-						padding-inline-start: 0px;
-						li{
-							line-height: 24px;
-								width: 100%;
-								display: flex;
-								justify-content: space-between;
-						}
-						.disclaimer, br{
-							display: none;
-						}
-						.day{
-							margin-right: 10px;
-							text-transform: capitalize;
-						}
-					}
-				}
-				.dynamic-hours{
-					.open{
-						display: none;
-					}
-				}
-			}
-			.top__dealer-address.dealer-info {
-				order: 3;
-			}
-		}
-	}
+  .header-top {
+    &__wrapper {
+      .top_dealer-phone.dealer-info.hidden-xs.hidden-sm {
+        order: 1;
+      }
+      .dealer-hours {
+        text-align: center;
+        margin: 0 12px 0 0;
+        .sales-hours,
+        .service-hours,
+        .hours-sales,
+        .hours-service {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .fa-clock-o {
+          display: none;
+        }
+      }
+      .dealer-hours-container {
+        order: 2;
+        position: relative;
+        margin: 0 20px 0 10px;
+        .hours-dropdown {
+          display: none;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &.open {
+          .hours-dropdown {
+            display: flex;
+            background: #eee;
+            position: absolute;
+            z-index: 9999;
+            top: 29px;
+            right: 0;
+          }
+          &:after {
+            content: '\f077';
+          }
+        }
+        &:after {
+          content: '\f078';
+          font: normal normal normal 9px/1 FontAwesome;
+          position: absolute;
+          right: 0px;
+          top: 11px;
+          color: $primary;
+        }
+        #saleshours,
+        #servicehours {
+          width: 245px;
+          padding: 0 5px;
+          .widget-subtitle-icon {
+            display: none;
+          }
+          .widget-subtitle {
+            font-weight: bold;
+          }
+          ul.hours {
+            list-style: none;
+            padding-inline-start: 0px;
+            li {
+              line-height: 24px;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+            }
+            .disclaimer,
+            br {
+              display: none;
+            }
+            .day {
+              margin-right: 10px;
+              text-transform: capitalize;
+            }
+          }
+        }
+        .dynamic-hours {
+          .open {
+            display: none;
+          }
+        }
+      }
+      .top__dealer-address.dealer-info {
+        order: 3;
+      }
+    }
+  }
 
-	.header-bottom .bottom__logo {
-		.oem-logo {
-			padding: 0;
-			margin: 0;
-			&:after {
-				content: none;
-			}
-		}
-		.logo__dealer--image img {
-			max-height: 35px;
-		}
-		.logo__dealer--imageMobile img {
-			max-height: 25px;
-		}
-		#vessel-header-img {
-			padding: 0 10px;
-			order: 3;
-		}
-	}
-	// media queries
-	@include breakpoint(md) {
-		.header-top {
-			.dealer-info,
-			.dealer-hours {
-				font-size: 12px;
-			}
-		} 
-	}
-	@include breakpoint(lg) {
-		.header-top {
-			.dealer-info,
-			.dealer-hours {
-				font-size: 13px;
-			}
-		} 
-	}
+  .header-bottom .bottom__logo {
+    .oem-logo {
+      padding: 0;
+      margin: 0;
+      &:after {
+        content: none;
+      }
+    }
+    .logo__dealer--image img {
+      max-height: 35px;
+    }
+    .logo__dealer--imageMobile img {
+      max-height: 25px;
+    }
+    #vessel-header-img {
+      padding: 0 10px;
+      order: 3;
+    }
+  }
+  // media queries
+  @include breakpoint(md) {
+    .header-top {
+      .dealer-info,
+      .dealer-hours {
+        font-size: 12px;
+      }
+    }
+  }
+  @include breakpoint(lg) {
+    .header-top {
+      .dealer-info,
+      .dealer-hours {
+        font-size: 13px;
+      }
+    }
+  }
 
-	.header-mobile__name {
-		display: none !important;
-	}
+  .header-mobile__name {
+    display: none !important;
+  }
 }
 
-#LetzChatSelectionList{
-	display: none !important;
+#LetzChatSelectionList {
+  display: none !important;
 }
 
-#header{
-	.header__language-toggle{
-		margin: 0px 10px;
-		display: inline-block;
-		height: 50px;
-		.goog-te-gadget-simple{
-			border: none;
-			background: transparent;
-			span{
-				height: 50px;
-			}
-		}
-		#google_translate_element{
-			height: 50px;
-		}
-		.button{
-			padding: 4px 10px 5px;
-			line-height: 18px;
-			margin: 0;
-			background: $green;
-			&:hover{
-				background: darken($green,10%);
-			}
-		}
-	}
-	.navbar-inner{
-		@include flexbox;
-	}
-	.nav_section{
-		display: inline-block;
-	}
+#header {
+  .header__language-toggle {
+    margin: 0px 10px;
+    display: inline-block;
+    height: 50px;
+    .goog-te-gadget-simple {
+      border: none;
+      background: transparent;
+      span {
+        height: 50px;
+      }
+    }
+    #google_translate_element {
+      height: 50px;
+    }
+    .button {
+      padding: 4px 10px 5px;
+      line-height: 18px;
+      margin: 0;
+      background: $green;
+      &:hover {
+        background: darken($green, 10%);
+      }
+    }
+  }
+  .navbar-inner {
+    @include flexbox;
+  }
+  .nav_section {
+    display: inline-block;
+  }
 }
-
 
 // *************************************************************************************************
 //	NAVIGATION
@@ -252,50 +256,50 @@ $glovebox-container-top-pad-desktop: 50px;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyota-menu.scss';
 
 .navbar {
-	@include breakpoint(md) {
-		.navbar-inner {
-			ul.nav {
-				>li.megamenu {
-					>ul.sub-menu {
-						min-height: 200px;
-						max-height: calc(100vh - #{$header-height-desktop} - 50px);
-						overflow-y: auto;
-					}
-				}
-			}
-		}
-	}
+  @include breakpoint(md) {
+    .navbar-inner {
+      ul.nav {
+        > li.megamenu {
+          > ul.sub-menu {
+            min-height: 200px;
+            max-height: calc(100vh - #{$header-height-desktop} - 50px);
+            overflow-y: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
-#header .header-bottom .bottom__navigation.navbar .navbar-inner ul.nav>li.menu-item-has-children{
-	&:hover{
-		a:after{
-			transform: none;
-		}
-	}
-	&.open{
-		a:after{
-			-ms-transform: rotate(-180deg);
-			-webkit-transform: rotate(-180deg);
-			transform: rotate(-180deg);
-		}
-	}
-	.caret{
-		display: none;
-	}
+#header .header-bottom .bottom__navigation.navbar .navbar-inner ul.nav > li.menu-item-has-children {
+  &:hover {
+    a:after {
+      transform: none;
+    }
+  }
+  &.open {
+    a:after {
+      -ms-transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+  }
+  .caret {
+    display: none;
+  }
 }
 
-.navbar .navbar-inner ul.nav li a{
-	@media screen and (max-width: 1399px){
-		padding: 0 5px;
-	}
-	@media screen and (max-width: 1199px){
-		padding: 0 5px;
-		font-size: 13px;
-		&:after{
-			display: none !important;
-		}
-	}
+.navbar .navbar-inner ul.nav li a {
+  @media screen and (max-width: 1399px) {
+    padding: 0 5px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding: 0 5px;
+    font-size: 13px;
+    &:after {
+      display: none !important;
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -305,16 +309,16 @@ $glovebox-container-top-pad-desktop: 50px;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample1/footer.scss';
 
 .footerWrapper .footerBottom .socialWrapper {
-	.logo--wrapper {
-		padding-right: 10px;
-		margin: 0;
-		&:after {
-			content: none;
-		}
-	}
-	.logo__dealer--image img {
-		max-height: 35px;
-	}
+  .logo--wrapper {
+    padding-right: 10px;
+    margin: 0;
+    &:after {
+      content: none;
+    }
+  }
+  .logo__dealer--image img {
+    max-height: 35px;
+  }
 }
 
 // *************************************************************************************************
@@ -343,35 +347,35 @@ $glovebox-container-top-pad-desktop: 50px;
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide';
-	
-	#mobile-advanced-search {
-		.top {
-			display: none;
-		}
-		select {
-			height: 45px;
-			border-bottom: 2px solid $primary;
-			padding: 10px;
-			margin-bottom: 10px;
-			&:last-child {
-				margin-bottom: 15px;
-			}
-		}
-		button.advanced-search-btn {
-			height: 45px;
-			font-size: 14px;
-			font-weight: 700;
-			text-transform: uppercase;
-			border-radius: 50px;
-		}
-	}
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide';
+
+  #mobile-advanced-search {
+    .top {
+      display: none;
+    }
+    select {
+      height: 45px;
+      border-bottom: 2px solid $primary;
+      padding: 10px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+    button.advanced-search-btn {
+      height: 45px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 50px;
+    }
+  }
 }
 
 /*************************************************************************************************
@@ -380,25 +384,25 @@ $glovebox-container-top-pad-desktop: 50px;
 
 // 02078724 - Hide OEM Logo
 #header .header-bottom .bottom__logo {
-	.oem-logo {
-		img {
-			display: none;
-		}
-	}
-	.cstm-oem-logo {
-		order: 1;
-		margin-right: 10px;
-	}
-	.logo__dealer--image {
-		order: 2;
-	}
-	@media only screen and (max-width: 1024px) {
-		.logo__dealer--imageMobile {
-			order: 2;
-		}
-		.cstm-oem-logo {
-			margin-left: 10px;
-		}
-	}
+  .oem-logo {
+    img {
+      display: none;
+    }
+  }
+  .cstm-oem-logo {
+    order: 1;
+    margin-right: 10px;
+  }
+  .logo__dealer--image {
+    order: 2;
+  }
+  @media only screen and (max-width: 1024px) {
+    .logo__dealer--imageMobile {
+      order: 2;
+    }
+    .cstm-oem-logo {
+      margin-left: 10px;
+    }
+  }
 }
 // end 02078724
