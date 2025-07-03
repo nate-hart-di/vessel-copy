@@ -4,4 +4,3 @@ tests/_support
 node_modules/
 .env
 *.css
-!*.scss

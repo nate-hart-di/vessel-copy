@@ -1,0 +1,32 @@
+# Core LLM and Vector Database
+embedchain==0.1.114
+langchain==0.1.0
+langchain-community==0.0.10
+langgraph==0.0.26
+streamlit==1.29.0
+
+# Local Vector Databases
+qdrant-client==1.7.0
+chromadb==0.4.22
+lancedb==0.4.0
+
+# Local Embeddings (no API calls)
+sentence-transformers==2.2.2
+fastembed==0.1.6
+
+# GitHub Processing
+PyGithub==2.1.1
+gitpython==3.1.40
+
+# Document Processing
+python-docx==1.1.0
+PyPDF2==3.0.1
+python-markdown==3.5.2
+
+# Web Interface
+gradio==4.15.0
+plotly==5.17.0
+networkx==3.2.1
+
+# Environment Management
+python-dotenv==1.0.0 
