@@ -2,14 +2,14 @@
 //	VARIABLES
 // *************************************************************************************************
 
-$primary: #0059a8;															// site main color
-$primaryhover: darken($primary,10%);
+$primary: #0059a8; // site main color
+$primaryhover: darken($primary, 10%);
 
-$secondary: #222;																// site accent color
-$secondaryhover: darken($secondary,10%);
+$secondary: #222; // site accent color
+$secondaryhover: darken($secondary, 10%);
 
 $cta: #ed8b00;
-$ctahover: darken($cta,10%);
+$ctahover: darken($cta, 10%);
 $cta-font: 14px/30px;
 
 // *************************************************************************************************
@@ -115,7 +115,6 @@ $outlinebutton-border: 2px solid #fff;
 // $darkbutton-bg: #555;
 // $darkbutton-color: #fff;
 
-
 // *************************************************************************************************
 //	HEADER
 // *************************************************************************************************
@@ -131,7 +130,6 @@ $phonenumber-color: #fff;
 
 $directionsicon-color: #fff;
 $directionstext-color: #fff;
-
 
 // *************************************************************************************************
 //	NAVIGATION
@@ -206,7 +204,6 @@ $offcanvas-submenuitem-color: $offcanvas-menuitem-color;
 $offcanvas-submenuitem-hover-background: $primary;
 $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
 
-
 // *************************************************************************************************
 //	FOOTER
 // *************************************************************************************************
@@ -243,7 +240,6 @@ $footer-menu-text-transform: none;
 //$prefooter-listtitle-underline: 1px solid $prefooter-color;
 
 //$prefooter-listitem-color: $prefooter-color;
-
 
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -316,7 +312,6 @@ $footer-menu-text-transform: none;
 // $vehicle-grid-overlay-toggle-hover-background: $primary;
 // $vehicle-grid-overlay-toggle-hover-color: #fff;
 
-
 // *************************************************************************************************
 //	VEHICLE DETAILS PAGE
 // *************************************************************************************************
@@ -329,7 +324,6 @@ $footer-menu-text-transform: none;
 // $vdpRealPriceColor: green;												// main price color
 // $vdp-tabs: $primary;															// accent color for details tabs
 
-
 // *************************************************************************************************
 //	INSIDE PAGES
 // *************************************************************************************************
@@ -340,7 +334,6 @@ $staffbutton-bg: #333;
 $staffbutton-color: #fff;
 $staffbox-bg: #f9f9f9;
 $staffbox-border: 1px solid #ccc;
-
 
 // *************************************************************************************************
 //	PLUGINS
@@ -364,11 +357,9 @@ $algolia-results-categorytitle-border: 1px solid #ccc;
 $algolia-results-categorytitle-fontfamily: $maintextfont;
 $algolia-results-categorytitle-fontsize: 16px;
 
-
 // LEASE CALCULATOR
 
 $lease_offer_calc_button_color: $cta;
-
 
 // *************************************************************************************************
 //	MISC

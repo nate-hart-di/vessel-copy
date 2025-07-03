@@ -1,8 +1,10 @@
-<?php /*
+<?php
+/*
 	Home page of the site
-*/ ?>
+*/
+?>
 
-<?php if(get_field('override_videobanner')) { ?>
+<?php if (get_field('override_videobanner')) { ?>
 <div id="override_videobanner" data-acf="override_videobanner" data-acf-location="Homepage">
   <?php the_field('override_videobanner_content'); ?>
 </div>
@@ -13,7 +15,7 @@
   <div class="gridwrap hidden-sm hidden-xs"> </div>
 
 	  <div id="videooverlay">
-		<?= get_field('overlay_text')?>
+		<?= get_field('overlay_text') ?>
 		<!--<h2> Select A Brand to Find A Dealership </h2> -->
 
 	    <div class="videooverlay-contentwrapper hidden-xs">
@@ -577,7 +579,7 @@
 	    </div>
 	</div>
 	<div class="bottom-text">
-		<h3><?php echo get_field("bottom_text");?></h3>
+		<h3><?php echo get_field('bottom_text'); ?></h3>
 	</div>
 </div>
 <?php } ?>
@@ -629,7 +631,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="storycontent">
-					<?php the_field('story_content');?>
+					<?php the_field('story_content'); ?>
 					<img class="visible-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/images/fletcherjones-mobile.png" alt="Fletcher Jones Jr" />
 				</div>
 			</div>

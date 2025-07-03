@@ -1,10 +1,11 @@
-<?php /*
+<?php
+/*
 Home page of the site
 */
 ?>
 
 <div class="visible-xs">
-  <?php if(is_active_sidebar("holiday-hours-hilo") || is_active_sidebar("holiday-hours-kona")): ?>
+  <?php if (is_active_sidebar('holiday-hours-hilo') || is_active_sidebar('holiday-hours-kona')): ?>
   <div id="openhoursbar" class="container">
   	<div class="row">
   		<div class="col-xs-12">
@@ -21,8 +22,10 @@ Home page of the site
   </div>
 
 <?php else: ?>
-  <?php get_scoped_template_part('partials/homepage/mobile/open','hours', array('departments' => 'Hilo Sales, Kona Sales')); ?>
-<?php endif ?>
+  <?php get_scoped_template_part('partials/homepage/mobile/open', 'hours', [
+    'departments' => 'Hilo Sales, Kona Sales',
+  ]); ?>
+<?php endif; ?>
 </div>
 
 <div id="videobanner" class="modfull-home">
@@ -38,23 +41,28 @@ Home page of the site
 	  <div class="videooverlay-content" id="homepage-advanced-search">
 	    <div class="row">
 	      <div class="col-sm-12">
-	        <?php  get_scoped_template_part('partials/homepage/personalizer', 'key', array()); ?>
+	        <?php get_scoped_template_part('partials/homepage/personalizer', 'key', []); ?>
 	      </div>
             <?php get_homepage_countdown(); ?>
 	    </div>
 
-          <?php get_scoped_template_part('partials/search/anything', '', array('button_text'=>'Search', 'search_placeholder'=>'i.e. 2017 Accord, Schedule Service...')); ?>
+          <?php get_scoped_template_part('partials/search/anything', '', [
+            'button_text' => 'Search',
+            'search_placeholder' => 'i.e. 2017 Accord, Schedule Service...',
+          ]); ?>
           <div class="col-sm-12 overlaybuttons">
               <a trid="70b03458c192489f9bb8ac" trc class="button primary-button" href="/new-vehicles/">New Vehicles</a>             
               <a trid="d694da420dca4981b34c12" trc class="button primary-button" href="/used-vehicles/">Used Vehicles</a>
               <a trid="3361594373dd4062835714" trc class="button primary-button" href="/value-your-trade/">Value Your Trade</a>
           </div>
 	  </div>
-	  <?php if(get_field('search_usp')){ the_field('search_usp'); } ?>
+	  <?php if (get_field('search_usp')) {
+     the_field('search_usp');
+   } ?>
 	</div>
 </div>
 
-<?php do_action('fj_below_homepage_video') ?>
+<?php do_action('fj_below_homepage_video'); ?>
 
 <div id="ctaRow-mobile" class="visible-xs">
 <a trid="295588b0b73c4dd1a8dd55" trc class="ctabox newvehicles" href="/new-vehicles/" data-gtm-event="mobileCTANewVehicles">
@@ -81,7 +89,7 @@ Home page of the site
 
 <div class="hidden-xs">
 
-<?php get_template_part('partials/dealer-groups/fletcherjones/home-fullpageslider') ?>
+<?php get_template_part('partials/dealer-groups/fletcherjones/home-fullpageslider'); ?>
 
 </div>
 

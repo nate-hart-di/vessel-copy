@@ -1,20 +1,20 @@
 {
-    "name": "dealer-inspire/vessel",
-    "description": "One source of truth for all things Fletcher Jones.",
-    "type": "wordpress-plugin",
-    "require": {
-        "composer/installers": "~1.0",
-        "wp-plugin/recent-posts-widget-extended": "*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "5.5.*",
-        "digitalnature/php-ref": "dev-master",
-        "codeception/codeception": "^2.3",
-        "codeception/mockery-module": "^0.2.3"
-    },
-    "scripts":{
-     "test" : [
-        "vendor/bin/phpunit tests/"
-     ]
+  "name": "dealer-inspire/vessel",
+  "description": "One source of truth for all things Fletcher Jones.",
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "~1.0",
+    "wp-plugin/recent-posts-widget-extended": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*",
+    "digitalnature/php-ref": "dev-master",
+    "codeception/codeception": "^2.3",
+    "codeception/mockery-module": "^0.2.3"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit tests/"
+    ]
   }
 }

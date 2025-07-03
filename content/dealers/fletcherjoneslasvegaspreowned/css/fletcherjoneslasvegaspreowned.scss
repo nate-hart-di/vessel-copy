@@ -1,7 +1,7 @@
 // *************************************************************************************************
 //	VARIABLES
 // *************************************************************************************************
-@import "variables";
+@import 'variables';
 $fj-drive: true !default;
 $vdp-lease-finance: false !default;
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables'; // *************************************************************************************************
@@ -11,27 +11,27 @@ $vdp-lease-finance: false !default;
 // @import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles';
 $header-vertical-width: 200px;
 
 .button.outline-button {
-    border-color: #ffffff;
-    color: #fff;
+  border-color: #ffffff;
+  color: #fff;
 }
 
 body,
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .event .button {
-    font-size: 32px;
+  font-size: 32px;
 }
-@media (min-width:1025px) {
-    .contentcontainer {
-        margin-top: 140px;
-    }
+@media (min-width: 1025px) {
+  .contentcontainer {
+    margin-top: 140px;
+  }
 }
 
 // *************************************************************************************************
@@ -40,295 +40,297 @@ html {
 @import '../../../shared/styles/header/fj_header_v2';
 
 #header.menu-top {
-    height: 110px;
+  height: 110px;
 
-    .header-top {
-        @include justify-content(flex-end);
+  .header-top {
+    @include justify-content(flex-end);
 
-        .search-anything-toggle {
-            width: 190px !important;
+    .search-anything-toggle {
+      width: 190px !important;
 
-            form {
-                // border: none;
-            }
+      form {
+        // border: none;
+      }
 
-            input {
-                border: none;
-                line-height: 39px;
-                height: 35px;
-                width: 100%;
-            }
+      input {
+        border: none;
+        line-height: 39px;
+        height: 35px;
+        width: 100%;
+      }
 
-            .search-anything-submit-btn {
-                width: 30px;
-                height: 30px;
-                //display: inline;
-                line-height: 30px;
-                background: transparent;
-                right: 15px;
-                top: 20px;
-            }
+      .search-anything-submit-btn {
+        width: 30px;
+        height: 30px;
+        //display: inline;
+        line-height: 30px;
+        background: transparent;
+        right: 15px;
+        top: 20px;
+      }
 
-            .ui-autocomplete {
-                right: 0 !important;
-                left: inherit !important;
-            }
-        }
-
-        .header-dropdown .widget ul.menu li {
-            @include flex(1 1 0);
-            padding: 0 10px 10px 0;
-        }
-
-        .logo {
-            position: absolute;
-            left: 0;
-            right: 0;
-        }
-
-        .search-anything-toggle,
-        a.holiday-hours-btn,
-        a.hours-icon {
-            z-index: 1001;
-        }
+      .ui-autocomplete {
+        right: 0 !important;
+        left: inherit !important;
+      }
     }
 
+    .header-dropdown .widget ul.menu li {
+      @include flex(1 1 0);
+      padding: 0 10px 10px 0;
+    }
+
+    .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .search-anything-toggle,
+    a.holiday-hours-btn,
+    a.hours-icon {
+      z-index: 1001;
+    }
+  }
+
+  .header-bottom {
+    display: flex;
+    &__left {
+      display: flex;
+      justify-self: flex-start;
+      flex: 1;
+      display: flex;
+      min-width: -webkit-min-content;
+    }
+    &__right {
+      display: flex;
+      flex: 1;
+      display: flex;
+      min-width: -webkit-min-content;
+      justify-content: flex-end;
+    }
+    .header__language-toggle {
+      height: 35px;
+      line-height: 30px;
+      margin: 1.5px 0 0 20px;
+    }
+    .dealer-phone {
+      color: #111;
+      color: rgba(#000, 0);
+      padding-left: 15px;
+
+      .phone {
+        color: #fff;
+
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+
+    .dealer-hours {
+      color: #fff;
+      color: rgba(#000, 0);
+
+      .hours {
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+  @media (max-width: 1199px) {
     .header-bottom {
-        display: flex;
-        &__left{
-            display: flex;
-            justify-self: flex-start;
-            flex: 1;
-            display: flex;
-            min-width: -webkit-min-content;
-        }
-        &__right{
-            display: flex;
-            flex: 1;
-            display: flex;
-            min-width: -webkit-min-content;
-            justify-content: flex-end;
-        }
-        .header__language-toggle{
-            height: 35px;
-            line-height: 30px;
-            margin: 1.5px 0 0 20px;
-        }
-        .dealer-phone {
-            color: #111;
-            color: rgba(#000,0);
-            padding-left: 15px;
-
-            .phone {
-                color: #fff;
-
-                &:last-of-type {
-                    display: none;
-                }
-            }
-        }
-
-        .dealer-hours {
-            color: #fff;
-            color: rgba(#000,0);
-
-            .hours {
-                margin: 0;
-                color: #fff;
-            }
-        }
+      font-size: 9px;
     }
-    @media (max-width:1199px) {
-        .header-bottom {
-            font-size: 9px;
-        }
-    }
+  }
 }
-@media (min-width:768px) {
-    .modal-dialog {
-        width: 550px;
-    }
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 550px;
+  }
 }
 
 .modal-content .modal-body div#servicehours {
-    display: none;
+  display: none;
 }
 
 #openhoursbar {
-    display: none;
+  display: none;
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-    .deviceWrapper__menu.menu-hamburger {
-        width: 100px !important;
+  .deviceWrapper__menu.menu-hamburger {
+    width: 100px !important;
 
-        .icon-label {
-            display: inline-block !important;
-            color: #111;
-            font-size: 14px;
-            margin: 0 0 0 7px;
-        }
+    .icon-label {
+      display: inline-block !important;
+      color: #111;
+      font-size: 14px;
+      margin: 0 0 0 7px;
     }
+  }
 }
 @media (max-width: 768px) {
-    .deviceWrapper__menu.menu-hamburger {
-        .icon-label {
-            font-size: 11px;
-        }
+  .deviceWrapper__menu.menu-hamburger {
+    .icon-label {
+      font-size: 11px;
     }
+  }
 }
 
-@media (max-width: 1024px){
-    #full-overlay.open {
-        z-index: 1005 !important;
-    }
+@media (max-width: 1024px) {
+  #full-overlay.open {
+    z-index: 1005 !important;
+  }
 }
 //=========================
 //	MENU TOGGLE BUTTON
 //=========================
 
 #desktop-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 110px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    font-weight: bold;
-    background: #fff;
-    @include transition(all 0.3s ease);
-    text-decoration: none;
-    z-index: 1001;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  @include transition(all 0.3s ease);
+  text-decoration: none;
+  z-index: 1001;
 
-    .menu-tab {
-        .menu-text {
-            vertical-align: middle;
-            color: #111;
-            padding-left: 7px;
-            font-size: 16px;
-        }
+  .menu-tab {
+    .menu-text {
+      vertical-align: middle;
+      color: #111;
+      padding-left: 7px;
+      font-size: 16px;
     }
+  }
 
-    .hamburger {
-        font: inherit;
-        display: inline-block;
-        overflow: visible;
-        margin: 0;
-        cursor: pointer;
-        color: #333;
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
-    .hamburger-box {
-        position: relative;
-        display: inline-block;
-        top: 6px;
-        width: 30px;
-        height: 25px;
-
-        .hamburger-inner {
-            display: block;
-            top: 8px;
-            left: 5px;
-            margin-top: -2px;
-            display: block;
-            width: 30px;
-            height: 3px;
-            background-color: $secondary;
-            border-radius: 4px;
-            position: absolute;
-            transition-duration: 0.4s;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-            &:after,
-            &:before {
-                content: "";
-                display: block;
-                width: 30px;
-                height: 3px;
-                background-color: $secondary;
-                border-radius: 4px;
-                position: absolute;
-                @include transform(all 0.15s ease);
-            }
-
-            &:before {
-                top: 7px;
-                @include transition(opacity 0.15s 0.4s ease);
-            }
-
-            &:after {
-                top: 14px;
-                transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            }
-        }
-    }
+  .hamburger {
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 
     &:hover {
-        text-decoration: none;
+      opacity: 0.7;
     }
+  }
 
-    &.open {
-        .hamburger-box {
-            .hamburger-inner {
-                top: 5px;
-                @include transform(translate3d(0,10px,0) rotate(135deg));
-                transition-delay: 0.1s;
+  .hamburger-box {
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    width: 30px;
+    height: 25px;
 
-                &:before {
-                    transition-delay: 0s;
-                    opacity: 0;
-                }
+    .hamburger-inner {
+      display: block;
+      top: 8px;
+      left: 5px;
+      margin-top: -2px;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $secondary;
+      border-radius: 4px;
+      position: absolute;
+      transition-duration: 0.4s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-                &:after {
-                    top: 20px;
-                    @include transform(translate3d(0, -20px, 0) rotate(-270deg));
-                    transition-delay: 0.1s;
-                }
-            }
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: $secondary;
+        border-radius: 4px;
+        position: absolute;
+        @include transform(all 0.15s ease);
+      }
+
+      &:before {
+        top: 7px;
+        @include transition(opacity 0.15s 0.4s ease);
+      }
+
+      &:after {
+        top: 14px;
+        transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:
+          transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+          -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.open {
+    .hamburger-box {
+      .hamburger-inner {
+        top: 5px;
+        @include transform(translate3d(0, 10px, 0) rotate(135deg));
+        transition-delay: 0.1s;
+
+        &:before {
+          transition-delay: 0s;
+          opacity: 0;
         }
+
+        &:after {
+          top: 20px;
+          @include transform(translate3d(0, -20px, 0) rotate(-270deg));
+          transition-delay: 0.1s;
+        }
+      }
     }
+  }
 }
 //=========================
 //	VERTICAL NAVIGATION
 //=========================
 
 #menu-overlay {
-    display: block;
-    overflow: hidden;
-    position: fixed;
-    top: 108px;
-    left: 0;
-    z-index: 994;
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  top: 108px;
+  left: 0;
+  z-index: 994;
+  background: #fff;
+  height: 100%;
+  overflow: visible;
+  @include transition(height 0.5s ease-in-out);
+  @include transform(translate(0%, -100%));
+  @include transition(transform 0.5s ease);
+  @include transition(all 0.5s ease);
+  width: auto;
+  opacity: 0;
+
+  #header-vertical {
     background: #fff;
+    box-shadow: none;
+  }
+
+  &.open {
     height: 100%;
-    overflow: visible;
-    @include transition(height 0.5s ease-in-out);
-    @include transform(translate(0%, -100%));
-    @include transition(transform 0.5s ease);
+    @include transform(translate(0%, 0%));
     @include transition(all 0.5s ease);
-    width: auto;
-    opacity: 0;
-
-    #header-vertical {
-        background: #fff;
-        box-shadow: none;
-    }
-
-    &.open {
-        height: 100%;
-        @include transform(translate(0%, 0%));
-        @include transition(all 0.5s ease);
-        opacity: 1;
-    }
+    opacity: 1;
+  }
 }
 
 // *************************************************************************************************
@@ -340,10 +342,11 @@ html {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-search-overlay';
 
 #main-navbar ul.nav.active .header-dropdown {
-    top: 70px !important;
+  top: 70px !important;
 }
 
-#search-overlay,#contact-overlay {
+#search-overlay,
+#contact-overlay {
   .close-overlay {
     z-index: 1000;
     img {
@@ -352,15 +355,16 @@ html {
   }
 }
 
-#contact-overlay{
+#contact-overlay {
   .close-overlay {
     display: block;
   }
 }
 
-@media screen and (max-width: 1024px){
-  #searchform{
-    .twitter-typeahead, input {
+@media screen and (max-width: 1024px) {
+  #searchform {
+    .twitter-typeahead,
+    input {
       width: 100%;
       border: 1px solid #ccc;
     }
@@ -373,43 +377,43 @@ html {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/prefooter-widelists'; // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
 
 .home #footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 @media (max-width: 767px) {
-    .home #footer {
-        border-top: 1px solid #ccc;
-        position: relative;
-    }
+  .home #footer {
+    border-top: 1px solid #ccc;
+    position: relative;
+  }
 }
 
 #footer {
-    .give-way {
-        padding: 10px;
-        @include flexbox;
-        @include flex-direction(row);
-        @include align-items(center);
-        @include justify-content(space-between);
+  .give-way {
+    padding: 10px;
+    @include flexbox;
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-between);
 
-        ul {
-            padding: 0;
-            list-style: none;
-            @include flexbox;
+    ul {
+      padding: 0;
+      list-style: none;
+      @include flexbox;
 
-            li {
-                padding: 0 5px;
-            }
-        }
-
-        span.copyright {
-            padding: 0 0 7px;
-        }
-        @media (max-width: 1024px) {
-            @include flex-direction(column);
-        }
+      li {
+        padding: 0 5px;
+      }
     }
+
+    span.copyright {
+      padding: 0 0 7px;
+    }
+    @media (max-width: 1024px) {
+      @include flex-direction(column);
+    }
+  }
 }
 // *************************************************************************************************
 //	HOMEPAGE
@@ -426,340 +430,344 @@ html {
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/slider-home_fullpagebkg';
 
 .sales-tag {
-    left: 0;
-    position: absolute;
-    top: 80px;
-    z-index: 1;
+  left: 0;
+  position: absolute;
+  top: 80px;
+  z-index: 1;
 
-    &.back {
-        z-index: -1;
-    }
+  &.back {
+    z-index: -1;
+  }
 }
 
-body.home{
+body.home {
   position: static !important;
 }
 
 #videobanner {
-    background-color: #FFF; // ADDED FOR HOLIDAY COUNTDOWN
-    background-position: 50% 50%;
+  background-color: #fff; // ADDED FOR HOLIDAY COUNTDOWN
+  background-position: 50% 50%;
+  min-height: 100px;
+  overflow: hidden;
+  position: relative;
+  #videorow > div {
+    // height: 100vh !important;
+  }
+
+  .gridwrap {
+    background: none;
+  }
+
+  .modfull {
     min-height: 100px;
     overflow: hidden;
-    position: relative;
-    #videorow > div {
-       // height: 100vh !important;
+    z-index: -1;
+  }
+
+  #videooverlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 110px 0 78px 0;
+    margin: 0;
+    @include transition(margin-top 0.5s ease);
+
+    > .center {
+      @include flexbox;
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-direction(column);
+      height: 100%;
     }
 
-    .gridwrap {
-        background: none;
+    .personalizer-wrap {
+      text-shadow: none;
+      font-family: 'Lato', sans-serif;
+
+      h1,
+      h2 {
+        color: #111;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        @include fluid-font(320px, 1440px, 30px, 48px);
+      }
+
+      h3,
+      h4 {
+        color: #929292;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-weight: 400;
+      }
     }
 
-    .modfull {
-      min-height: 100px;
-      overflow: hidden;
-      z-index: -1;
-    }
+    .videooverlay-contentwrapper {
+      // background: #fff;
+      // background: rgba(#fff, 0.8);
+      // height: 180px;
+      @include transition(height 0.5s ease);
+      margin: 20px auto 0;
 
-    #videooverlay {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 110px 0 78px 0;
-        margin: 0;
-        @include transition(margin-top 0.5s ease);
+      .videooverlay-content {
+        .cta-buttons {
+          p {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-wrap(wrap);
 
-        > .center{
-          @include flexbox;
-          @include justify-content(center);
-          @include align-items(center);
-          @include flex-direction(column);
-          height: 100%;
+            .button {
+              width: 48% !important;
+            }
+            @media (min-width: 1025px) {
+              @include flex-wrap(nowrap);
+            }
+          }
         }
+      }
 
-        .personalizer-wrap {
-            text-shadow: none;
-            font-family: 'Lato', sans-serif;
+      #intro-overlay {
+        padding: 30px 0;
+        z-index: 900;
 
-            h1,
-            h2 {
-                color: #111;
-                text-align: center;
-                margin-bottom: 30px;
-                font-weight: 600;
-                @include fluid-font(320px, 1440px, 30px, 48px);
-            }
-
-            h3,
-            h4 {
-                color: #929292;
-                text-align: center;
-                margin-bottom: 30px;
-                font-size: 25px;
-                font-weight: 400;
-            }
-        }
-
-        .videooverlay-contentwrapper {
-            // background: #fff;
-            // background: rgba(#fff, 0.8);
-            // height: 180px;
-            @include transition(height 0.5s ease);
-            margin: 20px auto 0;
-
-            .videooverlay-content {
-                .cta-buttons {
-                    p {
-                        @include flexbox;
-                        @include align-items(center);
-                        @include justify-content(center);
-                        @include flex-wrap(wrap);
-
-                        .button {
-                            width: 48% !important;
-                        }
-                        @media (min-width: 1025px) {
-                            @include flex-wrap(nowrap);
-                        }
-                    }
-                }
-            }
-
-            #intro-overlay {
-                padding: 30px 0;
-                z-index: 900;
-
-                .popover-wrapper {
-                    position: relative;
-                    -webkit-transform: translateZ(0);
-                    /* webkit flicker fix */
-                    -webkit-font-smoothing: antialiased;
-                    /* webkit text rendering
+        .popover-wrapper {
+          position: relative;
+          -webkit-transform: translateZ(0);
+          /* webkit flicker fix */
+          -webkit-font-smoothing: antialiased;
+          /* webkit text rendering
 					 fix */
-                    .info-box {
-                        background: #fff;
-                        font-size: 13px;
-                        top: 100%;
-                        color: #333;
-                        pointer-events: none;
-                        display: block;
-                        margin-bottom: 15px;
-                        opacity: 0;
-                        padding: 15px;
-                        width: 250px;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        position: absolute;
-                        @include transform(translateY(-20px));
-                        @include transition(all 0.25s ease-out);
-                        @include box-shadow(2px 2px 6px rgba(0,0,0,0.25));
-                        @media(max-width: 1024px) {
-                            display: none;
-                        }
-
-                        .single-dealer {
-                            padding: 5px 10px;
-                            display: inline-block;
-                            vertical-align: top;
-                        }
-
-                        h3 {
-                            margin-top: 0;
-                            font-size: 14px;
-                            color: $primary;
-                            font-weight: bold;
-                        }
-
-                        .address {
-                            padding-bottom: 10px;
-                        }
-
-                        .info-link {
-                            color: #333;
-                            display: block;
-
-                            &:hover {
-                                color: #333;
-                                text-decoration: none;
-                            }
-                        }
-
-                        .view-link {
-                            margin-top: 10px;
-                            display: block;
-                            font-weight: bold;
-                            color: #333;
-
-                            &:hover {
-                                color: $primary;
-                            }
-                        }
-
-                        &::after {
-                            border-left: solid transparent 10px;
-                            border-right: solid transparent 10px;
-                            border-bottom: solid #fff 10px;
-                            top: -10px;
-                            content: " ";
-                            height: 0;
-                            left: 0;
-                            right: 0;
-                            margin: auto;
-                            position: absolute;
-                            width: 0;
-                        }
-
-                        &.dealer-3 {
-                            width: 820px;
-                            left: -265px;
-                        }
-
-                        &.dealer-2 {
-                            width: 590px;
-                            left: -180px;
-                        }
-                    }
-
-                    &:hover {
-                        .info-box {
-                            opacity: 1;
-                            pointer-events: auto;
-                            @include transform(translateY(0px));
-                        }
-                    }
-                }
+          .info-box {
+            background: #fff;
+            font-size: 13px;
+            top: 100%;
+            color: #333;
+            pointer-events: none;
+            display: block;
+            margin-bottom: 15px;
+            opacity: 0;
+            padding: 15px;
+            width: 250px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            @include transform(translateY(-20px));
+            @include transition(all 0.25s ease-out);
+            @include box-shadow(2px 2px 6px rgba(0, 0, 0, 0.25));
+            @media (max-width: 1024px) {
+              display: none;
             }
-        }
 
-        .videooverlay-buttons {
-            width: 800px;
-            margin: 30px auto 0;
-
-            .button.primary-button {
-                background: #ca0000;
-
-                &:hover {
-                    background: #aa0000;
-                }
+            .single-dealer {
+              padding: 5px 10px;
+              display: inline-block;
+              vertical-align: top;
             }
-        }
 
-        &.open {
-            margin-top: -200px;
-
-            .videooverlay-contentwrapper {
-                height: 240px;
+            h3 {
+              margin-top: 0;
+              font-size: 14px;
+              color: $primary;
+              font-weight: bold;
             }
-        }
 
-        .location-col {
-            width: 20%;
-            padding: 0 15px;
-            float: left;
+            .address {
+              padding-bottom: 10px;
+            }
+
+            .info-link {
+              color: #333;
+              display: block;
+
+              &:hover {
+                color: #333;
+                text-decoration: none;
+              }
+            }
+
+            .view-link {
+              margin-top: 10px;
+              display: block;
+              font-weight: bold;
+              color: #333;
+
+              &:hover {
+                color: $primary;
+              }
+            }
+
+            &::after {
+              border-left: solid transparent 10px;
+              border-right: solid transparent 10px;
+              border-bottom: solid #fff 10px;
+              top: -10px;
+              content: ' ';
+              height: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              position: absolute;
+              width: 0;
+            }
+
+            &.dealer-3 {
+              width: 820px;
+              left: -265px;
+            }
+
+            &.dealer-2 {
+              width: 590px;
+              left: -180px;
+            }
+          }
+
+          &:hover {
+            .info-box {
+              opacity: 1;
+              pointer-events: auto;
+              @include transform(translateY(0px));
+            }
+          }
         }
+      }
     }
+
+    .videooverlay-buttons {
+      width: 800px;
+      margin: 30px auto 0;
+
+      .button.primary-button {
+        background: #ca0000;
+
+        &:hover {
+          background: #aa0000;
+        }
+      }
+    }
+
+    &.open {
+      margin-top: -200px;
+
+      .videooverlay-contentwrapper {
+        height: 240px;
+      }
+    }
+
+    .location-col {
+      width: 20%;
+      padding: 0 15px;
+      float: left;
+    }
+  }
 }
 
 #intro-overlay {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0s 0.5s;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s,
+    visibility 0s 0.5s;
 
-    &.open {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.5s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+
+  .row > div {
+    border-right: 1px solid #ccc;
+
+    &:last-child {
+      border-right: 0;
     }
-
-    .row > div {
-        border-right: 1px solid #ccc;
-
-        &:last-child {
-            border-right: 0;
-        }
-    }
+  }
 }
 
 .toolbar-overlays {
-    background: none;
-    height: auto;
-    min-height: 0;
-    opacity: 0;
+  background: none;
+  height: auto;
+  min-height: 0;
+  opacity: 0;
+  position: initial;
+  top: auto;
+  transition:
+    opacity 0.5s,
+    visibility 0s 0.5s;
+  visibility: hidden;
+  width: 100%;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+
+  .find-button {
+    cursor: pointer;
+  }
+
+  .overlay-container {
+    left: auto;
+    margin-left: auto;
     position: initial;
     top: auto;
-    transition: opacity 0.5s, visibility 0s 0.5s;
-    visibility: hidden;
-    width: 100%;
+    width: auto;
 
-    &.open {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.5s;
+    .overlay-content {
+      background: none;
+      float: none;
+      padding: initial;
+      color: #333;
     }
 
-    .find-button {
-        cursor: pointer;
+    span.back-button,
+    span.close-overlay {
+      background: $primary;
+      border-radius: 15px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 30px;
+      position: absolute;
+      right: 15px;
+      text-align: center;
+      top: 25px;
+      width: 30px;
     }
 
-    .overlay-container {
-        left: auto;
-        margin-left: auto;
-        position: initial;
-        top: auto;
-        width: auto;
-
-        .overlay-content {
-            background: none;
-            float: none;
-            padding: initial;
-            color: #333;
-        }
-
-        span.back-button,
-        span.close-overlay {
-            background: $primary;
-            border-radius: 15px;
-            color: #fff;
-            cursor: pointer;
-            font-size: 18px;
-            line-height: 30px;
-            position: absolute;
-            right: 15px;
-            text-align: center;
-            top: 25px;
-            width: 30px;
-        }
-
-        span.back-button {
-            right: 50px;
-        }
+    span.back-button {
+      right: 50px;
     }
+  }
 
-    h2 {
-        color: #333;
-        margin-top: 0;
-        margin-bottom: 30px;
+  h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  img {
+    margin: 0 auto 5px;
+    display: block;
+  }
+
+  a {
+    // color: #aaa;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
     }
-
-    img {
-        margin: 0 auto 5px;
-        display: block;
-    }
-
-    a {
-        // color: #aaa;
-        color: #333;
-        font-size: 14px;
-        font-weight: 400;
-        text-decoration: none;
-
-        &:hover {
-            color: $primary;
-        }
-    }
+  }
 }
 
 #body-tab,
@@ -769,156 +777,156 @@ body.home{
 #type-tab,
 .back-button,
 .close-overlay {
-    display: none;
+  display: none;
 }
 
 #contactdealer-overlay,
 #scheduleservice-overlay {
-    color: #999;
-    font-size: 13px;
+  color: #999;
+  font-size: 13px;
 
-    h3 {
-        margin-top: 0;
-        color: #333;
-        font-size: 18px;
-    }
+  h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+  }
 }
 
 #storyRow,
 .break-fix {
-    display: none;
+  display: none;
 }
 @media (max-width: 1024px) {
-    html {
-        min-height: 100%;
-    }
+  html {
+    min-height: 100%;
+  }
 
-    #videobanner {
-        min-height: 768px;
+  #videobanner {
+    min-height: 768px;
 
-        #videooverlay {
-          padding: 50px 0 110px 0;
-            h1 {
-                font-size: 30px;
-            }
+    #videooverlay {
+      padding: 50px 0 110px 0;
+      h1 {
+        font-size: 30px;
+      }
 
-            .videooverlay-contentwrapper {
-                .videooverlay-content {
-                    max-width: 700px;
-                }
-            }
-
-            .videooverlay-buttons {
-                max-width: 700px;
-
-                .button {
-                    font-size: 12px;
-                    padding: 10px 0;
-                }
-            }
-
-            &.open {
-                margin-top: -200px;
-
-                .videooverlay-contentwrapper {
-                    height: 240px;
-                }
-            }
-
-            #contactdealer-overlay,
-            #scheduleservice-overlay {
-                color: #999;
-                font-size: 12px;
-
-                h3 {
-                    font-size: 16px;
-                }
-            }
+      .videooverlay-contentwrapper {
+        .videooverlay-content {
+          max-width: 700px;
         }
-    }
-}
-@media (max-width: 767px) {
-    #videobanner {
-        min-height: 600px;
+      }
 
-        #videorow {
-            display: none;
+      .videooverlay-buttons {
+        max-width: 700px;
+
+        .button {
+          font-size: 12px;
+          padding: 10px 0;
         }
-    }
+      }
 
-    html {
-        min-height: 100%;
-    }
-
-    body.home {
-        background: none;
-    }
-
-    #videobanner #videooverlay {
-        top: 0;
-        margin-top: 0;
-        padding: 30px 15px;
-        position: relative;
-
-        h1 {
-            font-size: 22px;
-            margin: 10px 0;
-        }
+      &.open {
+        margin-top: -200px;
 
         .videooverlay-contentwrapper {
-            .videooverlay-content {
-                width: 320px;
-            }
+          height: 240px;
         }
+      }
 
-        .videooverlay-buttons {
-            width: 320px;
-
-            .button {
-                font-size: 12px;
-                padding: 0;
-            }
-        }
-
-        &.open {
-            margin-top: 60px;
-
-            .videooverlay-contentwrapper {
-                height: 240px;
-            }
-        }
-    }
-
-    #contactdealer-overlay,
-    #scheduleservice-overlay {
+      #contactdealer-overlay,
+      #scheduleservice-overlay {
         color: #999;
         font-size: 12px;
 
         h3 {
-            font-size: 16px;
+          font-size: 16px;
         }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #videobanner {
+    min-height: 600px;
+
+    #videorow {
+      display: none;
+    }
+  }
+
+  html {
+    min-height: 100%;
+  }
+
+  body.home {
+    background: none;
+  }
+
+  #videobanner #videooverlay {
+    top: 0;
+    margin-top: 0;
+    padding: 30px 15px;
+    position: relative;
+
+    h1 {
+      font-size: 22px;
+      margin: 10px 0;
     }
 
-    #mobile-content {
-        padding: 15px 0;
+    .videooverlay-contentwrapper {
+      .videooverlay-content {
+        width: 320px;
+      }
     }
 
-    #storyRow {
-        clear: both;
+    .videooverlay-buttons {
+      width: 320px;
+
+      .button {
+        font-size: 12px;
+        padding: 0;
+      }
     }
+
+    &.open {
+      margin-top: 60px;
+
+      .videooverlay-contentwrapper {
+        height: 240px;
+      }
+    }
+  }
+
+  #contactdealer-overlay,
+  #scheduleservice-overlay {
+    color: #999;
+    font-size: 12px;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  #mobile-content {
+    padding: 15px 0;
+  }
+
+  #storyRow {
+    clear: both;
+  }
 }
 
-@media screen and (max-width: 767px){
-    .home #openhoursbar.container{
-        display: block;
-        height: 32px;
-        line-height: 32px;
-        background: #101D23;
-        padding: 0;
-        .open:after{
-            display: none;
-        }
+@media screen and (max-width: 767px) {
+  .home #openhoursbar.container {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background: #101d23;
+    padding: 0;
+    .open:after {
+      display: none;
     }
+  }
 }
 // *************************************************************************************************
 //	INSIDE PAGES
@@ -935,89 +943,89 @@ body.home{
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
 
 #detailspage .maincardetails {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 // VDP dealer location popover styles
 
 #dealer-location-popover-trigger {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 8px 20px;
-    font-weight: bold;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 8px 20px;
+  font-weight: bold;
 
-    .popover-trigger-label {
-        text-transform: uppercase;
-        color: #999;
-        font-weight: normal;
-        font-size: 12px;
-    }
+  .popover-trigger-label {
+    text-transform: uppercase;
+    color: #999;
+    font-weight: normal;
+    font-size: 12px;
+  }
 
-    &:after {
-        content: "\f05a";
-        font-family: "FontAwesome";
-        position: relative;
-        display: inline-block;
-        margin-left: 16px;
-        vertical-align: middle;
-    }
+  &:after {
+    content: '\f05a';
+    font-family: 'FontAwesome';
+    position: relative;
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: middle;
+  }
 
-    &:hover:after {
-        color: $primary;
-    }
+  &:hover:after {
+    color: $primary;
+  }
 }
 
 .well {
-    > h2 {
-        font-size: 18px;
-        font-family: $heading-font;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+  > h2 {
+    font-size: 18px;
+    font-family: $heading-font;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-    > span {
-        display: block;
-        margin: 5px 0;
-        padding: 5px 0;
-    }
+  > span {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
 
-    .dealer-links {
-        margin-top: 20px;
-    }
+  .dealer-links {
+    margin-top: 20px;
+  }
 }
 
 .location-popover-wrap {
-    .btn {
-        color: #fff;
-    }
+  .btn {
+    color: #fff;
+  }
 
-    .dealer-address,
-    .dealer-name,
-    .dealer-phone {
-        display: block;
-    }
+  .dealer-address,
+  .dealer-name,
+  .dealer-phone {
+    display: block;
+  }
 
-    .dealer-name {
-        font-weight: bold;
-    }
+  .dealer-name {
+    font-weight: bold;
+  }
 
-    .dealer-phone {
-        margin-bottom: 5px;
-        @media (min-width: 1025px) {
-            text-align: center;
-        }
+  .dealer-phone {
+    margin-bottom: 5px;
+    @media (min-width: 1025px) {
+      text-align: center;
     }
+  }
 }
 
 .mainvehicleheaderbox {
-    .popover-close {
-        font-weight: bold;
-        font-size: 16px;
-        color: #333;
+  .popover-close {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+      text-decoration: none;
     }
+  }
 }
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -1033,50 +1041,50 @@ body.home{
 //=================================================
 
 #results-page td.gridview .vehicle.grid-view {
-    padding-bottom: 0;
-    display: flex !important;
+  padding-bottom: 0;
+  display: flex !important;
+  @include flex-direction(column);
+
+  .vehicle-quick-stats {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex-grow(1);
+  }
+
+  .button-bar {
+    position: relative;
+    height: auto;
+  }
+
+  .vehicle-price {
+    @include flexbox();
     @include flex-direction(column);
 
-    .vehicle-quick-stats {
-        @include flexbox();
-        @include flex-direction(column);
-        @include justify-content(flex-start);
-        @include flex-grow(1);
+    .price-block.bottom-text {
+      @include flex-grow(1);
     }
-
-    .button-bar {
-        position: relative;
-        height: auto;
-    }
-
-    .vehicle-price {
-        @include flexbox();
-        @include flex-direction(column);
-
-        .price-block.bottom-text {
-            @include flex-grow(1);
-        }
-    }
+  }
 }
 // ************************************************************************************************
 //  DEALER INSPIRE & THIRD PARTY PLUGINS
 // ************************************************************************************************
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia';
-@media (max-width:767px) {
-    .tt-dropdown-menu {
-        width: 100%;
-        min-width: 100%;
+@media (max-width: 767px) {
+  .tt-dropdown-menu {
+    width: 100%;
+    min-width: 100%;
 
-        .tt-dataset-departmentHours,
-        .tt-dataset-email,
-        .tt-dataset-inventory,
-        .tt-dataset-pages,
-        .tt-dataset-phone {
-            width: 94%;
-            margin: 0 3%;
-        }
+    .tt-dataset-departmentHours,
+    .tt-dataset-email,
+    .tt-dataset-inventory,
+    .tt-dataset-pages,
+    .tt-dataset-phone {
+      width: 94%;
+      margin: 0 3%;
     }
+  }
 }
 // *************************************************************************************************
 //	VEHICLE DETAILS PAGE
@@ -1084,389 +1092,391 @@ body.home{
 //NEW VDP STYLING: DO NOT REMOVE
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-details';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/vehicle-print-view';
-.page-vehicle-display-page{
+.page-vehicle-display-page {
   @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
 }
 @import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp';
 
 #vehicleDetails {
-    padding-top: 110px;
+  padding-top: 110px;
 
-    &.locked_pricing_vehicle {
-        #details-page-ctabox {
-            .locked-reveal-text {
-                display: none;
+  &.locked_pricing_vehicle {
+    #details-page-ctabox {
+      .locked-reveal-text {
+        display: none;
 
-                .locked-pricing-price-unlocked & {
-                    display: block;
-                }
-            }
+        .locked-pricing-price-unlocked & {
+          display: block;
         }
+      }
     }
-    .details-page-ctawrap #details-page-ctabox {
-        background: #fff;
+  }
+  .details-page-ctawrap #details-page-ctabox {
+    background: #fff;
+  }
+
+  .carfax-report,
+  .history_report {
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .vdp-shopping-tools {
+    border-top-color: #565656;
+    border-bottom-color: #565656;
+
+    .shopping-tools-wrapper {
+      @include flexbox;
+      @media (max-width: 450px) {
+        @include flex-wrap(wrap);
+      }
     }
 
-    .carfax-report,
-    .history_report {
-        img {
-            max-width: 150px;
-        }
+    .shopping-tool {
+      border-color: #565656;
+      padding: 0 7px;
+      width: 17%;
+
+      &:first-child {
+        border-color: #565656;
+      }
+      @media (max-width: 450px) {
+        width: 25%;
+        margin: 2% 0;
+      }
     }
 
-    .vdp-shopping-tools {
-        border-top-color: #565656;
-        border-bottom-color: #565656;
-
-        .shopping-tools-wrapper {
-            @include flexbox;
-            @media (max-width: 450px){
-                @include flex-wrap(wrap);
-            }
-        }
-
-        .shopping-tool {
-            border-color: #565656;
-            padding: 0 7px;
-            width: 17%;
-
-            &:first-child {
-                border-color: #565656;
-            }
-            @media (max-width: 450px){
-                width: 25%;
-                margin: 2% 0;
-            }
-        }
-
-        svg {
-            fill: #0059a8;
-        }
-
-        .shopping-label {
-            a {
-                font-size: 14px;
-                font-weight: bold;
-                @media (max-width: 767px){
-                    font-size: 11px;
-                }
-            }
-        }
+    svg {
+      fill: #0059a8;
     }
-    @media screen and (max-width:1024px) {
-        padding-top: 32px;
+
+    .shopping-label {
+      a {
+        font-size: 14px;
+        font-weight: bold;
+        @media (max-width: 767px) {
+          font-size: 11px;
+        }
+      }
     }
+  }
+  @media screen and (max-width: 1024px) {
+    padding-top: 32px;
+  }
 }
-@media screen and (max-width:1024px) {
-    .page-template-page-lightning {
-        #openhoursbar {
-            display: none;
-        }
+@media screen and (max-width: 1024px) {
+  .page-template-page-lightning {
+    #openhoursbar {
+      display: none;
     }
+  }
 }
-@media screen and (max-width:767px) {
-    .page-vehicle-display-page {
-        #openhoursbar {
-            top: 50px;
-        }
+@media screen and (max-width: 767px) {
+  .page-vehicle-display-page {
+    #openhoursbar {
+      top: 50px;
     }
+  }
 }
 
 #vehicleDetails.project-hotwheels .vdp-top-banner.box-gallery .box-gallery-wrap {
-    padding: 50px 0 50px !important;
+  padding: 50px 0 50px !important;
 }
 
-@media (max-width:767px) {
-    #vehicleDetails .maincta-row .button {
-        top: 50px !important;
-    }
+@media (max-width: 767px) {
+  #vehicleDetails .maincta-row .button {
+    top: 50px !important;
+  }
 }
 /*************************************************************************************************
 	TABLET ELEMENT STYLING
 *************************************************************************************************/
 @media (max-width: 1024px) {
-    @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
-    @import "mobile-menu";
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-touch-header';
+  @import 'mobile-menu';
 
-    .container-wide.contentcontainer {
-        padding-top: 42px;
+  .container-wide.contentcontainer {
+    padding-top: 42px;
+  }
+
+  #di-page-composer {
+    padding-top: 32px;
+  }
+
+  #openhoursbar .dynamic-hours .department {
+    margin-left: 5px;
+  }
+
+  #search-overlay {
+    background: #fff;
+  }
+
+  #algolia-overlay.active {
+    position: unset;
+    margin: 85px 5px 45px;
+
+    .close-overlay {
+      display: inline-block;
+      width: 32px;
+    }
+  }
+
+  #mobile-menu {
+    background: #fff;
+  }
+
+  .menu-top {
+    .mobile-header-top {
+      @include justify-content(space-between);
+
+      .icon-menu {
+        min-width: 70px;
+        @include justify-content(flex-start);
+
+        .menu-hamburger {
+          border-left: 0;
+        }
+      }
+
+      .icons {
+        margin-left: 0;
+        padding-right: 6px;
+
+        .menu-hours,
+        .menu-phone,
+        .menu-search {
+          border-left: 0;
+          width: 42px;
+          font-size: 20px;
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
+
+          a {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+          }
+        }
+
+        .menu-hours {
+          a,
+          svg {
+            color: $primary;
+            fill: $primary;
+          }
+        }
+
+        .menu-phone,
+        .menu-search {
+          a,
+          svg {
+            color: #111;
+            fill: #111;
+          }
+        }
+      }
     }
 
-    #di-page-composer {
-        padding-top: 32px;
-    }
+    .logo {
+      padding: 5px;
 
-    #openhoursbar .dynamic-hours .department {
-        margin-left: 5px;
+      img {
+        max-height: 40px;
+      }
     }
+  }
 
+  .navbar .navbar-inner ul.nav li ul.dropdown-menu .di-vehicle-icon a:before,
+  .navbar .navbar-inner ul.nav li ul.sub-menu .di-vehicle-icon a:before {
+    height: 40px !important;
+    width: 60px !important;
+  }
+
+  .page-template-page-lightning {
     #search-overlay {
-        background: #fff;
+      z-index: 1100;
+
+      &.open {
+        top: 50px;
+      }
+
+      .overlay-container {
+        margin-top: 0;
+      }
     }
+  }
+  @media (min-width: 768px) {
+    .page-template-page-di-page-composer {
+      .col-md-4 {
+        width: inherit;
+        margin: 0 auto;
+      }
 
-    #algolia-overlay.active {
-        position: unset;
-        margin: 85px 5px 45px;
-
-        .close-overlay {
-            display: inline-block;
-            width: 32px;
-        }
+      #footer .footer-middle {
+        width: 100%;
+        margin: 20px auto 0;
+      }
     }
+  }
 
-    #mobile-menu {
-        background: #fff;
-    }
-
-    .menu-top {
-        .mobile-header-top {
-            @include justify-content(space-between);
-
-            .icon-menu {
-                min-width: 70px;
-                @include justify-content(flex-start);
-
-                .menu-hamburger {
-                    border-left: 0;
-                }
-            }
-
-            .icons {
-                margin-left: 0;
-                padding-right: 6px;
-
-                .menu-hours,
-                .menu-phone,
-                .menu-search {
-                    border-left: 0;
-                    width: 42px;
-                    font-size: 20px;
-                    @include flexbox;
-                    @include align-items(center);
-                    @include justify-content(center);
-
-                    a {
-                        @include flexbox;
-                        @include align-items(center);
-                        @include justify-content(center);
-                    }
-                }
-
-                .menu-hours {
-                    a,
-                    svg {
-                        color: $primary;
-                        fill: $primary;
-                    }
-                }
-
-                .menu-phone,
-                .menu-search {
-                    a,
-                    svg {
-                        color: #111;
-                        fill: #111;
-                    }
-                }
-            }
-        }
-
-        .logo {
-            padding: 5px;
-
-            img {
-                max-height: 40px;
-            }
-        }
-    }
-
-    .navbar .navbar-inner ul.nav li ul.dropdown-menu .di-vehicle-icon a:before,
-    .navbar .navbar-inner ul.nav li ul.sub-menu .di-vehicle-icon a:before {
-        height: 40px !important;
-        width: 60px !important;
-    }
-
-    .page-template-page-lightning {
-        #search-overlay {
-            z-index: 1100;
-
-            &.open {
-                top: 50px;
-            }
-
-            .overlay-container {
-                margin-top: 0;
-            }
-        }
-    }
-    @media (min-width:768px) {
-        .page-template-page-di-page-composer {
-            .col-md-4 {
-                width: inherit;
-                margin: 0 auto;
-            }
-
-            #footer .footer-middle {
-                width: 100%;
-                margin: 20px auto 0;
-            }
-        }
-    }
-
-    .menu-top .menu-hamburger {
-        height: 49px;
-        padding: 0 9px;
-    }
+  .menu-top .menu-hamburger {
+    height: 49px;
+    padding: 0 9px;
+  }
 }
 
 .navbar.flex .navbar-inner .nav_section > ul.nav {
-    flex: 0;
+  flex: 0;
 }
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
-@media (max-width:767px) {
-    @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-    @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
-    @import "mobile";
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+  @import 'mobile';
 
-    .page-template-page-di-page-composer #di-page-composer .fullcontentrow .container-fluid .inner-wysiwyg {
-        padding: 0 15px;
-    }
+  .page-template-page-di-page-composer #di-page-composer .fullcontentrow .container-fluid .inner-wysiwyg {
+    padding: 0 15px;
+  }
 
-    .page-builder {
-        padding-top: 32px;
-    }
+  .page-builder {
+    padding-top: 32px;
+  }
 
-    .menu-top .menu-hamburger {
-        height: 49px;
-        padding: 0 9px;
-    }
+  .menu-top .menu-hamburger {
+    height: 49px;
+    padding: 0 9px;
+  }
 
-    .logo > a > img {
-        width: auto !important;
-    }
+  .logo > a > img {
+    width: auto !important;
+  }
 
-    .home .mobile-cta {
-        margin-top: 0 !important;
-    }
+  .home .mobile-cta {
+    margin-top: 0 !important;
+  }
 
-    .mobile-tabs {
-        height: 40px !important;
-    }
+  .mobile-tabs {
+    height: 40px !important;
+  }
 
-    .mobile-tabs.mobile-tabs-count-4 .mobile-tab-1,
-    .mobile-tabs.mobile-tabs-count-4 .mobile-tab-2,
-    .mobile-tabs.mobile-tabs-count-4 .mobile-tab-3,
-    .mobile-tabs.mobile-tabs-count-4 .mobile-tab-4 {
-        display: inline-block !important;
-    }
+  .mobile-tabs.mobile-tabs-count-4 .mobile-tab-1,
+  .mobile-tabs.mobile-tabs-count-4 .mobile-tab-2,
+  .mobile-tabs.mobile-tabs-count-4 .mobile-tab-3,
+  .mobile-tabs.mobile-tabs-count-4 .mobile-tab-4 {
+    display: inline-block !important;
+  }
 
-    #footer .give-way {
-        padding-bottom: 70px;
-    }
+  #footer .give-way {
+    padding-bottom: 70px;
+  }
 }
-@media screen and (max-width:400px) {
-    .menu-top {
-        .logo {
-            padding: 10px;
+@media screen and (max-width: 400px) {
+  .menu-top {
+    .logo {
+      padding: 10px;
 
-            img {
-                max-height: 28px;
-            }
-        }
+      img {
+        max-height: 28px;
+      }
     }
+  }
 }
 @import 'support-requests';
 
-@media (max-width: 1024px) and (min-width: 768px){
-    .contentcontainer {
-        margin-top: 60px !important;
-    }
-    .fixed-top-spacer {
-        height: 0 !important;
-    }
-    #search-overlay .overlay-container .overlay-content {
-        padding: 0 !important;
-    }
-    #algolia-overlay.active {
-        margin: 85px 5px 45px;
-        padding: 40px 0;
-    }
+@media (max-width: 1024px) and (min-width: 768px) {
+  .contentcontainer {
+    margin-top: 60px !important;
+  }
+  .fixed-top-spacer {
+    height: 0 !important;
+  }
+  #search-overlay .overlay-container .overlay-content {
+    padding: 0 !important;
+  }
+  #algolia-overlay.active {
+    margin: 85px 5px 45px;
+    padding: 40px 0;
+  }
 }
-@media (max-width: 767px){
-    .fixed-top-spacer {
-        height: 0 !important;
-    }
-    #search-overlay .overlay-container .overlay-content {
-        padding: 24px 0 !important;
-    }
+@media (max-width: 767px) {
+  .fixed-top-spacer {
+    height: 0 !important;
+  }
+  #search-overlay .overlay-container .overlay-content {
+    padding: 24px 0 !important;
+  }
 }
 
 #spanishButton {
-    @include transform(scale3d(1, 1, 1));
-    @include transition(transform .3s ease-in-out);
-    position: fixed;
-    top: 130px;
-    right: 30px;
-    width: 150px;
-    z-index: 11;
-    &:hover {
-        @include transform(scale3d(1.1, 1.1, 1.1));
+  @include transform(scale3d(1, 1, 1));
+  @include transition(transform 0.3s ease-in-out);
+  position: fixed;
+  top: 130px;
+  right: 30px;
+  width: 150px;
+  z-index: 11;
+  &:hover {
+    @include transform(scale3d(1.1, 1.1, 1.1));
+  }
+  @media screen and (max-width: 1024px) {
+    top: 70px;
+    width: 125px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 60px;
+    width: 90px;
+    .home & {
+      top: 85px;
     }
-    @media screen and (max-width: 1024px) {
-        top: 70px;
-        width: 125px;
-    }
-    @media screen and (max-width: 767px) {
-        top: 60px;
-        width: 90px;
-        .home &{
-            top: 85px;
-        }
-    }
+  }
 }
 
 // hide title top text
 #lvrp-results-wrapper .hit-content h2.result-title span.title-top {
-    display: none;
+  display: none;
 }
 
 // hide vrp/vdp details link
-#lvrp-results-wrapper .hit-price .hit-price__customize, a.pricing-item__details {
-    display: none;
+#lvrp-results-wrapper .hit-price .hit-price__customize,
+a.pricing-item__details {
+  display: none;
 }
 
 // adding classes to VRP/VDP to update CTA colors
-#lvrp-results-wrapper div.lightning-custom-cta.green-button, .vdp-price-box__cta a.vdp-pricebox-cta-button.green-button  {
-    background: $greencta;
-    &:hover {
-        background: $greenctahover;
-    }
+#lvrp-results-wrapper div.lightning-custom-cta.green-button,
+.vdp-price-box__cta a.vdp-pricebox-cta-button.green-button {
+  background: $greencta;
+  &:hover {
+    background: $greenctahover;
+  }
 }
 
-#lvrp-results-wrapper div.lightning-custom-cta.primary-button, .vdp-price-box__cta a.vdp-pricebox-cta-button.primary-button  {
-    background: $primary;
-    &:hover {
-        background: $primaryhover;
-    }
+#lvrp-results-wrapper div.lightning-custom-cta.primary-button,
+.vdp-price-box__cta a.vdp-pricebox-cta-button.primary-button {
+  background: $primary;
+  &:hover {
+    background: $primaryhover;
+  }
 }
 // move custom html secton above pricebox
-    section#price-box {
-        @include flexbox();
-        @include flex-direction(column);
-        margin-top: 20px;
-        .vdp-sidebar-custom-html {
-            order: -1;
-        }
-    }
-    .vdp-price-box__view-count {
-        display: none;
-    }
-
+section#price-box {
+  @include flexbox();
+  @include flex-direction(column);
+  margin-top: 20px;
+  .vdp-sidebar-custom-html {
+    order: -1;
+  }
+}
+.vdp-price-box__view-count {
+  display: none;
+}
 
 @media (min-width: 1025px) {
-    .vdp-hero .vdp-gallery-wrap {
-        margin-top: 120px;
-    }
+  .vdp-hero .vdp-gallery-wrap {
+    margin-top: 120px;
+  }
 }

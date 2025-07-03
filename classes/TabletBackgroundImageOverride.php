@@ -2,131 +2,133 @@
 
 namespace DealerInspire\Vessel;
 
-use \DICommonTheme\HomepageBackgroundImageOverrides;
+use DICommonTheme\HomepageBackgroundImageOverrides;
 
-class TabletBackgroundImageOverride extends HomepageBackgroundImageOverrides {
+class TabletBackgroundImageOverride extends HomepageBackgroundImageOverrides
+{
+  private $_tablet_selector;
 
-    private $_tablet_selector;
+  public function register_tablet_hooks()
+  {
+    $this->set_tablet_selector('#videobanner');
+    add_action('wp_enqueue_scripts', [$this, 'override_tablet_images']);
+  }
 
-    public function register_tablet_hooks() {
-        $this->set_tablet_selector('#videobanner');
-        add_action('wp_enqueue_scripts', array($this, 'override_tablet_images'));
+  private function set_tablet_selector($selector)
+  {
+    $this->_tablet_selector = $selector;
+    return $this;
+  }
 
-    }
+  public function override_tablet_images()
+  {
+    $css = '';
 
-    private function set_tablet_selector($selector) {
-        $this->_tablet_selector = $selector;
-        return $this;
-    }
+    $tablet_image = get_field('homepage_tablet_image', get_option('page_on_front'));
 
-    public function override_tablet_images() {
+    // Start to capture css output
+    ob_start();
 
-        $css = '';
+    // Above the fold tablet image
+    if (isset($tablet_image) && !empty($tablet_image)):
+      echo '@media (max-width: 1024px){' .
+        $this->_tablet_selector .
+        '{ background-image: url( ' .
+        $tablet_image .
+        ' ) !important; }}';
+    endif;
 
-        $tablet_image = get_field('homepage_tablet_image', get_option( 'page_on_front' ));
+    // Save the CSS to a variable for file generation
+    $css = trim(ob_get_clean());
 
-        // Start to capture css output
-        ob_start();
+    // Sudo minifying
+    $css = str_replace(' ', '', $css);
 
-        // Above the fold tablet image
-        if ( isset($tablet_image) && !empty($tablet_image) ):
+    if (isset($css) && !empty($css)):
+      // Add comments so other people know where these styles are coming from
+      $css = '<!-- BACKGROUND OVERRIDES --> <style>' . $css . '</style> <!-- END BACKGROUND OVERRIDE CSS -->';
 
-            echo '@media (max-width: 1024px){' . $this->_tablet_selector . '{ background-image: url( ' . $tablet_image . ' ) !important; }}';
-        endif;
+      // Output CSS on to page
+      echo $css;
+    endif;
+  }
 
-        // Save the CSS to a variable for file generation
-        $css = trim(ob_get_clean());
+  public function register_acf_fields()
+  {
+    // TODO - Implement below the fold background adjustments
 
-        // Sudo minifying
-        $css = str_replace(' ', '', $css);
-
-
-
-        if ( isset($css) && !empty($css) ):
-
-            // Add comments so other people know where these styles are coming from
-            $css = '<!-- BACKGROUND OVERRIDES --> <style>' . $css . '</style> <!-- END BACKGROUND OVERRIDE CSS -->';
-
-            // Output CSS on to page
-            echo $css;
-
-        endif;
-    }
-
-    public function register_acf_fields() {
-
-        // TODO - Implement below the fold background adjustments
-
-        if( function_exists('acf_add_local_field_group') ):
-
-            acf_add_local_field_group(array (
-                'key' => 'group_5935a8d87bac0',
-                'title' => 'Homepage Background Image Overrides',
-                'fields' => array (
-                    array (
-                        'key' => 'field_5935ac2f6f7fc',
-                        'label' => 'Main Image',
-                        'name' => '',
-                        'type' => 'tab',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'placement' => 'left',
-                        'endpoint' => 0,
-                    ),
-                    array (
-                        'key' => 'field_5935ac426f7fd',
-                        'label' => 'Desktop Image',
-                        'name' => 'homepage_desktop_image',
-                        'type' => 'image',
-                        'instructions' => 'The desktop image must be exactly 1800 pixels in width. This is the main homepage background image that will display at the top of the page. ',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => 100,
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'return_format' => 'url',
-                        'preview_size' => 'thumbnail',
-                        'library' => 'all',
-                        'min_width' => 1800,
-                        'min_height' => '',
-                        'min_size' => '',
-                        'max_width' => 1800,
-                        'max_height' => '',
-                        'max_size' => '',
-                        'mime_types' => '',
-                    ),array (
-                        'key' => 'field_5988ac426f7fd',
-                        'label' => 'Tablet Image',
-                        'name' => 'homepage_tablet_image',
-                        'type' => 'image',
-                        'instructions' => 'The tablet image must be exactly 1024 pixels in width. This is the main homepage background image that will display at the top of the page.',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => 100,
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'return_format' => 'url',
-                        'preview_size' => 'thumbnail',
-                        'library' => 'all',
-                        'min_width' => 1024,
-                        'min_height' => '',
-                        'min_size' => '',
-                        'max_width' => 1024,
-                        'max_height' => '',
-                        'max_size' => '',
-                        'mime_types' => '',
-                    ),
-                    /*array (
+    if (function_exists('acf_add_local_field_group')):
+      acf_add_local_field_group([
+        'key' => 'group_5935a8d87bac0',
+        'title' => 'Homepage Background Image Overrides',
+        'fields' => [
+          [
+            'key' => 'field_5935ac2f6f7fc',
+            'label' => 'Main Image',
+            'name' => '',
+            'type' => 'tab',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => [
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ],
+            'placement' => 'left',
+            'endpoint' => 0,
+          ],
+          [
+            'key' => 'field_5935ac426f7fd',
+            'label' => 'Desktop Image',
+            'name' => 'homepage_desktop_image',
+            'type' => 'image',
+            'instructions' =>
+              'The desktop image must be exactly 1800 pixels in width. This is the main homepage background image that will display at the top of the page. ',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => [
+              'width' => 100,
+              'class' => '',
+              'id' => '',
+            ],
+            'return_format' => 'url',
+            'preview_size' => 'thumbnail',
+            'library' => 'all',
+            'min_width' => 1800,
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => 1800,
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+          ],
+          [
+            'key' => 'field_5988ac426f7fd',
+            'label' => 'Tablet Image',
+            'name' => 'homepage_tablet_image',
+            'type' => 'image',
+            'instructions' =>
+              'The tablet image must be exactly 1024 pixels in width. This is the main homepage background image that will display at the top of the page.',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => [
+              'width' => 100,
+              'class' => '',
+              'id' => '',
+            ],
+            'return_format' => 'url',
+            'preview_size' => 'thumbnail',
+            'library' => 'all',
+            'min_width' => 1024,
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => 1024,
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+          ],
+          /*array (
                         'key' => 'field_5935b5f10fde0',
                         'label' => 'Mobile Image Option',
                         'name' => 'above_fold_same_image_on_mobile',
@@ -142,14 +144,15 @@ class TabletBackgroundImageOverride extends HomepageBackgroundImageOverrides {
                         'message' => 'Use desktop image on mobile?',
                         'default_value' => 0,
                     ),*/
-                    array (
-                        'key' => 'field_5935aca66f7fe',
-                        'label' => 'Mobile Image',
-                        'name' => 'homepage_mobile_image',
-                        'type' => 'image',
-                        'instructions' => 'The mobile image must be exactly 768 pixels in width. This is the main homepage background image that will display at the top of the page in the mobile view. ',
-                        'required' => 0,
-                        'conditional_logic' => 0,/*array (
+          [
+            'key' => 'field_5935aca66f7fe',
+            'label' => 'Mobile Image',
+            'name' => 'homepage_mobile_image',
+            'type' => 'image',
+            'instructions' =>
+              'The mobile image must be exactly 768 pixels in width. This is the main homepage background image that will display at the top of the page in the mobile view. ',
+            'required' => 0,
+            'conditional_logic' => 0 /*array (
                             array (
                                 array (
                                     'field' => 'field_5935b5f10fde0',
@@ -157,24 +160,24 @@ class TabletBackgroundImageOverride extends HomepageBackgroundImageOverrides {
                                     'value' => '1',
                                 ),
                             ),
-                        ),*/
-                        'wrapper' => array (
-                            'width' => 100,
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'return_format' => 'url',
-                        'preview_size' => 'thumbnail',
-                        'library' => 'all',
-                        'min_width' => 768,
-                        'min_height' => '',
-                        'min_size' => '',
-                        'max_width' => 768,
-                        'max_height' => '',
-                        'max_size' => '',
-                        'mime_types' => '',
-                    ),
-                    /*array (
+                        ),*/,
+            'wrapper' => [
+              'width' => 100,
+              'class' => '',
+              'id' => '',
+            ],
+            'return_format' => 'url',
+            'preview_size' => 'thumbnail',
+            'library' => 'all',
+            'min_width' => 768,
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => 768,
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+          ],
+          /*array (
                         'key' => 'field_5935aceb6f7ff',
                         'label' => 'Below Fold',
                         'name' => '',
@@ -428,26 +431,25 @@ class TabletBackgroundImageOverride extends HomepageBackgroundImageOverrides {
                             ),
                         ),
                     ),*/
-                ),
-                'location' => array (
-                    array (
-                        array (
-                            'param' => 'page',
-                            'operator' => '==',
-                            'value' => get_option( 'page_on_front' ),
-                        ),
-                    ),
-                ),
-                'menu_order' => 0,
-                'position' => 'normal',
-                'style' => 'default',
-                'label_placement' => 'top',
-                'instruction_placement' => 'label',
-                'hide_on_screen' => '',
-                'active' => 1,
-                'description' => '',
-            ));
-
-        endif;
-    }
+        ],
+        'location' => [
+          [
+            [
+              'param' => 'page',
+              'operator' => '==',
+              'value' => get_option('page_on_front'),
+            ],
+          ],
+        ],
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => 1,
+        'description' => '',
+      ]);
+    endif;
+  }
 }

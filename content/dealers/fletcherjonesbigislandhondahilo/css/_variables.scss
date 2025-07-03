@@ -2,17 +2,17 @@
 	VARIABLES
 *************************************************************************************************/
 
-$primary: #0059a8;													/* site main color */
-$primaryhover: darken($primary,10%);
+$primary: #0059a8; /* site main color */
+$primaryhover: darken($primary, 10%);
 
-$secondary: #222;												/* site accent color */
-$secondaryhover: darken($secondary,10%);
+$secondary: #222; /* site accent color */
+$secondaryhover: darken($secondary, 10%);
 
 $cta: #ed8b00;
-$ctahover: darken($cta,10%);
-$cta-font: 14px/30px; 
+$ctahover: darken($cta, 10%);
+$cta-font: 14px/30px;
 
-$maintextcolor: #333;											/* default text color across the site */
+$maintextcolor: #333; /* default text color across the site */
 
 // TEXT STYLING ***************
 
@@ -74,7 +74,7 @@ $button-radius: 0px;
 // $darkbutton-bg: #333;
 // $darkbutton-color: #fff;
 
-$cta-color: #fff;												/* text color for colored buttons */
+$cta-color: #fff; /* text color for colored buttons */
 $primary-color: #fff;
 $secondary-color: #fff;
 
@@ -134,7 +134,7 @@ $navbar-menuitem-fontsize: 18px;
 $navbar-menuitem-fontweight: 400;
 $navbar-menuitem-texttransform: none;
 
-$navbar-current-background:  $navbar-menuitem-hover-background;
+$navbar-current-background: $navbar-menuitem-hover-background;
 $navbar-current-color: $navbar-menuitem-hover-color;
 
 $navbar-submenu-background: rgba($primary, 0.9);
@@ -153,7 +153,7 @@ $navbar-megamenu-leftposition: 0;
 $navbar-megamenu-column-width: 33.3333%;
 $navbar-megamenu-column-padding: 0;
 $navbar-megamenu-column-font-size: 12px;
-$navbar-megamenu-subheading-background: rgba($primary,0.5);
+$navbar-megamenu-subheading-background: rgba($primary, 0.5);
 $navbar-megamenu-subheading-borderbottom: none;
 $navbar-megamenu-subheading-fontweight: 400;
 $navbar-megamenu-subheading-fontsize: 12px;

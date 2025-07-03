@@ -1,8 +1,7 @@
-
 // Popover positioning on VDPs
 .popover-container {
-  padding:10px 0 0;
-  text-align:center;
+  padding: 10px 0 0;
+  text-align: center;
 }
 
 .page-vehicle-display-page .vdp-top-banner.box-gallery .box-gallery-wrap {
@@ -20,7 +19,7 @@ span.twitter-typeahead {
 }
 
 span.twitter-typeahead {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 //55190
@@ -28,38 +27,39 @@ span.twitter-typeahead {
   .overlaybuttons {
     text-align: center;
   }
-  .button.primary-button:hover, .button:visited.primary-button:hover {
+  .button.primary-button:hover,
+  .button:visited.primary-button:hover {
     background-color: orange;
   }
 }
 //end 55190
 
 //54719
-@media (max-width:768px) {
+@media (max-width: 768px) {
   img#pink-ribbon-oct {
-    display:none;
+    display: none;
   }
 }
 //end 54719
 
-.specialCoupon .specialRight .modelName{
-    color: #0059a8 !important;
-    font-size: 21px !important;
+.specialCoupon .specialRight .modelName {
+  color: #0059a8 !important;
+  font-size: 21px !important;
 }
 
-.specialCoupon .specialRight .description p{
-    font-size: 14px !important;
+.specialCoupon .specialRight .description p {
+  font-size: 14px !important;
 }
 
-a.view-disclaimer-link{
-    color: #a7a7a7 !important;
-    font-size: 11px !important;
-    font-style: italic !important;          
+a.view-disclaimer-link {
+  color: #a7a7a7 !important;
+  font-size: 11px !important;
+  font-style: italic !important;
 }
-@media(max-width: 1024px) {
-    #videobanner {
-        background-position: 50% 50%;
-    }
+@media (max-width: 1024px) {
+  #videobanner {
+    background-position: 50% 50%;
+  }
 }
 
 #results-page .vehicle .button-bar .primary-cta a {
@@ -77,10 +77,11 @@ a.view-disclaimer-link{
   width: 90% !important;
 }
 
-#mini-header a.button.cta-button.ask-a-question, a.button-primary {
+#mini-header a.button.cta-button.ask-a-question,
+a.button-primary {
   background: Green !important;
 }
 .vdp-print-view .logo {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }

@@ -2,7 +2,7 @@
 //	VARIABLES
 // *************************************************************************************************
 
-@import "variables";
+@import 'variables';
 
 // *************************************************************************************************
 //	GENERAL
@@ -13,41 +13,41 @@
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
 
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
-@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles';
 
 .button.outline-button {
-	border-color: #fff;
-	color: #fff;
+  border-color: #fff;
+  color: #fff;
 }
 
 html,
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 //ANIMATION
 @-webkit-keyframes sdb07 {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes sdb07 {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 // *************************************************************************************************
@@ -56,17 +56,18 @@ body {
 //Compile please
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/header-vertical';
 
-#header, #tablet-mobile-header {
-	position: fixed;
-	font-family: $heading-font;
-	top: 0;
-	height: 80px;
-	width: 100%;
-	z-index: 999;
-	background: #fff;
-	border-bottom: 1px solid #ccc;
-	.logo {
-    @media screen and (min-width:1025px){
+#header,
+#tablet-mobile-header {
+  position: fixed;
+  font-family: $heading-font;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  .logo {
+    @media screen and (min-width: 1025px) {
       text-align: center;
       padding: 0;
       position: absolute;
@@ -80,160 +81,163 @@ body {
     img {
       max-height: 80px;
     }
-	}
-	span.directions-icon {
-		color: #111;
-		line-height: 80px;
-		font-size: 26px;
-	}
-	a.menu-toggle {
-		line-height: 80px;
-		color: #111;
-		font-size: 26px;
-		font-weight: 300;
-		text-decoration: none;
-		cursor: pointer;
-		.glyphicon {
-			margin-right: 10px;
-		}
-		.glyphicon-remove {
-			display: none;
-		}
-		.glyphicon-align-justify {
-			display: inline-block;
-		}
-	}
-	a.phone-toggle {
-		line-height: 80px;
-		color: #333;
-		font-size: 22px;
-		font-weight: 300;
-		text-decoration: none;
-		cursor: pointer;
-		@media (max-width:767px) {
-			line-height: 55px;
-		}
-		.glyphicon {
-			margin-left: 10px;
-		}
-		.glyphicon-remove {
-			display: none;
-		}
-		.glyphicon-map-marker {
-			display: inline-block;
-		}
-	}
-	.menu-bar {
-		line-height: 80px;
-		color: #111;
-		font-size: 16px;
-		text-transform: uppercase;
-		font-weight: 300;
-		cursor: pointer;
-		a {
-			color: #111;
-			-webkit-transition: all 0.5s;
-			-webkit-transition-delay: ease;
-			-moz-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
-			&:hover {
-				//color: $secondary;
-				//text-decoration: none;
-			}
-		}
-	}
-	@media (max-width:767px) {
-		.logo {
-			padding: 10px 0px;
-		}
-		span.directions-icon, a.phone-toggle .glyphicon {
-			font-size: 20px;
-		}
-	}
+  }
+  span.directions-icon {
+    color: #111;
+    line-height: 80px;
+    font-size: 26px;
+  }
+  a.menu-toggle {
+    line-height: 80px;
+    color: #111;
+    font-size: 26px;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    .glyphicon {
+      margin-right: 10px;
+    }
+    .glyphicon-remove {
+      display: none;
+    }
+    .glyphicon-align-justify {
+      display: inline-block;
+    }
+  }
+  a.phone-toggle {
+    line-height: 80px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      line-height: 55px;
+    }
+    .glyphicon {
+      margin-left: 10px;
+    }
+    .glyphicon-remove {
+      display: none;
+    }
+    .glyphicon-map-marker {
+      display: inline-block;
+    }
+  }
+  .menu-bar {
+    line-height: 80px;
+    color: #111;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    a {
+      color: #111;
+      -webkit-transition: all 0.5s;
+      -webkit-transition-delay: ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      &:hover {
+        //color: $secondary;
+        //text-decoration: none;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .logo {
+      padding: 10px 0px;
+    }
+    span.directions-icon,
+    a.phone-toggle .glyphicon {
+      font-size: 20px;
+    }
+  }
 }
 
-#sidr-desktop-content, #sidr-desktop-locations, #sidr-desktop-phone {
-	background: #222;
+#sidr-desktop-content,
+#sidr-desktop-locations,
+#sidr-desktop-phone {
+  background: #222;
 }
 
-#sidr-desktop-locations, #sidr-desktop-phone {
-	padding: 15px;
-	text-align: center;
+#sidr-desktop-locations,
+#sidr-desktop-phone {
+  padding: 15px;
+  text-align: center;
 }
 
 .sidr-desktop-content-open #tablet-mobile-header a.menu-toggle {
-	.glyphicon-remove {
-		display: inline-block;
-	}
-	.glyphicon-align-justify {
-		display: none;
-	}
+  .glyphicon-remove {
+    display: inline-block;
+  }
+  .glyphicon-align-justify {
+    display: none;
+  }
 }
 
 .sidr-desktop-phone-open #tablet-mobile-header a.phone-toggle {
-	.glyphicon-remove {
-		display: inline-block;
-	}
-	.glyphicon-earphone {
-		display: none;
-	}
+  .glyphicon-remove {
+    display: inline-block;
+  }
+  .glyphicon-earphone {
+    display: none;
+  }
 }
 
 #tablet-mobile-header {
-	padding: 0 20px;
-	@include flexbox();
-	@include align-items(center);
-	@include flex-wrap(nowrap);
+  padding: 0 20px;
+  @include flexbox();
+  @include align-items(center);
+  @include flex-wrap(nowrap);
 
-	.logo {
-		margin: 0 auto;
-	}
+  .logo {
+    margin: 0 auto;
+  }
 }
 
 #header .header-top {
-	@include flexbox();
-	@include align-items(center);
+  @include flexbox();
+  @include align-items(center);
 
-	#main-navbar {
-		margin: 0 120px 0 auto;
-		#menu-top-menu {
-			@include flexbox();
-			@include flex-wrap(nowrap);
-		}
-	}
+  #main-navbar {
+    margin: 0 120px 0 auto;
+    #menu-top-menu {
+      @include flexbox();
+      @include flex-wrap(nowrap);
+    }
+  }
 
-	#desktop-locations-toggle {
+  #desktop-locations-toggle {
     position: absolute;
     right: 15px;
     top: 0;
     height: 80px;
     line-height: 80px;
-		text-transform: $navbar-menuitem-texttransform;
-		color: $navbar-menuitem-color;
-		-webkit-transition: all 0.5s;
-		-webkit-transition-delay: ease;
-		-moz-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		white-space: nowrap;
-		&:hover {
-			color: $primary;
-			text-decoration: none;
-		}
-	}
+    text-transform: $navbar-menuitem-texttransform;
+    color: $navbar-menuitem-color;
+    -webkit-transition: all 0.5s;
+    -webkit-transition-delay: ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
 }
 
 .fixed-top-spacer {
-	height: 80px;
+  height: 80px;
 }
 
 .home {
-	.fixed-top-spacer {
-		height: 0;
-	}
+  .fixed-top-spacer {
+    height: 0;
+  }
 }
-
 
 // *************************************************************************************************
 //	NAVIGATION
@@ -241,7 +245,6 @@ body {
 
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/basic-navigation';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/offcanvasnav';
-
 
 // *************************************************************************************************
 //	FOOTER
@@ -252,59 +255,59 @@ body {
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
 
 .home #footer {
-	width: 100%;
+  width: 100%;
 }
 
 #footer {
-	background: #eee;
-	border-top: none;
+  background: #eee;
+  border-top: none;
 }
 
 body.home #footer {
-	position: fixed;
-	bottom: 50px;
-	left: 0;
-	margin-bottom: 0;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  margin-bottom: 0;
 }
 
 #header.menu-top {
-	.header-top {
-		>* {
-			-webkit-box-ordinal-group: 3;
-			-ms-flex-order: 2;
-			order: 2;
-		}
-		>.logo {
-			-webkit-box-ordinal-group: 2;
-			-ms-flex-order: 1;
-			order: 1;
-		}
-		>a {
-			-webkit-box-ordinal-group: 2;
-			-ms-flex-order: 1;
-			order: 1;
-		}
-	}
+  .header-top {
+    > * {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+    }
+    > .logo {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+    > a {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+  }
 }
 #header {
-	.header-top {
-		>a {
-			height: 80px;
-			position: static;
-			img {
-				height: 100%;
-				width: auto;
-				padding: 10px;
-			}
-		}
-	}
+  .header-top {
+    > a {
+      height: 80px;
+      position: static;
+      img {
+        height: 100%;
+        width: auto;
+        padding: 10px;
+      }
+    }
+  }
 }
 @media (min-width: 1025px) {
-	#header {
-		.logo {
-			position: relative;
-		}
-	}
+  #header {
+    .logo {
+      position: relative;
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -312,190 +315,192 @@ body.home #footer {
 // *************************************************************************************************
 
 #videobanner {
-	.gridwrap {
-		background: none;
-	}
-	#videooverlay {
-		position: absolute;
-		top: 40%;
-		left: 0;
-		width: 100%;
-		margin-top: -230px;
-		@include transition(margin-top 0.5s ease);
-		h1 {
-			color: #fff;
-		    text-align: center;
-		    text-transform: uppercase;
-		    margin-bottom: 30px;
-		    font-size: 36px;
-		    font-weight: 600;
-		    text-shadow: 0 0 10px #000;
-		}
-		h2 {
-			color: #333;
-		    text-align: center;
-		    text-transform: uppercase;
-		    font-size: 22px;
-		    font-weight: 600;
-		}
-		.videooverlay-contentwrapper {
-			background: #fff;
-			height: 300px;
-			@include trans(#fff,.8);
-			@include transition(height 0.5s ease);
-			position: relative;
-			.videooverlay-content {
-				width: 1000px;
-				margin: 0 auto;
-				text-align: center;
-				max-width: 1000px;
-				h2 {
-					font-size: 24px;
-					margin-bottom: 10px;
-					color: #333;
-				}
-				h3 {
-					font-size: 16px;
-					margin-bottom: 10px;
-					color: #333;
-				}
-				img {
-					max-height: 100px;
-				}
-			}
-			#intro-overlay {
-				padding: 10px 0;
-				z-index: 900;
-			}
-		}
-		.videooverlay-buttons {
-			margin: 0 auto;
-			background: #fff;
-			.button-wrap {
-				margin: 0 auto;
-				padding: 20px 0;
-				max-width: 1000px;
-				.col-sm-2.bottom-ctas:first-of-type {
-					margin-left: 10%;
-				}
-			}
-			.button {
-				background: #3c3c3c;
-				font-size: 14px;
-				height: 40px;
-				line-height: 40px;
-				padding: 0 20px;
-				text-transform: none;
-				font-family: $maintextfont;
-				font-weight: 300;
-				margin: 0;
-				vertical-align: middle;
-				-webkit-transform: perspective(1px) translateZ(0);
-				transform: perspective(1px) translateZ(0);
-				-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-				-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-				box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-				position: relative;
-				@include transition(color .3s ease);
-				border-bottom: 5px solid #515151;
-				&:before {
-					content: "";
-				    position: absolute;
-				    z-index: -1;
-				    top: 0;
-				    left: 0;
-				    right: 0;
-				    bottom: 0;
-				    background: gray;
-				    -webkit-transform: scaleY(0);
-				    transform: scaleY(0);
-				    -webkit-transform-origin: 50% 100%;
-				    transform-origin: 50% 100%;
-				    @include transition(transform .3s ease-out);
-				}
-				&.blue {
-					background: black;
-					border-bottom: 5px solid lighten(black, 10%);
-				}
-				&:hover {
-					border-bottom: 5px solid lighten(#ccc, 10%);
-					&:before {
-						-webkit-transform: scaleY(1);
-						transform: scaleY(1);
-					}
-				}
-				&.active {
-					background: gray;
-					border-bottom: 5px solid lighten(gray, 10%);
-				}
-			}
-		}
-		&.open {
-			margin-top: -200px;
-			.videooverlay-contentwrapper {
-				height: 400px;
-				overflow-y: scroll;
-				overflow-x: hidden;
-			}
-		}
-		.videooverlay-contentwrapper::-webkit-scrollbar {
-			-webkit-appearance: none;
-  			width: 10px;
-		}
-		.videooverlay-contentwrapper::-webkit-scrollbar-thumb {
-			border-radius: 5px;
-			background-color: rgba(0,0,0,.5);
-			-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-		}
-	}
+  .gridwrap {
+    background: none;
+  }
+  #videooverlay {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    margin-top: -230px;
+    @include transition(margin-top 0.5s ease);
+    h1 {
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-size: 36px;
+      font-weight: 600;
+      text-shadow: 0 0 10px #000;
+    }
+    h2 {
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .videooverlay-contentwrapper {
+      background: #fff;
+      height: 300px;
+      @include trans(#fff, 0.8);
+      @include transition(height 0.5s ease);
+      position: relative;
+      .videooverlay-content {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 1000px;
+        h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: #333;
+        }
+        h3 {
+          font-size: 16px;
+          margin-bottom: 10px;
+          color: #333;
+        }
+        img {
+          max-height: 100px;
+        }
+      }
+      #intro-overlay {
+        padding: 10px 0;
+        z-index: 900;
+      }
+    }
+    .videooverlay-buttons {
+      margin: 0 auto;
+      background: #fff;
+      .button-wrap {
+        margin: 0 auto;
+        padding: 20px 0;
+        max-width: 1000px;
+        .col-sm-2.bottom-ctas:first-of-type {
+          margin-left: 10%;
+        }
+      }
+      .button {
+        background: #3c3c3c;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        text-transform: none;
+        font-family: $maintextfont;
+        font-weight: 300;
+        margin: 0;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+        position: relative;
+        @include transition(color 0.3s ease);
+        border-bottom: 5px solid #515151;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: gray;
+          -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+          -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+          @include transition(transform 0.3s ease-out);
+        }
+        &.blue {
+          background: black;
+          border-bottom: 5px solid lighten(black, 10%);
+        }
+        &:hover {
+          border-bottom: 5px solid lighten(#ccc, 10%);
+          &:before {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+          }
+        }
+        &.active {
+          background: gray;
+          border-bottom: 5px solid lighten(gray, 10%);
+        }
+      }
+    }
+    &.open {
+      margin-top: -200px;
+      .videooverlay-contentwrapper {
+        height: 400px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+    }
+    .videooverlay-contentwrapper::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 10px;
+    }
+    .videooverlay-contentwrapper::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+  }
 }
 
 #intro-overlay {
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 0.5s, visibility 0s 0.5s;
-	&.open {
-		opacity: 1;
-		visibility: visible;
-		transition: opacity 0.5s;
-	}
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s,
+    visibility 0s 0.5s;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
 }
 
 .brand-section {
-	padding: 20px 10px;
-	#logos {
-		max-width: 900px;
-		margin: 0 auto;
-		text-align: center;
-		@media(max-width:1024px) {
-			max-width: 710px;
-		}
-		.wrapper {
-			text-align: center;
-		}
-	}
-	.dealer-logo {
-		display: inline-block;
-		width: 20%;
-		padding: 15px 5px;
-		margin-left: -4px;
-		cursor: pointer;
-	}
+  padding: 20px 10px;
+  #logos {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 1024px) {
+      max-width: 710px;
+    }
+    .wrapper {
+      text-align: center;
+    }
+  }
+  .dealer-logo {
+    display: inline-block;
+    width: 20%;
+    padding: 15px 5px;
+    margin-left: -4px;
+    cursor: pointer;
+  }
 
-	a.wrapper {
-		position: relative;
-		-webkit-transform: translateZ(0); /* webkit flicker fix */
-		-webkit-font-smoothing: antialiased; /* webkit text rendering fix */
-		text-align: center;
-	    .plain-info {
-			padding:5px;
-	    }
-	}
+  a.wrapper {
+    position: relative;
+    -webkit-transform: translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+    text-align: center;
+    .plain-info {
+      padding: 5px;
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -503,166 +508,166 @@ body.home #footer {
 // *************************************************************************************************
 
 #override_videobanner {
-	margin-top: 80px;
+  margin-top: 80px;
 
-	@media(max-width: 767px) {
-		margin-top: 55px;
-	}
+  @media (max-width: 767px) {
+    margin-top: 55px;
+  }
 }
 
 #storyRow,
 .break-fix {
-	display:none;
+  display: none;
 }
 
 #homepage-locationsRow {
-	padding: 50px 0px;
-	background: #eeeeee;
-	border-top: 1px solid #666666;
-	.location-row {
-		background: #fff;
-		margin: -100px auto 0 auto;
-		display: block;
-		text-align: center;
-		padding: 20px 10px;
-		position: relative;
-		-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-		-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-		box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
-		h2 {
-			font-weight: 700;
-		}
-		.location-wrap {
-			min-height: 280px;
-			.location-overlay {
-				position: absolute;
-				background: #eeeeee;
-				text-align: left;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				bottom: 0;
-				right: 0;
-				left: 0;
-				padding: 10px;
-				opacity: 0;
-				@include transition(all .5s ease);
-				h3 {
-					margin-bottom: 0px;
-				}
-				ul {
-					margin-top: 10px;
-				}
-			}
-			&:hover {
-				.location-overlay {
-					opacity: 1;
-				}
-			}
-		}
-	}
+  padding: 50px 0px;
+  background: #eeeeee;
+  border-top: 1px solid #666666;
+  .location-row {
+    background: #fff;
+    margin: -100px auto 0 auto;
+    display: block;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    h2 {
+      font-weight: 700;
+    }
+    .location-wrap {
+      min-height: 280px;
+      .location-overlay {
+        position: absolute;
+        background: #eeeeee;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        opacity: 0;
+        @include transition(all 0.5s ease);
+        h3 {
+          margin-bottom: 0px;
+        }
+        ul {
+          margin-top: 10px;
+        }
+      }
+      &:hover {
+        .location-overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-	body.home {
-		#footer {
-			position: absolute;
-			bottom: 0;
-		}
-	}
+  body.home {
+    #footer {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 
-
 @media (max-width: 1024px) {
-	#videobanner {
-		background: none transparent !important;
-	}
-	html {
-		min-height: 100%;
-	}
-	body.home {
-		background: url(../images/banner-bg.jpg) no-repeat center center;
-		background-size: cover;
-		height: 100%;
-	}
-	#videobanner {
-		min-height: 768px;
-		#videorow {
-			display: none;
-		}
-		#videooverlay {
-			h1 {
-				font-size: 30px;
-			}
-			.videooverlay-contentwrapper {
-				.videooverlay-content {
-					max-width: 700px;
-				}
-			}
-			.videooverlay-buttons {
-				.button-wrap {
-					max-width: 1000px !important;
-				}
-				.button {
-					font-size: 12px;
-				}
-			}
-		}
-	}
+  #videobanner {
+    background: none transparent !important;
+  }
+  html {
+    min-height: 100%;
+  }
+  body.home {
+    background: url(../images/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+  }
+  #videobanner {
+    min-height: 768px;
+    #videorow {
+      display: none;
+    }
+    #videooverlay {
+      h1 {
+        font-size: 30px;
+      }
+      .videooverlay-contentwrapper {
+        .videooverlay-content {
+          max-width: 700px;
+        }
+      }
+      .videooverlay-buttons {
+        .button-wrap {
+          max-width: 1000px !important;
+        }
+        .button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-	#di-page-composer {
-		margin-top: -60px;
-	}
+  #di-page-composer {
+    margin-top: -60px;
+  }
 }
 
 @media (max-width: 767px) {
-	#videobanner {
-		background: none transparent;
-		min-height: 0;
-	}
-	html {
-		min-height: 100%;
-	}
-	body.home {
-		background: none;
-	}
-	#videobanner #videooverlay {
-		top: 0;
-		margin-top: 0;
-		padding: 70px 15px 30px;
-		background: url(../images/mobile/search-banner-bg.jpg) no-repeat center center;
-		position: relative;
-		h1 {
-			font-size: 22px;
-			margin: 10px 0 10px;
-		}
-		.videooverlay-contentwrapper {
-			.videooverlay-content {
-				width: 320px;
-			}
-		}
-		.videooverlay-buttons {
-			.button-wrap {
-				max-width: 320px;
-			}
-			.button {
-				font-size: 12px;
-				padding: 0;
-			}
-		}
-	}
-	#scheduleservice-overlay, #contactdealer-overlay {
-		color: #999;
-		font-size: 12px;
-		h3 {
-			font-size: 16px;
-		}
-	}
-	#mobile-content {
-		padding: 15px 0;
-	}
+  #videobanner {
+    background: none transparent;
+    min-height: 0;
+  }
+  html {
+    min-height: 100%;
+  }
+  body.home {
+    background: none;
+  }
+  #videobanner #videooverlay {
+    top: 0;
+    margin-top: 0;
+    padding: 70px 15px 30px;
+    background: url(../images/mobile/search-banner-bg.jpg) no-repeat center center;
+    position: relative;
+    h1 {
+      font-size: 22px;
+      margin: 10px 0 10px;
+    }
+    .videooverlay-contentwrapper {
+      .videooverlay-content {
+        width: 320px;
+      }
+    }
+    .videooverlay-buttons {
+      .button-wrap {
+        max-width: 320px;
+      }
+      .button {
+        font-size: 12px;
+        padding: 0;
+      }
+    }
+  }
+  #scheduleservice-overlay,
+  #contactdealer-overlay {
+    color: #999;
+    font-size: 12px;
+    h3 {
+      font-size: 16px;
+    }
+  }
+  #mobile-content {
+    padding: 15px 0;
+  }
 }
 
 // *************************************************************************************************
@@ -681,57 +686,57 @@ body.home #footer {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
 
 .hover-glow {
-    position: absolute;
-    opacity:0;
-    z-index:6;
-    -webkit-transition: opacity 500ms ease-out;
-    -moz-transition: opacity 500ms ease-out;
-    -o-transition: opacity 500ms ease-out;
-    transition: opacity 500ms ease-out;
-
+  position: absolute;
+  opacity: 0;
+  z-index: 6;
+  -webkit-transition: opacity 500ms ease-out;
+  -moz-transition: opacity 500ms ease-out;
+  -o-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 .inner-wysiwyg {
-	float:none;
-	margin:0 auto;
-	position:relative;
-	width:75% !important;
-	max-width:790px;
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  width: 75% !important;
+  max-width: 790px;
 }
 .inner-wysiwyg .col-sm-5 > img {
-    width: 75%;
+  width: 75%;
 }
 .hover-box {
-	min-height: 280px;
+  min-height: 280px;
 }
 .hover-static {
-	position:absolute;
+  position: absolute;
 }
 .inner-wysiwyg .col-sm-7 > .hover-static {
-    width:100%;
+  width: 100%;
 }
-.inner-wysiwyg .col-sm-5:hover > .hover-glow, .inner-wysiwyg .col-sm-7:hover > .hover-glow {
-	-webkit-transition: opacity 500ms ease-out;
-    -moz-transition: opacity 500ms ease-out;
-    -o-transition: opacity 500ms ease-out;
-    transition: opacity 500ms ease-out;
-    opacity:1;
+.inner-wysiwyg .col-sm-5:hover > .hover-glow,
+.inner-wysiwyg .col-sm-7:hover > .hover-glow {
+  -webkit-transition: opacity 500ms ease-out;
+  -moz-transition: opacity 500ms ease-out;
+  -o-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
+  opacity: 1;
 }
 .wp-image-5408 {
-    left: 15px;
+  left: 15px;
 }
 
 .wp-image-5406 {
-    left: 14px;
+  left: 14px;
 }
 #detailspage .maincardetails {
-	padding-top:70px;
+  padding-top: 70px;
 }
 .contentcontainer {
-	margin-top:20px;
+  margin-top: 20px;
 }
-.home .bottom-text{
-	h3{
-		position: absolute;
+.home .bottom-text {
+  h3 {
+    position: absolute;
     /* background: red; */
     z-index: 9999999;
     bottom: 55px;
@@ -741,7 +746,7 @@ body.home #footer {
     font-weight: 600;
     text-shadow: 0 0 10px #000;
     color: #fff;
-	}
+  }
 }
 // *************************************************************************************************
 //	VEHICLE RESULTS PAGE
@@ -754,7 +759,6 @@ body.home #footer {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-mobile';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/resultspage-common-elements';
 
-
 // ************************************************************************************************
 //  DEALER INSPIRE & THIRD PARTY PLUGINS
 // ************************************************************************************************
@@ -762,15 +766,19 @@ body.home #footer {
 // @import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia';
 
-@media (max-width:767px) {
-	.tt-dropdown-menu {
-		width: 100%;
-		min-width: 100%;
-		.tt-dataset-inventory, .tt-dataset-pages, .tt-dataset-email, .tt-dataset-phone, .tt-dataset-departmentHours {
-			width: 94%;
-			margin: 0 3%;
-		}
-	}
+@media (max-width: 767px) {
+  .tt-dropdown-menu {
+    width: 100%;
+    min-width: 100%;
+    .tt-dataset-inventory,
+    .tt-dataset-pages,
+    .tt-dataset-email,
+    .tt-dataset-phone,
+    .tt-dataset-departmentHours {
+      width: 94%;
+      margin: 0 3%;
+    }
+  }
 }
 
 // *************************************************************************************************
@@ -788,99 +796,97 @@ body.home #footer {
 @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/gallery-filmstrip';
 
 #detailspage {
-	.maincardetails {
-		padding: 140px 0 50px;
-	}
+  .maincardetails {
+    padding: 140px 0 50px;
+  }
 }
 
 @media (max-width: 1024px) {
-	#detailspage {
-		.maincardetails {
-			padding: 20px 0 50px;
-		}
-	}
+  #detailspage {
+    .maincardetails {
+      padding: 20px 0 50px;
+    }
+  }
 }
-
 
 /*************************************************************************************************
 	TABLET ELEMENT STYLING
 *************************************************************************************************/
 
 @media (max-width: 1024px) {
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
-	#tablet-mobile-header {
-	  	.center {
-	    	text-align:center;
-	  	}
-	}
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
+  #tablet-mobile-header {
+    .center {
+      text-align: center;
+    }
+  }
 }
-
 
 /*************************************************************************************************
 	MOBILE ELEMENT STYLING
 *************************************************************************************************/
 
-@media (max-width:767px){
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
-	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+@media (max-width: 767px) {
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
 
-	.fixed-top-spacer {
-		height: 15px;
-	}
-	#tablet-mobile-header {
-		height: 55px;
-		a.menu-toggle, span.directions-icon {
-			line-height: 55px;
-		}
-	}
-	.mobile-tab-4 .mobile-tab-content {
-		display:none !important;
-	}
-	#videobanner {
-		padding-bottom:0px;
-	}
-	#preferredownersRow {
-		background-position:60% bottom;
-		.preferredownerscontent {
-			background:rgba(255,255,255,.4);
-			@include border-radius(6px);
-			margin:15px auto;
-		}
-	}
-	#storyRow .storycontent {
-		padding:0 20px;
-	}
-	#di-page-composer .bgimagerow {
-		padding: 40px 0 60px;
-	}
-	.bottom-line {
-		display: none;
-	}
-	div#careersRow {
-		background: url(../images/careers-image.jpg);
-		background-size: cover;
-		padding: 20px;
-		text-align: center;
-		margin-bottom: 0;
-		h2 {
-			font-size: 20px;
-			color: #fff;
-		}
-		p {
-			color: #fff;
-		}
-	}
-	div#storyRow {
-		margin-bottom: 100px;
-	}
+  .fixed-top-spacer {
+    height: 15px;
+  }
+  #tablet-mobile-header {
+    height: 55px;
+    a.menu-toggle,
+    span.directions-icon {
+      line-height: 55px;
+    }
+  }
+  .mobile-tab-4 .mobile-tab-content {
+    display: none !important;
+  }
+  #videobanner {
+    padding-bottom: 0px;
+  }
+  #preferredownersRow {
+    background-position: 60% bottom;
+    .preferredownerscontent {
+      background: rgba(255, 255, 255, 0.4);
+      @include border-radius(6px);
+      margin: 15px auto;
+    }
+  }
+  #storyRow .storycontent {
+    padding: 0 20px;
+  }
+  #di-page-composer .bgimagerow {
+    padding: 40px 0 60px;
+  }
+  .bottom-line {
+    display: none;
+  }
+  div#careersRow {
+    background: url(../images/careers-image.jpg);
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    h2 {
+      font-size: 20px;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  div#storyRow {
+    margin-bottom: 100px;
+  }
 }
-@import "support-requests";
-
+@import 'support-requests';
 
 #tablet-mobile-header .logo img#main-logo {
-	max-width: 100%;
+  max-width: 100%;
 }
