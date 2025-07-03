@@ -1,0 +1,92 @@
+// CLIENT REQUESTED TO REMOVED FOCUS STYLES - START
+a:focus, .focus a {
+    outline: none !important;
+}
+// CLIENT REQUESTED TO REMOVED FOCUS STYLES - END
+#header{
+  .header-dropdown{
+    h2{
+      display: none;
+    }
+    .widgettitle{
+      margin-top: 0;
+      font-weight: 400;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: "corposregular",sans-serif;
+    }
+    .widget ul.menu{
+      @include flexbox;
+      @include align-items(flex-start);
+      @include flex-wrap(wrap);
+      > li{
+        width: 100%;
+      }
+      .column{
+        width: 24%;
+        display: inline-block;
+      }
+    }
+    .menu-item.column{
+      width: 49%;
+      display: inline-block !important;
+      > a{
+        font-weight: 400 !important;
+        font-size: 30px !important;
+        text-transform: uppercase;
+        font-family: "corposregular",sans-serif;
+        margin-bottom: 10px;
+        height: 30px !important;
+        line-height: 30px !important;
+      }
+      > .sub-menu{
+        display: block;
+        position: relative;
+        a{
+          &:hover{
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  #full-overlay.open{
+    z-index: 999999999;
+  }
+}
+
+#vehicleDetails{
+  #review-box{
+    .review{
+      padding: 10px;
+      .overviewbox {
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(center);
+      }
+    }
+  }
+}
+
+.hidden-all{
+  display: none;
+}
+
+.home #videobanner{
+  @media screen and (min-width:1025px){
+    min-height: 500px;
+    width: 100%;
+  }
+}
+
+#DIModal{
+  #saleshours{
+    .department-hours{
+      @include flexbox;
+    }
+  }
+}

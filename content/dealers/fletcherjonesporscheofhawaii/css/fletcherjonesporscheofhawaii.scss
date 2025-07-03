@@ -1,0 +1,102 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/variables';
+
+// *************************************************************************************************
+//	GENERAL
+// *************************************************************************************************
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
+@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/common-elements';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/form/base';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/_save-vehicles.scss';
+
+//Porsche general styles
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/porsche-general';
+
+// *************************************************************************************************
+//	HEADER
+// *************************************************************************************************
+
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/header-vertical';
+
+//Porsche header styles
+ @import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/header';
+
+//make room for translate bar
+@media screen and (max-width:767px){
+  .contentcontainer{
+    padding-top: 15px;
+  }
+}
+// *************************************************************************************************
+//	NAVIGATION
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/basic-navigation';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/navigation/offcanvasnav';
+
+// *************************************************************************************************
+//	FOOTER
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/footer-basic';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/prefooter-widelists';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
+
+// Porsche footer styles
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/footer';
+
+// *************************************************************************************************
+//	PRINT PAGE
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/_vehicle-print-view.scss';
+
+// ************************************************************************************************
+//  DEALER INSPIRE & THIRD PARTY PLUGINS
+// ************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/glovebox/_glovebox-main.scss';
+
+// Porsche map styles
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/map-row';
+
+/*************************************************************************************************
+TABLET ELEMENT STYLING
+*************************************************************************************************/
+
+@media (max-width: 1024px) {
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/tablet/header-tabletbasic';
+}
+
+/*************************************************************************************************
+MOBILE ELEMENT STYLING
+*************************************************************************************************/
+
+@media (max-width:767px){
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/special-link';
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/new-vehicle-models';
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/weather';
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+      @import '../../../../../../themes/DealerInspireCommonTheme/css/components/search/advancedsearch-overlaybox-wide';
+}
+
+/*************************************************************************************************
+THIRD PARTY STYLING/REQUESTS
+*************************************************************************************************/
+#vessel-header-img {
+      max-height: 55px;
+      @media (max-width: 767px) {
+            max-height: 35px;
+      }
+}

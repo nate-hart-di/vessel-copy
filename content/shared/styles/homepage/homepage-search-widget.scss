@@ -1,0 +1,128 @@
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins/breakpoints";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins/flexbox";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins/pz-defaults";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins/appearance";
+
+$primary: var(--primary);
+$heading-font: var(--headingfont);
+$maintextcolor: #000;
+
+.search-section {
+    &__content {
+        padding: 10px 15px 30px;
+        background: #eee;
+    }
+    // ********** Media Queries ********** //
+
+    // Tablet -
+    @include breakpoint(mobile-tablet) {
+        background: #f2f2f2;
+    }
+
+    // Desktop +
+    @include breakpoint(md) {
+        padding-top: 80px;
+        height: calc(100vh - 112px);
+        &__wrapper {
+            @include flexbox();
+            height: 100%;
+        }
+
+        &__content {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+        }
+    }
+}
+
+// Default Flex Container Styles
+.flex-container {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex-wrap(wrap);
+}
+
+// PZ Row styles
+.pzRow {
+    @include pz-font-defaults($font-family: $heading-font, $weight: 500, $color:$maintextcolor, $align:center) {
+        //    (optional additional styles)
+    }
+
+    // ********** Media Queries ********** //
+
+    // LG Desktop +
+    @include breakpoint(lg) {
+        @include pz-font-defaults($font-family: $heading-font, $weight: 500, $color:$maintextcolor, $align:center) {
+            //    (optional additional styles)
+        }
+    }
+
+    .subheading{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+// Default Filter Row Styles
+.dropdownFiltersRow {
+    display: block;
+   // width: 100%;
+    &__filters#homepage-advanced-search {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        select {
+            @include appearance(none);
+        }
+
+        >*,
+        .selectpicker {
+            @include flex(1);
+            min-height: 45px;
+        }
+
+        .bootstrap-select:not([class*=span]):not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+        select {
+            margin: 0 0 10px 0;
+            min-width: 350px;
+            width: 100%;
+            background-image: url(/wp-content/plugins/vessel/content/shared/images/arrows/dropdownarrow.png);
+            @media screen and (max-width: 767px){
+                min-width: 100%;
+            }
+        }
+
+        .selectpicker,
+        select {
+            padding: 0 25px 0 10px;
+            // background: #fff;
+        }
+
+        .btn.advanced-search-btn {
+            color: #fff;
+            background: $primary;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        .bootstrap-select.btn-group {
+            .dropdown-menu {
+                &.inner {
+                    max-height: 200px !important;
+                }
+
+                ul {
+                    li {
+                        a {
+                            &:hover {
+                                color: #222;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

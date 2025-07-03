@@ -1,0 +1,26 @@
+#DIModal{
+	#saleshours, #servicehours{
+    max-width: 90%;
+    margin-left: 5%;
+    .dealer-info{
+      .widget-subtitle{
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .widget-subtitle-icon{
+        display: none;
+      }
+      .hours{
+        list-style: none;
+        padding-inline-start: 0px;
+        -moz-padding-inline-start: 0px;
+      }
+      .day{
+        float: left;
+      }
+      .right{
+        float: right;
+      }
+    }
+	}
+}

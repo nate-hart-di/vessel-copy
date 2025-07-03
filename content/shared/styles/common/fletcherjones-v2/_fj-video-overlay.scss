@@ -1,0 +1,75 @@
+#videobanner {
+	position: relative;
+	overflow: hidden;
+	#videorow {
+    	min-height:0px;
+	}
+	@media (max-width:1024px) {
+		background: url(../images/tablet-banner-bg.jpg);
+	    background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		min-height: 700px;
+	}
+	@media (max-width:767px) {
+		background: url(../images/mobile-banner-bg.jpg);
+	    background-repeat: no-repeat;
+		background-position: 40% 40%;
+		background-size: cover;
+		min-height: 0px;
+	}
+}
+
+#videoOverlay {
+	position: absolute;
+	width: 100%;
+	margin-top: 0px;
+	color: #fff;
+	top: 40%;
+	@media(max-width:1024px) {
+		top: 35% !important;
+	}
+	.videooverlay-content {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 0 0 30px 0;
+		text-align: center;
+		@include pz-font-defaults($color:#fff) {
+			h1, h2 {
+				font-weight: 300;
+				font-size: 2.8em;
+				line-height: 1.2;
+				font-family: $personalizer-font;
+				//text-transform: uppercase;
+				text-shadow: 0px 0px 10px #000;
+			}
+		}
+		.cta-buttons {
+			.button {
+				width: 20% !important;
+			}
+		}
+	}
+	@media(max-width: 767px) {
+		margin-top: 50px;
+		position: relative;
+		top: 0;
+		.videooverlay-content {
+			max-width: 300px;
+			.personalizer-wrap {
+				h1, h2 {
+					font-weight: 300;
+					font-size: 22px;
+					text-transform: none;
+				}
+			}
+			.cta-buttons {
+    			margin-top:50%;
+                position:initial;
+				.button {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}

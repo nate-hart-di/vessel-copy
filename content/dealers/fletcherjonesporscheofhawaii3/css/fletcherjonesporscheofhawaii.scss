@@ -1,0 +1,308 @@
+// *************************************************************************************************
+//  VARIABLES
+// *************************************************************************************************
+
+@import "variables.scss";
+
+// *************************************************************************************************
+//	IMPORT STYLES
+// *************************************************************************************************
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-videogallery";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/components/actionbars/button-sidebar";
+
+// *************************************************************************************************
+//	LOCAL STYLES
+// *************************************************************************************************
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+@include pz-font-defaults($color:#fff, $weight:300, $line-height:1.2, $font-family:"Lato") {
+  text-shadow:0px 0px 10px #000;
+  text-transform: uppercase;
+  * {
+    font-family:inherit;
+  }
+}
+
+
+// *************************************************************************************************
+//	HEADER
+// *************************************************************************************************
+
+#side-toolbar {
+	li,
+	.tool-label {
+		@include box-shadow(0px 2px 4px rgba(0,0,0,.5));
+	}
+}
+#header {
+	#header-top {
+		background: #fff;
+		@include box-shadow(0 -3px 15px #000);
+		position: relative;
+		z-index: 10;
+		a.menu-toggle {
+			color: #555;
+			font-weight: 500;
+		}
+		.hours-info-right {
+	  		a {
+	    		color:#444;
+	  		}
+	  		> span {
+	    		color:#333;
+	  		}
+	  		.dynamic-hours {
+	  			.open {
+	  				display: none;
+	  			}
+	  		}
+	    }
+	}
+}
+
+.sub-header-info {
+	background-color: $primary;
+	font-weight:bold;
+	white-space: normal;
+	.dealer-address {
+  	white-space: nowrap;
+	}
+}
+
+#mini-header {
+	background: #fff;
+	color: #555;
+	@include box-shadow(0 -3px 15px #000);
+	.navbar .navbar-inner ul.nav li a, a.menu-toggle {
+		color: #555;
+		font-weight: 400;
+	}
+}
+
+#menu-overlay {
+	a#menu-close {
+		color: #555;
+		font-weight: 500;
+	}
+	#overlay-wrap {
+		.overlay-info {
+			color: #555;
+		}
+		.overlay-header {
+			.dealer-info-area {
+				.get-directions {
+					a {
+						color: #555;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		.overlay-content {
+			.panel {
+				>.panel-heading {
+					background: #555;
+				}
+				.panel-body {
+					h4 {
+						color: #555;
+					}
+					.mini-border {
+						background: $primary;
+						height: 2px;
+					}
+				}
+			}
+			.department-hours {
+				color: #555;
+				.hours-header, .dealer-info ul.hours li {
+					border-color: #aaa;
+				}
+			}
+		}
+	}
+	.search-fields button.advanced-search-btn {
+		background-color: $primary;
+		&:hover {
+			background-color: darken($primary, 10%);
+		}
+	}
+	.search-fields .bootstrap-select {
+		border-color: #aaa;
+	}
+}
+
+#header-vertical {
+	background: url(../images/white-carbon-bg.png) repeat 0 0 #eee;
+	@include box-shadow(-1px 0 15px #aaa);
+	.navbar.vertical {
+		border-top: 1px solid #aaa;
+		@include border-radius(0);
+	}
+}
+
+@media (max-width:1200px) {
+	.sub-header-info {
+		line-height: normal;
+		.dealer-phone {
+			display: inline-block;
+			font-size: 14px;
+			margin-right: 10px;
+			&.sales {
+				width:80%;
+				+ span {
+					margin-left:27px;
+				}
+			}
+		}
+		.dealer-address {
+  		margin-top:10px;
+		}
+	}
+}
+
+// *************************************************************************************************
+//	HOMEPAGE
+// *************************************************************************************************
+
+#videobanner {
+	clear:both;
+	.modfull {
+  	min-height:600px;
+	}
+  #videooverlay{
+    top:50%;
+    .videooverlay-content {
+      h3 {
+        text-shadow:0px 0px 10px #000,
+          0px 0px 10px #000;
+        -moz-text-shadow:0px 0px 10px #000,
+          0px 0px 10px #000;
+        -webkit-text-shadow:0px 0px 10px #000,
+          0px 0px 10px #000;
+      }
+      form#searchform {
+        background:#222;
+        background: rgba(0,0,0,.7);
+      }
+      .service-button {
+        background: #222;
+        background: rgba(0,0,0,.7);
+        .button {           
+          border-color: $cta;       
+          color:#fff;
+          padding:12px 20px;
+          &:hover {
+            background: $cta;
+          }
+        }
+      }
+      .service-hours {
+        background:#222;
+        background: rgba(0,0,0,.7);
+        margin-top:0px;
+        padding: 9px 20px;
+      }
+    }
+  }
+}
+
+.search-fields .bootstrap-select {
+  background:#222;
+  background: rgba(0,0,0,.7);
+  &:hover {
+    border-color: $cta;
+  }
+  button.selectpicker {
+    padding: 5px 25px 3px 10px;
+  }
+}
+
+#homepage-advanced-search button.advanced-search-btn {
+  background: $primary;
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
+
+#storyRow {
+  background-position: center bottom;
+  clear:both;
+  overflow: hidden;
+  position: relative;
+  .fletcher {
+    height: 100%;
+    position: absolute;
+    right:0px;
+    img {
+      bottom: 0px;
+      position: absolute;
+    }
+  }
+}
+
+#directionsRow .getdirectionstext {
+	margin-left: -230px;
+	width: 480px;
+}
+
+// *************************************************************************************************
+//	RESULTS PAGE
+// *************************************************************************************************
+
+#results-page #search-views-toggle #search-anything {
+	input#start_search, #toggle-filters {
+		@extend .secondary-button;
+	}
+}
+
+// *************************************************************************************************
+//	INSIDE PAGES
+// *************************************************************************************************
+
+.service-banner-overlay {
+	h2 {
+		color: #555;
+	}
+}
+
+// *************************************************************************************************
+//	TABLET STYLES
+// *************************************************************************************************
+
+// *************************************************************************************************
+//	MOBILE STYLES
+// *************************************************************************************************
+
+
+@media (max-width: 767px) {
+  .mobile-tab.vehicles-saved {
+    background:$button-toolbar-saved-vehicle-button-background;
+  }
+  
+	.menu-top {
+		@include box-shadow(0 -3px 10px #000);
+		.logo {
+		  padding: 16px 5px 15px 10px;
+		  img {
+			  max-height: 24px;
+		  }
+		}
+	}
+	#directionsRow .getdirectionstext {
+		margin-left: 0;
+		width: auto;
+	}
+	// Make the vehicle sprites show on mobile
+	.navbar .navbar-inner ul.nav li.menu-item ul.sub-menu .di-vehicle-icon a:before,.navbar .navbar-inner ul.nav li.menu-item ul.dropdown-menu .di-vehicle-icon a:before {
+		display:block !important;
+		width:60px !important;
+	}
+}
+@import "support-requests";

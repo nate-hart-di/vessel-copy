@@ -1,0 +1,612 @@
+/*************************************************************************************************
+	NEW DESKTOP STYLES 06/20
+*************************************************************************************************/
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+
+$primary: #0059a8;
+$primaryhover: darken($primary,10%);
+
+h2, h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.blue-gradient-bg {
+    background: rgba(2,145,211,1);
+    background: -moz-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,145,211,1)), color-stop(100%, rgba(1,90,168,1))) !important;
+    background: -webkit-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    background: -o-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    background: -ms-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    background: linear-gradient(to right, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0291d3', endColorstr='#015aa8', GradientType=1 );
+    color: #fff !important;
+    @include transition(.3s);
+    &:hover {
+        background: -moz-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 0%) !important;
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,145,211,1)), color-stop(0%, rgba(1,90,168,1))) !important;
+        background: -webkit-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 0%) !important;
+        background: -o-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 0%) !important;
+        background: -ms-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 0%) !important;
+        background: linear-gradient(to right, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 0%) !important;
+    }
+}
+.blue-gradient-ol {
+    background: transparent !important;
+    border: 1px solid !important;
+    border-image-slice: 1 !important;
+    border-width: 1px !important;
+    border-image-source: -moz-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    border-image-source: -webkit-linear-gradient(left, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    border-image-source: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,145,211,1)), color-stop(100%, rgba(1,90,168,1))) !important;
+    border-image-source: linear-gradient(to right, rgba(2,145,211,1) 0%, rgba(1,90,168,1) 100%) !important;
+    color: $primary !important;
+    @include transition(.3s);
+    &:hover {
+        background: #e6e6e6;
+        border: 1px solid darken(rgba(2,145,211,1), 10%) !important;
+        color: $primaryhover !important;
+    }
+}
+
+.lazy-loading {
+    opacity: 0;
+    @include transition(700ms ease);
+    @include transform(translateY(40px));
+    &.active {
+        @include transform(translateY(0px));
+        opacity: 1;
+    }
+}
+
+.shutdown h2 {
+    text-transform: none;
+    font-size: 4.2em !important;
+    font-family: corporate-a,serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.shutdown h3 {
+    text-transform: none;
+    font-size: 3.5rem !important;
+    font-family: corposregular,serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+//===========================
+// HERO ROW
+//===========================
+.heroRow {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 550px;
+    padding: 10px 0 90px;
+    background-position: top center;
+    background-size: cover;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    &__container {
+        text-align: center;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        h2 {
+            text-shadow: 2px 2px 4px rgba(#000, .7);
+            @include fluid-font(320px, 1440px, 32px, 64px);
+            .title-break {
+                display: block;
+            }
+        }
+        h3 {
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(#000, .7);
+        }
+        @include breakpoint(sm) {
+            .personalizer-wrap {
+    			float: left !important;
+    			img.summer-logo {
+    			    width: 90%;
+    			}
+    			.summer-call {
+    			    margin: 30px 0px;
+    				span.summer-text {
+    				    font-size: 41px;
+    				    font-family: corporate-a,serif;
+    				    font-weight: 600;
+    				    text-shadow: 1px 1px 17px black;
+    				}
+    			}
+    			.button.primary-button.fj-hero-cta {
+    			    background: #ad0101;
+    			    font-weight: 500;
+    			    font-size: 21px;
+    			    letter-spacing: 2px;
+    			    padding: 15px 50px;
+    			}
+
+                p.smaller {
+    			    font-size: 23px;
+    			    color: #3f3f3f;
+    			    margin: 15px 0px 10px 0px;
+    			    font-weight: 500;
+    			}
+    			p.below-cta {
+    			    font-size: 23px;
+    			    color: white;
+    			    margin: 5px 0px;
+    			    font-weight: 500;
+    			    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    			}
+            }
+        }
+    }
+    &__cta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 80px;
+        background: rgba(#000, .75);
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        &--wrap {
+            @include flexbox;
+            @include align-items(center);
+            text-decoration: none;
+            border-right: 1px solid #fff;
+            height: 40px;
+            color: #fff;
+            padding: 0 40px;
+            img {
+                padding: 15px;
+                width: 60px;
+                @include transition(.3s);
+            }
+            p {
+                margin: 0;
+                color: #fff;
+            }
+            &:last-of-type {
+                border-right: none;
+            }
+            &:hover {
+                text-decoration: none;
+                img {
+                    @include transform(rotate(30deg));
+                }
+            }
+        }
+    }
+}
+
+//===========================
+// CTA ROW
+//===========================
+.ctaRow {
+    padding: 80px 0;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    &__title {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 80px;
+    }
+    &__wrap {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 50px 10px;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+    &__link {
+        width: 180px;
+        height: 180px;
+        padding: 15px;
+        background: $primary;
+        color: #fff;
+        text-decoration: none;
+        @include border-radius(50%);
+        @include flexbox;
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        @include transition(all .3s ease);
+		@include transition(all .3s cubic-bezier(0.8,-0.55,0.18,1.5));
+        img {
+            width: 70px;
+            max-height: 70px;
+        }
+        p {
+            color: #fff;
+            width: 100%;
+        }
+        &:hover {
+            text-decoration: none;
+            @include transform(scale(.9));
+        }
+    }
+    &__btn {
+        .button {
+            text-decoration: none;
+            color: $primary;
+            width: 250px !important;
+            font-weight: 300;
+        }
+    }
+    @media (max-width:1024px) {
+        &__wrap {
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+        }
+        &__link {
+            margin: 5px;
+        }
+    }
+}
+
+//===========================
+// DI-SLIDER ROW
+//===========================
+.homepage-slider {
+
+}
+
+//===========================
+// ONLINE SHOPPING ROW
+//===========================
+.shopOnline {
+    padding: 80px 0 40px;
+    &__wrap {
+        width: 100%;
+        max-width: 100%;
+        min-height: 400px;
+        margin: 0 auto;
+        @include flexbox;
+        @include justify-content(space-between);
+    }
+    &__left, &__right {
+        width: 50%;
+        height: auto;
+        min-height: 400px;
+    }
+    &__left {
+        position: relative;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        .shopOnline-img {
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+            width: 80%;
+            @include z-index(top);
+        }
+    }
+    &__right {
+        padding: 50px 130px;
+        text-align: center;
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        @include justify-content(center);
+        h2 {
+            padding-bottom: 15px;
+        }
+        p {
+            width: 100%;
+        }
+        a {
+            padding-top: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            @include transition(.3s);
+            i {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #e6e6e6;
+                margin-left: 10px;
+                padding: 3px 0;
+                @include transition(.3s);
+            }
+            &:hover {
+                text-decoration: none;
+                i {
+                    color: #fff;
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
+
+//===========================
+// SERVICE ROW
+//===========================
+
+.serviceRow {
+    padding: 41px 0;
+    &__wrap {
+        width: 100%;
+        max-width: 100%;
+        min-height: 400px;
+        margin: 0 auto;
+        @include flexbox;
+        @include justify-content(space-between);
+    }
+    &__left, &__right {
+        width: 50%;
+        height: auto;
+        min-height: 400px;
+    }
+    &__right {
+        position: relative;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        .service-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+        }
+        .service-img {
+            position: absolute;
+            bottom: 15%;
+            right: 0;
+            left: 0;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 20px;
+            @include z-index(top);
+        }
+    }
+    &__left {
+        padding: 25px 100px;
+        text-align: center;
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        @include justify-content(center);
+        h2 {
+            padding-bottom: 15px;
+        }
+        p {
+            width: 100%;
+        }
+        a {
+            padding-top: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            @include transition(.3s);
+            i {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #e6e6e6;
+                margin-left: 10px;
+                padding: 3px 0;
+                @include transition(.3s);
+            }
+            &:hover {
+                text-decoration: none;
+                i {
+                    color: #fff;
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
+
+//===========================
+// SEO ROW
+//===========================
+.seoRow {
+    &__content {
+        position: relative;
+        padding: 50px 10px 80px;
+    }
+    &__wrap {
+        width: 100%;
+        max-width: 1200px;
+        margin: -160px auto 0;
+        padding: 50px;
+        text-align: center;
+        line-height: 2;
+        background: #fff;
+        box-shadow: 3px 3px 7px rgba(#000, .4);
+        @include z-index(top);
+        @include border-radius(7px);
+        h1 {
+            span {
+                display: block;
+                font-size: 28px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+        }
+        &--btn {
+            padding: 30px 0 0;
+        }
+    }
+
+}
+
+//===========================
+// MAP ROW
+//===========================
+.mapRow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 50px 0;
+    #map3 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 0;
+    }
+	.mapWrapper {
+
+		&__directions {
+			@include z-index(high);
+            width: 350px;
+            height: 330px;
+			padding: 30px;
+			background: #fff;
+            position: relative;
+            float: right;
+            margin-right: 7%;
+            border-radius: 7px;
+            box-shadow: 3px 3px 6px rgba(#000, .4);
+            .blockSection__heading {
+                font-size: 32px;
+                font-weight: bold;
+                padding-bottom: 15px;
+            }
+		}
+
+		&__content{
+			@include flexbox;
+
+			.button {
+				margin: 0 0 0 10px;
+			}
+		}
+
+		&__dealerInfo {
+			margin: 0 0 30px;
+			padding: 0 0 0 50px;
+			position: relative;
+
+			svg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 35px;
+                fill: $primary;
+			}
+
+			.dynamic-hours {
+				display: block;
+                .open {
+                    display: none;
+                }
+			}
+		}
+	}
+}
+.mapRow2 {
+	padding: 30px 60px;
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(46,46,46,1)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2e2e2e', GradientType=1 );
+
+	.mapWrapper {
+		&__directions {
+            @include flexbox
+            select#select-location {
+                position: relative;
+                border: none;
+                margin: 10px 0;
+                padding: 10px;
+                background: $primary;
+                color: #fff;
+            }
+		}
+
+        &__title {
+            min-width: 250px;
+            .blockSection__heading {
+                font-size: 32px;
+                font-weight: bold;
+                padding-bottom: 0;
+                color: #fff;
+                display: block;
+            }
+            span {
+                color: #fff;
+            }
+        }
+
+		&__content{
+			@include flexbox;
+			@include justify-content(space-between);
+			margin: 30px 0 0;
+
+			.button {
+				margin: 0;
+			}
+		}
+        &__location {
+            width: 100%;
+            width: 100%;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            font-size: 16px;
+            margin-right: 50px;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: #fff;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+              color: #fff;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              color: #fff;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: #fff;
+            }
+        }
+
+	}
+
+	// ********** Media Queries ********** //
+
+    @media (max-width: 1024px) {
+        .mapWrapper__directions {
+            text-align: center;
+            @include flex-direction(column);
+        }
+    }
+
+	// Desktop (medium) +
+	@include breakpoint(md) {
+		.mapWrapper {
+			&__directions {
+				@include align-items(center);
+				@include flex-direction(row);
+				@include justify-content(space-between);
+
+			}
+			&__content{
+                width: 100%;
+                max-width: 700px;
+				margin: 0 0 0 50px;
+			}
+		}
+	}
+}

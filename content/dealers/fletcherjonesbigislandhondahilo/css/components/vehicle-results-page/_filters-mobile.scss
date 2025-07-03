@@ -1,0 +1,51 @@
+$mobiletab-content-width: 94% !default;
+
+.groupon-mobile-filters, .mobile-tab-content .mobile-tab-content-inside.groupon-mobile-filters {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	.filters-action-header {
+		position: absolute;
+		background: #eee;
+		width: 100%;
+		padding: 15px 15px 10px;
+		z-index: 10;
+		@include box-shadow(0 2px 4px -2px rgba(0,0,0,0.37));
+		.total-found {
+			visibility: visible;
+			background-color: transparent;
+			border: none;
+			padding: 0;
+			font-size: 16px;
+			font-weight: normal;
+			margin-bottom: 10px;
+			color: #333;
+			br {
+				display: none;
+			}
+		}
+		.button, .button.small-button {
+			background: none;
+			min-width: 50px !important;
+			padding: 0;
+			margin: 0 10px 0 0;
+			color: $primary;
+			font-size: 14px;
+			font-weight: bold;
+			float: left;
+			&.groupon-mobile-filters-apply {
+				background: $cta;
+				color: $cta-color;
+				padding: 0 15px;
+				margin: 0;
+				float: right;
+			}
+		}
+	}
+	.groupon-sidebar-filters {
+		padding: 100px 15px 15px;
+		> div {
+			margin-bottom: -1px;
+		}
+	}
+}	

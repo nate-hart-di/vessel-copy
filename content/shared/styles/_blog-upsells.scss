@@ -1,0 +1,57 @@
+@import '../../../../../themes/DealerInspireCommonTheme/css/mixins/flexbox';
+
+.upsells {
+    margin: 40px 0 100px 0;
+    // @include flexbox();
+    // @include flex-wrap(wrap);
+    // @include justify-content(center);
+    > * {
+        padding: 15px;
+        text-align: center;
+        -webkit-transition: ease all .5s;
+        -moz-transition: ease all .5s;
+        -o-transition: ease all .5s;
+        transition: ease all .5s;
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+        span.button {
+            margin: 0;
+        }
+        &:hover {
+            background: #ccc;
+            -ms-transform: scale(1.05,1.05);
+            -webkit-transform: scale(1.05,1.05);
+            transform: scale(1.05,1.05);
+            text-decoration: none;
+        }
+    }
+}
+
+.upsell-container.swiper-container-horizontal .swiper-button-next {
+    right: 50%;
+    transform: translateX(48px);
+    top: unset;
+    bottom: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+}
+.upsell-container.swiper-container-horizontal .swiper-button-prev {
+    left: 50%;
+    transform: translateX(-48px);
+    top: unset;
+    bottom: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+}

@@ -1,0 +1,540 @@
+$vehiclelinkcolor: #333 !default;
+$yousavecolor: $cta !default;
+$pricebottomBG: #555 !default;
+$pricebottomborder: 1px solid #333 !default;
+$pricebottomcolor: #fff !default;
+
+@import '../../../../DealerInspireCommonTheme/css/components/vehicle-results-page/_compare-vehicles.scss';
+@import '_save-vehicles.scss';
+// @import '../../../../DealerInspireCommonTheme/css/components/vehicle-results-page/_groupon-sidebar-filter.scss';
+// @import '../../../../DealerInspireCommonTheme/css/components/vehicle-results-page/_mobile-groupon-filter.scss';
+
+
+#results-page, table.results_table {		// Is table still needed?
+	width: 100%;
+	margin-top: 20px;
+	// div#ajax-indicator {
+	// 	display:none;
+	// 	position:fixed;
+	// 	height:100px;
+	// 	width:100px;
+	// 	background:#fff;
+	// 	box-shadow:0 0 5px #999;
+	// 	-moz-box-shadow:0 0 5px #999;
+	// 	-webkit-box-shadow:0 0 5px #999;
+	// 	border:solid 1px #ccc;
+	// 	-moz-border-radius:5px;
+	// 	border-radius:5px;
+	// 	z-index:2000;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	margin-top: -50px;
+	// 	margin-left: -100px;
+	// 	img {
+	// 		margin: 20px 0 0 20px;
+	// 	}
+	// }
+	div#ajax-indicator {
+	  display: none;
+	  position: fixed;
+	  height: 100px;
+	  width: 100px;
+	  background: #fff;
+	  box-shadow: 0 0 5px #999;
+	  -moz-box-shadow: 0 0 5px #999;
+	  -webkit-box-shadow: 0 0 5px #999;
+	  border: solid 1px #ccc;
+	  -moz-border-radius: 5px;
+	  border-radius: 50px;
+	  z-index: 2000;
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -50px;
+	  margin-left: -50px;
+	  font-size: 50px;
+	  line-height: 100px;
+	  text-align: center;
+	}
+	td {
+		vertical-align: top;
+		border: none;
+		&.filter-results {
+			width: 270px !important;
+			padding-right: 30px;
+			padding-top: 0px;
+			h4 {
+				text-align: center;
+				font-size: 18px;
+				font-weight: bold;
+				padding: 0px 0 0px;
+			}
+		}
+	}
+	&.infinite_scrolling {
+		.disclaimer-small {
+			display: none;
+		}
+	}
+}
+
+.top-text {
+	margin-bottom: 20px;
+}
+
+// *************************************************************************************************
+//	VRP TOP SEARCH / VIEWS TOGGLE
+// *************************************************************************************************
+
+#results-page {
+	#search-views-toggle {
+		#search-anything {
+			float: left;
+			width: 100%;
+			#toggle-filters {
+				margin-right: 0px;
+				margin-left: 10px;
+		    float: right;
+		    padding: 0 15px;
+		    cursor: pointer;
+		    font-size: 14px;
+		    line-height: 30px;
+	    }
+			.vrp-top-search-anything-label {
+				padding: 0;
+				line-height: 30px;
+				font-size: 16px;
+				float: left;	
+			}	
+			input#search {
+			   float: left;
+			   margin-left: 10px;
+			   padding: 0 10px;
+			   font-size: 16px;
+			   line-height: 30px;
+			   height: 32px;
+			   width: 260px;
+			}
+			input#start_search {
+				float: left;
+				margin-left: 10px;
+				padding: 0 15px;
+				font-size: 14px;
+				line-height: 30px;
+			}
+			.grid-list-container {
+				float: right;
+				.gridtoggle, .listtoggle {
+					cursor: pointer;
+					float: right;
+					margin-left: 10px;
+					font-size: 16px;
+					line-height: 30px;
+				}
+				.glyphicon {
+					font-size: 24px;
+					vertical-align: top;
+				}
+				.listtoggle{
+					img{
+						max-width: 100px\9;
+					}
+				}
+			}
+    }    
+  }
+}
+
+@media (max-width:1024px) {	
+	#results-page {
+		&.with-groupon-sidebar {
+			#search-views-toggle {
+				#search-anything {
+					#toggle-filters {
+						margin-left: 10px;
+					    padding: 0 10px;
+					    font-size: 12px;
+				    }
+				    .vrp-top-search-anything-label {
+						font-size: 14px;
+					}	
+					input#search {
+					   margin-left: 5px;
+					   padding: 0 5px;
+					   font-size: 14px;
+					   width: 200px;
+					}
+					input#start_search {
+						margin-left: 5px;
+						padding: 0 10px;
+						font-size: 12px;
+					}
+					.grid-list-container {
+						.listtoggle, .gridtoggle {
+							margin-right: 5px;
+							font-size: 14px;
+						}
+					}
+			  }    
+		  }
+		}
+	}
+}
+
+
+// *************************************************************************************************
+//	PAGINATION & SORTING
+// *************************************************************************************************
+
+#results-page {	
+	.paging {
+		float: none;
+		margin: 10px auto;
+		text-align: left;
+		height: 30px;
+		.sorting-options {
+			float: right;
+			select {
+				-webkit-appearance:none;
+			  -moz-appearance:none;
+			  text-indent: 0.01px;
+				text-overflow: '';
+			  appearance:none;
+			  cursor:pointer;
+				background: url(/wp-content/themes/DealerInspireCommonTheme/images/caret.png) no-repeat right center #fff;
+				padding: 0px 10px;
+				line-height: 30px;
+				height: 30px;
+				font-size: 14px;
+				border: 1px solid #ccc;
+			}
+		}
+		.button {
+			margin-right: 5px;
+		}
+	}
+}
+	
+// *************************************************************************************************
+//	VEHICLE DISPLAY
+// *************************************************************************************************	
+	
+#results-page {	
+	.vehicle {
+		width: 100%;
+		// border: 1px solid #ccc;
+		background-color: #f3f3f3;
+		float: left;
+		overflow: hidden;
+		font-family: 'Lato', sans-serif;
+		box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+		@include transition(box-shadow 0.5s ease-in-out);
+		@include border-radius(3px);
+		.vehicle-title {
+			h2 {
+				font-weight: normal;
+				a {
+					color: $maintextcolor;
+					text-decoration: none;
+				}
+			}
+			.vinstock {
+				width: auto;
+				font-size: 12px;
+				line-height: 14px;
+				margin-top: 5px;
+				span {
+					display: inline-block;
+					margin-right: 10px;
+				}
+			}
+		}
+		
+		.special-banner {
+			display: block !important;
+			background-color: green;
+			color: #fff;
+			font-weight: bold;
+		}
+		
+		.vehicle-specials {				 						//
+			float: right;						 						//	Not sure what this is?
+			width: 150px;						 						//
+			display: block;					 						//
+			min-height: 150px;			 						//
+			width: 150px;						 						//
+			margin: 10px 10px 10px 0;						//
+		}
+
+	}
+}
+		
+// *************************************************************************************************
+//	PRICE DISPLAY
+// *************************************************************************************************
+
+#results-page {
+	.vehicle {
+		span.callforprice {
+			font-size: 14px;
+			line-height: 100%;
+			display: inline-block;
+		}		
+		.vehicle-price {
+			width: 30%;
+			text-align: left;
+			float: right;
+			padding-top: 0;
+			border-left: 2px solid #eee;
+			padding-left: 10px;
+			a {
+				color: $vehiclelinkcolor;
+			}
+			.price-top {
+				float: left;
+				width: 100%;
+				padding: 0 10px;
+				.withdiscounts-left {
+					width: 50%;
+					float: left;
+				}
+				.withdiscounts-right {
+					width: 40%;
+					float: right;
+					a {
+						color: $yousavecolor;
+					}
+				}
+			}
+			.price-bottom {
+				float: left;
+				width: 100%;
+				padding: 10px;
+				background: $pricebottomBG;
+				border: $pricebottomborder;
+				a {
+					color: $pricebottomcolor;
+				}
+				.price-block {
+					&.finance {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.price-block {
+				display: block;
+				width: 100%;
+				max-width: 100%;
+				text-align: right;
+				margin-bottom: 10px;
+				&:after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				&.original {
+					.price-label {
+					}
+					.price {
+						text-decoration: line-through;
+					}
+				}
+				&.sold-price {
+					font-size: 24px;
+				}
+				&.bottom-text {
+					float: left;
+					width: 100%;
+					text-align: left;
+					margin-top: 10px;
+				}
+				.price-label {
+					display: block;
+					margin: 0;
+					font-size: 11px;	
+					line-height: 13px;
+					font-weight: bold;
+					text-transform: uppercase;
+					text-align: left;
+				}
+				.price {
+					font-weight: normal;
+					display: block;
+					font-size: 22px;
+					line-height: 22px;
+					font-family: "Open Sans", sans-serif;
+					text-align: left;
+				}
+			}
+			&.withsavings {
+				.price {
+					color: $primary;
+				}
+			}
+		}		
+	}	
+}
+
+// *************************************************************************************************
+//	BUTTON & ACTION BAR
+// *************************************************************************************************
+
+//$buttonbar-background: #9e9e9e;
+//$buttonbar-border: none;
+//$buttonbar-height: 52px;
+//
+//$buttonbar-button-background: #555;
+//$buttonbar-button-border: 1px solid #444;
+//$buttonbar-button-color: #fff;
+//$buttonbar-button-display: table-cell;
+//$buttonbar-button-padding: 0;
+//
+//$buttonbar-button-hover-background: darken($buttonbar-button-background,10%);
+//$buttonbar-button-hover-border: darken($buttonbar-button-background,10%);
+//$buttonbar-button-hover-color: #fff;
+//
+//$buttonbar-primarycta-float: none;
+//$buttonbar-primarycta-margin: 0 5px 0 0;
+
+$buttonbar-background: #fff !default;
+$buttonbar-border: none !default;
+$buttonbar-height: 60px !default;
+
+$buttonbar-button-textalign: left !default; //
+$buttonbar-button-background: transparent !default;
+$buttonbar-button-border: none !default;
+$buttonbar-button-color: $maintextcolor !default;
+$buttonbar-button-display: inline-block !default;
+$buttonbar-button-fontsize: 14px !default;
+$buttonbar-button-fontweight: 500 !default;
+$buttonbar-button-padding: 10px 15px !default;
+
+$buttonbar-buttonicon-fontsize: 24px !default;
+
+$buttonbar-button-hover-background: transparent !default;
+$buttonbar-button-hover-border: none !default;
+$buttonbar-button-hover-color: $primary !default;
+
+$buttonbar-primarycta-float: right !default;
+$buttonbar-primarycta-margin: 10px 10px 0 0 !default;
+
+#results-page {
+	.vehicle {
+		.button-bar {
+			background: $buttonbar-background;
+			border: $buttonbar-border;
+			height: $buttonbar-height;
+			width: 100%;
+			clear: both;
+			padding: 0;
+			display: table;
+			.button-bar-item {
+				display: $buttonbar-button-display;
+				vertical-align: middle;
+				a {
+					background: $buttonbar-button-background;
+					border: $buttonbar-button-border;
+					color: $buttonbar-button-color;
+					font-size: $buttonbar-button-fontsize;
+					font-weight: $buttonbar-button-fontweight;
+					line-height: 40px;
+					padding: $buttonbar-button-padding;
+					min-width: 32px;
+					margin-right: 5px;
+					display: block;
+					text-align: center;
+					vertical-align: middle;
+					i {
+						font-size: $buttonbar-buttonicon-fontsize;
+					  margin-right: 5px;
+					  vertical-align: middle;
+					}
+					&:hover {
+						background: $buttonbar-button-hover-background;						
+						color: $buttonbar-button-hover-color;
+					}
+				}
+				&:first-child {
+					a {
+						margin-left: 5px;
+					}
+				}
+			}
+			.standard-buttons {
+				display: none;
+			}
+			.primary-cta {
+				float: $buttonbar-primarycta-float;
+				a {
+					background-color: $vrpcta;
+					color: #fff;
+					padding: 0 20px;
+					margin: $buttonbar-primarycta-margin;			
+					&:hover {
+						background-color: darken($vrpcta, 5%);
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+				&:after {
+					display: none;
+				}
+			}
+
+			/* .standard-buttons {
+				display: inline-block;
+				display: none;
+				> div {
+					display: none;
+					a {
+						color: $maintextcolor;
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 40px;
+						text-align: center;
+						height: auto;
+						width: 100%;
+						padding: 0;
+						display: block;
+						padding: 0 15px;
+						&:hover {
+							color: $primary;
+							text-decoration: none;
+						}
+					}
+					&.vehicle-cta {
+						a {
+							background-color: $vrpcta;
+							color: #fff;
+							@include box-shadow(0 2px 5px #aaa);
+							&:hover {
+								background-color: darken($vrpcta, 5%);
+								color: #fff;
+								text-decoration: none;
+							}
+						}
+					}
+					&.icon {
+						padding: 5px 0;
+						height: 50px;
+						display: inline-block;
+						> div {
+							background: none;
+							a {
+								background: none;
+								border: none;
+								&:hover {
+									background: none;
+								}
+								img {
+									max-height: 50px;
+								}
+							}
+						}
+					}
+				}
+			} */
+		}
+	}
+}
+

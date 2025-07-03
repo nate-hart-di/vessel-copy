@@ -1,0 +1,86 @@
+ul.sub-menu .di-vehicle-icon, .dropdown-menu .di-vehicle-icon, .di-vehicle-icon {
+  &.mercedes-benz-amg {
+    a:before {
+      background: transparent url(/wp-content/themes/DealerInspireDealerTheme/images/amg-sprite.png) no-repeat;
+      background-size: 150px auto;
+    }
+    &.amg-cla45-coupe a:before {
+      background-position: 0px 0px;
+    }
+    &.amg-c63-coupe a:before {
+      background-position: 0px -40px;
+    }
+    &.amg-c63s-coupe a:before {
+      background-position: 0px -80px;
+    }
+    &.amg-cls63-scoupe a:before {
+      background-position: 0px -120px;
+    }
+    &.amg-s63-coupe a:before {
+      background-position: 0px -160px;
+    }
+    &.amg-s65-coupe a:before {
+      background-position: 0px -200px;
+    }
+    &.amg-gt-s-coupe a:before {
+      background-position: 0px -240px;
+    }
+    &.amg-c63-sedan a:before {
+      background-position: 0px -280px;
+    }
+    &.amg-c63s-sedan a:before {
+      background-position: 0px -320px;
+    }
+    &.amg-e63s-sedan a:before {
+      background-position: 0px -360px;
+    }
+    &.amg-s603-sedan a:before {
+      background-position: 0px -400px;
+    }
+    &.amg-s65-sedan a:before {
+      background-position: 0px -440px;
+    }
+    &.amg-s65-cabriolet a:before {
+      background-position: 0px -480px;
+    }
+    &.amg-s63-cabriolet a:before {
+      background-position: 0px -520px;
+    }
+    &.amg-sl65-roadster a:before {
+      background-position: 0px -560px;
+    }
+    &.amg-sl63-roadster a:before {
+      background-position: 0px -600px;
+    }
+    &.amg-slc43-roadster a:before {
+      background-position: 0px -640px;
+    }
+    &.amg-gla45-suv a:before {
+      background-position: 0px -680px;
+    }
+    &.amg-gle63-suv a:before {
+      background-position: 0px -720px;
+    }
+    &.amg-gle63-s-suv a:before {
+      background-position: 0px -760px;
+    }
+    &.amg-gle63-s-coupe a:before {
+      background-position: 0px -800px;
+    }
+    &.amg-gls63-suv a:before {
+      background-position: 0px -840px;
+    }
+    &.amg-g63-suv a:before {
+      background-position: 0px -880px;
+    }
+    &.amg-g65-suv a:before {
+      background-position: 0px -920px;
+    }
+    &.amg-e63-s-wagon a:before {
+      background-position: 0px -960px;
+    }
+    &.amg-m-suv a:before {
+      background-position: 0px -1000px;
+    }
+  }
+}

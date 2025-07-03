@@ -1,0 +1,51 @@
+.lightning{
+  #hits{
+    .hit-price__customize{
+      display: none;
+    }
+  }
+}
+
+#lvrp-results-wrapper {
+  .hit-content h2.result-title .title-top{
+    display: none !important;
+  }
+
+  .hit-additional-ctas .roadster-ctas {
+    @include flexbox();
+    @include flex-direction(column);
+
+    > * {
+      @include order(2);
+    }
+
+    > .roadster-ctas__start-buying {
+      @include order(1);
+
+      .lightning-custom-cta {
+        background-color: $cta;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  .page-template-page-lightning {
+    #openhoursbar{
+      display: none;
+    }
+  }
+
+	.page-template-page-lightning {
+    #search-overlay {
+      z-index: 1100;
+      &.open {
+      //  top: 50px;
+      }
+      .overlay-container {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,324 @@
+// mobile buttons and header menu button
+$header-height-mobile: 50px;
+$hamburger-background: #fff;
+
+.deviceWrapper__menu {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    text-align: center;
+    width: 35px;
+    font-size: 2rem;
+    height: calc(#{$header-height-mobile} - 1px);
+
+    &.menu-hamburger {
+        width: 60px;
+        background: $hamburger-background;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+
+        .icon-label {
+            display: none;
+        }
+    }
+
+    a {
+        @include flexbox();
+        @include align-items(center);
+        text-decoration: none;
+    }
+
+    .active {
+        opacity: 1;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+    }
+
+    .fa {
+        color: $maintextcolor;
+    }
+
+    @media (min-width: 768px) {
+        width: 50px;
+        font-size: 2.5rem;
+
+        &.menu-hamburger {
+            width: 60px;
+        }
+    }
+}
+
+/// Menu Full Overlay
+#full-overlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all 450ms ease);
+
+    &.open {
+        @include transition(all 450ms ease);
+        visibility: visible;
+        overflow-y: auto;
+        opacity: 1;
+        @include z-index("overlay");
+
+        .tool-overlay.showTarget .wrapper {
+            display: block !important;
+        }
+    }
+
+    .tool-overlay .wrapper {
+        color: $maintextcolor;
+    }
+
+    .overlay-controls {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        width: 100%;
+        text-align: center;
+
+        span {
+            margin: 0 10px;
+        }
+    }
+
+    #overlayInner {
+        width: 100%;
+    }
+}
+
+/// Overlay Styles for Menu (Mobile/tablet)
+#fullmenu-overlay {
+    .device-nav-menu {
+        display: block !important;
+        top: 0;
+        left: 0px;
+        position: relative;
+        width: 100vw;
+        background: #fff;
+        overflow-y: auto !important;
+        height: 100vh;
+        font-family: $heading-font; //position: relative;
+        //height: 100%;
+
+        #close-button {
+            text-align: center;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            height: 70px;
+            opacity: 1;
+            z-index: 20;
+            @include flexbox();
+            @include justify-content(center);
+            @include align-items(center);
+        }
+
+        .caret {
+            display: none;
+        }
+
+        >.navbar {
+            height: auto;
+            padding: 0 25px 60px;
+
+            .navbar-inner {
+                .nav_section {
+                    position: relative;
+
+                    >ul.nav {
+                        position: relative;
+                        z-index: 10;
+                        display: block;
+                        opacity: 1;
+                        visibility: visible;
+                        right: 0px;
+                        transition: transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1), opacity 550ms cubic-bezier(0.25, 0.1, 0.25, 1);
+                        margin-top: 70px;
+                        border-top: 1px solid #979797;
+
+                        &.hide-item {
+
+                            //
+                            display: none;
+                            opacity: 0;
+                            visibility: hidden;
+                            @include transform(translateX(60px));
+                        }
+
+                        li {
+                            &.menu-item-has-children {
+                                >a {
+                                    position: relative;
+
+                                    &:before {
+                                        content: '\f054';
+                                        font-family: 'FontAwesome';
+                                        position: absolute;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        top: -1px;
+                                        right: 5px;
+                                        margin-left: 5px;
+                                        font-size: 16px;
+                                        color: #111;
+                                        @include transition(all .2s ease);
+                                    }
+                                }
+                            }
+                        }
+                    } // submenu overlay
+                    .overlay {
+                        visibility: hidden;
+                        opacity: 0;
+                        width: 0;
+                        min-height: 100vh;
+                        background: $offcanvasflyout-bg;
+                        z-index: -100;
+                        position: absolute;
+                        top: 0;
+                        right: -60px;
+                        overflow: hidden; // @include transition(opacity 450ms ease);
+                        // @include transition(right 450ms ease);
+                        transition: right 450ms cubic-bezier(0.25, 0.1, 0.25, 1), opacity 450ms cubic-bezier(0.25, 0.1, 0.25, 1);
+                        width: 0vw;
+
+                        &.active {
+                            z-index: 900;
+                            width: 100%;
+                            display: block;
+                            opacity: 1; // @include transition(opacity 450ms ease);
+                            right: 0px;
+                            visibility: visible;
+                        }
+
+                        .dropdown-menu.nav {
+                            border: none;
+                            box-shadow: none;
+                        }
+
+                        .back-button {
+                            position: relative;
+                            width: 100%;
+                            height: 70px;
+                            line-height: 70px;
+                            @include flexbox();
+                            background: #fff;
+                            color: #111;
+                            border-bottom: 1px solid #979797;
+
+                            .back {
+                                text-align: center;
+                                width: 30px;
+                                position: absolute;
+                                height: 100%;
+                                @include flexbox();
+                                @include justify-content(center);
+                                @include align-items(center);
+                            }
+
+                            .title {
+                                padding: 0px 10px;
+                                width: 100%;
+                                width: calc(100% - 40px);
+                                margin: 0 auto;
+                                text-align: center;
+
+                                span {
+                                    font-size: 22px;
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            ul.dropdown-menu {
+                                display: block;
+                                position: relative;
+                                top: 0;
+                            }
+                        }
+                    }
+
+                    .dropdown-menu.nav,
+                    ul.nav {
+                        >li {
+
+                            >a {
+                                width: 100%;
+                                font-size: 22px;
+                                text-transform: uppercase;
+                            }
+
+                            >ul.dropdown-menu {
+                                display: none;
+                                padding: 0 15px 20px;
+                                li {
+                                    a {
+                                        font-size: 20px;
+                                        text-transform: none;
+                                    }
+                                }
+                            }
+                            &.active {
+                                >ul.dropdown-menu {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .inner-submenu {
+                            &.menu-item-has-children {
+                                >a {
+                                    position: relative;
+
+                                    &:before {
+                                        content: '\f067';
+                                        font-family: 'FontAwesome';
+                                        position: absolute;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        top: -1px;
+                                        right: 5px;
+                                        margin-left: 5px;
+                                        font-size: 16px;
+                                        color: #a2a2a2;
+                                        @include transition(all .2s ease);
+                                    }
+                                }
+                                &.active {
+                                    >a {
+                                        &:before {
+                                            content: '\f068';
+                                        }
+                                    }
+                                }
+                                ul {
+                                    li {
+                                        float: left;
+                                        min-width: 50%;
+                                        width: 50%;
+                                        a {
+                                            @include responsive-font(2.35vw, 17px, 20px);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

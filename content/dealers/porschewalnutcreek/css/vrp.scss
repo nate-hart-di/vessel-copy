@@ -1,0 +1,228 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+@import 'variables';
+
+// *************************************************************************************************
+//	GENERAL
+// *************************************************************************************************
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+
+// *************************************************************************************************
+//	VEHICLE RESULTS PAGE
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-listview';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-gridview';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-topbar';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-sidebar';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-mobile';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/resultspage-common-elements';
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/vrp';
+
+
+#results-page{
+  .vehicle{
+    .vehicle-price{
+      @include flexbox;
+      @include flex-direction(column);
+      .price-top{
+        order: 0;
+      }
+      .cta-button{
+        order: 1;
+      }
+      .finance-link{
+        order: 2 !important;
+      }
+      .below-price-cta{
+        order: 10; // place at bottom of stack
+      }
+      .options-button{
+        order: 15;
+      }
+      .button{
+        background: $primary;
+      }
+    }
+  }
+  td.gridview .vehicle.grid-view  {
+    padding-bottom: 0;
+    display: flex !important;
+    @include flex-direction(column);
+    .vehicle-quick-stats {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        @include flex-grow(1);
+    }
+    .button-bar {
+        position: relative;
+        height: auto;
+    }
+    .vehicle-price {
+        @include flexbox();
+        @include flex-direction(column);
+        .price-block.bottom-text {
+            @include flex-grow(1);
+        }
+    }
+  }
+}
+
+// *************************************************************************************************
+//	SUPPORT REQUESTS
+// *************************************************************************************************
+#results-page .vehicle .vehicle-price .price-block.locked-price{
+  margin-bottom: 0;
+}
+
+//308199
+#results-page .vehicle .button-bar-item.primary-cta {
+  display: none;
+}
+a.offer-image-link {
+  width: 50% !important;
+}
+.offer-content.card-content {
+  width: 50% !important;
+  display: inline-block;
+}
+.offerbuttonbar.card-action {
+display: none;
+}
+img#dynamic-banner-image {
+  max-width: 40%;
+  float: left;
+  display: inline-block;
+}
+.offerbuttonbar.card-action {
+  border: 0px !important;
+  padding: 0px !important;
+}
+.offer-content h3 {
+  font-size: 36px !important;
+}
+.offer-content span.offerlabel {
+  font-weight: 600;
+}
+.disclaimertoggle {
+  margin-top: -10px;
+}
+.offeritem {
+  margin-top: -20px !important;
+}
+.top-text-item ul.special-offers li.special-offer {
+  background:transparent;
+  box-shadow:none;
+  margin:0;
+}
+.top-text-item ul.special-offers li.special-offer:hover {
+  box-shadow:none;
+}
+.top-text-item ul.special-offers li.special-offer .offer-image-link {
+  padding: 0px;
+  width:50%;
+}
+.top-text-item ul.special-offers li.special-offer .offer-content {
+  padding: 0 20px;
+  text-align:left;
+  width:75%;
+  height: 100%;
+}
+.top-text-item ul.special-offers li.special-offer .offer-content .rates {
+  display:flex;
+  flex-wrap:wrap;
+}
+ul.special-offers li.special-offer .rates {
+  border: 0px !important;
+  padding: 0px !important;
+}
+.top-text-item ul.special-offers li.special-offer .offer-content .rates > div {
+  width:100%;
+}
+.top-text-item ul.special-offers li.special-offer .offeritem .offerrate,
+.top-text-item ul.special-offers li.special-offer .offeritem .offerlabel {
+  font-size:20px;
+  font-weight: bold;
+  text-transform: none !important;
+}
+.top-text-item ul.special-offers li.special-offer .offeritem.price-line .offerrate,
+.top-text-item ul.special-offers li.special-offer .offeritem.price-line .offerlabel {
+  font-size:24px;
+}
+.top-text-item ul.special-offers {
+  background:#f0f0f0;
+  border:5px solid #fff;
+  padding:10px;
+  box-shadow: 0px 0px 6px #0059a8;
+}
+.top-text-item ul.special-offers li.special-offer .offerbuttonbar .button.primary-button {
+  display:none;
+}
+.top-text-item ul.special-offers li.special-offer .offerbuttonbar .button {
+  font-size:24px;
+  width: 100% !important;
+}
+.top-text-item ul.special-offers li.special-offer .offer-content > h2 {
+  margin: 20px auto;
+}
+.top-text-item ul.special-offers li.special-offer .offerbuttonbar {
+  padding: 0px;
+}
+ul.special-offers li.special-offer .offerbuttonbar .primary-button {
+  display: none;
+}
+ul.special-offers li.special-offer .offerbuttonbar a.cta-button.button {
+  width:100% !important;
+  padding: 13px 20px;
+  background: #00a651 !important;
+  font-size: 14px;
+  bottom: 0 !important;
+  position: absolute;
+  width: 50% !important;
+}
+.vehicle .options-button{margin-top:5px}
+.unlock-offer a {
+  background: #c42929;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  color: #fff !important;
+font-size: 14px;
+}
+.vehicle-badges .options-button {
+  margin-top: 8px !important;
+  width: 50% !important;
+  display: inline-block;
+  font-size: 18px;
+  padding: 6px 0px;
+  vertical-align: top;
+  font-weight: normal;
+  svg.di-svg {
+    fill: #fff;
+    font-size: 4px;
+    height: 17px;
+    padding: 0px;
+    margin-right: -7px;
+    vertical-align: inherit;
+  }
+}
+
+.vehicle .price-top a[href="#gravity-form-77"] {
+  display: none;
+}
+#lvrp-container {
+  #lvrp-results-wrapper {
+      .hit-content {
+          h2.result-title {
+              .title-top {
+                  display: none;
+              }
+          }
+      }
+  }
+}

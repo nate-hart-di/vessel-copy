@@ -1,0 +1,614 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/toyota/toyotaexample2/variables-2.scss';
+
+// $primary: red;															// site main color
+// $primaryhover: darken($primary,10%);
+
+// $secondary: #010101;														// site accent color
+// $secondaryhover: darken($secondary,10%);
+
+// $cta: green;
+// $ctahover: darken($cta,10%);
+// $cta-font: 14px/30px;
+
+$green: green;
+
+// *************************************************************************************************
+//	TEXT STYLING
+// *************************************************************************************************
+
+// $maintextcolor: #333;
+// $maintextfont: 'ToyotaType', sans-serif;
+
+//$mainlinkcolor: $primary;
+
+// $heading-font: 'ToyotaType', sans-serif;
+
+//$h1-font-size: 30px;
+//$h1-font-weight: 700;
+//$h1-font-family: $heading-font;
+//$h1-text-transform: none;
+
+//$h2-font-size: 24px;
+//$h2-font-weight: 300;
+//$h2-font-family: $heading-font;
+//$h2-text-transform: none;
+
+//$h3-font-size: 18px;
+//$h3-font-weight: 700;
+//$h3-font-family: $heading-font;
+//$h3-text-transform: none;
+
+//$h4-font-size: 16px;
+//$h4-font-weight: 600;
+//$h4-font-family: $heading-font;
+//$h4-text-transform: none;
+
+// *************************************************************************************************
+//	BUTTON STYLING
+// *************************************************************************************************
+
+// BASE BUTTONS
+
+// $button-bg: #ccc;
+// $button-bghover: darken(#ccc,10%);
+// $button-border: none;
+// $button-color: #333;
+// $button-colorhover: #fff;
+// $button-fontfamily: $maintextfont;
+// $button-fontweight: normal;
+// $button-fontsize: 14px;
+// $button-lineheight: 30px;
+// $button-radius: 50px;
+// $button-shadow: none;
+// $button-padding: 0 20px;
+// $button-textshadow: none;
+// $button-transform: uppercase;
+// $button-margins: 0 10px 10px 0;
+
+// BUTTON TEXT COLORS
+
+// $cta-color: #fff;
+// $primary-color: #fff;
+// $secondary-color: #fff;
+
+// PRIMARY BUTTONS
+
+// $primarybutton-bg: $primary;
+// $primarybutton-color: $primary-color;
+// $primarybutton-border: none;
+// $primarybutton-hover-bg: darken($primary, 10%);
+// $primarybutton-hover-color: $primary-color;
+// $primarybutton-hover-border: none;
+
+// SECONDARY BUTTONS
+
+// $secondarybutton-bg: $secondary;
+// $secondarybutton-color: $secondary-color;
+// $secondarybutton-border: none;
+// $secondarybutton-hover-bg: darken($secondary, 10%);
+// $secondarybutton-hover-color: $secondary-color;
+// $secondarybutton-hover-border: none;
+
+// CTA BUTTONS
+
+// $ctabutton-bg: $cta;
+// $ctabutton-color: $cta-color;
+// $ctabutton-border: none;
+// $ctabutton-hover-bg: darken($cta, 10%);
+// $ctabutton-hover-color: $cta-color;
+// $ctabutton-hover-border: none;
+
+// OUTLINE BUTTONS
+
+// $outlinebutton-border: 2px solid #000;
+// $outlinebutton-color: #000;
+// $outlinebutton-hoverbg: #000;
+// $outlinebutton-hoverborder: 2px solid #000;
+// $outlinebutton-hovercolor: #fff;
+
+// MISC BUTTON SETTINGS
+
+// $smallbutton-weight: normal;
+// $smallbutton-size: 12px;
+// $smallbutton-padding: 0px 10px;
+
+// $largebutton-weight: normal;
+// $largebutton-size: 24px;
+// $largebutton-padding: 10px 30px;
+
+// $darkbutton-bg: #555;
+// $darkbutton-color: #fff;
+
+// SOCIAL ICONS ****************
+
+// $sociallink-color: #fff;
+// $sociallink-backgroundcolor: $primary;
+// $sociallink-fontsize: 24px;
+// $sociallink-width: 40px;
+// $sociallink-height: 40px;
+// $sociallink-line-height: $sociallink-height;
+// $sociallink-margin: 0 3px 0 0;
+// $sociallink-radius: 50px;
+// $sociallink-border: none;
+
+// $sociallink-hover-color: $primary;
+// $sociallink-hover-backgroundcolor: #fff;
+
+// *************************************************************************************************
+//	HEADER
+// *************************************************************************************************
+
+// $tablet-header-background: #fff;
+// $mobile-header-background: #fff;
+
+// $hamburger-color: $secondary;
+// $hamburger-background: transparent;
+
+// $phoneicon-color: $secondary;
+// $phonenumber-color: $secondary;
+
+// $directionsicon-color: $secondary;
+// $directionstext-color: $secondary;
+
+// MOBILE ELEMENTS ****************
+
+// $hoursbarbg: $secondary;
+// $hoursbarcolor: #fff;
+
+// *************************************************************************************************
+//	NAVIGATION
+// *************************************************************************************************
+
+// $navbar-height: 70px;
+// $navbar-lineheight: $navbar-height;
+// $navbar-float: none;
+
+// $navbar-menuitem-padding: 0 15px;
+// $navbar-menuitem-textalign: left;
+// $navbar-menuitem-color: #58595B;
+// $navbar-menuitem-letter-spacing: .02em;
+// $navbar-menuitem-border-bottom: none;
+// $navbar-menuitem-hover-background: transparent;
+// $navbar-menuitem-hover-color: $primary;
+// $navbar-menuitem-font: $maintextfont;
+// $navbar-menuitem-fontsize: 14px;
+// $navbar-menuitem-fontweight: normal;
+// $navbar-menuitem-texttransform: none;
+
+// $navbar-current-background:  $navbar-menuitem-hover-background;
+// $navbar-current-color: $navbar-menuitem-hover-color;
+
+// $navbar-submenu-background: #fff;
+// $navbar-submenu-border: 1px solid #e6e6e6;
+
+// $navbar-submenuitem-height: 40px;
+// $navbar-submenuitem-textalign: left;
+// $navbar-submenuitem-border-bottom: $navbar-menuitem-border-bottom;
+// $navbar-submenuitem-lineheight: $navbar-submenuitem-height;
+// $navbar-submenuitem-color: #fff;
+// $navbar-submenuitem-hover-background: transparent;
+// $navbar-submenuitem-hover-color: $primary;
+
+$navbar-megamenu-width: 1000px;
+$navbar-megamenu-leftposition: -500px;
+$navbar-megamenu-column-width: 25%;
+// $navbar-megamenu-column-padding: 0;
+// $navbar-megamenu-column-font-size: 12px;
+// $navbar-megamenu-subheading-background: #202020;
+// $navbar-megamenu-subheading-borderbottom: none;
+// $navbar-megamenu-subheading-fontweight: 600;
+// $navbar-megamenu-subheading-fontsize: $navbar-menuitem-fontsize;
+// $navbar-megamenu-subheading-color: $primary;
+
+// OFF CANVAS MENU
+
+// $offcanvasflyout-bg: #333;
+// $offcanvas-menuitem-height: 40px;
+// $offcanvas-menuitem-lineheight: 20px;
+// $offcanvas-menuitem-padding: 10px 15px;
+// $offcanvas-menuitem-textalign: left;
+// $offcanvas-menuitem-background: #222;
+// $offcanvas-menuitem-color: #fff;
+// $offcanvas-menuitem-border-bottom: 1px solid #333;
+// $offcanvas-menuitem-hover-background: #1c1c1c;
+// $offcanvas-menuitem-hover-color: #fff;
+// $offcanvas-menuitem-font: $maintextfont;
+// $offcanvas-menuitem-fontsize: 14px;
+// $offcanvas-menuitem-fontweight: normal;
+// $offcanvas-menuitem-texttransform: none;
+
+// $offcanvas-current-background: $offcanvas-menuitem-hover-background;
+// $offcanvas-current-color: $offcanvas-menuitem-hover-color;
+
+// $offcanvas-submenu-background: #444;
+// $offcanvas-submenuitem-height: 40px;
+// $offcanvas-submenuitem-textalign: left;
+// $offcanvas-submenuitem-border-bottom: 1px solid #333;
+// $offcanvas-submenuitem-lineheight: 20px;
+// $offcanvas-submenuitem-color: $offcanvas-menuitem-color;
+// $offcanvas-submenuitem-hover-background: #1c1c1c;
+// $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
+
+
+// *************************************************************************************************
+//	FOOTER
+// *************************************************************************************************
+
+// $footer-background: #111;
+// $footer-padding: 30px 0;
+// $footer-color: #fff;
+// $footer-font-size: 14px;
+// $footer-font-family: $maintextfont;
+
+// $footer-left-margin: 10px 0 0 0;
+// $footer-left-logo-width: 200px;
+
+// $footer-middle-text-align: center;
+// $footer-middle-text-transform: uppercase;
+// $footer-copyright-margin: 0 0 10px;
+// $footer-menu-color: #aaa;
+// $footer-menu-margin: 0 5px;
+// $footer-menu-font-size: 14px;
+// $footer-menu-text-transform: uppercase;
+
+// $footer-right-margin: 10px 0 0 0;
+// $footer-right-logo-width: 200px;
+
+// PRE FOOTER ******************
+
+// $prefooter-background: #fff;
+// $prefooter-padding: 50px 0 70px;
+
+// $prefooter-color: $maintextcolor;
+// $prefooter-font: $maintextfont;
+
+// $prefooter-listtitle-color: $prefooter-color;
+// $prefooter-listtitle-underline: 1px solid $prefooter-color;
+
+// $prefooter-listitem-color: $prefooter-color;
+
+
+// *************************************************************************************************
+//	VEHICLE RESULTS PAGE
+// *************************************************************************************************
+
+// $vrpcta: $cta;																		// results page colors
+// $vrpcta-border: 2px solid darken($vrpcta, 10%);
+// $vrpctahover: $ctahover;
+// $vrpcta-font: $cta-font;
+// $vrpcta-color: $cta-color;
+
+// BUTTON BAR
+
+// $buttonbar-background: #fff;
+// $buttonbar-border: none;
+// $buttonbar-height: 50px;
+
+// $buttonbar-button-textalign: left;
+// $buttonbar-button-background: transparent;
+// $buttonbar-button-border: none;
+// $buttonbar-button-borderradius: 0;
+// $buttonbar-button-color: $maintextcolor;
+// $buttonbar-button-display: inline-block;
+// $buttonbar-button-fontsize: 14px;
+// $buttonbar-button-fontweight: 500;
+// $buttonbar-button-padding: 10px 10px;
+// $buttonbar-button-lineheight: 1;
+
+// $buttonbar-buttonicon-fontsize: 20px;
+
+// $buttonbar-button-hover-background: transparent;
+// $buttonbar-button-hover-border: none;
+// $buttonbar-button-hover-color: $primary;
+
+// $buttonbar-primarycta-float: right;
+// $buttonbar-primarycta-margin: 10px;
+
+// LIST VIEW
+
+// $vehicle-listing-background: #f3f3f3;
+// $vehicle-listing-border: none;
+// $vehicle-listing-borderradius: 3px;
+// $vehicle-listing-boxshadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+// $vehicle-listing-fontfamily: $maintextfont;
+
+// $vehicle-listing-special-banner-background: $primary;
+
+// GRID VIEW
+
+// $vehicle-grid-listing-4-columns: "(min-width: 1400px)";
+// $vehicle-grid-listing-3-columns: "(min-width: 1025px) and (max-width: 1399px)";
+// $vehicle-grid-listing-2-columns: "(min-width: 768px) and (max-width: 1024px)";
+// $vehicle-grid-listing-1-columns: "(max-width: 767px)";
+
+// $vehicle-grid-listing-background: $vehicle-listing-background;
+// $vehicle-grid-listing-border: $vehicle-listing-border;
+// $vehicle-grid-listing-borderradius: $vehicle-listing-borderradius;
+// $vehicle-grid-listing-boxshadow: $vehicle-listing-boxshadow;
+// $vehicle-grid-listing-fontfamily: $vehicle-listing-fontfamily;
+
+// $vehicle-grid-spacing: 10px;
+
+// $vehicle-grid-overlay-background: #fff;
+// $vehicle-grid-overlay-opacity: 0.95;
+// $vehicle-grid-overlay-fontsize: 18px;
+// $vehicle-grid-overlay-color: #333;
+// $vehicle-grid-overlay-hover-color: $primary;
+// $vehicle-grid-overlay-toggle-background: #f7f7f7;
+// $vehicle-grid-overlay-toggle-color: #333;
+// $vehicle-grid-overlay-toggle-hover-background: $primary;
+// $vehicle-grid-overlay-toggle-hover-color: #fff;
+
+
+// *************************************************************************************************
+//	VEHICLE DETAILS PAGE
+// *************************************************************************************************
+
+//**********************************************
+//  MAIN VARIABLES
+//**********************************************
+
+// $details-page-row-padding-top: 15px;
+// $details-page-row-padding-bottom: 15px;
+
+// $vdp-top-banner-bg: url(../images/vdpbg.jpg) no-repeat center center #eee;
+// $vdp-top-banner-bg-sm: url(../images/vdpbg.jpg) no-repeat center center #eee;
+// $vdp-top-banner-bg-xs: none #eee;
+// $vdp-top-banner-bg-size: cover;
+// $vdp-top-banner-bg-size-sm: cover;
+// $vdp-top-banner-padding: 20px 0 50px;
+// $vdp-top-banner-padding-sm: 0 0 0;
+// $vdp-top-banner-title-color: #111;
+// $vdp-top-banner-title-font: $heading-font;
+// $vdp-top-banner-title-font-weight: 800;
+// $vdp-top-banner-title-font-size: 24px;
+// $vdp-breadcrumbs-color: #111;
+// $vdp-breadcrumbs-link-color: $primary;
+
+//$details-page-condensed-gallery-background: #fff;
+//$details-page-condensed-gallery-border: 1px solid #e6e6e6;
+
+// $details-page-titlewrap-bg-sm: transparent;
+// $details-page-gallerywrap-bg-sm: transparent;
+// $details-page-gallerywrap-padding-sm: 0 0 30px;
+// $details-page-gallery-bg-sm: #fff;
+
+// $save-vehicles-saved-background: #4b4b4b;
+// $save-vehicles-saved-background-hover: darken(#4b4b4b,10%);
+// $save-vehicles-saved-color: #fff;
+// $save-vehicles-saved-color-hover: #fff;
+
+// $details-page-container: 1300px;
+// $details-page-container-max-1399: 1100px;
+// $details-page-container-max-1199: 940px;
+// $details-page-container-max-1024: 680px;
+// $details-page-container-max-767: 100%;
+
+//$vdp-print-bg: #000 !default;
+
+//**********************************************
+//  CTA BOX VARS
+//**********************************************
+
+// $vdp-ctabox-bg: #fff;
+// $vdp-ctabox-color: #111;
+// $vdp-ctabox-padding: 15px;
+// $vdp-ctabox-border: 1px solid #e6e6e6;
+// $vdp-ctabox-border-radius: 0;
+// $vdp-ctabox-box-shadow: none;
+// $vdp-ctabox-row-border-top: none;
+// $vdp-ctabox-offset-top-start: 200px;
+// $vdp-ctabox-offset-top-fixed: 30px;
+// $vdp-ctabox-main-cta-line-height: 20px;
+// $vdp-ctabox-main-cta-padding: 15px;
+// $vdp-ctabox-main-cta-font-size: 10px;
+
+// $vdp-ctabox-border-top: 5px solid $primary;
+
+
+// $ctabox-pricing-background: #f7f7f7;
+// $ctabox-price-label-transform: uppercase;
+// $ctabox-price-weight: 600;
+
+// $ctabox-pricing-bottom-bg: #f7f7f7;
+// $ctabox-pricing-bottom-border: none;
+
+// $mobile-header-height: 55px;
+
+//**********************************************
+//  URGENCY TEXT VARS
+//**********************************************
+
+//$vdp-urgency-icon-color: #777;
+//$vdp-urgency-text-color: #777;
+
+//**********************************************
+//  SHOPPING TOOLS
+//**********************************************
+
+// $vdp-shopping-tools-row-bg: none transparent;
+// $vdp-shopping-tools-icon-color: #333;
+// $vdp-shopping-tools-icon-hover-color: $secondary;
+// $vdp-shopping-tools-text-color: #757b81;
+// $vdp-shopping-tools-text-hover-color: $primaryhover;
+// $vdp-shopping-tools-width-xl: 11.11%;
+// $vdp-shopping-tools-width-lg: 12.5%;
+// $vdp-shopping-tools-width-xs: 24%;
+// $vdp-shopping-tools-padding: 0 15px;
+
+//**********************************************
+//  BASIC INFO
+//**********************************************
+
+// $vdp-basicinfo-row-bg: none transparent;
+// $vdp-basicinfo-row-color: $maintextcolor;
+// $vdp-basicinfo-wrapper-bg: none transparent;
+// $vdp-basicinfo-wrapper-padding: 20px 0 0;
+// $vdp-basicinfo-wrapper-border: none;
+// $vdp-basicinfo-wrapper-border-radius: 0;
+
+// $vdp-xs-basic-info-bg: none transparent;
+// $vdp-xs-basic-info-color: $maintextcolor;
+
+//**********************************************
+//  VEHICLE DESCRIPTION
+//**********************************************
+
+// $vdp-description-row-bg: none transparent;
+// $vdp-description-row-color: $maintextcolor;
+// $vdp-description-wrapper-bg: none transparent;
+// $vdp-description-wrapper-padding: 20px 0 0;
+// $vdp-description-wrapper-border: none;
+// $vdp-description-wrapper-border-radius: 0;
+
+// $vdp-xs-description-row-bg: none transparent;
+// $vdp-xs-description-row-color: $maintextcolor;
+
+//**********************************************
+//  RELATED VEHICLES
+//**********************************************
+
+// $vdp-related-row-bg: #eee;
+// $vdp-related-row-title-color: #111;
+// $vdp-related-row-padding: 15px 0;
+// $vdp-related-vehicle-bg: #fff;
+// $vdp-related-vehicle-padding: 0;
+// $vdp-related-vehicle-border: none;
+// $vdp-related-vehicle-border-radius: 0;
+// $vdp-related-vehicle-info-padding: 15px;
+// $vdp-related-vehicle-title-margin: 0 0 5px;
+// $vdp-related-vehicle-title-font: $heading-font;
+// $vdp-related-vehicle-title-font-size: 14px;
+// $vdp-related-vehicle-title-font-weight: normal;
+// $vdp-related-vehicle-price-font: $heading-font;
+// $vdp-related-vehicle-price-font-size: 21px;
+// $vdp-related-vehicle-price-font-weight: normal;
+// $vdp-related-vehicle-link-color: $maintextcolor;
+
+//**********************************************
+//  INFO ACCORDION
+//**********************************************
+
+// $vdp-info-accordion-panel-title-font: $heading-font;
+// $vdp-info-accordion-panel-title-font-size: 16px;
+// $vdp-info-accordion-panel-title-font-weight: normal;
+// $vdp-info-accordion-panel-title-text-transform: none;
+// $vdp-info-accordion-panel-title-padding: 10px 30px;
+// $vdp-info-accordion-panel-title-line-height: 30px;
+// $vdp-info-accordion-panel-title-expand-icon: '\f067';
+// $vdp-info-accordion-panel-title-collapse-icon: '\f068';
+
+// $vdp-info-accordion-panel-title-bg: #eee;
+// $vdp-info-accordion-panel-title-color: #333;
+
+// $vdp-info-accordion-active-panel-title-bg: $primary;
+// $vdp-info-accordion-active-panel-title-color: $primary-color;
+
+// $vdp-info-accordion-svg-color: $primary;
+// $vdp-info-accordion-svg-active: #fff;
+
+// $vdp-info-accordion-panel-body-bg: #fafafa;
+
+// *************************************************************************************************
+//	INSIDE PAGES
+// *************************************************************************************************
+
+// STAFF PAGE
+
+// $staffbutton-bg: #333;
+// $staffbutton-color: #fff;
+// $staffbox-bg: #f9f9f9;
+// $staffbox-border: 1px solid #ccc;
+
+
+// *************************************************************************************************
+//	PLUGINS
+// *************************************************************************************************
+
+// ALGOLIA SEARCH
+
+// $algolia-search-fontfamily: $maintextfont;
+// $algolia-search-fontsize: 14px;
+
+// $algolia-results-fontfamily: $maintextfont;
+// $algolia-results-fontsize: 14px;
+// $algolia-results-background: #fff;
+// $algolia-results-border: none;
+// $algolia-results-color: #333;
+// $algolia-results-padding: 10px 0px;
+// $algolia-results-label-color: #777;
+// $algolia-results-icon-color: #333;
+
+// $algolia-results-categorytitle-border: 1px solid #ccc;
+// $algolia-results-categorytitle-fontfamily: $maintextfont;
+// $algolia-results-categorytitle-fontsize: 16px;
+
+
+// LEASE CALCULATOR
+
+// $lease_offer_calc_button_color: $cta;
+
+// DIRECT COMPARISONS
+
+// $dc_font_size: em(30); // font size of vehicle title underneath vehicle
+// $dc_font:"Oswald", sans-serif;
+// $dc_max_width:1200px;
+// $dc_accent_color:#ff6633;
+
+/* Vehicle Section */
+// $dc_background_color: none;
+// $dc_model_title_color: $dc_accent_color;
+// $dc_background_image: '/wp-content/themes/DealerInspireCommonTheme/images/direct-comparison/bkg-direct-comparison.jpg'; /* 1920px x 500px rec. */
+// $dc_background_position: top center;
+// $dc_background_repeat: no-repeat;
+
+/* Selection Wrapper */
+// $dc_select_wrap_background: #282828;
+// $dc_select_wrap_border_top: none;
+// $dc_select_wrap_border_bottom: none;
+// $dc_select_wrap_compare_text:	#fff;
+// $dc_select_wrap_compare_text_font_family: $dc_font;
+
+/* Select element */
+// $dc_selection_color: #fff;
+// $dc_selection_background_color: #1e1e1e;
+// $dc_selection_background_color_opened: lighten(#1e1e1e, 10%);
+// $dc_selection_arrow: url('/wp-content/themes/DealerInspireCommonTheme/images/direct-comparison/select-arrow.png');
+// $dc_selection_arrow_position: 92% center;
+// $dc_selection_border: 1px solid $dc_accent_color;
+
+/* Select Dropdown */
+// $dc_select_dropdown_background: lighten(#1e1e1e, 10%);
+// $dc_select_dropdown_background_selected: #1e1e1e;
+// $dc_select_dropdown_color: #fff;
+
+/* Model CTA Buttons  */
+// $dc_cta_button_font_family: $dc_font;
+// $dc_cta_button_font_size: 16;
+// $dc_cta_button_border_radius: 5px;
+// $dc_cta_button_border: none;
+// $dc_cta_button_background: $dc_accent_color;
+// $dc_cta_button_color: #fff;
+// $dc_cta_button_hover_border: none;
+// $dc_cta_button_hover_background: $dc_accent_color;
+// $dc_cta_button_hover_color: #fff;
+
+
+// *************************************************************************************************
+//	MISC
+// *************************************************************************************************
+
+// $noDelay: 00ms;
+// $fastSpeedTime: 500ms;
+
+// $smartpathIconWidth-Desktop: 25px;
+// $smartpathIconWidth-Tablet: 40px;
+// $smartpathIconWidth-Mobile: 40px;
+
+// $smartpathIconHeight-Desktop: 70px;
+// $smartpathIconHeight-Tablet: 70px;
+// $smartpathIconHeight-Mobile: 55px;

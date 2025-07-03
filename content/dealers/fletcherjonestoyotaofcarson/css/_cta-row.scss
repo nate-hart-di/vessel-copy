@@ -1,0 +1,133 @@
+// *************************************************************************************************
+//	CTA, Style 6
+// *************************************************************************************************
+
+/*
+	Building Blocks
+	Confluence: https://carsenterprise.atlassian.net/wiki/spaces/WDT/pages/342852650/CTA+Style+6
+
+	Directions:
+		- Find/replace "ctaRow" with "ctaRow"
+		- Edit as needed
+*/
+
+.ctaRow {
+  padding: 20px 0;
+	.box {
+		position: relative;
+		width: 100%;
+		@include flexbox();
+		@include justify-content(center);
+		@include align-items(flex-start);
+    a:hover {
+      text-decoration: none;
+    }
+
+		&__image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			background-color: rgba(#111111, 0.3);
+      &:after {
+        content: " ";
+        z-index: 10;
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      &:hover:after {
+        @include transition(all 450ms ease);
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+
+		&__info {
+			text-align: center;
+			color: #fff;
+			z-index: 1;
+      position: relative;
+      &--title {
+        margin-top: 30px;
+        h3 {
+          font-weight: 300;
+          @include responsive-font(4vw, 22px, 24px);
+          text-decoration: none;
+        }
+      }
+		}
+
+		.button {
+			margin: 0px;
+		}
+
+		&.small {
+			height: 180px;
+			margin-bottom: 15px;
+
+		}
+
+		&.wide {
+			height: 180px;
+		}
+
+		&.big {
+			margin-top: 15px;
+			height: 180px;
+		}
+	}
+
+	// ********** Media Queries ********** //
+
+	// Tablet +
+	@include breakpoint(sm) {
+		.box {
+      &.small {
+        height: 250px;
+      }
+  
+      &.wide {
+        height: 250px;
+      }
+  
+      &.big {
+        margin-top: 0px;
+        height: 515px;
+      }
+		}
+	}
+
+	// Desktop (medium) +
+	@include breakpoint(md) {
+		.box {
+			&:hover {
+				.box__info {
+					&--button {
+						@include transform(scaleY(1));
+						opacity: 1;
+					}
+				}
+			}
+			&__info {
+				&--button {
+					@include transition(all 450ms ease);
+					opacity: 0;
+					@include transform(scaleY(0));
+				}
+			}
+		}
+	}
+}

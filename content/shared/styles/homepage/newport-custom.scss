@@ -1,0 +1,23 @@
+$primary: #0059a8;
+$secondary: #313130;
+$heading-font: 'corposregular', sans-serif;
+$maintextcolor: #333;
+$maintextfont: 'Montserrat', sans-serif;
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import '../../../shared/styles/header/fj_header_v2';
+#header.menu-top .header-top .logo img{
+	max-height: 70px !important;
+}
+
+@media screen and (max-width: 1024px) {
+	.menu-top .mobile-header-top .logo{
+		img {
+	    	display: none;
+	    	max-height: 50px;
+		}
+		#vessel-header-img{
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.header__language-toggle{
+	margin: 2px 0px;
+	display: inline-block;
+	height: 30px;
+	line-height: 25px;
+	padding: 0 5px !important;
+	span, a{
+		font-size: 12px;
+	}
+}
+
+.bar-item--audio-eye svg {
+	fill: #000!important;
+}
+
+body.blog,body.category {
+	div.post-content {
+		a.moretag,a.moretag:hover {
+			background-color: #000;
+			color: #fff;
+			font-family: inherit;
+		}
+	}
+	.featuredContent {
+		.cta a {
+			background-color: transparent;
+			color: #fff;
+			border: 1px solid #fff;
+		}
+	}
+}

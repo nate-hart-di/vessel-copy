@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+$fj-drive: true !default;
+$vdp-lease-finance: false !default;
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
+@import '../../../shared/styles/radioactive';
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+
+// *************************************************************************************************
+//  VEHICLE RESULTS PAGE
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-listview';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-gridview';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-topbar';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-sidebar';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-mobile';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/resultspage-common-elements';
+
+#results-page td.gridview .vehicle.grid-view  {
+  padding-bottom: 0;
+  display: flex !important;
+  flex-direction: column;
+  .vehicle-quick-stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-grow: 1;
+  }
+  .button-bar {
+      position: relative;
+      height: auto;
+  }
+  .vehicle-price {
+      display: flex;
+      flex-direction: column;
+      .price-block.bottom-text {
+          flex-grow: 1;
+      }
+  }
+}
+
+@include breakpoint (xs) {
+  #results-page {
+    .vehicle {
+      .button-bar .primary-cta {
+          width: 100%;
+          a {
+            width: 94%!important;
+          }
+      }
+
+    }
+  }
+}

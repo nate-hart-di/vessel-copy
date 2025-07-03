@@ -1,0 +1,288 @@
+#results-page {
+	td.gridview {
+		.spacer {
+			display: none;
+		}
+		.hidden-grid-view {
+			display: none !important;
+		}
+		.results-container {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		.vehicle-wrap {
+			padding: 15px;
+			width: 25%;
+			float: left;
+			@media (max-width: 1560px) {
+				width: 33.3333%;
+			}
+			@media (max-width: 1199px) {
+				width: 50%;
+			}
+			@media (max-width: 1024px) {
+				width: 33.3333%;
+			}
+			@media (max-width: 979px) {
+				width: 50%;
+			}
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+		}
+		.vehicle {
+			&.list-view {
+				display: none;
+			}
+			&.grid-view {
+				display: inline-block !important;
+				position: relative;
+				width: 100%;
+				float: left;
+				background: none #fff;
+				border: none;
+				.vehicle-menu-overlay {
+					position: absolute;
+					height: 0%;
+					width: 100%;
+					background: rgba(255,255,255,0.9);
+					z-index: 10;
+					overflow: hidden;
+					@include transition(height 0.25s ease);
+					.vehicle-menu {
+					  padding: 50px;
+					  a {
+						  display: block;
+						  font-size: 18px;
+						  line-height: 2em;
+						  color: $maintextcolor;
+						  text-decoration: none;
+						  cursor: pointer;
+						  i {
+							  margin-right: 15px;
+						  }
+						  &:hover {
+							  color: $primary;
+						  }
+					  }
+					}
+				}
+				.vehicle-menu-toggle {
+				  position: absolute;
+				  top: 10px;
+				  right: 10px;
+				  z-index: 11;
+				  background: #f7f7f7;
+				  width: 30px;
+				  height: 30px;
+				  line-height: 30px;
+				  text-align: center;
+				  @include border-radius(15px);
+				  @include transition(all 0.25s ease);
+				  box-shadow: 0 1px 4px rgba(0,0,0,0.37);
+				  font-size: 14px;
+				  i.open-button {
+					  display: inline-block;
+				  }
+				  i.close-button {
+					  display: none;
+				  }
+				 }
+				 &.menu-open {
+					.vehicle-menu-overlay {
+						height: 100%;	
+					}
+				  .vehicle-menu-toggle {
+					  i.open-button {
+						  display: none;
+					  }
+					  i.close-button {
+						  display: inline-block;
+					  }
+				  }
+				}
+				.vehicle-image {
+					padding: 0;
+					width: 100%;
+					max-width: 100%;
+					margin: 0;
+					float: none;
+					img {
+						width: 100%;
+					}
+					.sold-overlay {
+						top: 0;
+						left: 0;
+						/*width: 100% !important;*/
+					}
+				}
+				.vehicle-quick-stats {
+				  background: #f3f3f3;
+				  padding: 10px;
+					h2 {
+						font-size: 16px;
+						margin-top: 0;
+						font-weight: normal;
+						line-height: 20px;
+						height: 32px;
+					}
+					.price{
+						font-weight: bold;
+						&.finance {
+							font-weight: 100;
+						}
+						&.bottom-text {
+							font-size: 10px !important;
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}	
+	}	
+
+	/***********************************
+	RESULTS PAGE WITHOUT SIDEBAR FILTERS
+	***********************************/
+/*	&.without-sidebar-filters {
+
+		.resultsPagination {
+			background: none;
+			padding: 0;
+			margin: 0;
+			margin-top: 30px;
+			form {
+				margin: 0;
+			}
+			#top-filters {
+				background: #dddddd;
+				padding: 8px 10px 0 10px;
+				text-align: left;
+				width: 100%;
+				border: 1px solid #ccc;
+				height: 65px;
+				@include box-sizing(border-box);
+				.top-filter {
+					display: inline-block;
+					max-width: 15% !important;
+					margin-right: 1%;
+					select, .bootstrap-select {
+						width: 100%;
+						margin-bottom: 0;
+					}
+				}
+				.button {
+					max-width: 22%;
+					float: right;
+					font-size: 15px;
+					padding: 5px 15px;
+					@include box-sizing(border-box);
+				}
+			}
+			.advanced-filters {
+				display: none;
+				padding: 20px 0;
+				background: #eee;
+				text-align: left;
+				.column {
+					font-family: 'Open Sans', arial, sans-serif;
+					width: 30%;
+					vertical-align: top;
+					@include box-sizing(border-box);
+					padding: 0 20px;
+					float: left;
+					display: block;
+					span {
+						&.column-label {
+							display: inline-block;
+							color: #999;
+							font-size: 24px;
+							margin-bottom: 15px;
+						}
+					}
+					div {
+						select {
+							float: left;
+							margin: 10px 2% 0 0;
+							width: 48%;
+							min-width: 160px;
+						}
+						&.resultsCount {
+							display: inline-block;
+							h4 {
+								display: inline-block;
+							}
+							#reset_filters {
+								margin-left: 0px;
+							}
+						}
+					}
+					.bootstrap-select {
+						width: 100%;
+						float: left;
+						margin-right: 10px;
+					}
+				}
+				.column.vehicle-info {
+					width: 40%;
+				}
+				.column.recently-modified {
+					width: 25%;
+					.location-filter-container {
+						margin-top: 20px;
+						span {
+							&.column-label {
+								display: block;
+							}
+						}
+					}
+				}
+				.column.advanced-search {
+					width: 35%;
+					label {
+						display: block;
+					}
+					input {
+						margin-bottom: 10px;
+						border-radius: 4px;
+						border: 1px solid #ccc;
+						padding: 0 10px;
+						line-height: 40px;
+						height: 40px;
+						line-height: 15px\9;
+						width: 100%;
+					}
+				}
+				&.expanded {
+					display: block;
+				}
+			}
+		}
+		.paging {
+			float: none;
+			margin: 10px auto;
+			text-align: left;
+			height: 30px;
+			.sorting-options {
+				float: right;
+				select {
+					-webkit-appearance:none;
+				    -moz-appearance:none;
+				    text-indent: 0.01px;
+					text-overflow: '';
+				    appearance:none;
+				    cursor:pointer;
+					background: url(/wp-content/themes/DealerInspireCommonTheme/images/caret.png) no-repeat right center #fff;
+					padding: 0px 10px;
+					line-height: 30px;
+					height: 30px;
+					font-size: 14px;
+					border: 1px solid #ccc;
+				}
+			}
+			.button {
+				margin-right: 5px;
+			}
+		}
+	} */
+}

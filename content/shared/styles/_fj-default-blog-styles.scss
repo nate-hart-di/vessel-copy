@@ -1,0 +1,28 @@
+.single-post {
+  .entry{
+    font-size:16px;
+    line-height:1.5;
+  }
+
+  span.caption{
+    font-size:12px;
+    color:#999;
+  }
+
+  a.link{
+    font-size:20px;
+    color:#ef9624;
+
+  }
+
+  a.link:hover{
+    font-size:20px;
+    color:#ef9624;
+
+  }
+
+  a.link:active{
+    font-size:16px;
+    color:#ef9624;
+  }
+}

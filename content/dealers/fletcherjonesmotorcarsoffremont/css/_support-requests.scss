@@ -1,0 +1,261 @@
+// *************************************************************************************************
+//	Support request & third-party related styles
+// *************************************************************************************************
+
+//52250 - Overriding bold styles in Prem Options on VDP
+#vehicleDetails {
+    .premium-options-list {
+        h3 {
+            font-weight: 300 !important;
+        }
+        p {
+            font-weight: 500 !important;
+        }
+    }
+}
+
+
+//54699 Custom styles for overview vehicle number
+#di-page-composer {
+	#vehicle-count-overview-number {
+			font-size: 29px;
+			color: white;
+			margin-bottom: 25px;
+			font-family: 'Playfair Display', serif;
+			text-align: center;
+			text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+			-moz-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+			-webkit-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+			#count-number {
+					font-size: 50px;
+					font-weight: 700;
+					font-style: italic;
+			}
+	}
+}
+
+//55573 - Customizing service menu
+.service-menu-right {
+  display: block;
+  float: right;
+  margin-top: -292px;
+  margin-right: 15%;
+}
+.header-dropdown .header-dropdown-container {
+  .menu-image-sidebar img {
+    max-width: 100%;
+  }
+  .menu-image-sidebar {
+    width: 44%;
+  }
+  .menu-navigation {
+    width: 56%;
+  }
+}
+//end 55573
+
+// #00062688 - TEMP holiday cta button style homepage
+
+#videoOverlay .videooverlay-content .cta-buttons .primary-button {
+    background: red;
+    padding: 13px 5px !important;
+    border-radius: 0;
+
+    &:hover {
+        background: #bb0117;
+    }
+}
+
+// #00062688 - END
+
+
+.specialCoupon .specialRight .modelName{
+    color: #0059a8 !important;
+    font-size: 21px !important;
+}
+
+.specialCoupon .specialRight .description p{
+    font-size: 14px !important;
+}
+
+a.view-disclaimer-link{
+    color: #a7a7a7 !important;
+    font-size: 11px !important;
+    font-style: italic !important;
+            
+}
+
+//62845
+.page-vehicle-results-page {
+    a.button.inquire {
+        width: 100% !important;
+    }
+    .hide-the-main-cta a.fancy.button-form.button.cta-button {
+        display: none;
+    }
+}
+.page-vehicle-display-page {
+    .hide-the-main-cta .maincta-row.ctabox-row {
+        display: none;
+    }
+    div#inquire-button a {
+        width: 100% !important;
+        margin-top: -10px;
+        display: none;
+    }
+}
+//end 62845
+@media(max-width: 767px) {
+    #videobanner {
+        background-position: 50% 50%;
+    }
+}
+
+// #00068477 - New Menu Model Carousel
+
+/*
+#menu_modelRow {
+    display: none;
+    position: relative;
+    background-color: #eeeeee;
+
+    &.open {
+        display: block;
+        -webkit-transition: ease all .5s;
+        -moz-transition: ease all .5s;
+        -o-transition: ease all .5s;
+        transition: ease all .5s;
+    }
+
+    .model_nav {
+        background-color: #0059a8;
+        height: 35px;
+
+        ul.nav-tabs {
+            height: 35px;
+            border-bottom: 0;
+            line-height: 35px;
+
+            li {
+                button {
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #5a87b7;
+                    height: 35px;
+                    line-height: 35px;
+                    border: none;
+                    background: transparent;
+                    text-transform: uppercase;
+                    outline: 0 !important;
+                    padding: 0 15px;
+
+                    &:hover {
+                        color: #fff;
+                        border: none;
+                    }
+                }
+
+                &.active button {
+                    color: #fff;
+                    background: transparent;
+                    border: none;
+                }
+            }
+        }     
+    }
+
+    #sedanModels,
+    #coupeModels,
+    #suvModels,
+    #convertModels,
+    #hybridModels {
+        width: 100%;
+        padding: 15px 30px 0;
+        position: relative;
+        z-index: 10;
+
+        .label-wrap {
+            margin-top: 25px
+        }
+
+        .model-name {
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+
+    .owl-controls {
+        .owl-prev {
+            position: absolute;
+            left: -20px;
+            top: 38%;
+            width: 50px;
+            height: 54px;
+            background: url(/wp-content/themes/DealerInspireDealerTheme/images/left-arrow.png) no-repeat center transparent;
+            background-size: contain;
+            z-index: 500;
+        }
+        .owl-next {
+            position: absolute;
+            right: -20px;
+            top: 38%;
+            width: 50px;
+            height: 50px;
+            background: url(/wp-content/themes/DealerInspireDealerTheme/images/right-arrow.png) no-repeat center transparent;
+            background-size: contain;
+            z-index: 500;
+        }
+    }
+}
+*/
+
+.vdp-print-view .logo {
+    background-color: #fff;
+    text-align: center;
+}
+
+#results-page .unlock-offer {
+    background: #d01e1c;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    a {
+        color: #fff !important;
+        text-decoration: none;
+    } 
+  }
+  #vehicleDetails .unlock-offer {
+    display: block;
+    width: 100% !important;
+    background: #d01e1c;
+  }
+
+  #header .search-anything-toggle .tt-dropdown-menu .inventorySearchResult .invPrice { 
+    display: none;
+}
+
+#results-page .vehicle .vehicle-price a.button {
+    width: 100% !important;
+    max-width: unset !important;
+}
+
+#results-page .advanced-pricing-stack.courtesy-vehicles-stack.vertical-stack{
+    text-align: center;    
+}
+
+.page-vehicle-display-page #ctabox-pricing{
+   
+    a.ctabox-price {
+        float: unset;
+        width: 100% !important;
+    }
+}
+
+#ff_link img:not(:first-child){
+    display:none;
+}
+
+.page-id-38749 .video-button {
+    width: 100%;
+    text-align: center;
+}

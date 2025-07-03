@@ -1,0 +1,302 @@
+/*************************************************************************************************
+	VARIABLES
+*************************************************************************************************/
+
+$primary: #0059a8;													/* site main color */
+$primaryhover: darken($primary,10%);
+
+$secondary: #222;												/* site accent color */
+$secondaryhover: darken($secondary,10%);
+
+$cta: #ed8b00;
+$ctahover: darken($cta,10%);
+$cta-font: 14px/30px; 
+
+$maintextcolor: #333;											/* default text color across the site */
+
+// TEXT STYLING ***************
+
+$maintextcolor: #333;
+$maintextfont: 'Lato', sans-serif;
+
+$mainlinkcolor: $primary;
+
+$heading-font: 'Lato', sans-serif;
+
+$h1-font-size: 30px;
+$h1-font-weight: 300;
+$h1-font-family: $heading-font;
+
+$h2-font-size: 24px;
+$h2-font-weight: 300;
+$h2-font-family: $heading-font;
+
+$h3-font-size: 18px;
+$h3-font-weight: 500;
+$h3-font-family: $heading-font;
+
+$h4-font-size: 16px;
+$h4-font-weight: 500;
+$h4-font-family: $heading-font;
+
+// BUTTON STYLING *************
+
+// $button-bg: #ccc;
+// $button-bghover: darken(#ccc,10%);
+// $button-border: none;
+// $button-color: #333;
+// $button-colorhover: #fff;
+// $button-fontfamily: $heading-font;
+// $button-fontweight: 400;
+// $button-fontsize: 14px;
+// $button-lineheight: 30px;
+$button-radius: 0px;
+// $button-shadow: none;
+// $button-padding: 0 20px;
+// $button-textshadow: none;
+// $button-transform: uppercase;
+// $button-margins: 0 10px 10px 0;
+
+// $outlinebutton-border: 2px solid $primary;
+// $outlinebutton-color: #ffffff;
+// $outlinebutton-hoverbg: $primary;
+// $outlinebutton-hoverborder: 2px solid $primary;
+// $outlinebutton-hovercolor: #fff;
+
+// $smallbutton-weight: normal;
+// $smallbutton-size: 12px;
+// $smallbutton-padding: 0px 10px;
+
+// $largebutton-weight: normal;
+// $largebutton-size: 24px;
+// $largebutton-padding: 10px 30px;
+
+// $darkbutton-bg: #333;
+// $darkbutton-color: #fff;
+
+$cta-color: #fff;												/* text color for colored buttons */
+$primary-color: #fff;
+$secondary-color: #fff;
+
+// HEADER **********************
+
+$header-vertical-background: #111;
+$header-vertical-color: #fff;
+$header-vertical-width: 250px;
+$header-vertical-shadow: 0 0 10px #000;
+$header-vertical-position: left;
+$header-vertical-logo-padding: 20px;
+$header-vertical-logo-background: transparent;
+
+$tablet-header-background: transparent;
+$mobile-header-background: #111;
+
+$hamburger-color: #fff;
+$hamburger-background: $primary;
+
+$phoneicon-color: #fff;
+$phonenumber-color: #fff;
+
+$directionsicon-color: #fff;
+$directionstext-color: #fff;
+
+$hoursbarbg: #222;
+$hoursbarcolor: #aaa;
+$hoursbarweight: 600;
+
+$sociallink-color: #fff;
+$sociallink-backgroundcolor: #333;
+$sociallink-fontsize: 18px;
+$sociallink-width: 30px;
+$sociallink-height: 30px;
+$sociallink-line-height: $sociallink-height;
+$sociallink-margin: 0 0 0 3px;
+$sociallink-radius: 0px;
+$sociallink-border: none;
+
+$sociallink-hover-color: #fff;
+$sociallink-hover-backgroundcolor: $primary;
+
+// NAVIGATION ******************
+
+$navbar-height: 50px;
+$navbar-lineheight: 50px;
+$navbar-float: none;
+
+$navbar-menuitem-padding: 0 15px;
+$navbar-menuitem-textalign: left;
+$navbar-menuitem-color: #aaa;
+$navbar-menuitem-border-bottom: 1px solid #1c1c1c;
+$navbar-menuitem-hover-background: rgba($primary, 0.7);
+$navbar-menuitem-hover-color: #fff;
+$navbar-menuitem-font: $heading-font;
+$navbar-menuitem-fontsize: 18px;
+$navbar-menuitem-fontweight: 400;
+$navbar-menuitem-texttransform: none;
+
+$navbar-current-background:  $navbar-menuitem-hover-background;
+$navbar-current-color: $navbar-menuitem-hover-color;
+
+$navbar-submenu-background: rgba($primary, 0.9);
+$navbar-submenu-border: none;
+
+$navbar-submenuitem-height: $navbar-height;
+$navbar-submenuitem-textalign: left;
+$navbar-submenuitem-border-bottom: 1px solid transparent;
+$navbar-submenuitem-lineheight: $navbar-submenuitem-height;
+$navbar-submenuitem-color: #fff;
+$navbar-submenuitem-hover-background: $primary;
+$navbar-submenuitem-hover-color: $navbar-menuitem-hover-color;
+
+$navbar-megamenu-width: 600px;
+$navbar-megamenu-leftposition: 0;
+$navbar-megamenu-column-width: 33.3333%;
+$navbar-megamenu-column-padding: 0;
+$navbar-megamenu-column-font-size: 12px;
+$navbar-megamenu-subheading-background: rgba($primary,0.5);
+$navbar-megamenu-subheading-borderbottom: none;
+$navbar-megamenu-subheading-fontweight: 400;
+$navbar-megamenu-subheading-fontsize: 12px;
+$navbar-megamenu-subheading-color: #fff;
+
+// OFF CANVAS MENU *************
+
+$offcanvasflyout-bg: #333;
+$offcanvas-menuitem-height: 50px;
+$offcanvas-menuitem-lineheight: 20px;
+$offcanvas-menuitem-padding: 15px;
+$offcanvas-menuitem-textalign: left;
+$offcanvas-menuitem-background: #222;
+$offcanvas-menuitem-color: #fff;
+$offcanvas-menuitem-border-bottom: 1px solid #333;
+$offcanvas-menuitem-hover-background: #1c1c1c;
+$offcanvas-menuitem-hover-color: #fff;
+$offcanvas-menuitem-font: 'Lato', sans-serif;
+$offcanvas-menuitem-fontsize: 13px;
+$offcanvas-menuitem-fontweight: normal;
+$offcanvas-menuitem-texttransform: none;
+
+$offcanvas-current-background: $offcanvas-menuitem-hover-background;
+$offcanvas-current-color: $offcanvas-menuitem-hover-color;
+
+$offcanvas-submenu-background: #444;
+$offcanvas-submenuitem-height: 50px;
+$offcanvas-submenuitem-textalign: left;
+$offcanvas-submenuitem-border-bottom: 1px solid #333;
+$offcanvas-submenuitem-lineheight: 20px;
+$offcanvas-submenuitem-color: $offcanvas-menuitem-color;
+$offcanvas-submenuitem-hover-background: #1c1c1c;
+$offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
+
+// FOOTER **********************
+
+$footer-background: #0c0c0c;
+$footer-padding: 20px 0;
+$footer-color: #777;
+$footer-font-size: 12px;
+$footer-font-family: 'Lato', sans-serif;
+
+$footer-left-margin: 0;
+$footer-left-logo-width: 200px;
+
+$footer-middle-text-align: center;
+$footer-middle-text-transform: uppercase;
+$footer-copyright-margin: 0;
+$footer-menu-color: #aaa;
+$footer-menu-margin: 0 5px;
+$footer-menu-font-size: 12px;
+$footer-menu-text-transform: uppercase;
+
+$footer-right-margin: 0;
+$footer-right-logo-width: 150px;
+
+// PRE FOOTER *****************
+
+$prefooter-background: #fff;
+$prefooter-padding: 50px 0 70px;
+
+$prefooter-color: $maintextcolor;
+$prefooter-font: 'Open Sans', sans-serif;
+
+$prefooter-listtitle-color: $prefooter-color;
+$prefooter-listtitle-underline: 1px solid $prefooter-color;
+
+$prefooter-listitem-color: $prefooter-color;
+
+// VRP ************************
+
+// $vrpcta: $cta;													/* results page colors */
+// $vrpcta-border: 2px solid darken($vrpcta, 10%);
+// $vrpctahover: $ctahover;
+// $vrpcta-font: $cta-font;
+// $vrpcta-color: $cta-color;
+
+// LEASE OFFER CALCULATOR ***************
+$lease_offer_calc_button_color: $cta;
+
+// VDP ************************
+
+// HOTWHEELS VARS ****************************************************
+$vdp-cta-bg: $cta;
+$vdp-top-banner-bg: url(../images/vdpbg.jpg);
+
+$vdp-ctabox-bg: #fff;
+$vdp-ctabox-color: #111;
+$vdp-ctabox-border: 1px solid #ddd;
+$vdp-ctabox-row-border-top: 1px solid #eee;
+$vdp-ctabox-main-cta-line-height: normal;
+$vdp-ctabox-main-cta-padding: 15px 5px;
+$vdp-ctabox-main-cta-font-size: 22px;
+
+$vdp-urgency-icon-color: #aaa;
+
+$vdp-basicinfo-wrapper-bg: #eee;
+$vdp-basicinfo-wrapper-padding: 30px;
+
+// STAFF PAGE *****************
+
+$staffbutton-bg: #333;
+$staffbutton-color: #fff;
+$staffbox-bg: #f9f9f9;
+$staffbox-border: 1px solid #ccc;
+
+// MISC ***********************
+
+$noDelay: 00ms;
+$fastSpeedTime: 500ms;
+
+$button-toolbar-button-background: $primary;
+$button-toolbar-saved-vehicle-button-background: darken(red, 10%);
+$button-toolbar-saved-vehicle-button-background-hover: red;
+
+// FJ Custom Vars
+$tablet-header-vertical-width: 220px;
+$menu-overlay: false;
+$fj-drive: false;
+
+// ALGOLIA SEARCH BAR
+
+$algolia-search-background: #fff !default;
+$algolia-search-border: none !default;
+$algolia-search-border-radius: 5px !default;
+$algolia-search-color: #222 !default;
+$algolia-search-fontfamily: $maintextfont !default;
+$algolia-search-fontsize: 16px !default;
+$algolia-search-height: 30px !default;
+$algolia-search-line-height: 20px !default;
+$algolia-search-margin: 10px 0 0 !default;
+$algolia-search-padding: 10px !default;
+$algolia-search-width: 100% !default;
+
+$algolia-results-fontfamily: $maintextfont;
+$algolia-results-fontsize: 14px;
+$algolia-results-background: #fff;
+$algolia-results-border: none;
+$algolia-results-color: #333;
+$algolia-results-padding: 10px 0px;
+$algolia-results-label-color: #777;
+$algolia-results-icon-color: #333;
+
+$algolia-results-categorytitle-border: 1px solid #ccc;
+$algolia-results-categorytitle-fontfamily: $maintextfont;
+$algolia-results-categorytitle-fontsize: 16px;

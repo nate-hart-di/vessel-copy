@@ -1,0 +1,88 @@
+/*
+	workaround for this Jira: https://carsenterprise.atlassian.net/browse/SDWEB-8147
+	SF-01304156
+*/
+$no_results_ctas: (
+	"fj-g-class-page": "g-class-cta",
+	"fj-gla-page": "gla-cta",
+	"fj-glb-page": "glb-cta",
+	"fj-glc-coupe-page": "glc-coupe-cta",
+	"fj-glc-suv-page": "glc-suv-cta",
+	"fj-gle-coupe-page": "gle-coupe-cta",
+	"fj-gle-suv-page": "gle-suv-cta",
+	"fj-gls-suv-page": "gls-suv-cta",
+	"fj-a-class-page": "a-class-cta",
+	"fj-c-class-page": "c-class-cta",
+	"fj-e-class-page": "e-class-cta",
+	"fj-e-class-wagon-page": "e-class-wagon-cta",
+	"fj-maybach-page": "maybach-cta",
+	"fj-s-class-page": "s-class-cta",
+	"fj-gt-roadster-page": "gt-roadster-cta",
+	"fj-gt-coupe-page": "gt-coupe-cta",
+	"fj-c-class-coupe-page": "c-class-coupe-cta",
+	"fj-cla-coupe-page": "cla-coupe-cta",
+	"fj-cls-coupe-page": "cls-coupe-cta",
+	"fj-e-class-coupe-page": "e-class-coupe-cta",
+	"fj-sl-class-page": "sl-class-cta",
+	"fj-c-class-cab-page": "c-class-cab-cta",
+	"fj-e-class-cab-page": "e-class-cab-cta",
+	"fj-glc-2023-page": "glc-2023-cta",
+	"fj-eqe-page": "eqe-cta",
+	"fj-eqs-suv-page": "eqs-suv-cta",
+	"fj-eqs-page": "eqs-cta",
+	"fj-amg-eqs-page": "amg-eqs-cta",
+	"fj-eqb-page": "eqb-cta",
+	"fj-gla-suv-page": "gla-suv-cta",
+	"fj-cla-2023-page": "cla-2023-cta",
+	"fj-cls-2023-page": "cls-2023-cta",
+	"fj-e-class-2023-page": "e-class-2023-cta",
+	"fj-eqb-2023-page": "eqb-2023-cta",
+	"fj-eqs-2023-page": "eqs-2023-cta",
+	"fj-2023-amg-eqs-page": "2023-amg-eqs-cta",
+	"fj-glb-2023-page": "glb-2023-cta",
+	"fj-s-class-2023-page": "s-class-2023-cta",
+	"fj-c-class-2023-page":"fj-c-class-2023-cta",
+	"fj-c-class-coupe-2023-page":"fj-c-class-coupe-2023-cta",
+	"fj-amg-eqs-2023-page":"fj-amg-eqs-2023-cta",
+	"fj-gle-suv-2023-page":"fj-gle-suv-2023-cta",
+	"fj-amg-gle-2023-page":"fj-amg-gle-2023-cta",
+	"fj-amg-gle-suv-2023-page":"fj-amg-gle-suv-2023-cta",
+	"fj-g-class-2023-page":"fj-g-class-2023-cta",
+	"fj-maybach-2023-page":"fj-maybach-2023-cta",
+	"fj-sl-2023-page":"fj-sl-2023-cta",
+	"fj-eqe-2023-page":"fj-eqe-2023-cta",
+	"fj-gls-2023-page":"fj-gls-2023-cta"
+);
+
+
+.lightning-vehicle-results-page{
+	#no-results-form-wrapper{
+		display: none;
+	}
+	#no-results-ctas{
+		.stat-button-link{
+			&.fj-primary{
+				display: none;
+			}
+			&.default{
+				display: block;
+			}
+		}
+	}
+	@each $page, $cta in $no_results_ctas {
+		&.#{$page}{
+			#no-results-ctas{
+				.#{$cta}.stat-button-link{
+					display: flex;
+				}
+				.stat-button-link{
+					display: none;
+				}
+				.default{
+					display: none;
+				}
+			}		
+		}
+	}
+}
+

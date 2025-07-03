@@ -1,0 +1,152 @@
+#results-page {	
+	.fluid-filters {
+		background: none;
+		padding: 0;
+		margin: 0;
+		margin-top: 10px;
+		form {
+			margin: 0;
+		}
+
+		// Top bar with select dropdown buttons
+		
+		#top-filters {
+			background: #dddddd;
+			padding: 8px 10px 0 10px;
+			text-align: left;
+			width: 100%;
+			border: 1px solid #ccc;
+			height: 65px;
+			.top-filter {
+				display: inline-block;
+				max-width: 15% !important;
+				margin-right: 1%;
+				select, .bootstrap-select {
+					width: 100%;
+					margin-bottom: 0;
+				}
+			}
+			.button {
+				max-width: 22%;
+				float: right;
+				font-size: 15px;
+				padding: 5px 15px;
+			}
+		}
+		
+		// Expandable advanced filters area below top bar
+		
+		.advanced-filters {
+			display: none;
+			padding: 20px 0;
+			background: #eee;
+			text-align: left;
+			.column {
+				font-family: 'Open Sans', arial, sans-serif;
+				width: 30%;
+				vertical-align: top;
+				padding: 0 20px;
+				float: left;
+				display: block;
+				span {
+					&.column-label {
+						display: inline-block;
+						color: #999;
+						font-size: 24px;
+						margin-bottom: 15px;
+					}
+				}
+				div {
+					select {
+						float: left;
+						margin: 10px 2% 0 0;
+						width: 48%;
+						min-width: 160px;
+					}
+					&.resultsCount {
+						display: inline-block;
+						h4 {
+							display: inline-block;
+						}
+						#reset_filters {
+							margin-left: 0px;
+						}
+					}
+				}
+				.bootstrap-select {
+					width: 100%;
+					float: left;
+					margin-right: 10px;
+				}
+			}
+			.column.vehicle-info {
+				width: 40%;
+			}
+			.column.recently-modified {
+				width: 25%;
+				.location-filter-container {
+					margin-top: 20px;
+					span {
+						&.column-label {
+							display: block;
+						}
+					}
+				}
+			}
+			.column.advanced-search {
+				width: 35%;
+				label {
+					display: block;
+				}
+				input {
+					margin-bottom: 10px;
+					border-radius: 4px;
+					border: 1px solid #ccc;
+					padding: 0 10px;
+					line-height: 40px;
+					height: 40px;
+					line-height: 15px\9;
+					width: 100%;
+				}
+			}
+			&.expanded {
+				display: block;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+/* &.without-sidebar-filters {
+
+		.paging {
+			float: none;
+			margin: 10px auto;
+			text-align: left;
+			height: 30px;
+			.sorting-options {
+				float: right;
+				select {
+					-webkit-appearance:none;
+				    -moz-appearance:none;
+				    text-indent: 0.01px;
+					text-overflow: '';
+				    appearance:none;
+				    cursor:pointer;
+					background: url(/wp-content/themes/DealerInspireCommonTheme/images/caret.png) no-repeat right center #fff;
+					padding: 0px 10px;
+					line-height: 30px;
+					height: 30px;
+					font-size: 14px;
+					border: 1px solid #ccc;
+				}
+			}
+			.button {
+				margin-right: 5px;
+			}
+		}
+	} */

@@ -1,0 +1,43 @@
+@media (min-width:1025px) {
+  .home #footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    .footer-middle {
+      ul, .copyright, .di-version {
+        display: inline-block;
+        font-weight: 300;
+      }
+      .di-version {
+        a {
+          font-weight: 500;
+        }
+      }
+      ul li a {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+#footer {
+  #white-sprinter-logo,#white-amg-logo {
+    max-width: 115px;
+    padding: 15px 5px 0;
+  }
+  .footer-middle {
+    margin: 20px 0 0 0;
+  }
+  .footer-right {
+    .social {
+      margin: 20px 5px 0 0;
+    }
+  }
+  @media (max-width:1024px) {
+    .footer-middle {
+      margin: 0;
+    }
+  }
+}

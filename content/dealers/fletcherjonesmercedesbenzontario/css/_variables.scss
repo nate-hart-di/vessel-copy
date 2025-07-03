@@ -1,0 +1,361 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+$primary: #0059a8; // site main color
+$primaryhover: darken($primary, 10%);
+$secondary: #313130; // site accent color
+$secondaryhover: darken($secondary, 10%);
+$cta: #00a651;
+$ctahover: darken($cta, 10%);
+$cta-font: 14px/30px;
+// *************************************************************************************************
+//	TEXT STYLING
+// *************************************************************************************************
+$maintextcolor: #333;
+$maintextfont: 'Montserat', sans-serif;
+//$mainlinkcolor: $primary;
+$heading-font: 'corposregular',
+sans-serif;
+$personalizer-font: 'corposregular',
+sans-serif;
+$mercedes-font: 'corposregular',
+sans-serif;
+$h1-font-size: 40px;
+$h1-font-weight: 800;
+//$h1-font-family: $heading-font;
+$h2-font-size: 34px;
+$h2-font-weight: 700;
+//$h2-font-family: $heading-font;
+$h3-font-size: 24px;
+$h3-font-weight: 500;
+//$h3-font-family: $heading-font;
+$h4-font-size: 18px;
+$h4-font-weight: 400;
+// $h4-font-family: $heading-font;
+// *************************************************************************************************
+//	BUTTON STYLING
+// *************************************************************************************************
+// BASE BUTTONS
+// $button-bg: #ccc !default;
+// $button-bghover: darken(#ccc,10%) !default;
+// $button-border: none !default;
+// $button-color: #333 !default;
+// $button-colorhover: #fff !default;
+$button-fontfamily: $maintextfont;
+// $button-fontweight: normal !default;
+// $button-fontsize: 14px !default;
+// $button-lineheight: 1 !default;
+$button-radius: 0;
+// $button-shadow: none !default;
+// $button-padding: 9px 20px 8px !default;
+// $button-textshadow: none !default;
+// $button-transform: uppercase !default;
+// $button-margins: 0 10px 10px 0 !default;
+// BUTTON TEXT COLORS
+$cta-color: #fff;
+$primary-color: #fff;
+$secondary-color: #fff;
+// PRIMARY BUTTONS
+// $primarybutton-bg: $primary;
+// $primarybutton-color: $primary-color;
+// $primarybutton-border: none;
+// $primarybutton-hover-bg: darken($primary, 10%);
+// $primarybutton-hover-color: $primary-color;
+// $primarybutton-hover-border: none;
+// SECONDARY BUTTONS
+// $secondarybutton-bg: $secondary;
+// $secondarybutton-color: $secondary-color;
+// $secondarybutton-border: none;
+// $secondarybutton-hover-bg: darken($secondary, 10%);
+// $secondarybutton-hover-color: $secondary-color;
+// $secondarybutton-hover-border: none;
+// CTA BUTTONS
+// $ctabutton-bg: $cta;
+// $ctabutton-color: $cta-color;
+// $ctabutton-border: none;
+// $ctabutton-hover-bg: darken($cta, 10%);
+// $ctabutton-hover-color: $cta-color;
+// $ctabutton-hover-border: none;
+// OUTLINE BUTTONS
+// $outlinebutton-border: 2px solid $primary;
+// $outlinebutton-color: #ffffff;
+// $outlinebutton-hoverbg: $primary;
+// $outlinebutton-hoverborder: 2px solid $primary;
+// $outlinebutton-hovercolor: $primary;
+// MISC BUTTON SETTINGS
+// $smallbutton-weight: normal;
+// $smallbutton-size: 12px;
+// $smallbutton-padding: 0px 10px;
+// $largebutton-weight: normal;
+// $largebutton-size: 24px;
+// $largebutton-padding: 10px 30px;
+$darkbutton-bg: #000;
+// $darkbutton-color: #fff;
+// SOCIAL ICONS ****************
+$sociallink-color: #111;
+$sociallink-backgroundcolor: none;
+$sociallink-fontsize: 18px;
+$sociallink-width: 30px;
+$sociallink-height: 30px;
+// $sociallink-line-height: $sociallink-height;
+$sociallink-margin: 10px 3px 0 0;
+$sociallink-radius: 50%;
+$sociallink-border: 1px solid #111;
+$sociallink-hover-color: #fff;
+$sociallink-hover-backgroundcolor: $primary;
+// *************************************************************************************************
+//	HEADER
+// *************************************************************************************************
+$tablet-header-background: #fff;
+$mobile-header-background: #fff;
+
+$hamburger-color: #434343;
+$hamburger-background: #fff;
+
+$phoneicon-color: #434343;
+//$phonenumber-color: #fff;
+
+$directionsicon-color: #434343;
+$directionstext-color: #fff;
+$header-vertical-width: 200px;
+
+// MOBILE ELEMENTS ****************
+// $hoursbarbg: $secondary;
+// $hoursbarcolor: #fff;
+// *************************************************************************************************
+//	NAVIGATION
+// *************************************************************************************************
+$navbar-height: 70px;
+$navbar-lineheight: 70px;
+$navbar-float: none;
+$navbar-menuitem-padding: 0 12px;
+// $navbar-menuitem-textalign: left;
+$navbar-menuitem-color: #111;
+// $navbar-menuitem-border-bottom: none;
+$navbar-menuitem-hover-background: #fff;
+$navbar-menuitem-hover-color: #111;
+$navbar-menuitem-font: $maintextfont;
+// $navbar-menuitem-fontsize: 14px;
+$navbar-menuitem-fontweight: 500;
+$navbar-menuitem-texttransform: uppercase;
+// $navbar-current-background:  $navbar-menuitem-hover-background;
+// $navbar-current-color: $navbar-menuitem-hover-color;
+$navbar-submenu-background: #fff;
+// $navbar-submenu-border: none;
+$navbar-submenuitem-height: 45px;
+// $navbar-submenuitem-textalign: left;
+// $navbar-submenuitem-border-bottom: $navbar-menuitem-border-bottom;
+// $navbar-submenuitem-lineheight: $navbar-submenuitem-height;
+$navbar-submenuitem-color: #111;
+$navbar-submenuitem-hover-background: #fff;
+$navbar-submenuitem-hover-color: #111;
+// $navbar-megamenu-width: 400px;
+// $navbar-megamenu-leftposition: 0;
+// $navbar-megamenu-column-width: 50%;
+// $navbar-megamenu-column-padding: 0;
+// $navbar-megamenu-column-font-size: 12px;
+// $navbar-megamenu-subheading-background: #202020;
+// $navbar-megamenu-subheading-borderbottom: none;
+// $navbar-megamenu-subheading-fontweight: 600;
+// $navbar-megamenu-subheading-fontsize: $navbar-menuitem-fontsize;
+// $navbar-megamenu-subheading-color: $primary;
+// OFF CANVAS MENU
+$offcanvasflyout-bg: #fff;
+// $offcanvas-menuitem-height: 40px;
+// $offcanvas-menuitem-lineheight: 20px;
+// $offcanvas-menuitem-padding: 10px 15px;
+// $offcanvas-menuitem-textalign: left;
+$offcanvas-menuitem-background: #fff;
+$offcanvas-menuitem-color: #111;
+$offcanvas-menuitem-border-bottom: 1px solid #e1e1e1;
+$offcanvas-menuitem-hover-background: #eee;
+$offcanvas-menuitem-hover-color: $primary;
+$offcanvas-menuitem-font: $maintextfont;
+$offcanvas-menuitem-fontsize: 12px;
+$offcanvas-menuitem-fontweight: 300;
+// $offcanvas-menuitem-texttransform: none;
+$offcanvas-current-background: #eee;
+// $offcanvas-current-color: $offcanvas-menuitem-hover-color;
+$offcanvas-submenu-background: #eee;
+// $offcanvas-submenuitem-height: 40px;
+// $offcanvas-submenuitem-textalign: left;
+$offcanvas-submenuitem-border-bottom: 1px solid #e1e1e1;
+// $offcanvas-submenuitem-lineheight: 20px;
+// $offcanvas-submenuitem-color: $offcanvas-menuitem-color;
+$offcanvas-submenuitem-hover-background: #eee;
+// $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
+// *************************************************************************************************
+//	FOOTER
+// *************************************************************************************************
+$footer-background: #111;
+$footer-padding: 10px 0;
+$footer-color: #fff;
+$footer-font-size: 12px;
+$footer-font-family: $maintextfont;
+$footer-left-margin: 0 0 0 0;
+$footer-left-logo-width: 250px;
+$footer-middle-text-align: center;
+$footer-middle-text-transform: none;
+$footer-copyright-margin: 0 0 0;
+$footer-menu-color: #fff;
+// $footer-menu-margin: 0 5px;
+$footer-menu-font-size: 10px;
+// $footer-menu-text-transform: uppercase;
+$footer-right-margin: 0 0 0 0;
+// $footer-right-logo-width: 200px;
+// PRE FOOTER ******************
+// $prefooter-background: #fff;
+// $prefooter-padding: 50px 0 70px;
+// $prefooter-color: $maintextcolor;
+// $prefooter-font: 'Open Sans', sans-serif;
+// $prefooter-listtitle-color: $prefooter-color;
+// $prefooter-listtitle-underline: 1px solid $prefooter-color;
+// $prefooter-listitem-color: $prefooter-color;
+// *************************************************************************************************
+//	VEHICLE RESULTS PAGE
+// *************************************************************************************************
+// $vrpcta: $cta;																		// results page colors
+// $vrpcta-border: 2px solid darken($vrpcta, 10%);
+// $vrpctahover: $ctahover;
+// $vrpcta-font: $cta-font;
+// $vrpcta-color: $cta-color;
+// BUTTON BAR
+// $buttonbar-background: #fff;
+// $buttonbar-border: none;
+// $buttonbar-height: 50px;
+// $buttonbar-button-textalign: left;
+// $buttonbar-button-background: transparent;
+// $buttonbar-button-border: none;
+// $buttonbar-button-borderradius: 0;
+// $buttonbar-button-color: $maintextcolor;
+// $buttonbar-button-display: inline-block;
+// $buttonbar-button-fontsize: 14px;
+// $buttonbar-button-fontweight: 500;
+// $buttonbar-button-padding: 10px 10px;
+// $buttonbar-button-lineheight: 1;
+// $buttonbar-buttonicon-fontsize: 20px;
+// $buttonbar-button-hover-background: transparent;
+// $buttonbar-button-hover-border: none;
+// $buttonbar-button-hover-color: $primary;
+// $buttonbar-primarycta-float: right;
+// $buttonbar-primarycta-margin: 10px;
+// LIST VIEW
+// $vehicle-listing-background: #f3f3f3;
+// $vehicle-listing-border: none;
+// $vehicle-listing-borderradius: 3px;
+// $vehicle-listing-boxshadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+$vehicle-listing-fontfamily: $maintextfont;
+// $vehicle-listing-special-banner-background: $primary;
+// GRID VIEW
+// $vehicle-grid-listing-4-columns: "(min-width: 1400px)";
+// $vehicle-grid-listing-3-columns: "(min-width: 1025px) and (max-width: 1399px)";
+// $vehicle-grid-listing-2-columns: "(min-width: 768px) and (max-width: 1024px)";
+// $vehicle-grid-listing-1-columns: "(max-width: 767px)";
+// $vehicle-grid-listing-background: $vehicle-listing-background;
+// $vehicle-grid-listing-border: $vehicle-listing-border;
+// $vehicle-grid-listing-borderradius: $vehicle-listing-borderradius;
+// $vehicle-grid-listing-boxshadow: $vehicle-listing-boxshadow;
+// $vehicle-grid-listing-fontfamily: $vehicle-listing-fontfamily;
+// $vehicle-grid-spacing: 10px;
+// $vehicle-grid-overlay-background: #fff;
+// $vehicle-grid-overlay-opacity: 0.95;
+// $vehicle-grid-overlay-fontsize: 18px;
+// $vehicle-grid-overlay-color: #333;
+// $vehicle-grid-overlay-hover-color: $primary;
+// $vehicle-grid-overlay-toggle-background: #f7f7f7;
+// $vehicle-grid-overlay-toggle-color: #333;
+// $vehicle-grid-overlay-toggle-hover-background: $primary;
+// $vehicle-grid-overlay-toggle-hover-color: #fff;
+// *************************************************************************************************
+//	VEHICLE DETAILS PAGE
+// *************************************************************************************************
+// $vdpcta: $cta;																		// details page colors
+// $vdpcta-border: 2px solid darken($vdpcta, 10%);
+// $vdpctahover: $ctahover;
+// $vdpcta-font: $cta-font;
+// $vdpcta-color: $cta-color;
+// $vdpRealPriceColor: green;												// main price color
+// $vdp-tabs: $primary;															// accent color for details tabs
+// $vdp_shopping_tool_background : #eee; // shopping tool background
+// $vdp_shopping_tool_background_hover : $primary; // shopping tool background on hover
+// *************************************************************************************************
+//	INSIDE PAGES
+// *************************************************************************************************
+// STAFF PAGE
+// $staffbutton-bg: #333;
+// $staffbutton-color: #fff;
+// $staffbox-bg: #f9f9f9;
+// $staffbox-border: 1px solid #ccc;
+// *************************************************************************************************
+//	PLUGINS
+// *************************************************************************************************
+// ALGOLIA SEARCH
+// $algolia-search-fontfamily: $maintextfont;
+// $algolia-search-fontsize: 14px;
+// $algolia-results-fontfamily: $maintextfont;
+// $algolia-results-fontsize: 14px;
+// $algolia-results-background: #fff;
+// $algolia-results-border: none;
+// $algolia-results-color: #333;
+// $algolia-results-padding: 10px 0px;
+// $algolia-results-label-color: #777;
+// $algolia-results-icon-color: #333;
+// $algolia-results-categorytitle-border: 1px solid #ccc;
+// $algolia-results-categorytitle-fontfamily: $maintextfont;
+// $algolia-results-categorytitle-fontsize: 16px;
+// LEASE CALCULATOR
+// $lease_offer_calc_button_color: $cta;
+// DIRECT COMPARISONS
+// $dc_font_size: em(30); // font size of vehicle title underneath vehicle
+// $dc_font:"Oswald", sans-serif;
+// $dc_max_width:1200px;
+// $dc_accent_color:#ff6633;
+
+/* Vehicle Section */
+
+// $dc_background_color: none;
+// $dc_model_title_color: $dc_accent_color;
+// $dc_background_image: '/wp-content/themes/DealerInspireCommonTheme/images/direct-comparison/bkg-direct-comparison.jpg'; /* 1920px x 500px rec. */
+// $dc_background_position: top center;
+// $dc_background_repeat: no-repeat;
+
+/* Selection Wrapper */
+
+// $dc_select_wrap_background: #282828;
+// $dc_select_wrap_border_top: none;
+// $dc_select_wrap_border_bottom: none;
+// $dc_select_wrap_compare_text:	#fff;
+// $dc_select_wrap_compare_text_font_family: $dc_font;
+
+/* Select element */
+
+// $dc_selection_color: #fff;
+// $dc_selection_background_color: #1e1e1e;
+// $dc_selection_background_color_opened: lighten(#1e1e1e, 10%);
+// $dc_selection_arrow: url('/wp-content/themes/DealerInspireCommonTheme/images/direct-comparison/select-arrow.png');
+// $dc_selection_arrow_position: 92% center;
+// $dc_selection_border: 1px solid $dc_accent_color;
+
+/* Select Dropdown */
+
+// $dc_select_dropdown_background: lighten(#1e1e1e, 10%);
+// $dc_select_dropdown_background_selected: #1e1e1e;
+// $dc_select_dropdown_color: #fff;
+
+/* Model CTA Buttons  */
+
+// $dc_cta_button_font_family: $dc_font;
+// $dc_cta_button_font_size: 16;
+// $dc_cta_button_border_radius: 5px;
+// $dc_cta_button_border: none;
+// $dc_cta_button_background: $dc_accent_color;
+// $dc_cta_button_color: #fff;
+// $dc_cta_button_hover_border: none;
+// $dc_cta_button_hover_background: $dc_accent_color;
+// $dc_cta_button_hover_color: #fff;
+// *************************************************************************************************
+//	MISC
+// *************************************************************************************************
+// $noDelay: 00ms;
+// $fastSpeedTime: 500ms;

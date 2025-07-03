@@ -1,0 +1,16 @@
+#whitewrap{
+  .button, .button.cta-button{
+  	&.orange-button{
+  		background: $orange;
+  		color: #fff;
+  	}
+  	&.red-button{
+  		background: $red;
+  		color: #fff;
+  	}
+    &.black-button{
+      background: #000;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,546 @@
+@import "variables.scss";
+
+
+@mixin modal-spans() {  
+  display:block;
+  font-size:2rem;
+  margin:15px auto;
+  text-align:center;
+}
+
+// *************************************************************************************************
+//	IMPORT STYLES
+// *************************************************************************************************
+
+ @import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-pagebuilderstyles";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-videogallery";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/material-design';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/specials/offers-list';
+
+// *************************************************************************************************
+//	LOCAL STYLES
+// *************************************************************************************************
+body{
+  position: static !important;
+}
+@include pz-font-defaults($color:#fff, $weight:300, $line-height:1.2, $font-family:"Lato") {
+  text-shadow:0px 0px 10px #000;
+  * {
+    font-family:inherit;
+  }
+}
+
+.service-banner-overlay h2 {
+  color:#fff;
+}
+
+@media (min-width: 1024px) {
+	.contentcontainer {
+		margin-top: 170px;
+		margin-bottom: 100px;
+	}
+	#detailspage .maincardetails {
+		padding: 160px 0 50px;
+	}
+}
+// Compliance fix breadcrumbs back button to capitalize DI-30890
+span.link-back a.back-button {
+	text-transform: capitalize;
+}
+// **************************
+//  HEADER
+// **************************
+
+#header {
+	#header-top {
+		height:80px;
+    position: relative;
+		a.menu-toggle {
+			line-height:80px;
+		}
+		.logo {
+			padding:5px 0 0;
+		}
+	}
+	.dealer-hours {
+    text-align:right;
+  	> a {
+    	color:#fff;
+    	cursor:pointer;
+    	font-size:18px;
+    	line-height:80px;
+  	}
+	}
+	.hours-info-right {
+  	padding:5px 0 0;
+  	overflow:hidden;
+  	> a {
+    	margin:0;
+    	padding:0;
+    	line-height:33px;
+  	}
+	}
+}
+
+.sub-header-info {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+	background: #fff;
+	background: rgba(255,255,255,.85);
+	color: #222;
+	font-weight:bold;
+	height: 55px;
+	line-height: 24px;
+  width: 100%;
+  padding: 0 15px;
+	.dealer-phone {
+    @include flexbox;
+    @include justify-content(flex-start);
+    @include flex-grow(2);
+    .phone-item{
+      padding: 0 5px;
+    }
+		a {
+			color: #fff;
+		}
+	}
+	.dealer-address {
+    @include flex-grow(2);
+		a {
+			display:block;
+      color:#222;
+		}
+	}
+  #mini-header &{
+    width: calc( 100% + 30px);
+  }
+}
+
+#open-hours {
+  > div > span {
+    @include modal-spans();
+  }
+  .open {
+    text-transform: lowercase;
+  }
+  .department {
+    display:none;
+  }
+  .hours {
+    color:$primary;
+    display:block;
+  }
+}
+
+// **************************
+//  HOURS MODAL
+// **************************
+.modal {
+	&-dialog {
+		.modal-content {
+			.modal-body {
+				.dynamic-hours {
+					.open {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+// **************************
+//  HOMEPAGE
+// **************************
+
+#videobanner {
+  background-position:center bottom;
+	clear:both;
+	@media(max-width: 767px) {
+		min-height: 400px;
+	}
+	#videooverlay {
+		h1,h2 {
+			text-shadow: 0px 0px 10px #000;
+		}
+		@media(max-width: 767px) {
+			padding: 75px 0 0;
+			width: 95%;
+			margin: 0 auto;
+		}
+		.videooverlay-content {
+			@media(max-width: 1024px) {
+				max-width: 700px;
+			}
+  		.service-button {
+    		background: rgba(0,0,0,.7);
+  		}
+  		.service-button a {
+    		border-color:$cta;
+    		color:#fff;
+        line-height: 40px;
+        padding:0;
+  		  &:hover {
+    		  background:$cta;
+  			  border-color: $cta;
+  			  color: #ffffff !important;
+  		  }
+  		}
+  		.service-hours {
+    		background:#222;
+    		background:rgba(0,0,0,.7);
+    		margin-top: 0px;
+    		padding: 9px 0;
+  		}
+  		h3 {
+    		color:#fff;
+    		text-shadow:0px 0px 10px #000,
+    		  0px 0px 10px #000;
+  		}
+    }
+	}
+	.modfull {
+  	min-height:600px;
+	}
+}
+
+.search-fields .bootstrap-select {
+  background:#222;
+  background: rgba(0,0,0,.7);
+  &:hover {
+    border-color: $cta;
+  }
+  button.selectpicker {
+    padding: 5px 25px 3px 10px;
+  }
+}
+
+#homepage-advanced-search {
+  button.advanced-search-btn {
+    background: $primary;
+    &:hover {
+      background: darken($primary, 10%);
+    }
+  }
+  form#searchform {
+    background:rgba(0,0,0,.7);
+  }
+}
+
+.search-fields .bootstrap-select {
+  width:27% !important;
+}
+
+#storyRow {
+  background-position: center bottom;
+  clear:both;
+  overflow: hidden;
+  position: relative;
+  .fletcher {
+    height: 100%;
+    position: absolute;
+    right:15px;
+    img {
+      bottom: 0px;
+      position: absolute;
+    }
+  }
+}
+
+#directionsRow {
+	.getdirectionstext {
+  	background: rgba(255,255,255,.6);
+  	border-radius: 6px 6px 0px 0px;
+  	-moz-border-radius: 6px 6px 0px 0px;
+  	-webkit-border-radius: 6px 6px 0px 0px;
+		margin-left: -320px;
+		top: -65px;
+		width: 640px;
+	}
+}
+
+#searchtoggle {
+	background: $cta;
+	padding: 5px 10px 0 30px;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	position: fixed;
+	top: 190px;
+	left: 0px;
+	width: 220px;
+	height: 40px;
+	z-index: 999;
+	cursor: pointer;
+	@include transition(all 0.5s ease);
+	text-transform: uppercase;
+	i {
+		font-size: 20px;
+		float: right;
+		line-height: 30px;
+		padding-right: 5px;
+	}
+	img {
+		height: 20px;
+		margin-top: 5px;
+		vertical-align: top;
+		float: right;
+	}
+	&.minimized {
+		left: -180px;
+	}
+}
+
+.why-buy-from-us{
+	padding: 40px 0 20px 0;
+	max-width: 1100px;
+	margin: 0 auto;
+	
+	.why-buy-content{
+		text-align: center;
+	} // .why-buy-content
+
+	img{
+		margin-top: 4px;
+	}	
+
+} // .why-buy-from-us
+
+#searchbox {
+	position: fixed;
+	top: 175px;
+	left: -100%;
+	width: 100%;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000E6,endColorstr=#000000E6)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000E6,endColorstr=#000000E6);
+	zoom: 1;
+	background: #111111\9;
+	z-index: 998;
+	padding: 50px 0 70px;
+	@include transition(all 0.5s ease);
+	color: #fff;
+	&.open {
+		left: 0%;
+	}
+	.searchwrap {
+		max-width: 800px;
+		margin: 0 auto;
+		h3 {
+			color: #fff;
+		}
+		// .button {
+		//	 height: 50px;
+		//	 padding: 10px;
+		//	 line-height: 30px;
+		//	 @include border-radius(0px);
+		//	 vertical-align: top;
+		//	 margin: 0;
+		//	 width: 19% !important;
+		//	 float: left;
+		//	 font-size: 18px;
+		// }
+		.button {
+			min-width: 18%;
+			margin: 0 1% 10px;
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	.contentcontainer {
+		margin-top: 120px;
+	}
+	.social a {
+		height: 25px;
+		width: 25px;
+		i {
+			height: 23px;
+			width: 23px;
+			line-height: 23px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.sub-header-info {
+  	.dealer-phone,
+  	.dealer-address {
+  		font-size: 13px;
+    }
+	}
+	
+	#videobanner .modfull {
+		min-height: 600px;
+	}
+	#searchtoggle {
+		top: 140px;	
+	}
+	#searchbox {
+		top: 130px;
+	}
+	#side-toolbar {
+		ul.toolbar {
+			li {
+				height: 40px;
+				width: 40px;
+				span.tool-label {
+					line-height: 20px;
+					padding: 10px 65px 10px 15px;
+					font-size: 10px;
+					width: 250px;
+				}
+				i {
+					height: 40px;
+					width: 40px;
+					line-height: 40px;
+					font-size: 18px;
+				}
+				&:hover {
+					span.tool-label {
+						left: -200px;
+					}
+				}
+			}
+		}
+	}
+	.toolbar-overlays .overlay-container {
+		top: 160px;
+		left: 50%;
+		margin-left: -320px;
+		width: 640px;
+	}
+}
+
+@media (max-width: 767px) {
+  // add scrolling to conact footer tab
+  .mobile-tab-content-inside {
+    overflow:scroll;
+  }
+  .mobile-tab.vehicles-saved {
+    background:$button-toolbar-saved-vehicle-button-background;
+  }
+  #mobile-phone-picker .modal-body {
+    > span {
+      @include modal-spans();
+      a {
+        color:$primary;
+        display:block;
+      }
+    }
+  }
+  #mobile-directions-picker .modal-body {
+    > span {
+      @include modal-spans();
+    }
+  }
+  #directionsRow .getdirectionstext {
+    display:block;
+  }
+	#videobanner .modfull {
+		min-height: 300px;
+	}
+	#mobile-payments {
+		padding: 15px;
+		background: $primary;
+		color: #fff;
+		float: left;
+		width: 100%;
+		h2 {
+			margin-top: 0;
+			font-size: 20px;
+		}
+		.search-fields select {
+			width: 48%;
+			color: #333;
+			float: left;
+			margin: 0 1% 10px;
+		}
+	}
+	
+	#directionsRow .getdirectionstext {
+  	background:none;
+  	line-height:normal;
+		margin: 20px 0;
+		top:0px;
+		width: auto;
+	}
+	#homepage-advanced-search {
+  	.search-fields {
+    	margin:0 auto;
+    	max-width:350px;
+    	width:80%;
+    	select {
+      	&.bodytype{
+        	width:48%;
+      	}
+      	&.year {
+        	width:48%;
+      	}
+      	&.model {
+        	width:98%;
+      	}
+    	}
+  	}
+  	button.advanced-search-btn {
+    	background:$primary;
+    	float:none;
+    	margin:0 auto;
+    	width:98%;
+  	}
+	}
+	#footer {
+  	padding-bottom:40px;
+	}
+}
+
+/*
+ *	FOOTER
+ */
+#footer {
+	.footer-middle .copyright {
+		text-transform: capitalize;
+	}
+	.footer-right img {
+	  width:230px;
+	}
+	.footer-left img {
+		width:70px;
+	}
+}
+
+#google_translate_element{
+  position: absolute;
+  right: 20px;
+  top: 135px;
+  z-index: 99;
+  @media screen and (max-width:767px){
+    top: 85px;
+  }
+}
+
+// some js is setting position to relative and causing display issues
+body.page-vehicle-results-page{
+  position: static !important;
+}
+
+@media screen and (max-width:767px){
+  #openhoursbar {
+    .open:after {
+      display: none;
+    }
+  }
+}
+
+@import 'support-requests';
+
+/* Algolia styles */
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/_default-algolia.scss';

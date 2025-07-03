@@ -1,0 +1,459 @@
+.popover-container {
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+// FOR HOLIDAY PROMO
+.mobile-timer {
+  color: #fff;
+  >span {
+    font-size: 12px;
+    display: inline-block;
+    width: 20%;
+    >span {
+      font-size: 30px;
+      display: block;
+    }
+  }
+}
+
+.flip-clock-label {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1026px) {
+  .blog .posts-wrap.clearfix,
+  .archive .posts-wrap.clearfix {
+    padding-top: 10%;
+  }
+}
+
+.page-vehicle-display-page #header {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+// 00042339 - cta buttons on the Homepage
+#videooverlay {
+  .videooverlay-content {
+    .cta-buttons {
+      .button {
+        width: 31.33% !important;
+        padding: 13px 20px;
+        @media(max-width: 767px) {
+          width: 100% !important;
+        }
+      }
+      @media(max-width: 767px) {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// 00042339  - End
+
+@media (max-width:560px) {
+  img#pink-ribbon-oct {
+    display: none;
+  }
+}
+
+#results-page .vehicle .button-bar .button-bar-item {
+  a {
+    margin: 10px 0;
+  }
+  &.pre-approved-button,
+  &.test-drive-button {
+    a.primary-button {
+      background: $primary;
+      color: #fff;
+      font-size: 12px;
+      min-width: initial;
+      padding: 5px;
+      margin-right: 3px;
+    }
+  }
+  &.test-drive-button {
+    margin-right: 0;
+  }
+  &.primary-cta a {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
+
+#results-page .grid-view-results-wrapper .vehicle .button-bar .button-bar-item {
+  &.pre-approved-button,
+  &.test-drive-button {
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  #results-page .vehicle .button-bar .button-bar-item {
+    &.pre-approved-button,
+    &.test-drive-button {
+      a.primary-button {
+        display: block;
+      }
+    }
+    a.primary-button,
+    a.cta-button {
+      .button-text {
+        display: block;
+      }
+    }
+  }
+}
+
+@media(max-width: 450px) {
+  #results-page .vehicle .button-bar .button-bar-item {
+    width: 100%;
+    text-align: center;
+    a.primary-button,
+    a.cta-button {
+      width: 90% !important;
+      margin: 0 auto 10px !important;
+    }
+    &.first-button {
+      text-align: left;
+      margin-left: 15px;
+    }
+    &.pre-approved-button,
+    &.test-drive-button {
+      display: block;
+    }
+    &.primary-cta {
+      float: none;
+    }
+  }
+}
+
+#results-page .vehicle .button-bar .primary-cta a {
+  font-size: 12px;
+}
+
+#results-page .vehicle .vehicle-price a {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+//56796
+@media (min-width:768px) {
+  .october-banner {
+    /* margin: 60px;*/
+  }
+  .videooverlay-buttons .col-sm-8.col-sm-offset-2.event {
+    margin-top: 95px;
+  }
+}
+
+//end 56796
+//**START 61890**//
+#menu-overlay .overlay-container .overlay-content .vehicle-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+//**END 61890**//
+//62845
+.page-vehicle-results-page {
+  .hide-the-main-cta a.fancy.button-form.button.cta-button {
+    display: none !important;
+  }
+}
+
+.page-vehicle-display-page {
+  .hide-the-main-cta .maincta-row.ctabox-row {
+    display: none;
+  }
+  div#inquire-button a {
+    width: 100% !important;
+    margin-top: -10px;
+    display: none;
+  }
+}
+
+//end 62845
+.comments ul.post-comments .comment-num {
+  display: none;
+}
+
+// Why FJ button change to red
+#videoOverlay .videooverlay-content .cta-buttons .button.primary-button {
+  background: red;
+}
+
+//REF #75582 Custom button class
+.button-radioactive {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background: red;
+  border-radius: 5px;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset !important;
+  -webkit-animation-name: greenPulse;
+  animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.button-radioactive:hover {
+  background: #ff2929;
+}
+
+@-webkit-keyframes greenPulse {
+  from {
+    background-color: red;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    background-color: #ff2929;
+    -webkit-box-shadow: 0 0 50px #ff2929;
+  }
+  to {
+    background-color: red;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+//end #75582
+
+
+.dealer-tagline h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: white !important;
+}
+
+.dealer-tagline {
+  margin-top: 30px;
+}
+
+#menu-overlay .overlay-container .overlay-content #about-overlay .overlay-buttons .button,
+#menu-overlay .overlay-container .overlay-content #used-overlay .overlay-buttons .button {
+  width: 45% !important;
+  margin: 0 6px;
+}
+
+@media (max-width: 767px) {
+  #videooverlay .cta-buttons a {
+    width: 100% !important;
+    display: block;
+  }
+  #videooverlay {
+    margin: 15px 0;
+  }
+}
+
+//84645
+#results-page {
+  div#tradepending-container {
+    width: max-content;
+    margin-bottom: 10px;
+    .tp-col {
+      width: max-content;
+    }
+  }
+}
+
+//end 84545
+.info-box.dealer-4 {
+  width: 1050px !important;
+  left: -415px !important;
+}
+
+.coming-soon {
+  font-weight: bold;
+}
+
+#menu-overlay .overlay-container .overlay-content .overlay-buttons.new .button {
+  width: 23% !important;
+}
+
+#results-page .vehicle .button-bar .button-bar-item.primary-cta a {
+  width: 136px !important;
+  background: green;
+}
+
+#footer {
+  .porsche-footer-logo {
+    margin-left: 15px;
+  }
+  .audi-footer-logo {
+    margin-left: 20px;
+  }
+  .give-way {
+    padding: 0;
+    @media (max-width: 767px) {
+      margin: 10px auto;
+      padding: 5px;
+    }
+    ul {
+      list-style: none;
+      li {
+        display: inline;
+      }
+    }
+  }
+}
+
+.main-cta-container {
+  margin-top: 20px;
+}
+
+#videobanner #videooverlay {
+  .cta-buttons {
+    @media(max-width: 767px) {
+      h1 {
+        font-size: 22px;
+      }
+    }
+    a {
+      padding: 13px 20px;
+      font-weight: 700;
+    }
+  }
+  h1 {
+    color: black;
+    text-shadow: none;
+  }
+  span {
+    color: black;
+  }
+}
+
+#norcal-overlay,
+#socal-overlay,
+#both-new-overlay,
+#both-used-overlay,
+#about-overlay {
+  .vehicle-card {
+    width: 40%;
+    display: inline-block;
+    margin: 0 2.5%;
+    img {
+      margin-bottom: 2.5%;
+      display: block;
+    }
+    a {
+      font-size: 18px;
+      background: black;
+      font-weight: 700;
+    }
+  }
+}
+
+#menu-overlay .overlay-container {
+  background-color: white !important;
+}
+
+.col-md-4.col-sm-12.give-way.text-right {
+  text-align: center;
+}
+
+.col-md-4.col-sm-12.give-way {
+  text-align: center;
+}
+
+#results-page td.gridview .vehicle.grid-view .vehicle-quick-stats {
+  margin-bottom: 60px;
+}
+
+#menu-overlay .overlay-container .overlay-content #about-overlay .vehicle-image img {
+  width: 92%;
+  margin-bottom: 20px;
+}
+
+//Floating social icons in footer
+#floating-social-icons {
+  position: fixed;
+  z-index: 99999;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  border-radius: 6px;
+  background: black;
+  overflow: hidden;
+  @media(max-width: 767px) {
+    bottom: 50px;
+    right: 10px;
+  }
+
+  .floating-social-icon {
+    text-align: center;
+    padding: 3px 10px;
+    &:hover {
+      background-color: #1E1E1E;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+    a {
+      font-size: 18px;
+      i {
+       color: white;
+      }
+    }
+  }
+}
+
+
+#vessel-header-img {
+  max-width: 55px;
+}
+
+#mobile-overlay-buttons {
+  .mobile-overlay-cta {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-dealer {
+    h3 {
+      color: $primary;
+    }
+    .address {
+      color: black;
+      margin: 5px 0;
+    }
+    .sales {
+      color: black;
+      margin: 5px 0;
+    }
+    .service {
+      color: black;
+      margin: 5px 0;
+    }
+    .view-link {
+      color: black;
+      font-weight: bold;
+    }
+
+  }
+  #loc-mercedes-benz img,
+  #loc-audi img,
+  #loc-porsche img {
+    display: none;
+  }
+}
+
+//01077479
+@media (min-width:1025px){
+  .home #footer{
+    position:relative;
+  }
+}
+//end - 01077479

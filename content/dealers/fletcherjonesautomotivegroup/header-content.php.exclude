@@ -1,0 +1,85 @@
+<div id="header" class="hidden-sm hidden-xs">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="menu-bar">
+					<? /*<a href="/about-us/"> About </a>*/?>  <? /*|<a href="/contact/"> Contact </a>*/?>
+ <a href="/careers-at-fletcher-jones/"> Legacy & Careers </a>
+
+
+				</div>
+			</div>
+			<div class="col-xs-6 no-padding">
+				<div class="logo" itemscope itemtype="http://schema.org/Organization">
+					<a itemprop="url" href="<?php echo home_url(); ?>"><img itemprop="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php echo get_bloginfo('title'); ?>"></a>
+                    <?php if (get_field('vessel_header_image', 'option')):?>
+                        <img src="<?= get_field('vessel_header_image', 'option'); ?>" alt="Custom Header Image">
+                    <?php endif; ?>
+				</div>
+			</div>
+			<div class="col-md-3 text-right">
+				<div class="menu-bar">
+					<a href="/fletcher-jones-evolution/"> FJ Evolution </a> | <!--<a href="/careers-at-fletcher-jones/"> Legacy Careers </a>-->
+                    <a href="/contact/"> Contact </a> |
+                    <a id="desktop-locations-toggle" data-side="right" data-container="sidr-desktop-locations" class="locations-toggle menu hidden-xs"><span class="glyphicon glyphicon-map-marker"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="fixed-top-spacer"></div>
+
+<div id="tablet-mobile-header" class="visible-sm visible-xs">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-2 col-sm-3">
+				<a id="desktop-menu-toggle" data-side="left" data-container="sidr-desktop-content" class="menu-toggle menu" data-gtm-event="desktopHeaderMenuOpen"><span class="glyphicon glyphicon-align-justify"></span><span class="glyphicon glyphicon-remove"></span>  <span class="menu-label hidden-xs">MENU</span></a>
+			</div>
+			<div class="col-xs-6 no-padding center">
+				<div class="logo" itemscope itemtype="http://schema.org/Organization">
+					<a itemprop="url" href="<?php echo home_url(); ?>"><img itemprop="logo" id="main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php echo get_bloginfo('title'); ?>"></a>
+                    <?php if (get_field('vessel_header_image', 'option')): ?>
+                        <img id="vessel-header-img" src="<?= get_field('vessel_header_image', 'option'); ?>" alt="Custom Header Image">
+                    <?php endif; ?>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-4 text-right">
+				<a href="/directions/"> <span class="directions-icon glyphicon glyphicon-map-marker"></span> </a>
+				<a id="desktop-phone-toggle" data-side="right" data-container="sidr-desktop-phone" class="phone-toggle menu"><span class="glyphicon glyphicon-earphone"></span><span class="glyphicon glyphicon-remove"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php get_scoped_template_part('partials/navigations/offcanvas','nav', array( 'flyout_id' => 'sidr-desktop-content', 'theme_location' => 'main-menu' )); ?>
+
+<script>
+jQuery(document).ready(function() {
+	jQuery('#sidr-desktop-locations').sidr({
+		name: 'sidr-desktop-locations',
+		side: 'right'
+	});
+});
+</script>
+
+<div id="sidr-desktop-phone" class="mobile-nav-menu sidebar-navigation-enabled" style="display: none;">
+	<div class="menu-row">
+		<div class="menu-span">
+			<?php if (is_active_sidebar('phone-tab')) {
+				dynamic_sidebar( 'Phone Tab' );
+			} ?>
+		</div>
+	</div>
+</div>
+
+
+<div id="sidr-desktop-locations" class="mobile-nav-menu sidebar-navigation-enabled" style="display: none;">
+    <div class="menu-row">
+        <div class="menu-span">
+            <?php if (is_active_sidebar('locations-tab')) {
+                dynamic_sidebar( 'Locations Tab' );
+            } ?>
+        </div>
+    </div>
+</div>

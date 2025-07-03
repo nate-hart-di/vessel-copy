@@ -1,0 +1,197 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+@import 'variables';
+
+// *************************************************************************************************
+//	GENERAL
+// *************************************************************************************************
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+
+// *************************************************************************************************
+//	FRONT PAGE SECTIONS
+// *************************************************************************************************
+
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/video/_video-fullheight-native.scss';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/content/_content-imagebg.scss';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/slider_with_overlay';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/slider-videooverlay';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/slider_royalslider';
+
+// Defaults for PZ font mixin: $font-family:$heading-font, $color:$primary, $weight:bold, $line-height:normal, $align:center
+@include pz-font-defaults($color: #fff) {
+	@media (min-width: 1025px) {
+		h2 {
+			font-size: 4em;
+			font-family: $regfont;
+		}
+	}
+}
+
+/* SLIDER ROW **************************************************/
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/slider-row';
+
+/* FULL OVERLAY **************************************************/
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/full-overlay';
+
+/* MODEL ROW **************************************************/
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/model-row';
+	.arrow-right:before {
+		color: #000;
+  	}
+/* SHOPPING TOOLS ROW **************************************************/
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/cta-row';
+
+/* ABOUT ROW **************************************************/
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/about-row';
+#aboutRow{
+	background: #fff;
+    background-size: cover;
+    color: $maintextcolor;
+	p {
+		a:not(.button) {
+			color: $maintextcolor;
+		}
+	}
+}
+/* REVIEWS ROW **************************************************/
+#reviewsRow {
+	background: $light-gray;
+	.review {
+		text-align: left;
+		margin: 0 30px;
+		position: relative;
+		background: #fff;
+		padding: 0;
+		.overviewbox {
+			img {
+				display: none;
+			}
+			.source {
+				padding: 20px;
+				background: $porsche-blue;
+				color: #fff;
+				font-size: 16px;
+				font-family: $heading-font;
+				line-height: 25px;
+				.reviewsource {
+					font-family: $heading-font;
+					border-right: 1px solid #fff;
+					padding-right: 5px;
+				}
+				.reviewdate{
+					padding-left: 8px;
+				}
+				&:before {
+					content: '\f105';
+					font-family: 'FontAwesome';
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					color: $primary;
+					font-size: 30px;
+					@include transition(all .2s ease);
+					margin-right: 6px;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					-moz-font-smoothing: antialiased;
+					-ms-font-smoothing: antialiased;
+					-o-font-smoothing: antialiased;
+					font-smoothing: antialiased;
+				}
+			}
+			.rating {
+				margin-top: 20px;
+				margin-left: 20px;
+				background-image: url('../../../../../../themes/DealerInspireCommonTheme/images/dealer-groups/porsche/porsche-rating-sprite.png');
+			}
+		}
+		.reviewbox {
+			padding: 10px 20px;
+			a {
+				background: $secondary;
+				padding: 15px;
+				color: #fff;
+				display: inline-block;
+				margin-top: 20px;
+				font-family: $maintextfont;
+				&:before {
+					content: '\f105';
+					font-family: 'FontAwesome';
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					color: #fff;
+					@include transition(all .2s ease);
+					margin-right: 6px;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					-moz-font-smoothing: antialiased;
+					-ms-font-smoothing: antialiased;
+					-o-font-smoothing: antialiased;
+					font-smoothing: antialiased;
+				}
+				&:hover {
+					text-decoration: none;
+					color: #fff;
+					background: $secondaryhover;
+				}
+			}
+		}
+	}
+
+	#reviewCarousel {
+		position: relative;
+
+		.owl-buttons {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include transform(translate(-50%, -50%));
+			width: 100vw;
+
+			.owl-prev,
+			.owl-next {
+				@include z-index(top);
+				i {
+					color: #fff;
+					padding: 15px;
+					font-size: 50px;
+					@include transition(all 0.35s ease-in-out);
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+
+			.owl-prev {
+				float: left;
+
+				i {
+					padding-right: 20px;
+				}
+			}
+
+			.owl-next {
+				float: right;
+
+				i {
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+// *************************************************************************************************
+//	SUPPORT REQUESTS
+// *************************************************************************************************
+
+// Anchor Homepage
+html{
+	max-width: 100%;
+	overflow-x: hidden;
+}

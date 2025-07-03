@@ -1,0 +1,130 @@
+//54719
+@media (max-width:768px) {
+  img#pink-ribbon-oct {
+    display:none;
+  }
+}
+
+.specialCoupon .specialRight .modelName{
+    color: #0059a8 !important;
+    font-size: 21px !important;
+}
+
+.specialCoupon .specialRight .description p{
+    font-size: 14px !important;
+}
+
+a.view-disclaimer-link{
+    color: #a7a7a7 !important;
+    font-size: 11px !important;
+    font-style: italic !important;
+
+}
+
+//62845
+.page-vehicle-results-page {
+    a.button.inquire {
+        width: 100% !important;
+    }
+    .hide-the-main-cta a.fancy.button-form.button.cta-button {
+        display: none;
+    }
+}
+.page-vehicle-display-page {
+    .hide-the-main-cta .maincta-row.ctabox-row {
+        display: none;
+    }
+    div#inquire-button a {
+        width: 100% !important;
+        margin-top: -10px;
+        display: none;
+    }
+}
+//end 62845
+
+.vdp-print-view .logo {
+    background-color: #fff;
+    text-align: center;
+}
+
+#ctabox-custom-ctas {
+  display: none;
+}
+
+//locked pricing #00282538
+#results-page{
+  .vehicle{
+    &.locked_pricing_vehicle{
+      .locked-reveal-text{
+        display: none;
+        .locked-pricing-price-unlocked &{
+          display: block;
+        }
+      }
+    }
+    .vehicle-price{
+      .price-block{
+        .price{
+          text-decoration-color: red !important;
+        }
+      }
+    }
+  }
+}
+
+#vehicleDetails{
+  &.locked_pricing_vehicle{
+    #details-page-ctabox{
+      .locked-reveal-text{
+        display: none;
+        .locked-pricing-price-unlocked &{
+          display: block;
+        }
+      }
+    }
+    .locked-reveal-text{
+      text-align: center;
+      font-size: 16px;
+    }
+    .advanced-pricing-stack{
+      .original{
+        .ctabox-price{
+          text-decoration: line-through;
+          text-decoration-color: red !important;
+        }
+      }
+    }
+  }
+  #ctabox-pricing-bottom{
+    @include flexbox;
+    @include flex-direction(column);
+    .locked-reveal-text{
+      order: -1;
+    }
+  }
+}
+
+#lockedPricingFormModal{
+  .gform_button.button{
+    background: red;
+    &:hover{
+      background: darken(red,10%);
+    }
+  }
+}
+
+#results-page .unlock-offer {
+  background: #d01e1c;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  a {
+      color: #fff !important;
+      text-decoration: none;
+  }
+}
+#vehicleDetails .unlock-offer {
+  display: block;
+  width: 100% !important;
+  background: #d01e1c;
+}

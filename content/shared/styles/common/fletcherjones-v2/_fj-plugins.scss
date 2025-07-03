@@ -1,0 +1,207 @@
+// ************************************************************************************************
+//    DEALER INSPIRE & THIRD PARTY PLUGINS
+// ************************************************************************************************
+@if $vdp-lease-finance == true {
+    .mainPriceContainer {
+    	text-align: center;
+    	.vdp-pricing-group {
+    		display: inline-block;
+    		position: relative;
+    		top: -10px;
+    		width: 25%;
+    	}
+    	.finance-container {
+    		width: 25%;
+    		display: inline-block;
+    	}
+    	.leasepayment {
+    		width: 25%;
+    		display: inline-block;
+    	}
+    	.finance-container {
+    		text-align: center;
+    		a{
+    			color: #000;
+    		}
+    		.monthly_payment {
+    			font-size: em(20);
+    			text-decoration: underline;
+    			//font-weight: bold;
+    			b {
+    				font-weight: normal;
+    			}
+    		}
+    		.finance_label {
+    			display: block;
+    			clear: both;
+    		}
+    	}
+    	.leasepayment {
+    		text-align: center;
+    		&:hover{
+    			cursor: pointer !important;
+    		}
+    		.term_container {
+    			display: block;
+    			clear: both;
+    		}
+    		.payment_amount,.per_month {
+    			font-size: em(20);
+    			text-decoration: underline;
+    		}
+    	}
+
+    	@media(min-width: 300px) and (max-width: 1024px){
+    		.vdp-pricing-group {
+    			width: 100%;
+    			margin-bottom: 10px;
+    			top: 0;
+    		}
+    		.finance-container {
+    			width: 100%;
+    			margin-bottom: 10px;
+    		}
+    		.leasepayment {
+    			width: 100%;
+    			margin-bottom: 10px;
+    		}
+    	}
+
+    	@media(min-width: 1025px) and (max-width: 1399px){
+    		.vdp-pricing-group {
+    			top: 0;
+    			font-size: 85%;
+    			width: 36%;
+    		}
+    		.finance-container {
+    			font-size: 85%;
+    		}
+    		.leasepayment {
+    			font-size: 85%;
+    		}
+    	}
+    }
+
+    #results-page .vehicle .vehicle-price .price-leaseandfinance {
+    	.btn-customize-lease, .price-block {
+    		cursor: pointer;
+    	}
+    }
+}
+
+// *************************************************************************************************
+//	MODEL LANDING PAGE STYLES
+// *************************************************************************************************
+
+.fj-model-page {
+    p, li{
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+        &.overlay-title span {
+            &.normal {
+                font-size: 50px;
+            }
+            &.smaller {
+                font-size: 20px !important;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .overlay-buttons {
+        text-align: center;
+    }
+    .contentcontainer {
+        margin-top: 0px;
+        margin-bottom:0px;
+    }
+    .lightboxForm_wrapper {
+        background: none;
+        padding: 0px;
+    }
+    #di-page-composer > div.leftbox.bgimagerow.no-cover > div > div > div > div {
+        margin-left: 40px;
+    }
+    .model-content {
+        padding: 30px 15px;
+    }
+    .mlp-specials ul.special-offers li.special-offer {
+        box-shadow:none;
+        margin-bottom:20px;
+        width:100%;
+        h2 {
+            display:none;
+        }
+        .rates {
+            border-top:0px;
+        }
+        .offer-image-link {
+            margin:auto;
+            width:35%;
+        }
+        .offer-content {
+            margin:auto;
+            width:60%;
+        }
+        .offerbuttonbar {
+            border-top: 0px;
+        }
+        .offeritem span {
+            &.offerlabel {
+                font-size:20px;
+            }
+            &.offerrate {
+                font-size:30px;
+            }
+        }
+    }
+    .skmetro {
+        padding-left: 8%;
+    }
+    #footer {
+         clear:both;
+    }
+    .hero-section {
+        background-size: cover!important;
+        height:70vh;
+        position:relative;
+        div[class*="col-"] {
+            position:initial;
+        }
+        .row {
+            .overlay-title {
+                left:50%;
+                margin-left:-300px;
+                position:absolute;
+                top:40%;
+                text-align:center;
+                width:600px;
+            }
+        }
+        .inner-wysiwyg .overlay-buttons {
+            bottom:5%;
+            left:50%;
+            margin-left:-50%;
+            position:absolute;
+            width:100%;
+        }
+    }
+    .inventory-owl {
+        margin: 0 5%;
+        #results-page td.gridview {
+            .vehicle-wrap {
+                float:none;
+                margin:0 auto;
+                width:90% !important;
+            }
+            .owl-item {
+                text-align:center;
+            }
+        }
+    }
+    .owl-prev i,
+    .owl-next i{
+        font-size: .5em !important;
+    }
+}

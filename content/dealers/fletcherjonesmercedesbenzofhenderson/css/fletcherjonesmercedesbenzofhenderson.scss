@@ -1,0 +1,511 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+@import "variables.scss";
+
+$fj-drive: true !default;
+$vdp-lease-finance: false !default;
+
+@import '../../../shared/styles/radioactive';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/mercedes-benz/mercedes-benz-fonts-canada.scss';
+
+// *************************************************************************************************
+//	GENERAL
+// *************************************************************************************************
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones/shared-styles";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/social/links-iconfont';
+
+p {
+	font-weight: 300;
+}
+
+a[href^=tel]{
+	color:inherit;
+}
+
+.hidden {
+    display:none;
+}
+
+// *************************************************************************************************
+//	HEADER
+// *************************************************************************************************
+//@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-header';
+
+// *************************************************************************************************
+//	NAVIGATION
+// *************************************************************************************************
+
+// *************************************************************************************************
+//	FOOTER
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/footer-basic';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/prefooter-widelists';
+// @import '../../../../../../themes/DealerInspireCommonTheme/css/components/footers/fat-footer';
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-footer';
+
+footer #footerMobile .footerTop__Menu{
+	display:none!important;
+}
+
+@media (max-width: 767px) {
+	.home #footer {
+		border-top: 1px solid #ccc;
+		position: relative;
+	}
+}
+
+.footerTop {
+    background: #1b1b1b;
+    &__Menu {
+        padding: 0;
+        color: #fff;
+        border-top: 1px solid #1c1c1c;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+            li {
+                list-style: none;
+                a {
+                    color: #fff;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        li.menu-item {
+            width: inherit;
+            list-style-type: none;
+            min-height: auto;
+            border-bottom: 1px solid #444;
+            a {
+                display: block;
+                margin: 0;
+                padding: 25px;
+                font-size: 17px;
+                &:after {
+                    content: '\f054';
+                    font-family: 'FontAwesome';
+                    float: right;
+                    color: #706f6c;
+                    @include transition(all .5s ease);
+                }
+            }
+        }
+    }
+}
+
+.footerRow {
+	z-index: 1;
+	background: #fff;
+
+	.footerBottom {
+		background: #fff;
+		color: #333;
+		text-align: center;
+		padding: 0;
+
+        .social {
+            padding: 10px 0 30px;
+        }
+
+		.infoWrapper {
+			&__menu {
+				ul {
+					margin: 0;
+					padding: 0;
+
+					li {
+						display: inline-block;
+
+						+ li:before {
+							content: '\|';
+						}
+
+						a {
+							color: $primary;
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+
+			&__di {
+				a {
+					color: $primary;
+					text-decoration: underline;
+				}
+			}
+
+			div + div {
+				margin: 15px 0 0;
+			}
+		}
+
+        .email-button {
+            float: none;
+            margin: 20px 0 0 !important;
+            @include breakpoint(xs) {
+                font-size: 12px !important;
+            }
+        }
+	}
+
+	// ********** Media Queries ********** //
+
+	// Tablet +
+	@include breakpoint(sm) {
+
+		.footerBottom {
+			a.link__logo img {
+			    max-width: 315px;
+			    width: 100%;
+			}
+		}
+	}
+}
+#footer {
+    background: #fff;
+}
+// *************************************************************************************************
+//	HOMEPAGE
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/slider-videooverlay';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/video-fullheight';
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-video-overlay';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-search-overlay';
+
+#videoOverlay {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	@include flex-direction(column);
+
+	h1,h2 {
+		text-shadow: 0px 0px 10px #000;
+	}
+
+	@media screen and (max-width:1024px){
+		top: 0 !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#videoOverlay {
+		.videooverlay-content {
+	    height: calc(100vh - 211px);
+			.cta-buttons {
+				margin-top: 0;
+				@media(max-width: 767px) {
+					h1 {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1919px) and (min-width: 1024px){
+	.home #videobanner {
+	    max-height: 100%;
+	}
+}
+
+.gridwrap {
+	display: none;
+}
+
+// *************************************************************************************************
+//	INSIDE PAGES
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/sidebars/sidebar-basicboxy';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/specials/specials-coupons';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/staff/staff-boxes';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/inside-pages/contactpage-simple3column';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/modelpages/modelpage-withtopgallery';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/modelpages/modelpage-featurehub';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/modelpages/modelarchive-simplegrid';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/content/simple-blogarchive';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/shortcodes/incentives-listview-2014';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-service-page";
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-inside-pages';
+
+
+@media (max-width: 375px){
+	.tablepress td, .tablepress th {
+	    padding: 8px 3px !important;
+	}
+}
+
+
+// *************************************************************************************************
+//	VEHICLE RESULTS PAGE
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-listview';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/result-listing-gridview';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-topbar';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-sidebar';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/filters-mobile';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-results-page/resultspage-common-elements';
+
+
+#results-page{
+  .vehicle{
+    .vehicle-price{
+      @include flexbox;
+      @include flex-direction(column);
+      @include justify-content(flex-end);
+      @include flex-grow(2);
+      .price-top{
+        order: -10;
+      }
+      .order-top{
+        order: -5;
+      }
+      .online-shopper-cta-box{
+        order: 10;
+      }
+    }
+    .vehicle-price, .button-bar{
+      .button.red-button{
+        background: $red;
+        &:hover {
+          background: darken($red, 5%);
+        }
+      }
+    }
+  }
+}
+
+// ************************************************************************************************
+//  DEALER INSPIRE & THIRD PARTY PLUGINS
+// ************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/lease-calculator/lease-calculator-styled';
+
+.lo_container {
+	.lo_head {
+		background-image: url('../images/bg-leaseoffer-header-fletcher.jpg');
+		background-size: cover;
+	}
+}
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-plugins';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/algolia-search/default-algolia';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-inspire-plugins/national-offers-mercedes-benz';
+
+#details-page-ctabox {
+  .maincta-row,
+  #ctabox-pricing-bottom {
+      padding-bottom: 0;
+  }
+  .button{
+    margin-bottom: 10px;
+  }
+  .red-button{
+        background: $red;
+        color: #fff;
+        width: 100% !important;
+        &:hover{
+          background: darken($red,5%);
+        }
+  }
+}
+// *************************************************************************************************
+//	VEHICLE DETAILS PAGE
+// *************************************************************************************************
+
+//NEW VDP STYLING: DO NOT REMOVE
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-details';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/vehicle-print-view';
+.page-vehicle-display-page{
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
+}
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp';
+
+.fj-drive.vdp {
+	display: none !important;
+}
+
+/********************************************************************************
+    FJ DRIVE STYLES
+********************************************************************************/
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-drive';
+
+/*************************************************************************************************
+	TABLET ELEMENT STYLING
+*************************************************************************************************/
+
+@media (max-width: 1024px) {
+
+}
+
+/*************************************************************************************************
+	MOBILE ELEMENT STYLING
+*************************************************************************************************/
+
+@media (max-width:767px){
+	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/headers/mobile/header-mobilebasic';
+	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/homepage/mobile/openhours-bar';
+	@import '../../../../../../themes/DealerInspireCommonTheme/css/components/mobile/mobile-tabs';
+	@import "../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/fj-search-overlay";
+
+
+	.mobile-cta {
+	    .ctaItem {
+	        a {
+	            bottom: 0;
+	        }
+	    }
+	}
+
+	// THIS STYLE IS FOR THE CORONA VIRUS MOBILE CTA
+	.home .mobile-cta .ctaItem:first-child a {
+	    bottom: -35px;
+	}
+
+	#footer {
+		padding-bottom: 70px;
+	}
+
+	.mobile-tabs {
+	    height: 0 !important;
+	}
+}
+
+/*************************************************************************************************
+	SUPPORT
+*************************************************************************************************/
+
+//Dealer timer styles
+@import "support-requests";
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-support';
+@import '../../../shared/styles/shared-support';
+@import '../../../shared/styles/header/header-v3.scss';
+
+.vdp-third-party-shopping-tools .shopping-tool.icon, .vehicle .grid-view-badges .button-bar-item img {
+	width:100px;
+}
+
+
+#vehicleDetails .vdp-top-banner.box-gallery .details-page-ctawrap {
+	div#ctabox-custom-ctas a:nth-child(1) {
+		display: none;
+	}
+}
+
+@media(min-width:1024px){
+	.home{
+		#footer{
+			position: relative;
+		}
+	}
+}
+@media (max-width: 1919px) and (min-width: 1024px){
+	.home #videobanner {
+		max-height: 650px;
+	}
+}
+
+@media (max-width: 767px) {
+	.page-vehicle-display-page .vdp-top-banner.box-gallery .box-gallery-wrap {
+    padding-top: 0 !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	#vrp-custom-filter {
+    margin: 0;
+	}
+}
+
+//=====================================
+// ADDED STYLE BELOW FOR DESKTOP 06/20
+//=====================================
+a:focus,
+.focus a,
+#header .header-top .navbar .navbar-inner ul#menu-top-menu>li.menu-item {
+    outline: none !important;
+}
+
+.home #meetTeam {
+  display: none;
+}
+//==============================================
+// ADDED STYLE BELOW FOR DESKTOP 06/20 - END
+//==============================================
+
+
+#heroRow{
+	padding: 0;
+	.heroRow__cta{
+	  background: #fff;
+	  position: relative;
+	  height: 100%;
+	  &--wrap{
+		background: #f1f1f1;
+		width: 100%;
+		justify-content: center;
+		flex-direction: column;
+		height: 150px;
+		padding: 8px 0 22px 0;
+		text-decoration: none;
+		// &:hover{
+		//   background: #fff;
+		// }
+		p{
+		  color: #000;
+		  font-weight: 500;
+		}
+		&:hover {
+			background: white;
+		}
+	  }
+	}
+  }
+
+  .home #map {
+	overflow: hidden;
+}
+
+@media (max-width: 767px){
+	div.details-page-row:nth-child(2) {
+	  display: block !important;
+	}
+  }
+  
+.page-id-50623 #lvrp-results-wrapper .result-wrap .hit-price__customize {
+	display: none;
+}
+
+.dynamic-hours .open {
+    display: none;
+}
+
+#eqe-suv-show{
+  display: none !important;
+}
+
+#eqe-suv-hidden{
+  display: inline-block !important;
+  visibility: visible !important;
+}

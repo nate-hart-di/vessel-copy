@@ -1,0 +1,38 @@
+// *************************************************************************************************
+//	INSIDE PAGES
+// *************************************************************************************************
+@import "variables";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/sidebars/sidebar-basicboxy';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/specials/specials-coupons';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/staff/staff-boxes';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/inside-pages/contactpage-simple3column';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/modelpages/modelpage-withtopgallery';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/modelpages/modelpage-featurehub';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/modelpages/modelarchive-simplegrid';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/content/simple-blogarchive';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/shortcodes/incentives-listview-2014';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/reviews';
+
+@import "../../../shared/styles/common/fletcherjones-v2/_fj-service-page";
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-inside-pages';
+
+
+@media (max-width: 375px){
+	.tablepress td, .tablepress th {
+	    padding: 8px 3px !important;
+	}
+}
+
+#di-page-composer{
+  .body-header, .desktop-margin{
+    margin-top: 0;
+  }
+  &.contentcontainer {
+    @media screen and (max-width: 767px){
+      padding-top: 0;
+    }
+  }
+}

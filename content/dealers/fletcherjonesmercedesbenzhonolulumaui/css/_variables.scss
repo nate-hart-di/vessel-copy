@@ -1,0 +1,277 @@
+/*************************************************************************************************
+	VARIABLES
+*************************************************************************************************/
+
+$primary: #0059a8;													/* site main color */
+$primaryhover: darken($primary,10%);
+
+$secondary: #ed8b00;												/* site accent color */
+$secondaryhover: darken($secondary,10%);
+
+$cta: green;
+$ctahover: darken($cta,10%);
+$cta-font: 14px/30px;
+
+$maintextcolor: #333;											/* default text color across the site */
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
+
+// TEXT STYLING ***************
+
+$maintextcolor: #333;
+$maintextfont: 'Lato', sans-serif;
+
+$mainlinkcolor: $primary;
+
+$heading-font: 'corposregular', sans-serif;
+
+$personalizer-font: 'corposregular', sans-serif;
+
+$mercedes-font: 'corposregular', sans-serif;
+
+$h1-font-size: 30px;
+$h1-font-weight: 300;
+$h1-font-family: $heading-font;
+
+$h2-font-size: 24px;
+$h2-font-weight: 300;
+$h2-font-family: $heading-font;
+
+$h3-font-size: 18px;
+$h3-font-weight: 500;
+$h3-font-family: $heading-font;
+
+$h4-font-size: 16px;
+$h4-font-weight: 500;
+$h4-font-family: $heading-font;
+
+// BUTTON STYLING *************
+
+// $button-bg: #ccc;
+// $button-bghover: darken(#ccc,10%);
+// $button-border: none;
+// $button-color: #333;
+// $button-colorhover: #fff;
+$button-fontfamily: $maintextfont;
+$button-fontweight: 400;
+// $button-fontsize: 14px;
+// $button-lineheight: 30px;
+$button-radius: 0;
+// $button-shadow: none;
+$button-padding: 13px 20px;
+// $button-textshadow: none;
+// $button-transform: uppercase;
+// $button-margins: 0 10px 10px 0;
+
+// $outlinebutton-border: 2px solid $primary;
+// $outlinebutton-color: #ffffff;
+// $outlinebutton-hoverbg: $primary;
+// $outlinebutton-hoverborder: 2px solid $primary;
+// $outlinebutton-hovercolor: $primary;
+
+// $smallbutton-weight: normal;
+// $smallbutton-size: 12px;
+
+// $largebutton-weight: normal;
+// $largebutton-size: 24px;
+
+$darkbutton-bg: #000;
+// $darkbutton-color: #fff;
+
+$cta-color: #fff;												/* text color for colored buttons */
+$primary-color: #fff;
+$secondary-color: #fff;
+
+// HEADER **********************
+
+$header-vertical-background: #111;
+$header-vertical-color: #fff;
+$header-vertical-width: 250px;
+$header-vertical-shadow: 0 0 10px #000;
+$header-vertical-position: left;
+$header-vertical-logo-padding: 20px;
+$header-vertical-logo-background: transparent;
+
+$tablet-header-background: #fff;
+$mobile-header-background: #fff;
+
+$hamburger-color: #434343;
+$hamburger-background: transparent;
+
+$phoneicon-color: #434343;
+//$phonenumber-color: #fff;
+
+$directionsicon-color: #434343;
+$directionstext-color: #fff;
+
+$hoursbarbg: #222;
+$hoursbarcolor: #aaa;
+$hoursbarweight: 600;
+
+$sociallink-color: #111;
+$sociallink-backgroundcolor: none;
+$sociallink-fontsize: 18px;
+$sociallink-width: 30px;
+$sociallink-height: 30px;
+$sociallink-line-height: $sociallink-height;
+$sociallink-margin: 0 0 0 3px;
+$sociallink-radius: 50%;
+$sociallink-border: 1px solid #111;
+
+$sociallink-hover-color: #fff;
+$sociallink-hover-backgroundcolor: $primary;
+
+// NAVIGATION ******************
+
+
+$navbar-height: 70px;
+$navbar-lineheight: 70px;
+$navbar-float: none;
+
+$navbar-menuitem-padding: 0 12px;
+// $navbar-menuitem-textalign: left;
+$navbar-menuitem-color: #111;
+// $navbar-menuitem-border-bottom: none;
+$navbar-menuitem-hover-background: none;
+$navbar-menuitem-hover-color: $primary;
+$navbar-menuitem-font: $maintextfont;
+// $navbar-menuitem-fontsize: 14px;
+$navbar-menuitem-fontweight: 500;
+$navbar-menuitem-texttransform: uppercase;
+
+// $navbar-current-background:  $navbar-menuitem-hover-background;
+// $navbar-current-color: $navbar-menuitem-hover-color;
+
+$navbar-submenu-background: #fff;
+// $navbar-submenu-border: none;
+
+$navbar-submenuitem-height: 45px;
+// $navbar-submenuitem-textalign: left;
+// $navbar-submenuitem-border-bottom: $navbar-menuitem-border-bottom;
+// $navbar-submenuitem-lineheight: $navbar-submenuitem-height;
+$navbar-submenuitem-color: #111;
+$navbar-submenuitem-hover-background: #eee;
+$navbar-submenuitem-hover-color: #111;
+
+// $navbar-megamenu-width: 400px;
+// $navbar-megamenu-leftposition: 0;
+// $navbar-megamenu-column-width: 50%;
+// $navbar-megamenu-column-padding: 0;
+// $navbar-megamenu-column-font-size: 12px;
+// $navbar-megamenu-subheading-background: #202020;
+// $navbar-megamenu-subheading-borderbottom: none;
+// $navbar-megamenu-subheading-fontweight: 600;
+// $navbar-megamenu-subheading-fontsize: $navbar-menuitem-fontsize;
+// $navbar-megamenu-subheading-color: $primary;
+
+// OFF CANVAS MENU
+
+$offcanvasflyout-bg: #fff;
+// $offcanvas-menuitem-height: 40px;
+// $offcanvas-menuitem-lineheight: 20px;
+// $offcanvas-menuitem-padding: 10px 15px;
+// $offcanvas-menuitem-textalign: left;
+$offcanvas-menuitem-background: #fff;
+$offcanvas-menuitem-color: #111;
+$offcanvas-menuitem-border-bottom: 1px solid #e1e1e1;
+$offcanvas-menuitem-hover-background: #eee;
+$offcanvas-menuitem-hover-color: $primary;
+$offcanvas-menuitem-font: $maintextfont;
+$offcanvas-menuitem-fontsize: 12px;
+$offcanvas-menuitem-fontweight: 300;
+// $offcanvas-menuitem-texttransform: none;
+
+$offcanvas-current-background: #eee;
+// $offcanvas-current-color: $offcanvas-menuitem-hover-color;
+
+$offcanvas-submenu-background: #eee;
+// $offcanvas-submenuitem-height: 40px;
+// $offcanvas-submenuitem-textalign: left;
+$offcanvas-submenuitem-border-bottom: 1px solid #e1e1e1;
+// $offcanvas-submenuitem-lineheight: 20px;
+// $offcanvas-submenuitem-color: $offcanvas-menuitem-color;
+$offcanvas-submenuitem-hover-background: #eee;
+// $offcanvas-submenuitem-hover-color: $offcanvas-menuitem-hover-color;
+
+// FOOTER **********************
+
+$footer-background: #0c0c0c;
+$footer-padding: 20px 0;
+$footer-color: #777;
+$footer-font-size: 12px;
+$footer-font-family: 'Lato', sans-serif;
+
+$footer-left-margin: 0;
+$footer-left-logo-width: 250px;
+
+$footer-middle-text-align: center;
+$footer-middle-text-transform: uppercase;
+$footer-copyright-margin: 0;
+$footer-menu-color: #aaa;
+$footer-menu-margin: 0 5px;
+$footer-menu-font-size: 12px;
+$footer-menu-text-transform: uppercase;
+
+$footer-right-margin: 5px 0 0;
+$footer-right-logo-width: 180px;
+
+// PRE FOOTER *****************
+
+$prefooter-background: #fff;
+$prefooter-padding: 50px 0 70px;
+
+$prefooter-color: $maintextcolor;
+$prefooter-font: 'Open Sans', sans-serif;
+
+$prefooter-listtitle-color: $prefooter-color;
+$prefooter-listtitle-underline: 1px solid $prefooter-color;
+
+$prefooter-listitem-color: $prefooter-color;
+
+// VRP ************************
+
+// $vrpcta: $cta;													/* results page colors */
+// $vrpcta-border: 2px solid darken($vrpcta, 10%);
+// $vrpctahover: $ctahover;
+// $vrpcta-font: $cta-font;
+// $vrpcta-color: $cta-color;
+
+// LEASE OFFER CALCULATOR ***************
+$lease_offer_calc_button_color: $cta;
+
+// VDP ************************
+// HOTWHEELS VARS ****************************************************
+$vdp-cta-bg: $cta;
+$vdp-top-banner-bg: url(../images/vdpbg.jpg);
+
+$vdp-ctabox-bg: #fff;
+$vdp-ctabox-color: #111;
+$vdp-ctabox-border: 1px solid #ddd;
+$vdp-ctabox-row-border-top: 1px solid #eee;
+$vdp-ctabox-main-cta-line-height: normal;
+$vdp-ctabox-main-cta-padding: 15px 5px;
+$vdp-ctabox-main-cta-font-size: 22px;
+
+$vdp-urgency-icon-color: #aaa;
+
+$vdp-basicinfo-wrapper-bg: #eee;
+$vdp-basicinfo-wrapper-padding: 30px;
+
+// STAFF PAGE *****************
+
+$staffbutton-bg: #333;
+$staffbutton-color: #fff;
+$staffbox-bg: #f9f9f9;
+$staffbox-border: 1px solid #ccc;
+
+// MISC ***********************
+
+$noDelay: 00ms;
+$fastSpeedTime: 500ms;
+
+// BUTTON SIDEBAR *********************
+$button-toolbar-button-background:$primary;
+$button-toolbar-saved-vehicle-button-background: darken(red, 10%);
+$button-toolbar-saved-vehicle-button-background-hover: red;
+
+// FJ Custom Vars
+$tablet-header-vertical-width: 220px;

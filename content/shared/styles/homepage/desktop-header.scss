@@ -1,0 +1,10 @@
+$primary: #0059a8;
+$secondary: #313130;
+$maintextfont: 'Montserrat', sans-serif;
+$heading-font: 'corposregular', sans-serif;
+
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-header';
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-navigation';

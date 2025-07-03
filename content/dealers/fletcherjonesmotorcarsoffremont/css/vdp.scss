@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+$fj-drive: true !default;
+$vdp-lease-finance: false !default;
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-vdp-variables';
+@import '../../../shared/styles/radioactive';
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+@import "../../../../../../themes/DealerInspireCommonTheme/css/buttons-basic";
+
+// *************************************************************************************************
+//  VEHICLE DETAILS PAGE
+// *************************************************************************************************
+$vdp-top-banner-padding: 0px 0 50px;
+$vdp-ctabox-offset-top-start: 130px;
+//NEW VDP STYLING: DO NOT REMOVE
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-details';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/vehicle-print-view';
+.page-vehicle-display-page{
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
+}
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp';
+
+#results-page .vehicle .vehicle-price .price-block {
+  &.original .price {
+    text-decoration-color: red;
+  }
+  &.discounts span {
+    color: red;
+  }
+}
+
+#vehicleDetails  {
+  .vdp-shopping-tools {
+    .shopping-tools-wrapper {
+      @include flexbox;
+      @include flex-wrap(wrap);
+      .shopping-tool.text-btn {
+        @include flexbox;
+        @include align-items(center);
+        .sms-button {
+          color: #111;
+        }
+      }
+    }
+    @include breakpoint (mobile-tablet) {
+      .shopping-tools-wrapper {
+        .shopping-tool {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.details-page-row{
+  .shopping-tool{
+    display: block;
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+#vehicleDetails .vdp-top-banner.box-gallery .details-page-ctawrap {
+  div#ctabox-custom-ctas a:nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-vehicle-display-page .vdp-top-banner.box-gallery .box-gallery-wrap {
+    padding-top: 0 !important;
+  }
+}

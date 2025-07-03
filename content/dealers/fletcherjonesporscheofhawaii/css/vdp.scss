@@ -1,0 +1,45 @@
+// *************************************************************************************************
+//	VARIABLES
+// *************************************************************************************************
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/variables';
+
+// *************************************************************************************************
+//	GENERAL
+// *************************************************************************************************
+
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+
+// *************************************************************************************************
+//	VEHICLE DETAILS PAGE
+// *************************************************************************************************
+
+//NEW VDP STYLING: DO NOT REMOVE
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/_payment-calculator.scss';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/_vehicle-details.scss';
+.page-vehicle-display-page{
+  @import '../../../../../../themes/DealerInspireCommonTheme/css/components/vehicle-detail-page/hotwheels/vehicle-gallery-condensed';
+}
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/porsche/vdp';
+
+$secondary: #000000;
+#vehicleDetails.project-hotwheels #breadcrumbs-row #breadcrumbs {
+    color: $secondary;
+}
+
+@media (min-width: 768px) {
+    .vdp-shopping-tools .shopping-tool {
+        &.text-us-now-mobile {
+            display: none !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #whitewrap #vehicleDetails .ctabox-inner .maincta-row .button {
+        top: 55px !important;
+    }
+}
+// *************************************************************************************************
+//	SUPPORT REQUESTS
+// *************************************************************************************************

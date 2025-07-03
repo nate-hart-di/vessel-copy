@@ -1,0 +1,87 @@
+#ctabox-pricing .original-price .ctabox-price {
+  text-decoration: line-through;
+}
+@media (min-width: 768px)and (max-width: 1023px){
+	#videobanner #videooverlay .videooverlay-content h2 {
+	    font-size: 41px;
+	}
+}
+
+#youtube-row{
+    background: #000;
+}
+.specialCoupon .specialRight .modelName{
+    color: #a51a19 !important;
+    font-size: 21px !important;
+}
+
+.specialCoupon .specialRight .description p{
+    font-size: 14px !important;
+}
+
+a.view-disclaimer-link{
+    color: #a7a7a7 !important;
+    font-size: 11px !important;
+    font-style: italic !important;
+            
+}
+@media(max-width: 1024px) {
+    #videobanner {
+        background-position: 50% 50%;
+    }
+}
+
+@media(max-width: 767px) {
+    .clock.flip-clock-wrapper {
+        padding-left: 135px;
+    }
+}
+
+.comments ul.post-comments .comment-num{
+  display: none;
+}
+#getdirectionsrow {
+	background-size: cover;
+	form.getdirections input {
+		border-bottom: 1px solid #fff;
+	}
+}
+
+.schedule-testdrive {
+  display: none;
+}
+.col-md-6.test-drive-cta.no-padding {
+  padding-right: 10px !important;
+}
+
+#results-page .vehicle .button-bar .primary-cta a {
+  background: green;
+}
+
+.maincta-row.ctabox-row {
+  .button.cta-button.block.button-form.fancybox {
+    background: green;
+  }
+}
+
+//Fix crappy styles for those buttons on the VDP
+.col-md-6.test-drive-cta.no-padding a {
+  width: 90% !important;
+}
+
+#footer {
+    padding: 25px 0;
+    .footer-left img {
+        width: 85px;
+    }
+    .footer-middle {
+        margin-top: 30px;
+    }
+    .footer-right {
+        margin-top: 45px;
+    }
+}
+
+#mini-header a.button.cta-button.ask-a-question, a.button-primary {
+  background: Green !important;
+}

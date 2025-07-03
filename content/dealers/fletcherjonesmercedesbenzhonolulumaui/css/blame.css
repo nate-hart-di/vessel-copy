@@ -1,0 +1,130 @@
+#detailspage #floatingForm form.betterPricingDetail .gform_body ul li input {
+  height: 18px !important; }
+
+.top-pad {
+  padding-top: 27px; }
+
+#detailspage #floatingForm {
+  width: 100%;
+  max-width: 360px; }
+  #detailspage #floatingForm .textarea {
+    height: 60px !important; }
+  #detailspage #floatingForm .ginput_complex {
+    max-width: 360px;
+    width: 100%; }
+    #detailspage #floatingForm .ginput_complex input {
+      width: 90%; }
+
+.gf_clear:before,
+.gf_clear:after {
+  content: " ";
+  display: table; }
+
+.gf_clear:after {
+  clear: both; }
+
+.gf_left_third input, .gf_middle_third input, .gf_right_third input {
+  width: 100%;
+  max-width: 90px;
+  float: left;
+  margin-right: 1px; }
+
+.entry .gf_left_third input, .entry .gf_middle_third input, .entry .gf_right_third input {
+  float: none;
+  max-width: 200px; }
+
+.gf_right_third:after {
+  clear: both; }
+
+#detailspage .vdp-bottom .gform_wrapper .gform_body, #detailspage .vdp-bottom .gform_wrapper form {
+  background: #fff; }
+
+#detailspage .vdp-bottom .gform_wrapper .gform_body ul li input {
+  height: 16px; }
+
+.vehicle-title {
+  display: block !important; }
+
+.lightboxForm_wrapper {
+  width: 100%;
+  max-width: 550px; }
+
+#main-action-button-form .gform_body {
+  width: 1024px !important; }
+
+.fancybox-outer .gf_left_third input, .entry .gf_left_third input, .fancybox-outer .gf_middle_third input, .entry .gf_middle_third input, .fancybox-outer .gf_right_third input, .entry .gf_right_third input {
+  float: none;
+  max-width: 200px; }
+
+.fancybox-outer .ginput_complex, .entry .ginput_complex {
+  width: 100%; }
+  .fancybox-outer .ginput_complex input, .entry .ginput_complex input {
+    width: 70%; }
+
+@media screen and (max-width: 767px) {
+  .fancybox-outer .ginput_complex input, .entry .ginput_complex input {
+    width: 100%;
+    min-width: 125px !important; }
+  .fancybox-outer .gf_left_third input, .entry .gf_left_third input, .fancybox-outer .gf_middle_third input, .entry .gf_middle_third input, .fancybox-outer .gf_right_third input, .entry .gf_right_third input, .fancybox-outer .gf_middle_third input, .entry .gf_middle_third input, .fancybox-outer .gf_right_third input, .entry .gf_right_third input {
+    float: none !important;
+    max-width: 250px !important;
+    width: 100%;
+    margin-right: 30px; } }
+
+@media screen and (max-width: 1199px) {
+  .responsive-on #detailspage .vdp-bottom .gform_wrapper .gform_body ul li {
+    width: 360px !important;
+    margin-right: 20px;
+    float: left !important; }
+  .responsive-on .gf_left_third, .responsive-on .gf_middle_third, .responsive-on .gf_right_third, .responsive-on .gf_middle_third, .responsive-on .gf_right_third {
+    width: 100% !important;
+    max-width: 90px !important; }
+  .responsive-on .fancybox-outer .gf_left_third, .responsive-on .entry .gf_left_third, .responsive-on .fancybox-outer .gf_middle_third, .responsive-on .entry .gf_middle_third, .responsive-on .fancybox-outer .gf_right_third, .responsive-on .entry .gf_right_third, .responsive-on .fancybox-outer .gf_middle_third, .responsive-on .entry .gf_middle_third, .responsive-on .fancybox-outer .gf_right_third, .responsive-on .entry .gf_right_third {
+    max-width: 200px !important; } }
+
+@media screen and (max-width: 979px) {
+  .header-spacer {
+    height: 0 !important; }
+  #whitewrap .search-special-vehicles-actions-weather-layout.touch-header {
+    padding-top: 0 !important; } }
+
+@media (max-width: 979px) and (min-width: 768px) {
+  .responsive-on #detailspage .maincardetails .vdp-header-portrait h1 {
+    font-size: 18px !important; } }
+
+@media screen and (max-width: 767px) {
+  .ginput_complex input {
+    width: 100%;
+    min-width: 125px !important; }
+  .gf_left_third input, .gf_middle_third input, .gf_right_third input, .gf_middle_third input, .gf_right_third input {
+    float: none !important;
+    max-width: 250px !important;
+    width: 100%;
+    margin-right: 30px; }
+  .responsive-on #whitewrap #detailspage .cta-mobile-details-page {
+    top: 70px !important;
+    width: 100% !important; }
+  .responsive-on .gf_left_third, .responsive-on .gf_middle_third, .responsive-on .gf_right_third, .responsive-on .gf_middle_third, .responsive-on .gf_right_third {
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 0 auto; }
+  .responsive-on .fancybox-outer .gf_left_third, .responsive-on .entry .gf_left_third, .responsive-on .fancybox-outer .gf_middle_third, .responsive-on .entry .gf_middle_third, .responsive-on .fancybox-outer .gf_right_third, .responsive-on .entry .gf_right_third, .responsive-on .fancybox-outer .gf_middle_third, .responsive-on .entry .gf_middle_third, .responsive-on .fancybox-outer .gf_right_third, .responsive-on .entry .gf_right_third {
+    margin: 0 !important; } }
+
+.mobile-sidebar-menu {
+  padding-top: 10px !important; }
+
+.selectShowFilters {
+  display: none !important; }
+
+.gform_validation_container {
+  display: none !important; }
+
+#field_4_5 {
+  display: none !important; }
+
+.betterPricingDetail_wrapper {
+  background: #fff !important; }
+
+input[type="text"].datepicker.datepicker_with_icon {
+  width: 50% !important; }

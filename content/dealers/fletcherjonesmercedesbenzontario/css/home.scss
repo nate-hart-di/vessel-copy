@@ -1,0 +1,100 @@
+// *************************************************************************************************
+//	HOMEPAGE
+// *************************************************************************************************
+@import "variables";
+
+$fj-drive: true !default;
+$vdp-lease-finance: false !default;
+
+@import '../../../shared/styles/common/fletcherjones-v2/_fj-vdp-variables';
+@import "../../../../../../themes/DealerInspireCommonTheme/css/mixins";
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/slider-videooverlay';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/components/sliders/video-fullheight';
+
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-video-overlay';
+@import '../../../../../../themes/DealerInspireCommonTheme/css/dealer-groups/fletcherjones-v2/_fj-search-overlay';
+
+#videoOverlay {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	@include flex-direction(column);
+	h1,h2 {
+		text-shadow: 0px 0px 10px #000;
+	}
+
+	@media screen and (max-width:1024px){
+		top: 0 !important;
+	}
+}
+
+@media (min-width:768px) {
+	#videobanner{
+		#videorow {
+		 	margin-top: -20px;
+		}
+	}
+}
+
+@media (max-width:767px) {
+	#videobanner {
+		min-height: 600px;
+		background-position: 48% 40%;
+
+		#videoOverlay {
+			margin-top: 25px;
+
+			.videooverlay-content {
+
+				.cta-buttons {
+					margin-top: 0;
+
+					h1 {
+						font-size: 22px;
+					}
+
+				}
+			}
+		}
+	}
+}
+.home #meetTeam {
+  display: none;
+}
+
+
+#heroRow{
+	padding: 0;
+	.heroRow__cta{
+	  background: #fff;
+	  position: relative;
+	  height: 100%;
+	  &--wrap{
+		background: #f1f1f1;
+		width: 100%;
+		justify-content: center;
+		flex-direction: column;
+		height: 150px;
+		padding: 8px 0 22px 0;
+		text-decoration: none;
+		// &:hover{
+		//   background: #fff;
+		// }
+		p{
+		  color: #000;
+		  font-weight: 500;
+		}
+		&:hover {
+			background: white;
+		}
+	  }
+	}
+  }
+  #map {
+	overflow: hidden;
+}

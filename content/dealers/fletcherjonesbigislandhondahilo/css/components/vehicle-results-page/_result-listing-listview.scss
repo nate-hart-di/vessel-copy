@@ -1,0 +1,464 @@
+$lightText: #fff;
+$hideShowFilterHeaderBackgroundColor:#dba800;
+
+$vehiclelinkcolor: #333 !default;
+$yousavecolor: $cta-color !default;
+$pricebottomBG: #555 !default;
+$pricebottomborder: 1px solid #333 !default;
+$pricebottomcolor: #fff !default;
+
+#results-page {
+	.vehicle {
+		.vehicle-image {
+			text-align: center;
+			position: relative;
+			padding: 10px;
+			float: left;
+			margin-bottom: 10px;
+			max-width: 272px;
+	 		min-width: 30%;
+	 		width: 30%;
+	 		display: block;
+	 		img {
+	 			max-width: 100%;
+	 		}
+			.sold-overlay {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				width: 220px;
+			}
+			.below-thumbnail {
+				text-align: center;
+				margin-top: 10px;
+				a {
+					font-size: 24px;
+					padding: 0 5px;
+					display: inline-block;
+					color: $maintextcolor;
+					.icon-label {
+						font-size: 0.5em;
+						vertical-align: middle;
+						font-weight: 600;
+					}
+					&.save-things {
+						margin: 0;
+						background: none transparent;
+						text-transform: none;
+					}
+					&:hover {
+						text-decoration: none;
+						color: $primary;
+					}
+				}
+				.more-photos {
+	
+				}
+			}
+			.certified-logo {
+				width: 75px;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+			}			
+		}
+		.vehicle-overview {
+	 		width: 70%;
+	 		width: 65%\9;
+	 		padding: 10px;
+			float: left;
+			min-height: 195px;
+			h2 {
+				font-size:20px;
+				line-height: 24px;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+			.options {
+				margin: 0;
+				float: left;
+				width: 70%;
+				color: #333;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					li {
+						.detail-content {
+							font-weight: bold;
+						}
+						.mpg-disclaimer {
+							font-size: 60%;
+							vertical-align: super;
+						}
+					}
+				}
+			}
+			.vehicle-content {
+				background-color: #fff;
+				margin: 10px 0;
+				padding: 10px;
+				&:after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+			}
+		}	
+		// .vrp-related-vehicle {											// This needed anymore?
+		// 	display: inline-block;
+		// 	width: 260px;
+		// 	position: relative;
+		// 	margin: 0px 20px 20px 0px;
+		// 	.related-thumbnail img{
+		// 		width: 100%;
+		// 		max-height: 190px;
+		// 	}
+		// 	a.related-info{
+		// 		display: block;
+		// 		width: 250px;
+		// 		position: relative;
+		// 		bottom: 0;
+		// 		background-color: #ccc;
+		// 		opacity: 0.8;
+		// 		filter: alpha(opacity=40);
+		// 		color: #ffffff;
+		// 		font-size: 10px;
+		// 		font-decoration: none;
+		// 		padding: 0px 0px 0px 10px;
+		// 	}
+		// }
+		.hidden-list-view {
+			display: none !important;
+		}
+	}
+}
+
+
+.search-results {
+	.yearFilter, .makeModel, .priceFilter, .searchFilter {
+		display: inline-block;
+		select {
+			width: 100px;
+		}
+	}
+	.searchFilter {
+		#search, #classic_filters_search {
+			line-height: 21px;
+			position: relative;
+			top: -2px;
+			width: 143px;
+			margin: 0;
+		}
+	}
+}
+
+div.newSearch {
+	display: none;
+	a {
+		font-size: 18px;
+		color: #555;
+		text-decoration: underline;
+	}
+}
+
+#results-page .vehiclePagination a {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+table.filterkey-current, table.filterkey-refine {
+	background: #ccc;
+	width: 185px;
+	font-size: 12px;
+	.heading {
+		font-weight: bold;
+	}
+	.remove_filter {
+		img{
+			max-width:20px;
+			vertical-align:middle;
+		}
+	}
+	td {
+		padding: 2px 10px;
+	}
+}
+
+@media (max-width: 1399px) {
+	#results-page {
+		.vehicle .vehicle-overview {
+			.options {
+				width: 65%;
+			}
+			.vehicle-price {
+				width: 35%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	#results-page {
+		.vehicle {
+			.vehicle-image {
+				.below-thumbnail a .icon-label {
+					display: none;
+				}
+			}
+			.vehicle-overview {
+				.options {
+					width: 60%;
+				}
+			}
+			.vehicle-price {
+				width: 40%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	#results-page .vehicle {
+		font-size: 12px;
+		.button-bar {
+			font-size: 12px;
+			> div.icon {
+				padding: 0px 10px 15px 0;
+				&:first-child {
+					padding-left: 10px;
+				}
+				> div a {
+					max-width: 60px;
+					img {
+						max-width: 60px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+	td.filter-results {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	td.filter-results {
+		display: none;
+	}
+	.vrp-listing #results-page {
+		.sortablePrice {
+			display: none;
+		}
+		.vehicle {
+			position: relative;
+			min-width: 100%;
+			max-width: 0;
+			padding: 0px;
+			background: #f3f3f3;
+			@include box-shadow(0 1px 7px #aaa);
+			&:hover {
+				background: #eee;
+			}
+			.vehicle-card-header {
+				padding: 10px;
+				border-bottom: none;
+				.vehicle-image {
+					display: inline;
+				  max-width: 120px;
+				  min-width: 120px;
+				  margin: 0 10px 0 0;
+				  padding: 0;
+				}
+				.vehicle-title {
+					display: inline;
+					h2 {
+						line-height: 16px;
+						margin-top: 0px;
+						clear: none;
+						a {
+							font-size: 16px;
+						}
+					}
+				}
+				.vehicle-price {
+					padding: 0px;
+					border: none;
+					float: none;
+					width: auto;
+					.price-block {
+						margin: 0px;
+						a {
+							width: 100%;
+							.price {
+								font-weight: bold;
+								width: 100%;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+			.vehicle-card-content {
+				padding: 10px;
+				font-weight: 500;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 13px;
+				.options {
+					display: block;
+					width: 100%;
+					ul {
+						background: none transparent;
+						list-style: none;
+						padding: 0px;
+						margin: 0;
+						li {
+							padding-left: 0px;
+							background: none transparent;
+							line-height: 140%;
+						}
+					}
+				}
+				.vinstock {
+					width: 100%;
+					line-height: 140%;
+				}
+				.description-cta-form {
+					clear: both;
+			    max-height: 30px;
+			    overflow-y: hidden;
+					.vehicle-description-text {
+						clear: left;
+						padding-top: 5px;
+					}
+					.vrp-cta-form {
+						h3 {
+							font-size: 20px;
+						}
+					}
+					.button-expand {
+						float: right;
+						a {
+							width: 30px;
+							height: 20px;
+							margin-top: 5px;
+							background-image: url(/wp-content/themes/DealerInspireCommonTheme/images/mobile/orangeplusminus.png);
+							background-repeat: no-repeat;
+							display: block;
+							&.closed {
+								background-position: 100% 0px;
+							}
+							&.open {
+								background-position: 100% -20px;
+							}
+						}
+					}
+				}
+			}
+			.vehicle-card-actions {
+				padding: 10px;
+				min-height: 52px;
+				background: #fff;
+				a {
+					display: inline-block;
+				  min-width: 20px;
+				  height: 32px;
+				  line-height: 32px;
+				  margin-right: 5px;
+				  text-align: center;
+				  vertical-align: top;
+				  padding: 0 5px;
+					.glyphicon, i {
+						color: #333;
+						font-size: 20px;
+						line-height: 32px;
+					}
+					img {
+						max-height: 32px;
+					}
+				}
+				.viewdetails-button {
+				  padding: 0 15px;
+				  margin: 0;
+				  float: right;
+				  color: #fff;
+				  @include box-shadow(0 2px 5px #aaa);
+				  height: 32px;
+				  line-height: 32px;
+				  font-size: 12px;
+				  font-weight: normal;
+				  &:only-child {
+						min-width: 100%;
+					}
+				}
+			}
+			.history-reports {
+				img {
+					max-width: 70px;
+				}
+			}
+			.vrp-actions {
+				text-align: center;
+				clear: both;
+				&.save-vehicles-action {
+					.view-details-button {
+						width: 85%;
+					}
+				}
+				.save-vehicle-button {
+					display: block;
+					width: 15%;
+					height: 28px;
+					float: left;
+					a {
+						display: block;
+						width: 95%;
+					}
+				}
+				.shopping-tools-button {
+					margin-top: 0;
+					margin-left: 0;
+					width: 50%;
+					float: left;
+					a {
+						text-align: center;
+						padding: 2px 0px;
+						background-color: #999;
+						color: $lightText;
+						border: 2px solid #777;
+						clear: left;
+						text-transform: lowercase;
+						display: block;
+						width: 100%;
+						@include box-sizing(border-box);
+					}
+				}
+			}
+		}
+	}	
+	div#specialLeft, .special .special-left {		
+		float: none;
+		width: 100%;
+	}
+	div#specialRight, .special .special-right {
+		float: none;
+		width: 100%;
+	}		
+}
+
+@media (max-width: 479px) {
+	.responsive-on {
+		#vrp-filter-menu {
+			bottom: -320px;
+			height: 320px;
+			select {
+				width: 48%;
+				float: left;
+				margin: 0 1% 10px;
+			}
+		}
+	}
+}

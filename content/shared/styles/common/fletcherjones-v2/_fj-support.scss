@@ -1,0 +1,199 @@
+// *************************************************************************************************
+//	SUPPORT REQUESTS
+// *************************************************************************************************
+
+//***START #44422
+.overlay-title {
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    &.no-shadow {
+        text-shadow: none!important;
+        -moz-text-shadow:none !important;
+        -webkit-text-shadow:none !important;
+    }
+}
+.page-builder > div:first-child,
+.modelpagebuilder > div:first-child + div {
+    .overlay-title {
+        text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        -moz-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+    }
+}
+
+//54699 Custom styles for overview vehicle number
+#di-page-composer {
+    #vehicle-count-overview-number {
+        font-size: 29px;
+        color: white;
+        margin-bottom: 25px;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        -moz-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        #count-number {
+            font-size: 50px;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+}
+
+/********************************************************************************
+        CUSTOM EVENTS STYLES
+********************************************************************************/
+
+.red-button.button {
+    background: red !important;
+    color:#fff !important;
+    margin-top:15px;
+    &:hover {
+        background:darken(red, 10%) !important;
+        color:#fff;
+    }
+}
+
+// Holiday Hours styles
+ul.holiday-hours {
+    padding:0px 5px;
+    li {
+        clear:both;
+        display:block;
+        text-align:right;
+        span {
+            float:left;
+        }
+        &.hours-title {
+            font-size:16px;
+            font-weight:bold;
+            text-align:left;
+        }
+    }
+}
+
+// Holiday slider style
+#featuredSpecials {
+    img {
+	    width: 100%;
+    }
+    h2.feature-title {
+        text-align:center;
+        font-size:3rem;
+        font-weight:bold;
+        margin:10px auto !important;
+    }
+    ul.special-offers {
+        margin:30px auto;
+        opacity:0;
+        padding:0px;
+        @include transition(opacity .5s ease);
+        width:100%;
+        &.shown {
+            opacity:1;
+        }
+        li.special-offer {
+            margin:10px auto;
+            width:90%;
+            a {
+                color:#222;
+                text-decoration:none;
+            }
+            h2 {
+                margin-top:0px;
+                font-size:20px;
+            }
+            .offer-content {
+                padding-bottom:0px;
+            }
+            .rates {
+                border-bottom:none;
+                text-align:center;
+                > div {
+                    > span {
+                        display:block;
+                    }
+                }
+            }
+            .offerlabel {
+                color:$primary;
+                font-size:34px;
+            }
+            .offerbuttonbar {
+                .button {
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .divider.striped-icon {
+        margin-top:-100px;
+    }
+    .owl-buttons {
+        .striped-icon{
+            &:after {
+                background:$primary;
+            }
+            &:hover {
+                background:#fff;
+            }
+        }
+        > div {
+            position:absolute;
+            top:40%;
+            span {
+                display:inline-block;
+                color:#fff;
+            }
+        }
+        .owl-prev {
+            left:-50px;
+            .fa {
+                margin-left:-3px;
+            }
+        }
+        .owl-next {
+            right:-50px;
+            .fa {
+                margin-right:-3px;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #featuredSpecials {
+        h2.feature-title {
+            font-size:2.6rem;
+            margin: -20px auto 70px !important;
+        }
+        ul.special-offers {
+            margin-top:50px;
+            width:100%;
+            li.special-offer {
+                @include box-shadow(none);
+            }
+        }
+        .owl-buttons {
+            > div {
+                font-size:18px;
+                padding: 6px 13px;
+                top:-60px;
+            }
+            .owl-prev {
+                padding-left:8px;
+                left:10px;
+            }
+            .owl-next {
+                padding-right:8px;
+                right:10px;
+            }
+        }
+    }
+}
+
+.vdp-print-view .logo {
+    background-color: #fff;
+    text-align: center;
+}

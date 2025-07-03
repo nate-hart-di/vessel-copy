@@ -1,0 +1,491 @@
+// *************************************************************************************************
+//	Support request & third-party related styles
+// *************************************************************************************************
+
+#c-class-countdown
+{
+    position: fixed;
+    z-index: 1050;
+    bottom: 20px;
+    left: 30px;
+
+    width: 200px;
+    padding: 20px 14px 14px;
+
+    -webkit-transition: all 220ms ease-out;
+            transition: all 220ms ease-out;
+    transform: translateX(0);
+
+    color: #fff;
+    background-color: #fff;
+    background-color: rgba(0,0,0,.85);
+    .c-class-count
+    {
+        font-size: 18px;
+
+        display: block;
+
+        height: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+        text-align: center;
+        vertical-align: middle;
+        span
+        {
+            font-weight: 700;
+
+            display: inline;
+
+            color: $primary;
+            text-shadow: -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+        }
+    }
+    .c-class-countdown-close
+    {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1;
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        display: block;
+
+        width: 18px;
+        height: 18px;
+
+        content: '\f00d';
+        text-decoration: none;
+
+        color: #fff;
+    }
+    &.close
+    {
+        opacity: 0;
+    }
+}
+.c-class-countdown-sm
+{
+    font-size: 16px;
+
+    position: fixed;
+    z-index: 1050;
+    right: auto !important;
+    bottom: 15%;
+    left: -50px !important;
+
+    display: block;
+
+    width: auto;
+    height: 40px;
+    margin-left: 0;
+    padding: 10px;
+
+    -webkit-transition: margin-left 100ms ease-out;
+            transition: margin-left 100ms ease-out;
+    transform: rotate(90deg);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    color: #fff !important;
+    background-color: rgba(0,0,0,.85);
+    span
+    {
+        font-weight: 700;
+
+        color: $primary;
+        text-shadow: -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    }
+    &.inactive
+    {
+        margin-left: -40px;
+        @media screen and (max-width:767px)
+        {
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width:767px)
+    {
+        bottom: 25%;
+    }
+}
+
+//Related Posts Styles
+.crp_related
+{
+    clear: both;
+
+    padding-top: 20px;
+}
+
+.crp_related ul
+{
+    //text-align: center;
+}
+
+.crp_related li
+{
+    display: inline-block;
+
+    width: 100%;
+    max-width: 200px;
+
+    list-style: none;
+
+    vertical-align: top;
+}
+
+.crp_related h3
+{
+    font-size: 20px;
+
+    position: relative;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #ddd;
+}
+
+.crp_related h3 span
+{
+    position: relative;
+
+    display: inline-block;
+}
+
+.crp_related h3 span:before,
+.crp_related h3 span:after
+{
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background: #ddd;
+}
+
+.crp_related h3 span:before
+{
+    right: 100%;
+
+    margin-right: 15px;
+}
+
+.crp_related h3 span:after
+{
+    left: 100%;
+
+    margin-left: 15px;
+}
+
+.crp_related li a
+{
+    color: #333;
+}
+.crp_related li a:hover
+{
+    color: #0059a8;
+}
+
+.crp_related li img,
+.crp_related .crp_title
+{
+    display: block;
+}
+
+.crp_related li img
+{
+    margin: 0 auto;
+}
+
+.crp_related .crp_title
+{
+    font-size: 14px;
+    font-weight: normal;
+
+    width: 100%;
+    max-width: 190px;
+    margin: 5px auto 0 auto;
+
+    text-align: center;
+}
+
+//52250 - Overriding bold styles in Prem Options on VDP
+#vehicleDetails {
+    .premium-options-list {
+        h3 {
+            font-weight: 300 !important;
+        }
+        p {
+            font-weight: 500 !important;
+        }
+    }
+}
+
+.modal-backdrop {
+    z-index: 999 !important;
+}
+.modal .modal-content {
+    text-align: left !important;
+}
+
+//52570 - Custom classes for vehicle count over Overview pages
+
+#di-page-composer {
+    #vehicle-count-overview-number {
+        font-size: 29px;
+        color: white;
+        margin-bottom: 25px;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        -moz-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,.8),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.6),0px 0px 10px rgba(0,0,0,.8);
+        #count-number {
+            font-size: 50px;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+}
+.mobile-tabs.mobile-tabs-count-4 {
+    height: 0px;
+    .mobile-tab-1, .mobile-tab-2, .mobile-tab-3, .mobile-tab-4{
+        display: none;
+    }
+}
+
+//Make pre-order ctas pink
+.make-pre-order-pink .vehicle-price a.fancy.button-form.button.cta-button{
+    background-color: rgba(250,104,170,1) !important;
+}
+
+.make-pre-order-pink .maincta-row.ctabox-row a {
+    background-color: rgba(250,104,170,1) !important;
+}
+
+.testing {
+    display: none !important;
+}
+
+.hide-form-85 {
+    display: none !important;
+}
+
+// #00059456 - Blog Header styles
+.post {
+    a.entry-title{
+        color: black !important;
+        font-size: 25px !important;
+        font-weight: 500 !important;
+    }
+
+    @media(max-width: 767px) {
+        h1.entry-title {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+    }
+}
+// #00059456 - Blog Header styles - END
+
+
+//62845
+.page-vehicle-display-page {
+    .hide-the-main-cta .maincta-row.ctabox-row {
+        display: none;
+    }
+    div#inquire-button a {
+        width: 100% !important;
+        margin-top: -10px;
+        display: none;
+    }
+}
+//end 62845
+
+//#00066711 START
+.comments .post-comments li {
+    list-style: none !important;
+}
+//#00066711 END
+
+// #00068477 - END
+.unlock-pricing-cta {
+    background: red !important;
+}
+// Radioactive Button Styling
+.button-radioactive {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background: red;
+  border-radius: 5px;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset !important;
+
+  -webkit-animation-name: redPulse;
+  animation-name: redPulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    background: lighten($primary, 8%);
+  }
+}
+
+@-webkit-keyframes redPulse {
+  from {
+    background-color: red;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    background-color: lighten(red, 8%);
+    -webkit-box-shadow: 0 0 20px lighten(red, 8%);
+  }
+  to {
+    background-color: red;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.fj-drive.vdp {
+    display: none !important;
+}
+
+.vdp-print-view .logo {
+    background-color: #fff;
+    text-align: center;
+}
+
+//Make dem arrows bouncy
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev {
+    background: url(/wp-content/plugins/vessel/content/shared/images/arrows/arrow-blue-left.png) no-repeat center center !important;
+    left: -50px !important;
+    animation: shake 3s infinite;
+    @media (max-width: 767px) {
+        left: -28px !important;
+    }
+}
+
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
+    right: -50px !important;
+    @media (max-width: 767px) {
+        right: -20px !important;
+    }
+}
+
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-prev, .difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
+    width: 65px !important;
+}
+
+.difo-wrapper .owlcard-wrap-inner .owl-buttons .owl-next {
+    background: url(/wp-content/plugins/vessel/content/shared/images/arrows/arrow-blue-right.png) no-repeat center center !important;
+    animation: shake 3s infinite;
+}
+
+.content {
+    background-color: white;
+}
+.koral {
+    color: red;
+}
+//comment
+.vdp-print-view .logo {
+    background-color: #fff;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    #whitewrap {
+        #footer {
+            margin-bottom: 0;
+        }
+    }
+}
+
+//Make VDP gallery unreasonably large
+.page-vehicle-display-page {
+    .fancybox-desktop{
+        width: 100% !important;
+        left: calc( (100% - 800px)/2) !important;
+        max-width: 800px;
+        @media screen and (max-width:1200px){
+            left: 2.5% !important;
+            width: 95% !important;
+        }
+        .fancybox-inner{
+            width: 100% !important;
+            overflow-y: scroll;
+            > div{
+                max-width: 100% !important;
+            }
+        }
+    }
+}
+
+.di-version {
+    @media (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+#results-page .vehicle .vehicle-price #lease-for-less-cta {
+    background: orange;
+}
+//
+
+.lease-for-less{background: orange !important; }
+
+#chinese-button {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 150px;
+    @media screen and (max-width: 1024px) {
+        width: 125px;
+        right: 15px;
+    }
+    @media screen and (max-width: 767px) {
+        width: 85px;
+        right: 10px;
+    }
+}
+
+#lvrp-vehicle-finder-image{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.cpo-carfax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.cpo-brochure, .cpo-carfax {
+    float: left;
+    margin: 0 5px;
+}
