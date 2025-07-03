@@ -3,3 +3,5 @@ tests/_output/
 tests/_support
 node_modules/
 .env
+*.css
+!*.scss
